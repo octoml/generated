@@ -8130,7 +8130,7 @@ pub mod schemas {
         Name,
         #[doc = "Corresponds to the `#NULL!` error."]
         NullValue,
-        #[doc = "Corresponds to the `#NUM`! error."]
+        #[doc = "Corresponds to the `#NUM!` error."]
         Num,
         #[doc = "Corresponds to the `#REF!` error."]
         Ref,

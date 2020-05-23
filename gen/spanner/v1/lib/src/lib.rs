@@ -1235,7 +1235,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GetIamPolicyRequest {
-        #[doc = "OPTIONAL: A `GetPolicyOptions` object for specifying options to\n`GetIamPolicy`. This field is only used by Cloud IAM."]
+        #[doc = "OPTIONAL: A `GetPolicyOptions` object for specifying options to\n`GetIamPolicy`."]
         #[serde(
             rename = "options",
             default,

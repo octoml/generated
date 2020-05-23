@@ -2900,6 +2900,20 @@ pub mod schemas {
         )]
         pub accelerator_config:
             ::std::option::Option<crate::schemas::GoogleCloudMlV1AcceleratorConfig>,
+        #[doc = "Arguments to the entrypoint command.\nThe following rules apply for container_command and container_args:\n\n* If you do not supply command or args:\n  The defaults defined in the Docker image are used.\n* If you supply a command but no args:\n  The default EntryPoint and the default Cmd defined in the Docker image\n  are ignored. Your command is run without any arguments.\n* If you supply only args:\n  The default Entrypoint defined in the Docker image is run with the args\n  that you supplied.\n* If you supply a command and args:\n  The default Entrypoint and the default Cmd defined in the Docker image\n  are ignored. Your command is run with your args.\n  It cannot be set if custom container image is\n  not provided.\n  Note that this field and [TrainingInput.args] are mutually exclusive, i.e.,\n  both cannot be set at the same time."]
+        #[serde(
+            rename = "containerArgs",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub container_args: ::std::option::Option<Vec<String>>,
+        #[doc = "The command with which the replica's custom container is run.\nIf provided, it will override default ENTRYPOINT of the docker image.\nIf not provided, the docker image's ENTRYPOINT is used.\nIt cannot be set if custom container image is\nnot provided.\nNote that this field and [TrainingInput.args] are mutually exclusive, i.e.,\nboth cannot be set at the same time."]
+        #[serde(
+            rename = "containerCommand",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub container_command: ::std::option::Option<Vec<String>>,
         #[doc = "The Docker image to run on the replica. This image must be in Container\nRegistry. Learn more about [configuring custom\ncontainers](/ai-platform/training/docs/distributed-training-containers)."]
         #[serde(
             rename = "imageUri",
@@ -2998,13 +3012,19 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GoogleCloudMlV1Scheduling {
-        #[doc = "Optional. The maximum job running time, expressed in seconds. The field can\ncontain up to nine fractional digits, terminated by `s`. By default there\nis no limit to the running time.\n\nIf the training job is still running after this duration, AI Platform\nTraining cancels it.\n\nFor example, if you want to ensure your job runs for no more than 2 hours,\nset this field to `7200s` (2 hours * 60 minutes / hour * 60 seconds /\nminute).\n\nIf you submit your training job using the `gcloud` tool, you can [provide\nthis field in a `config.yaml`\nfile](/ai-platform/training/docs/training-jobs#formatting_your_configuration_parameters).\nFor example:\n\n````textyaml\ntrainingInput:\n  ...\n  scheduling:\n    maxRunningTime: 7200s\n  ...\n````"]
+        #[doc = "Optional. The maximum job running time, expressed in seconds. The field can\ncontain up to nine fractional digits, terminated by `s`. If not specified,\nthis field defaults to `604800s` (seven days).\n\nIf the training job is still running after this duration, AI Platform\nTraining cancels it.\n\nFor example, if you want to ensure your job runs for no more than 2 hours,\nset this field to `7200s` (2 hours * 60 minutes / hour * 60 seconds /\nminute).\n\nIf you submit your training job using the `gcloud` tool, you can [provide\nthis field in a `config.yaml`\nfile](/ai-platform/training/docs/training-jobs#formatting_your_configuration_parameters).\nFor example:\n\n````textyaml\ntrainingInput:\n  ...\n  scheduling:\n    maxRunningTime: 7200s\n  ...\n````"]
         #[serde(
             rename = "maxRunningTime",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub max_running_time: ::std::option::Option<String>,
+        #[serde(
+            rename = "maxWaitTime",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub max_wait_time: ::std::option::Option<String>,
     }
     impl ::google_field_selector::FieldSelector for GoogleCloudMlV1Scheduling {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -4192,6 +4212,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub master_type: ::std::option::Option<String>,
+        #[doc = "Optional. The full name of the Google Compute Engine\n[network](/compute/docs/networks-and-firewalls#networks) to which the Job\nis peered. For example, projects/12345/global/networks/myVPC. Format is of\nthe form projects/{project}/global/networks/{network}. Where {project} is a\nproject number, as in '12345', and {network} is network name.\".\n\nPrivate services access must already be configured for the network. If left\nunspecified, the Job is not peered with any network. Learn more -\nConnecting Job to user network over private\nIP."]
+        #[serde(
+            rename = "network",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub network: ::std::option::Option<String>,
         #[doc = "Required. The Google Cloud Storage location of the packages with\nthe training program and any additional dependencies.\nThe maximum number of package URIs is 100."]
         #[serde(
             rename = "packageUris",
@@ -5223,7 +5250,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GoogleIamV1Binding {
-        #[doc = "The condition that is associated with this binding.\nNOTE: An unsatisfied condition will not allow user access via current\nbinding. Different bindings, including their conditions, are examined\nindependently."]
+        #[doc = "The condition that is associated with this binding.\n\nIf the condition evaluates to `true`, then this binding applies to the\ncurrent request.\n\nIf the condition evaluates to `false`, then this binding does not apply to\nthe current request. However, a different role binding might grant the same\nrole to one or more of the members in this binding.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "condition",
             default,
@@ -5289,7 +5316,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<::google_api_bytes::Bytes>,
-        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset."]
+        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "version",
             default,
@@ -5327,7 +5354,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub policy: ::std::option::Option<crate::schemas::GoogleIamV1Policy>,
-        #[doc = "OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only\nthe fields in the mask will be modified. If no mask is provided, the\nfollowing default mask is used:\npaths: \"bindings, etag\"\nThis field is only used by Cloud IAM."]
+        #[doc = "OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only\nthe fields in the mask will be modified. If no mask is provided, the\nfollowing default mask is used:\n\n`paths: \"bindings, etag\"`"]
         #[serde(
             rename = "updateMask",
             default,
@@ -5793,7 +5820,7 @@ pub mod resources {
             fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                 self.auth
             }
-            #[doc = "Performs explanation on the data in the request.\nAI Platform implements a custom `explain` verb on top of an HTTP POST\nmethod."]
+            #[doc = "Performs explanation on the data in the request.\n\n<div>{% dynamic include \"/ai-platform/includes/___explain-request\" %}</div>"]
             pub fn explain(
                 &self,
                 request: crate::schemas::GoogleCloudMlV1ExplainRequest,
@@ -6513,7 +6540,7 @@ pub mod resources {
                         update_mask: None,
                     }
                 }
-                #[doc = "Sets the access control policy on the specified resource. Replaces any\nexisting policy.\n\nCan return Public Errors: NOT_FOUND, INVALID_ARGUMENT and PERMISSION_DENIED"]
+                #[doc = "Sets the access control policy on the specified resource. Replaces any\nexisting policy.\n\nCan return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors."]
                 pub fn set_iam_policy(
                     &self,
                     request: crate::schemas::GoogleIamV1SetIamPolicyRequest,
@@ -6537,7 +6564,7 @@ pub mod resources {
                         resource: resource.into(),
                     }
                 }
-                #[doc = "Returns permissions that a caller has on the specified resource.\nIf the resource does not exist, this will return an empty set of\npermissions, not a NOT_FOUND error.\n\nNote: This operation is designed to be used for building permission-aware\nUIs and command-line tools, not for authorization checking. This operation\nmay \"fail open\" without warning."]
+                #[doc = "Returns permissions that a caller has on the specified resource.\nIf the resource does not exist, this will return an empty set of\npermissions, not a `NOT_FOUND` error.\n\nNote: This operation is designed to be used for building permission-aware\nUIs and command-line tools, not for authorization checking. This operation\nmay \"fail open\" without warning."]
                 pub fn test_iam_permissions(
                     &self,
                     request: crate::schemas::GoogleIamV1TestIamPermissionsRequest,
@@ -7065,7 +7092,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> GetIamPolicyRequestBuilder<'a> {
-                #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset."]
+                #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
                 pub fn options_requested_policy_version(mut self, value: i32) -> Self {
                     self.options_requested_policy_version = Some(value);
                     self
@@ -11505,7 +11532,7 @@ pub mod resources {
                         update_mask: None,
                     }
                 }
-                #[doc = "Sets the access control policy on the specified resource. Replaces any\nexisting policy.\n\nCan return Public Errors: NOT_FOUND, INVALID_ARGUMENT and PERMISSION_DENIED"]
+                #[doc = "Sets the access control policy on the specified resource. Replaces any\nexisting policy.\n\nCan return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors."]
                 pub fn set_iam_policy(
                     &self,
                     request: crate::schemas::GoogleIamV1SetIamPolicyRequest,
@@ -11529,7 +11556,7 @@ pub mod resources {
                         resource: resource.into(),
                     }
                 }
-                #[doc = "Returns permissions that a caller has on the specified resource.\nIf the resource does not exist, this will return an empty set of\npermissions, not a NOT_FOUND error.\n\nNote: This operation is designed to be used for building permission-aware\nUIs and command-line tools, not for authorization checking. This operation\nmay \"fail open\" without warning."]
+                #[doc = "Returns permissions that a caller has on the specified resource.\nIf the resource does not exist, this will return an empty set of\npermissions, not a `NOT_FOUND` error.\n\nNote: This operation is designed to be used for building permission-aware\nUIs and command-line tools, not for authorization checking. This operation\nmay \"fail open\" without warning."]
                 pub fn test_iam_permissions(
                     &self,
                     request: crate::schemas::GoogleIamV1TestIamPermissionsRequest,
@@ -12065,7 +12092,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> GetIamPolicyRequestBuilder<'a> {
-                #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset."]
+                #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
                 pub fn options_requested_policy_version(mut self, value: i32) -> Self {
                     self.options_requested_policy_version = Some(value);
                     self

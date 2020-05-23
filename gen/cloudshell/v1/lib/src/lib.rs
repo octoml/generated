@@ -238,6 +238,8 @@ pub mod schemas {
     }
     #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
     pub enum EnvironmentState {
+        #[doc = "The environment is being deleted and can't be connected to."]
+        Deleting,
         #[doc = "The environment is not running and can't be connected to. Starting the\nenvironment will transition it to the STARTING state."]
         Disabled,
         #[doc = "The environment is running and ready to accept connections. It will\nautomatically transition back to DISABLED after a period of inactivity or\nif another environment is started."]
@@ -250,6 +252,7 @@ pub mod schemas {
     impl EnvironmentState {
         pub fn as_str(self) -> &'static str {
             match self {
+                EnvironmentState::Deleting => "DELETING",
                 EnvironmentState::Disabled => "DISABLED",
                 EnvironmentState::Running => "RUNNING",
                 EnvironmentState::Starting => "STARTING",
@@ -266,6 +269,7 @@ pub mod schemas {
         type Err = ();
         fn from_str(s: &str) -> ::std::result::Result<EnvironmentState, ()> {
             Ok(match s {
+                "DELETING" => EnvironmentState::Deleting,
                 "DISABLED" => EnvironmentState::Disabled,
                 "RUNNING" => EnvironmentState::Running,
                 "STARTING" => EnvironmentState::Starting,
@@ -294,6 +298,7 @@ pub mod schemas {
         {
             let value: &'de str = <&str>::deserialize(deserializer)?;
             Ok(match value {
+                "DELETING" => EnvironmentState::Deleting,
                 "DISABLED" => EnvironmentState::Disabled,
                 "RUNNING" => EnvironmentState::Running,
                 "STARTING" => EnvironmentState::Starting,

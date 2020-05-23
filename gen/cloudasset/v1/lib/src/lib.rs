@@ -1,4 +1,4 @@
-#![doc = "# Resources and Methods\n    * [feeds](resources/feeds/struct.FeedsActions.html)\n      * [*create*](resources/feeds/struct.CreateRequestBuilder.html), [*delete*](resources/feeds/struct.DeleteRequestBuilder.html), [*get*](resources/feeds/struct.GetRequestBuilder.html), [*list*](resources/feeds/struct.ListRequestBuilder.html), [*patch*](resources/feeds/struct.PatchRequestBuilder.html)\n    * [operations](resources/operations/struct.OperationsActions.html)\n      * [*get*](resources/operations/struct.GetRequestBuilder.html)\n    * [v_1](resources/v_1/struct.V1Actions.html)\n      * [*batchGetAssetsHistory*](resources/v_1/struct.BatchGetAssetsHistoryRequestBuilder.html), [*exportAssets*](resources/v_1/struct.ExportAssetsRequestBuilder.html)\n"]
+#![doc = "# Resources and Methods\n    * [feeds](resources/feeds/struct.FeedsActions.html)\n      * [*create*](resources/feeds/struct.CreateRequestBuilder.html), [*delete*](resources/feeds/struct.DeleteRequestBuilder.html), [*get*](resources/feeds/struct.GetRequestBuilder.html), [*list*](resources/feeds/struct.ListRequestBuilder.html), [*patch*](resources/feeds/struct.PatchRequestBuilder.html)\n    * [operations](resources/operations/struct.OperationsActions.html)\n      * [*get*](resources/operations/struct.GetRequestBuilder.html)\n    * [v_1](resources/v_1/struct.V1Actions.html)\n      * [*batchGetAssetsHistory*](resources/v_1/struct.BatchGetAssetsHistoryRequestBuilder.html), [*exportAssets*](resources/v_1/struct.ExportAssetsRequestBuilder.html), [*searchAllIamPolicies*](resources/v_1/struct.SearchAllIamPoliciesRequestBuilder.html), [*searchAllResources*](resources/v_1/struct.SearchAllResourcesRequestBuilder.html)\n"]
 pub mod scopes {
     #[doc = "View and manage your data across Google Cloud Platform services\n\n`https://www.googleapis.com/auth/cloud-platform`"]
     pub const CLOUD_PLATFORM: &str = "https://www.googleapis.com/auth/cloud-platform";
@@ -20,14 +20,14 @@ pub mod schemas {
         )]
         pub access_policy:
             ::std::option::Option<crate::schemas::GoogleIdentityAccesscontextmanagerV1AccessPolicy>,
-        #[doc = "The ancestry path of an asset in Google Cloud [resource\nhierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy),\nrepresented as a list of relative resource names. An ancestry path starts\nwith the closest ancestor in the hierarchy and ends at root. If the asset\nis a project, folder, or organization, the ancestry path starts from the\nasset itself.\n\nFor example: `[\"projects/123456789\", \"folders/5432\", \"organizations/1234\"]`"]
+        #[doc = "The ancestry path of an asset in Google Cloud [resource\nhierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy),\nrepresented as a list of relative resource names. An ancestry path starts\nwith the closest ancestor in the hierarchy and ends at root. If the asset\nis a project, folder, or organization, the ancestry path starts from the\nasset itself.\n\nExample: `[\"projects/123456789\", \"folders/5432\", \"organizations/1234\"]`"]
         #[serde(
             rename = "ancestors",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub ancestors: ::std::option::Option<Vec<String>>,
-        #[doc = "The type of the asset. For example: \"compute.googleapis.com/Disk\"\n\nSee [Supported asset\ntypes](https://cloud.google.com/asset-inventory/docs/supported-asset-types)\nfor more information."]
+        #[doc = "The type of the asset. Example: \"compute.googleapis.com/Disk\"\n\nSee [Supported asset\ntypes](https://cloud.google.com/asset-inventory/docs/supported-asset-types)\nfor more information."]
         #[serde(
             rename = "assetType",
             default,
@@ -41,7 +41,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub iam_policy: ::std::option::Option<crate::schemas::Policy>,
-        #[doc = "The full name of the asset. For example:\n\"//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1\"\n\nSee [Resource\nnames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more information."]
+        #[doc = "The full name of the asset. Example:\n\"//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1\"\n\nSee [Resource\nnames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more information."]
         #[serde(
             rename = "name",
             default,
@@ -316,7 +316,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct Binding {
-        #[doc = "The condition that is associated with this binding.\nNOTE: An unsatisfied condition will not allow user access via current\nbinding. Different bindings, including their conditions, are examined\nindependently."]
+        #[doc = "The condition that is associated with this binding.\n\nIf the condition evaluates to `true`, then this binding applies to the\ncurrent request.\n\nIf the condition evaluates to `false`, then this binding does not apply to\nthe current request. However, a different role binding might grant the same\nrole to one or more of the members in this binding.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "condition",
             default,
@@ -422,8 +422,41 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct Explanation {
+        #[doc = "The map from roles to their included permissions that match the\npermission query (i.e., a query containing `policy.role.permissions:`).\nExample: if query `policy.role.permissions : \"compute.disk.get\"`\nmatches a policy binding that contains owner role, the\nmatched_permissions will be {\"roles/owner\": [\"compute.disk.get\"]}. The\nroles can also be found in the returned `policy` bindings. Note that the\nmap is populated only for requests with permission queries."]
+        #[serde(
+            rename = "matchedPermissions",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub matched_permissions: ::std::option::Option<
+            ::std::collections::BTreeMap<String, crate::schemas::Permissions>,
+        >,
+    }
+    impl ::google_field_selector::FieldSelector for Explanation {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for Explanation {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct ExportAssetsRequest {
-        #[doc = "A list of asset types of which to take a snapshot for. For example:\n\"compute.googleapis.com/Disk\". If specified, only matching assets will be\nreturned. See [Introduction to Cloud Asset\nInventory](https://cloud.google.com/asset-inventory/docs/overview)\nfor all supported asset types."]
+        #[doc = "A list of asset types of which to take a snapshot for. Example:\n\"compute.googleapis.com/Disk\". If specified, only matching assets will be\nreturned. See [Introduction to Cloud Asset\nInventory](https://cloud.google.com/asset-inventory/docs/overview)\nfor all supported asset types."]
         #[serde(
             rename = "assetTypes",
             default,
@@ -619,14 +652,14 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct Feed {
-        #[doc = "A list of the full names of the assets to receive updates. You must specify\neither or both of asset_names and asset_types. Only asset updates matching\nspecified asset_names and asset_types are exported to the feed. For\nexample:\n`//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1`.\nSee [Resource\nNames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more info."]
+        #[doc = "A list of the full names of the assets to receive updates. You must specify\neither or both of asset_names and asset_types. Only asset updates matching\nspecified asset_names or asset_types are exported to the feed.\nExample:\n`//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1`.\nSee [Resource\nNames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more info."]
         #[serde(
             rename = "assetNames",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub asset_names: ::std::option::Option<Vec<String>>,
-        #[doc = "A list of types of the assets to receive updates. You must specify either\nor both of asset_names and asset_types. Only asset updates matching\nspecified asset_names and asset_types are exported to the feed.\nFor example: `\"compute.googleapis.com/Disk\"`\n\nSee [this\ntopic](https://cloud.google.com/asset-inventory/docs/supported-asset-types)\nfor a list of all supported asset types."]
+        #[doc = "A list of types of the assets to receive updates. You must specify either\nor both of asset_names and asset_types. Only asset updates matching\nspecified asset_names or asset_types are exported to the feed.\nExample: `\"compute.googleapis.com/Disk\"`\n\nSee [this\ntopic](https://cloud.google.com/asset-inventory/docs/supported-asset-types)\nfor a list of all supported asset types."]
         #[serde(
             rename = "assetTypes",
             default,
@@ -795,14 +828,14 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GcsDestination {
-        #[doc = "The uri of the Cloud Storage object. It's the same uri that is used by\ngsutil. For example: \"gs://bucket_name/object_name\". See [Viewing and\nEditing Object\nMetadata](https://cloud.google.com/storage/docs/viewing-editing-metadata)\nfor more information."]
+        #[doc = "The uri of the Cloud Storage object. It's the same uri that is used by\ngsutil. Example: \"gs://bucket_name/object_name\". See [Viewing and\nEditing Object\nMetadata](https://cloud.google.com/storage/docs/viewing-editing-metadata)\nfor more information."]
         #[serde(
             rename = "uri",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub uri: ::std::option::Option<String>,
-        #[doc = "The uri prefix of all generated Cloud Storage objects. For example:\n\"gs://bucket_name/object_name_prefix\". Each object uri is in format:\n\"gs://bucket_name/object_name_prefix/<asset type>/<shard number> and only\ncontains assets for that type. <shard number> starts from 0. For example:\n\"gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0\" is\nthe first shard of output objects containing all\ncompute.googleapis.com/Disk assets. An INVALID_ARGUMENT error will be\nreturned if file with the same name \"gs://bucket_name/object_name_prefix\"\nalready exists."]
+        #[doc = "The uri prefix of all generated Cloud Storage objects. Example:\n\"gs://bucket_name/object_name_prefix\". Each object uri is in format:\n\"gs://bucket_name/object_name_prefix/<asset type>/<shard number> and only\ncontains assets for that type. <shard number> starts from 0. Example:\n\"gs://bucket_name/object_name_prefix/compute.googleapis.com/Disk/0\" is\nthe first shard of output objects containing all\ncompute.googleapis.com/Disk assets. An INVALID_ARGUMENT error will be\nreturned if file with the same name \"gs://bucket_name/object_name_prefix\"\nalready exists."]
         #[serde(
             rename = "uriPrefix",
             default,
@@ -2037,6 +2070,58 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct IamPolicySearchResult {
+        #[doc = "Explanation about the IAM policy search result. It contains additional\ninformation to explain why the search result matches the query."]
+        #[serde(
+            rename = "explanation",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub explanation: ::std::option::Option<crate::schemas::Explanation>,
+        #[doc = "The IAM policy directly set on the given resource. Note that the original\nIAM policy can contain multiple bindings. This only contains the bindings\nthat match the given query. For queries that don't contain a constrain on\npolicies (e.g., an empty query), this contains all the bindings.\n\nTo search against the `policy` bindings:\n\n* use a field query, as following:\n  * query by the policy contained members. Example:\n    `policy : \"amy@gmail.com\"`\n  * query by the policy contained roles. Example:\n    `policy : \"roles/compute.admin\"`\n  * query by the policy contained roles' implied permissions. Example:\n    `policy.role.permissions : \"compute.instances.create\"`"]
+        #[serde(
+            rename = "policy",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub policy: ::std::option::Option<crate::schemas::Policy>,
+        #[doc = "The project that the associated GCP resource belongs to, in the form of\nprojects/{PROJECT_NUMBER}. If an IAM policy is set on a resource (like VM\ninstance, Cloud Storage bucket), the project field will indicate the\nproject that contains the resource. If an IAM policy is set on a folder or\norgnization, the project field will be empty.\n\nTo search against the `project`:\n\n* specify the `scope` field as this project in your search request."]
+        #[serde(
+            rename = "project",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub project: ::std::option::Option<String>,
+        #[doc = "The full resource name of the resource associated with this IAM policy.\nExample:\n\"//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1\".\nSee [Cloud Asset Inventory Resource Name\nFormat](https://cloud.google.com/asset-inventory/docs/resource-name-format)\nfor more information.\n\nTo search against the `resource`:\n\n* use a field query. Example: `resource : \"organizations/123\"`"]
+        #[serde(
+            rename = "resource",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub resource: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for IamPolicySearchResult {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for IamPolicySearchResult {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct ListFeedsResponse {
         #[doc = "A list of feeds."]
         #[serde(
@@ -2156,6 +2241,37 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct Permissions {
+        #[doc = "A list of permissions. A sample permission string: \"compute.disk.get\"."]
+        #[serde(
+            rename = "permissions",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub permissions: ::std::option::Option<Vec<String>>,
+    }
+    impl ::google_field_selector::FieldSelector for Permissions {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for Permissions {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct Policy {
         #[doc = "Specifies cloud audit logging configuration for this policy."]
         #[serde(
@@ -2178,7 +2294,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<::google_api_bytes::Bytes>,
-        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset."]
+        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "version",
             default,
@@ -2209,7 +2325,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct PubsubDestination {
-        #[doc = "The name of the Pub/Sub topic to publish to.\nFor example: `projects/PROJECT_ID/topics/TOPIC_ID`."]
+        #[doc = "The name of the Pub/Sub topic to publish to.\nExample: `projects/PROJECT_ID/topics/TOPIC_ID`."]
         #[serde(
             rename = "topic",
             default,
@@ -2236,35 +2352,42 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub data: ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
-        #[doc = "The URL of the discovery document containing the resource's JSON schema.\nFor example:\n\"https://www.googleapis.com/discovery/v1/apis/compute/v1/rest\"\n\nThis value is unspecified for resources that do not have an API based on a\ndiscovery document, such as Cloud Bigtable."]
+        #[doc = "The URL of the discovery document containing the resource's JSON schema.\nExample:\n\"https://www.googleapis.com/discovery/v1/apis/compute/v1/rest\"\n\nThis value is unspecified for resources that do not have an API based on a\ndiscovery document, such as Cloud Bigtable."]
         #[serde(
             rename = "discoveryDocumentUri",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub discovery_document_uri: ::std::option::Option<String>,
-        #[doc = "The JSON schema name listed in the discovery document. For example:\n\"Project\"\n\nThis value is unspecified for resources that do not have an API based on a\ndiscovery document, such as Cloud Bigtable."]
+        #[doc = "The JSON schema name listed in the discovery document. Example:\n\"Project\"\n\nThis value is unspecified for resources that do not have an API based on a\ndiscovery document, such as Cloud Bigtable."]
         #[serde(
             rename = "discoveryName",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub discovery_name: ::std::option::Option<String>,
-        #[doc = "The full name of the immediate parent of this resource. See\n[Resource\nNames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more information.\n\nFor Google Cloud assets, this value is the parent resource defined in the\n[Cloud IAM policy\nhierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).\nFor example:\n\"//cloudresourcemanager.googleapis.com/projects/my_project_123\"\n\nFor third-party assets, this field may be set differently."]
+        #[doc = "The location of the resource in Google Cloud, such as its zone and region.\nFor more information, see https://cloud.google.com/about/locations/."]
+        #[serde(
+            rename = "location",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub location: ::std::option::Option<String>,
+        #[doc = "The full name of the immediate parent of this resource. See\n[Resource\nNames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nfor more information.\n\nFor Google Cloud assets, this value is the parent resource defined in the\n[Cloud IAM policy\nhierarchy](https://cloud.google.com/iam/docs/overview#policy_hierarchy).\nExample:\n\"//cloudresourcemanager.googleapis.com/projects/my_project_123\"\n\nFor third-party assets, this field may be set differently."]
         #[serde(
             rename = "parent",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub parent: ::std::option::Option<String>,
-        #[doc = "The REST URL for accessing the resource. An HTTP `GET` request using this\nURL returns the resource itself. For example:\n\"https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123\"\n\nThis value is unspecified for resources without a REST API."]
+        #[doc = "The REST URL for accessing the resource. An HTTP `GET` request using this\nURL returns the resource itself. Example:\n\"https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123\"\n\nThis value is unspecified for resources without a REST API."]
         #[serde(
             rename = "resourceUrl",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub resource_url: ::std::option::Option<String>,
-        #[doc = "The API version. For example: \"v1\""]
+        #[doc = "The API version. Example: \"v1\""]
         #[serde(
             rename = "version",
             default,
@@ -2278,6 +2401,148 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for Resource {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct ResourceSearchResult {
+        #[doc = "The additional attributes of this resource. The attributes may vary from\none resource type to another. Examples: \"projectId\" for Project,\n\"dnsName\" for DNS ManagedZone.\n\nTo search against the `additional_attributes`:\n\n* use a free text query to match the attributes values. Example: to search\n  additional_attributes = { dnsName: \"foobar\" }, you can issue a query\n  `\"foobar\"`."]
+        #[serde(
+            rename = "additionalAttributes",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub additional_attributes:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "The type of this resource. Example: \"compute.googleapis.com/Disk\".\n\nTo search against the `asset_type`:\n\n* specify the `asset_type` field in your search request."]
+        #[serde(
+            rename = "assetType",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub asset_type: ::std::option::Option<String>,
+        #[doc = "One or more paragraphs of text description of this resource. Maximum length\ncould be up to 1M bytes.\n\nTo search against the `description`:\n\n* use a field query. Example: `description : \"*important instance*\"`\n* use a free text query. Example: `\"*important instance*\"`"]
+        #[serde(
+            rename = "description",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub description: ::std::option::Option<String>,
+        #[doc = "The display name of this resource.\n\nTo search against the `display_name`:\n\n* use a field query. Example: `displayName : \"My Instance\"`\n* use a free text query. Example: `\"My Instance\"`"]
+        #[serde(
+            rename = "displayName",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub display_name: ::std::option::Option<String>,
+        #[doc = "Labels associated with this resource. See [Labelling and grouping GCP\nresources](https://cloud.google.com/blog/products/gcp/labelling-and-grouping-your-google-cloud-platform-resources)\nfor more information.\n\nTo search against the `labels`:\n\n* use a field query, as following:\n  * query on any label's key or value. Example: `labels : \"prod\"`\n  * query by a given label. Example: `labels.env : \"prod\"`\n  * query by a given label'sexistence. Example: `labels.env : *`\n* use a free text query. Example: `\"prod\"`"]
+        #[serde(
+            rename = "labels",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub labels: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
+        #[doc = "Location can be \"global\", regional like \"us-east1\", or zonal like\n\"us-west1-b\".\n\nTo search against the `location`:\n\n* use a field query. Example: `location : \"us-west*\"`\n* use a free text query. Example: `\"us-west*\"`"]
+        #[serde(
+            rename = "location",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub location: ::std::option::Option<String>,
+        #[doc = "The full resource name of this resource. Example:\n\"//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1\".\nSee [Cloud Asset Inventory Resource Name\nFormat](https://cloud.google.com/asset-inventory/docs/resource-name-format)\nfor more information.\n\nTo search against the `name`:\n\n* use a field query. Example: `name : \"instance1\"`\n* use a free text query. Example: `\"instance1\"`"]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+        #[doc = "Network tags associated with this resource. Like labels, network tags are a\ntype of annotations used to group GCP resources. See [Labelling GCP\nresources](https://cloud.google.com/blog/products/gcp/labelling-and-grouping-your-google-cloud-platform-resources)\nfor more information.\n\nTo search against the `network_tags`:\n\n* use a field query. Example: `networkTags : \"internal\"`\n* use a free text query. Example: `\"internal\"`"]
+        #[serde(
+            rename = "networkTags",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub network_tags: ::std::option::Option<Vec<String>>,
+        #[doc = "The project that this resource belongs to, in the form of\nprojects/{PROJECT_NUMBER}.\n\nTo search against the `project`:\n\n* specify the `scope` field as this project in your search request."]
+        #[serde(
+            rename = "project",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub project: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for ResourceSearchResult {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ResourceSearchResult {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct SearchAllIamPoliciesResponse {
+        #[doc = "Set if there are more results than those appearing in this response; to get\nthe next set of results, call this method again, using this value as the\n`page_token`."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+        #[doc = "A list of IamPolicy that match the search query. Related information such\nas the associated resource is returned along with the policy."]
+        #[serde(
+            rename = "results",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub results: ::std::option::Option<Vec<crate::schemas::IamPolicySearchResult>>,
+    }
+    impl ::google_field_selector::FieldSelector for SearchAllIamPoliciesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for SearchAllIamPoliciesResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct SearchAllResourcesResponse {
+        #[doc = "If there are more results than those appearing in this response, then\n`next_page_token` is included. To get the next set of results, call this\nmethod again using the value of `next_page_token` as `page_token`."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+        #[doc = "A list of Resources that match the search query. It contains the resource\nstandard metadata information."]
+        #[serde(
+            rename = "results",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub results: ::std::option::Option<Vec<crate::schemas::ResourceSearchResult>>,
+    }
+    impl ::google_field_selector::FieldSelector for SearchAllResourcesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for SearchAllResourcesResponse {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -3831,7 +4096,7 @@ pub mod resources {
                     read_time_window_start_time: None,
                 }
             }
-            #[doc = "Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export."]
+            #[doc = "Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON. Each line represents\na google.cloud.asset.v1.Asset in the JSON format.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export. We recommend intervals of at least 2 seconds\nwith exponential retry to poll the export operation result. For\nregular-size resource parent, the export operation usually finishes within\n5 minutes."]
             pub fn export_assets(
                 &self,
                 request: crate::schemas::ExportAssetsRequest,
@@ -3853,6 +4118,58 @@ pub mod resources {
                     upload_type: None,
                     xgafv: None,
                     parent: parent.into(),
+                }
+            }
+            #[doc = "Searches all the IAM policies within the given accessible scope (e.g., a\nproject, a folder or an organization). Callers should have\ncloud.assets.SearchAllIamPolicies permission upon the requested scope,\notherwise the request will be rejected."]
+            pub fn search_all_iam_policies(
+                &self,
+                scope: impl Into<String>,
+            ) -> SearchAllIamPoliciesRequestBuilder {
+                SearchAllIamPoliciesRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    scope: scope.into(),
+                    page_size: None,
+                    page_token: None,
+                    query: None,
+                }
+            }
+            #[doc = "Searches all the resources within the given accessible scope (e.g., a\nproject, a folder or an organization). Callers should have\ncloud.assets.SearchAllResources permission upon the requested scope,\notherwise the request will be rejected."]
+            pub fn search_all_resources(
+                &self,
+                scope: impl Into<String>,
+            ) -> SearchAllResourcesRequestBuilder {
+                SearchAllResourcesRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    scope: scope.into(),
+                    asset_types: None,
+                    order_by: None,
+                    page_size: None,
+                    page_token: None,
+                    query: None,
                 }
             }
         }
@@ -3879,7 +4196,7 @@ pub mod resources {
             xgafv: Option<crate::params::Xgafv>,
         }
         impl<'a> BatchGetAssetsHistoryRequestBuilder<'a> {
-            #[doc = "A list of the full names of the assets. For example:\n`//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1`.\nSee [Resource\nNames](https://cloud.google.com/apis/design/resource_names#full_resource_name)\nand [Resource Name\nFormat](https://cloud.google.com/asset-inventory/docs/resource-name-format)\nfor more info.\n\nThe request becomes a no-op if the asset name list is empty, and the max\nsize of the asset name list is 100 in one request."]
+            #[doc = "A list of the full names of the assets.\nSee: https://cloud.google.com/asset-inventory/docs/resource-name-format\nExample:\n\n`//compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1`.\n\nThe request becomes a no-op if the asset name list is empty, and the max\nsize of the asset name list is 100 in one request."]
             pub fn asset_names(mut self, value: impl Into<Vec<String>>) -> Self {
                 self.asset_names = Some(value.into());
                 self
@@ -4206,6 +4523,600 @@ pub mod resources {
                 Ok(req)
             }
         }
+        #[doc = "Created via [V1Actions::search_all_iam_policies()](struct.V1Actions.html#method.search_all_iam_policies)"]
+        #[derive(Debug, Clone)]
+        pub struct SearchAllIamPoliciesRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            scope: String,
+            page_size: Option<i32>,
+            page_token: Option<String>,
+            query: Option<String>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> SearchAllIamPoliciesRequestBuilder<'a> {
+            #[doc = "Optional. The page size for search result pagination. Page size is capped at 500 even\nif a larger value is given. If set to zero, server will pick an appropriate\ndefault. Returned results may be fewer than requested. When this happens,\nthere could be more results as long as `next_page_token` is returned."]
+            pub fn page_size(mut self, value: i32) -> Self {
+                self.page_size = Some(value);
+                self
+            }
+            #[doc = "Optional. If present, retrieve the next batch of results from the preceding call to\nthis method. `page_token` must be the value of `next_page_token` from the\nprevious response. The values of all other method parameters must be\nidentical to those in the previous call."]
+            pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                self.page_token = Some(value.into());
+                self
+            }
+            #[doc = "Optional. The query statement. An empty query can be specified to search all the IAM\npolicies within the given `scope`.\n\nExamples:\n\n* `policy : \"amy@gmail.com\"` to find Cloud IAM policy bindings that\n  specify user \"amy@gmail.com\".\n* `policy : \"roles/compute.admin\"` to find Cloud IAM policy bindings that\n  specify the Compute Admin role.\n* `policy.role.permissions : \"storage.buckets.update\"` to find Cloud IAM\n  policy bindings that specify a role containing \"storage.buckets.update\"\n  permission.\n* `resource : \"organizations/123\"` to find Cloud IAM policy bindings that\n  are set on \"organizations/123\".\n* `(resource : (\"organizations/123\" OR \"folders/1234\") AND policy : \"amy\")`\n  to find Cloud IAM policy bindings that are set on \"organizations/123\" or\n  \"folders/1234\", and also specify user \"amy\".\n\nSee [how to construct a\nquery](https://cloud.google.com/asset-inventory/docs/searching-iam-policies#how_to_construct_a_query)\nfor more details."]
+            pub fn query(mut self, value: impl Into<String>) -> Self {
+                self.query = Some(value.into());
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+            #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+            #[doc = r" populated fields in the yielded items will be determined by the"]
+            #[doc = r" `FieldSelector` implementation."]
+            pub fn iter_results<T>(self) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_results_with_fields(fields)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be the default fields populated by"]
+            #[doc = r" the server."]
+            pub fn iter_results_with_default_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::IamPolicySearchResult>
+            {
+                self.iter_results_with_fields(None::<String>)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be all fields available. This should"]
+            #[doc = r" primarily be used during developement and debugging as fetching"]
+            #[doc = r" all fields can be expensive both in bandwidth and server"]
+            #[doc = r" resources."]
+            pub fn iter_results_with_all_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::IamPolicySearchResult>
+            {
+                self.iter_results_with_fields(Some("*"))
+            }
+            pub fn iter_results_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                self.fields = Some({
+                    let mut selector = concat!("nextPageToken,", "results").to_owned();
+                    let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                    if !items_fields.is_empty() {
+                        selector.push_str("(");
+                        selector.push_str(items_fields);
+                        selector.push_str(")");
+                    }
+                    selector
+                });
+                crate::iter::PageItemIter::new(self, "results")
+            }
+            pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_with_fields(fields)
+            }
+            pub fn iter_with_default_fields(
+                self,
+            ) -> crate::iter::PageIter<Self, crate::schemas::SearchAllIamPoliciesResponse>
+            {
+                self.iter_with_fields(None::<&str>)
+            }
+            pub fn iter_with_all_fields(
+                self,
+            ) -> crate::iter::PageIter<Self, crate::schemas::SearchAllIamPoliciesResponse>
+            {
+                self.iter_with_fields(Some("*"))
+            }
+            pub fn iter_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                let mut fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                if !fields.is_empty() {
+                    match fields.chars().rev().nth(0) {
+                        Some(',') | None => {}
+                        _ => fields.push_str(","),
+                    }
+                    fields.push_str("nextPageToken");
+                    self.fields = Some(fields);
+                }
+                crate::iter::PageIter::new(self)
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<crate::schemas::SearchAllIamPoliciesResponse, crate::Error> {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<crate::schemas::SearchAllIamPoliciesResponse, crate::Error> {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://cloudasset.googleapis.com/".to_owned();
+                output.push_str("v1/");
+                {
+                    let var_as_str = &self.scope;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::RESERVED,
+                    ));
+                }
+                output.push_str(":searchAllIamPolicies");
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::GET, path);
+                let req = req.query(&[("pageSize", &self.page_size)]);
+                let req = req.query(&[("pageToken", &self.page_token)]);
+                let req = req.query(&[("query", &self.query)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        impl<'a> crate::iter::IterableMethod for SearchAllIamPoliciesRequestBuilder<'a> {
+            fn set_page_token(&mut self, value: String) {
+                self.page_token = value.into();
+            }
+            fn execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                self._execute()
+            }
+        }
+        #[doc = "Created via [V1Actions::search_all_resources()](struct.V1Actions.html#method.search_all_resources)"]
+        #[derive(Debug, Clone)]
+        pub struct SearchAllResourcesRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            scope: String,
+            asset_types: Option<Vec<String>>,
+            order_by: Option<String>,
+            page_size: Option<i32>,
+            page_token: Option<String>,
+            query: Option<String>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> SearchAllResourcesRequestBuilder<'a> {
+            #[doc = "Optional. A list of asset types that this request searches for. If empty, it will\nsearch all the [searchable asset\ntypes](https://cloud.google.com/asset-inventory/docs/supported-asset-types#searchable_asset_types)."]
+            pub fn asset_types(mut self, value: impl Into<Vec<String>>) -> Self {
+                self.asset_types = Some(value.into());
+                self
+            }
+            #[doc = "Optional. A comma separated list of fields specifying the sorting order of the\nresults. The default order is ascending. Add \" DESC\" after the field name\nto indicate descending order. Redundant space characters are ignored.\nExample: \"location DESC, name\". See [supported resource metadata\nfields](https://cloud.google.com/asset-inventory/docs/searching-resources#query_on_resource_metadata_fields)\nfor more details."]
+            pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                self.order_by = Some(value.into());
+                self
+            }
+            #[doc = "Optional. The page size for search result pagination. Page size is capped at 500 even\nif a larger value is given. If set to zero, server will pick an appropriate\ndefault. Returned results may be fewer than requested. When this happens,\nthere could be more results as long as `next_page_token` is returned."]
+            pub fn page_size(mut self, value: i32) -> Self {
+                self.page_size = Some(value);
+                self
+            }
+            #[doc = "Optional. If present, then retrieve the next batch of results from the preceding call\nto this method. `page_token` must be the value of `next_page_token` from\nthe previous response. The values of all other method parameters, must be\nidentical to those in the previous call."]
+            pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                self.page_token = Some(value.into());
+                self
+            }
+            #[doc = "Optional. The query statement. An empty query can be specified to search all the\nresources of certain `asset_types` within the given `scope`.\n\nExamples:\n\n* `name : \"Important\"` to find Cloud resources whose name contains\n  \"Important\" as a word.\n* `displayName : \"Impor*\"` to find Cloud resources whose display name\n  contains \"Impor\" as a word prefix.\n* `description : \"*por*\"` to find Cloud resources whose description\n  contains \"por\" as a substring.\n* `location : \"us-west*\"` to find Cloud resources whose location is\n  prefixed with \"us-west\".\n* `labels : \"prod\"` to find Cloud resources whose labels contain \"prod\" as\n  a key or value.\n* `labels.env : \"prod\"` to find Cloud resources which have a label \"env\"\n  and its value is \"prod\".\n* `labels.env : *` to find Cloud resources which have a label \"env\".\n* `\"Important\"` to find Cloud resources which contain \"Important\" as a word\n  in any of the searchable fields.\n* `\"Impor*\"` to find Cloud resources which contain \"Impor\" as a word prefix\n  in any of the searchable fields.\n* `\"*por*\"` to find Cloud resources which contain \"por\" as a substring in\n  any of the searchable fields.\n* `(\"Important\" AND location : (\"us-west1\" OR \"global\"))` to find Cloud\n  resources which contain \"Important\" as a word in any of the searchable\n  fields and are also located in the \"us-west1\" region or the \"global\"\n  location.\n\nSee [how to construct a\nquery](https://cloud.google.com/asset-inventory/docs/searching-resources#how_to_construct_a_query)\nfor more details."]
+            pub fn query(mut self, value: impl Into<String>) -> Self {
+                self.query = Some(value.into());
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+            #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+            #[doc = r" populated fields in the yielded items will be determined by the"]
+            #[doc = r" `FieldSelector` implementation."]
+            pub fn iter_results<T>(self) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_results_with_fields(fields)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be the default fields populated by"]
+            #[doc = r" the server."]
+            pub fn iter_results_with_default_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::ResourceSearchResult> {
+                self.iter_results_with_fields(None::<String>)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be all fields available. This should"]
+            #[doc = r" primarily be used during developement and debugging as fetching"]
+            #[doc = r" all fields can be expensive both in bandwidth and server"]
+            #[doc = r" resources."]
+            pub fn iter_results_with_all_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::ResourceSearchResult> {
+                self.iter_results_with_fields(Some("*"))
+            }
+            pub fn iter_results_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                self.fields = Some({
+                    let mut selector = concat!("nextPageToken,", "results").to_owned();
+                    let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                    if !items_fields.is_empty() {
+                        selector.push_str("(");
+                        selector.push_str(items_fields);
+                        selector.push_str(")");
+                    }
+                    selector
+                });
+                crate::iter::PageItemIter::new(self, "results")
+            }
+            pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_with_fields(fields)
+            }
+            pub fn iter_with_default_fields(
+                self,
+            ) -> crate::iter::PageIter<Self, crate::schemas::SearchAllResourcesResponse>
+            {
+                self.iter_with_fields(None::<&str>)
+            }
+            pub fn iter_with_all_fields(
+                self,
+            ) -> crate::iter::PageIter<Self, crate::schemas::SearchAllResourcesResponse>
+            {
+                self.iter_with_fields(Some("*"))
+            }
+            pub fn iter_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                let mut fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                if !fields.is_empty() {
+                    match fields.chars().rev().nth(0) {
+                        Some(',') | None => {}
+                        _ => fields.push_str(","),
+                    }
+                    fields.push_str("nextPageToken");
+                    self.fields = Some(fields);
+                }
+                crate::iter::PageIter::new(self)
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<crate::schemas::SearchAllResourcesResponse, crate::Error> {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<crate::schemas::SearchAllResourcesResponse, crate::Error> {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://cloudasset.googleapis.com/".to_owned();
+                output.push_str("v1/");
+                {
+                    let var_as_str = &self.scope;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::RESERVED,
+                    ));
+                }
+                output.push_str(":searchAllResources");
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::GET, path);
+                let req = req.query(&[("assetTypes", &self.asset_types)]);
+                let req = req.query(&[("orderBy", &self.order_by)]);
+                let req = req.query(&[("pageSize", &self.page_size)]);
+                let req = req.query(&[("pageToken", &self.page_token)]);
+                let req = req.query(&[("query", &self.query)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        impl<'a> crate::iter::IterableMethod for SearchAllResourcesRequestBuilder<'a> {
+            fn set_page_token(&mut self, value: String) {
+                self.page_token = value.into();
+            }
+            fn execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                self._execute()
+            }
+        }
     }
 }
 #[derive(Debug)]
@@ -4479,6 +5390,128 @@ mod parsed_string {
         match Option::<String>::deserialize(deserializer)? {
             Some(x) => Ok(Some(x.parse().map_err(::serde::de::Error::custom)?)),
             None => Ok(None),
+        }
+    }
+}
+pub mod iter {
+    pub trait IterableMethod {
+        fn set_page_token(&mut self, value: String);
+        fn execute<T>(&mut self) -> Result<T, crate::Error>
+        where
+            T: ::serde::de::DeserializeOwned;
+    }
+
+    pub struct PageIter<M, T> {
+        pub method: M,
+        pub finished: bool,
+        pub _phantom: ::std::marker::PhantomData<T>,
+    }
+
+    impl<M, T> PageIter<M, T>
+    where
+        M: IterableMethod,
+        T: ::serde::de::DeserializeOwned,
+    {
+        pub(crate) fn new(method: M) -> Self {
+            PageIter {
+                method,
+                finished: false,
+                _phantom: ::std::marker::PhantomData,
+            }
+        }
+    }
+
+    impl<M, T> Iterator for PageIter<M, T>
+    where
+        M: IterableMethod,
+        T: ::serde::de::DeserializeOwned,
+    {
+        type Item = Result<T, crate::Error>;
+
+        fn next(&mut self) -> Option<Result<T, crate::Error>> {
+            if self.finished {
+                return None;
+            }
+            let paginated_result: ::serde_json::Map<String, ::serde_json::Value> =
+                match self.method.execute() {
+                    Ok(r) => r,
+                    Err(err) => return Some(Err(err)),
+                };
+            if let Some(next_page_token) = paginated_result
+                .get("nextPageToken")
+                .and_then(|t| t.as_str())
+            {
+                self.method.set_page_token(next_page_token.to_owned());
+            } else {
+                self.finished = true;
+            }
+
+            Some(
+                match ::serde_json::from_value(::serde_json::Value::Object(paginated_result)) {
+                    Ok(resp) => Ok(resp),
+                    Err(err) => Err(err.into()),
+                },
+            )
+        }
+    }
+
+    pub struct PageItemIter<M, T> {
+        items_field: &'static str,
+        page_iter: PageIter<M, ::serde_json::Map<String, ::serde_json::Value>>,
+        items: ::std::vec::IntoIter<T>,
+    }
+
+    impl<M, T> PageItemIter<M, T>
+    where
+        M: IterableMethod,
+        T: ::serde::de::DeserializeOwned,
+    {
+        pub(crate) fn new(method: M, items_field: &'static str) -> Self {
+            PageItemIter {
+                items_field,
+                page_iter: PageIter::new(method),
+                items: Vec::new().into_iter(),
+            }
+        }
+    }
+
+    impl<M, T> Iterator for PageItemIter<M, T>
+    where
+        M: IterableMethod,
+        T: ::serde::de::DeserializeOwned,
+    {
+        type Item = Result<T, crate::Error>;
+
+        fn next(&mut self) -> Option<Result<T, crate::Error>> {
+            loop {
+                if let Some(v) = self.items.next() {
+                    return Some(Ok(v));
+                }
+
+                let next_page = self.page_iter.next();
+                match next_page {
+                    None => return None,
+                    Some(Err(err)) => return Some(Err(err)),
+                    Some(Ok(next_page)) => {
+                        let mut next_page: ::serde_json::Map<String, ::serde_json::Value> =
+                            next_page;
+                        let items_array = match next_page.remove(self.items_field) {
+                            Some(items) => items,
+                            None => {
+                                return Some(Err(crate::Error::Other(
+                                    format!("no {} field found in iter response", self.items_field)
+                                        .into(),
+                                )))
+                            }
+                        };
+                        let items_vec: Result<Vec<T>, _> = ::serde_json::from_value(items_array);
+                        match items_vec {
+                            Ok(items) => self.items = items.into_iter(),
+                            Err(err) => return Some(Err(err.into())),
+                        }
+                    }
+                }
+            }
         }
     }
 }

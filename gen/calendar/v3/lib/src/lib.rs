@@ -980,7 +980,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct ConferenceSolutionKey {
-        #[doc = "The conference solution type.\nIf a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.\nThe possible values are:\n\n* \"eventHangout\" for Hangouts for consumers (http://hangouts.google.com)\n* \"eventNamedHangout\" for classic Hangouts for G Suite users (http://hangouts.google.com)\n* \"hangoutsMeet\" for Hangouts Meet (http://meet.google.com)\n* \"addOn\" for 3P conference providers"]
+        #[doc = "The conference solution type.\nIf a client encounters an unfamiliar or empty type, it should still be able to display the entry points. However, it should disallow modifications.\nThe possible values are:\n\n* \"eventHangout\" for Hangouts for consumers (http://hangouts.google.com)\n* \"eventNamedHangout\" for classic Hangouts for G Suite users (http://hangouts.google.com)\n* \"hangoutsMeet\" for Google Meet (http://meet.google.com)\n* \"addOn\" for 3P conference providers"]
         #[serde(
             rename = "type",
             default,

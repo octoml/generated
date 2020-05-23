@@ -7,7 +7,7 @@
   "canonicalName": "Firebase Management",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200506",
+  "revision": "20200522",
   "title": "Firebase Management API",
   "description": "The Firebase Management API enables programmatic setup and management of Firebase projects, including a project's Firebase resources and Firebase apps.",
   "ownerDomain": "google.com",
@@ -1654,7 +1654,7 @@
           "items": null
         },
         "measurementId": {
-          "description": "The unique Google-assigned identifier of the Google Analytics web stream\nassociated with the Firebase Web App. Firebase SDKs use this ID to interact\nwith Google Analytics APIs.\n<br>\n<br>This field is only present if the App is linked to a web stream in a\nGoogle Analytics App + Web property. Learn more about this ID and Google\nAnalytics web streams in the [Analytics\ndocumentation](https://support.google.com/analytics/topic/9303475).\n<br>\n<br>To generate a `measurementId` and link the Web App with a Google\nAnalytics web stream, call\n[`AddGoogleAnalytics`](../../v1beta1/projects/addGoogleAnalytics).",
+          "description": "This field will no longer be provided here. Instead, use\n`GetAnalyticsDetails`",
           "type": "string",
           "format": null,
           "enum": [],

@@ -2723,6 +2723,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub compression: ::std::option::Option<String>,
+        #[doc = "[Optional, Trusted Tester] Connection for external data source."]
+        #[serde(
+            rename = "connectionId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub connection_id: ::std::option::Option<String>,
         #[doc = "Additional properties to set if sourceFormat is set to CSV."]
         #[serde(
             rename = "csvOptions",

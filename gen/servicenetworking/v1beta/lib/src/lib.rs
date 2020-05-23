@@ -19,6 +19,92 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct AddDnsRecordSetMetadata {}
+    impl ::google_field_selector::FieldSelector for AddDnsRecordSetMetadata {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AddDnsRecordSetMetadata {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct AddDnsZoneMetadata {}
+    impl ::google_field_selector::FieldSelector for AddDnsZoneMetadata {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AddDnsZoneMetadata {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct AddDnsZoneResponse {
+        #[doc = "The DNS peering zone created in the consumer project."]
+        #[serde(
+            rename = "consumerPeeringZone",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub consumer_peering_zone: ::std::option::Option<crate::schemas::DnsZone>,
+        #[doc = "The private DNS zone created in the shared producer host project."]
+        #[serde(
+            rename = "producerPrivateZone",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub producer_private_zone: ::std::option::Option<crate::schemas::DnsZone>,
+    }
+    impl ::google_field_selector::FieldSelector for AddDnsZoneResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AddDnsZoneResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct AddRolesMetadata {}
     impl ::google_field_selector::FieldSelector for AddRolesMetadata {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -549,13 +635,6 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub protocol: ::std::option::Option<String>,
-        #[doc = "Unimplemented. Do not use.\n\nThe new name the selected proto elements should be renamed to.\n\nThe package, the service and the method can all be renamed.\nThe backend server should implement the renamed proto. However, clients\nshould call the original method, and ESF routes the traffic to the renamed\nmethod.\n\nHTTP clients should call the URL mapped to the original method.\ngRPC and Stubby clients should call the original method with package name.\n\nFor legacy reasons, ESF allows Stubby clients to call with the\nshort name (without the package name). However, for API Versioning(or\nmultiple methods mapped to the same short name), all Stubby clients must\ncall the method's full name with the package name, otherwise the first one\n(selector) wins.\n\nIf this `rename_to` is specified with a trailing `*`, the `selector` must\nbe specified with a trailing `*` as well. The all element short names\nmatched by the `*` in the selector will be kept in the `rename_to`.\n\nFor example,\nrename_rules:\n- selector: |-\ngoogle.example.library.v1.*\nrename_to: google.example.library.*\n\nThe selector matches `google.example.library.v1.Library.CreateShelf` and\n`google.example.library.v1.Library.CreateBook`, they will be renamed to\n`google.example.library.Library.CreateShelf` and\n`google.example.library.Library.CreateBook`. It essentially renames the\nproto package name section of the matched proto service and methods."]
-        #[serde(
-            rename = "renameTo",
-            default,
-            skip_serializing_if = "std::option::Option::is_none"
-        )]
-        pub rename_to: ::std::option::Option<String>,
         #[doc = "Selects the methods to which this rule applies.\n\nRefer to selector for syntax details."]
         #[serde(
             rename = "selector",
@@ -1007,6 +1086,96 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for CustomHttpPattern {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct DnsRecordSet {
+        #[doc = "Required. As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1) for\nexamples see https://cloud.google.com/dns/records/json-record."]
+        #[serde(
+            rename = "data",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub data: ::std::option::Option<Vec<String>>,
+        #[doc = "Required. The DNS or domain name of the record set, e.g. `test.example.com`."]
+        #[serde(
+            rename = "domain",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub domain: ::std::option::Option<String>,
+        #[doc = "Required. The identifier of a supported record type."]
+        #[serde(
+            rename = "type",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub r#type: ::std::option::Option<String>,
+        #[doc = "Required. The period of time for which this RecordSet can be cached by resolvers."]
+        #[serde(
+            rename = "ttl",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub ttl: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for DnsRecordSet {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for DnsRecordSet {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct DnsZone {
+        #[doc = "The DNS name suffix of this zone e.g. `example.com.`."]
+        #[serde(
+            rename = "dnsSuffix",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub dns_suffix: ::std::option::Option<String>,
+        #[doc = "User assigned name for this resource. Must be unique within the project.\nThe name must be 1-63 characters long, must begin with a letter, end with\na letter or digit, and only contain lowercase letters, digits or dashes."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for DnsZone {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for DnsZone {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -3535,6 +3704,102 @@ pub mod schemas {
         PartialOrd,
         Ord,
         Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct RemoveDnsRecordSetMetadata {}
+    impl ::google_field_selector::FieldSelector for RemoveDnsRecordSetMetadata {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for RemoveDnsRecordSetMetadata {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct RemoveDnsRecordSetResponse {}
+    impl ::google_field_selector::FieldSelector for RemoveDnsRecordSetResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for RemoveDnsRecordSetResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct RemoveDnsZoneMetadata {}
+    impl ::google_field_selector::FieldSelector for RemoveDnsZoneMetadata {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for RemoveDnsZoneMetadata {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct RemoveDnsZoneResponse {}
+    impl ::google_field_selector::FieldSelector for RemoveDnsZoneResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for RemoveDnsZoneResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
         Default,
         :: serde :: Deserialize,
         :: serde :: Serialize,
@@ -4240,6 +4505,30 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for TypeSyntax {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct UpdateDnsRecordSetMetadata {}
+    impl ::google_field_selector::FieldSelector for UpdateDnsRecordSetMetadata {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for UpdateDnsRecordSetMetadata {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }

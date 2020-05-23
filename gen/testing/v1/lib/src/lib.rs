@@ -499,7 +499,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub tags: ::std::option::Option<Vec<String>>,
-        #[doc = "URL of a thumbnail image of the device."]
+        #[doc = "URL of a thumbnail image (photo) of the device.\ne.g. https://lh3.googleusercontent.com/90WcauuJiCYABEl8U0lcZeuS5STUbf2yW..."]
         #[serde(
             rename = "thumbnailUrl",
             default,

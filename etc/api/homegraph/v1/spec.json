@@ -7,7 +7,7 @@
   "canonicalName": "Home Graph Service",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200504",
+  "revision": "20200518",
   "title": "HomeGraph API",
   "description": "",
   "ownerDomain": "google.com",

@@ -1749,8 +1749,6 @@ pub mod schemas {
     pub enum VersionStatus {
         #[doc = "The version was not updated to `FINALIZED` within 12\u{a0}hours and was\nautomatically deleted."]
         Abandoned,
-        #[doc = "The version is being cloned from another version. All content is still\nbeing copied over."]
-        Cloning,
         #[doc = "The version has been created, and content is currently being added to the\nversion."]
         Created,
         #[doc = "The version has been deleted."]
@@ -1766,7 +1764,6 @@ pub mod schemas {
         pub fn as_str(self) -> &'static str {
             match self {
                 VersionStatus::Abandoned => "ABANDONED",
-                VersionStatus::Cloning => "CLONING",
                 VersionStatus::Created => "CREATED",
                 VersionStatus::Deleted => "DELETED",
                 VersionStatus::Expired => "EXPIRED",
@@ -1785,7 +1782,6 @@ pub mod schemas {
         fn from_str(s: &str) -> ::std::result::Result<VersionStatus, ()> {
             Ok(match s {
                 "ABANDONED" => VersionStatus::Abandoned,
-                "CLONING" => VersionStatus::Cloning,
                 "CREATED" => VersionStatus::Created,
                 "DELETED" => VersionStatus::Deleted,
                 "EXPIRED" => VersionStatus::Expired,
@@ -1816,7 +1812,6 @@ pub mod schemas {
             let value: &'de str = <&str>::deserialize(deserializer)?;
             Ok(match value {
                 "ABANDONED" => VersionStatus::Abandoned,
-                "CLONING" => VersionStatus::Cloning,
                 "CREATED" => VersionStatus::Created,
                 "DELETED" => VersionStatus::Deleted,
                 "EXPIRED" => VersionStatus::Expired,

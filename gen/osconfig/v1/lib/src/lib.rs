@@ -231,7 +231,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub allowed_success_codes: ::std::option::Option<Vec<i32>>,
-        #[doc = "A Google Cloud Storage object containing the executable."]
+        #[doc = "A Cloud Storage object containing the executable."]
         #[serde(
             rename = "gcsObject",
             default,
@@ -418,14 +418,14 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GcsObject {
-        #[doc = "Required. Bucket of the Google Cloud Storage object."]
+        #[doc = "Required. Bucket of the Cloud Storage object."]
         #[serde(
             rename = "bucket",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub bucket: ::std::option::Option<String>,
-        #[doc = "Required. Generation number of the Google Cloud Storage object. This is used to\nensure that the ExecStep specified by this PatchJob does not change."]
+        #[doc = "Required. Generation number of the Cloud Storage object. This is used to\nensure that the ExecStep specified by this PatchJob does not change."]
         #[serde(
             rename = "generationNumber",
             default,
@@ -433,7 +433,7 @@ pub mod schemas {
         )]
         #[serde(with = "crate::parsed_string")]
         pub generation_number: ::std::option::Option<i64>,
-        #[doc = "Required. Name of the Google Cloud Storage object."]
+        #[doc = "Required. Name of the Cloud Storage object."]
         #[serde(
             rename = "object",
             default,
@@ -824,7 +824,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct PatchDeployment {
-        #[doc = "Output only. Time the patch deployment was created. Timestamp is in\n<a href=\"https://www.ietf.org/rfc/rfc3339.txt\" target=\"_blank\">RFC3339</a>\ntext format."]
+        #[doc = "Output only. Time the patch deployment was created. Timestamp is in\n[RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format."]
         #[serde(
             rename = "createTime",
             default,
@@ -852,7 +852,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub instance_filter: ::std::option::Option<crate::schemas::PatchInstanceFilter>,
-        #[doc = "Output only. The last time a patch job was started by this deployment.\nTimestamp is in\n<a href=\"https://www.ietf.org/rfc/rfc3339.txt\" target=\"_blank\">RFC3339</a>\ntext format."]
+        #[doc = "Output only. The last time a patch job was started by this deployment.\nTimestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text\nformat."]
         #[serde(
             rename = "lastExecuteTime",
             default,
@@ -887,7 +887,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub recurring_schedule: ::std::option::Option<crate::schemas::RecurringSchedule>,
-        #[doc = "Output only. Time the patch deployment was last updated. Timestamp is in\n<a href=\"https://www.ietf.org/rfc/rfc3339.txt\" target=\"_blank\">RFC3339</a>\ntext format."]
+        #[doc = "Output only. Time the patch deployment was last updated. Timestamp is in\n[RFC3339](\"https://www.ietf.org/rfc/rfc3339.txt) text format."]
         #[serde(
             rename = "updateTime",
             default,
@@ -925,7 +925,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub all: ::std::option::Option<bool>,
-        #[doc = "Targets VM instances matching at least one of these label sets. This allows\ntargeting of disparate groups, for example \"env=prod or env=staging\"."]
+        #[doc = "Targets VM instances matching ANY of these GroupLabels. This allows\ntargeting of disparate groups of VM instances."]
         #[serde(
             rename = "groupLabels",
             default,
@@ -977,7 +977,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct PatchInstanceFilterGroupLabel {
-        #[doc = "Google Compute Engine instance labels that must be present for a VM\ninstance to be targeted by this filter."]
+        #[doc = "Compute Engine instance labels that must be present for a VM\ninstance to be targeted by this filter."]
         #[serde(
             rename = "labels",
             default,

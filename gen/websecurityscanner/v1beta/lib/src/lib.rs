@@ -197,7 +197,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub final_url: ::std::option::Option<String>,
-        #[doc = "The type of the Finding.\nDetailed and up-to-date information on findings can be found here:\nhttps://cloud.google.com/security-scanner/docs/scan-result-details"]
+        #[doc = "The type of the Finding.\nDetailed and up-to-date information on findings can be found here:\nhttps://cloud.google.com/security-command-center/docs/how-to-remediate-web-security-scanner"]
         #[serde(
             rename = "findingType",
             default,
@@ -855,7 +855,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub authentication: ::std::option::Option<crate::schemas::Authentication>,
-        #[doc = "The blacklist URL patterns as described in\nhttps://cloud.google.com/security-scanner/docs/excluded-urls"]
+        #[doc = "The excluded URL patterns as described in\nhttps://cloud.google.com/security-command-center/docs/how-to-use-web-security-scanner#excluding_urls"]
         #[serde(
             rename = "blacklistPatterns",
             default,
@@ -869,7 +869,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub display_name: ::std::option::Option<String>,
-        #[doc = "Controls export of scan configurations and results to Cloud Security\nCommand Center."]
+        #[doc = "Controls export of scan configurations and results to Security\nCommand Center."]
         #[serde(
             rename = "exportToSecurityCommandCenter",
             default,
@@ -884,7 +884,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub latest_run: ::std::option::Option<crate::schemas::ScanRun>,
-        #[doc = "Whether the scan config is managed by Cloud Web Security Scanner, output\nonly."]
+        #[doc = "Whether the scan config is managed by Web Security Scanner, output\nonly."]
         #[serde(
             rename = "managedScan",
             default,
@@ -933,7 +933,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub static_ip_scan: ::std::option::Option<bool>,
-        #[doc = "Set of Cloud Platforms targeted by the scan. If empty, APP_ENGINE will be\nused as a default."]
+        #[doc = "Set of Google Cloud platforms targeted by the scan. If empty, APP_ENGINE\nwill be used as a default."]
         #[serde(
             rename = "targetPlatforms",
             default,
@@ -961,9 +961,9 @@ pub mod schemas {
     }
     #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
     pub enum ScanConfigExportToSecurityCommandCenter {
-        #[doc = "Do not export results of this scan to Cloud Security Command Center."]
+        #[doc = "Do not export results of this scan to Security Command Center."]
         Disabled,
-        #[doc = "Export results of this scan to Cloud Security Command Center."]
+        #[doc = "Export results of this scan to Security Command Center."]
         Enabled,
         #[doc = "Use default, which is ENABLED."]
         ExportToSecurityCommandCenterUnspecified,
@@ -1362,7 +1362,7 @@ pub mod schemas {
         SeedUrlMappedToNonRoutableAddress,
         #[doc = "One of the seed URLs is mapped to an IP address which is not reserved\nfor the current project."]
         SeedUrlMappedToUnreservedAddress,
-        #[doc = "The Cloud Security Scanner service account is not configured under the\nproject."]
+        #[doc = "The Web Security Scanner service account is not configured under the\nproject."]
         ServiceAccountNotConfigured,
         #[doc = "A project has reached the maximum number of scans."]
         TooManyScans,

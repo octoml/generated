@@ -15,7 +15,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         let mut app = App::new("computealpha")
             .setting(clap::AppSettings::ColoredHelp)
             .author("Sebastian Thiel <byronimo@gmail.com>")
-            .version("0.1.0-20200331")
+            .version("0.1.0-20200427")
             .about("Creates and runs virtual machines on Google Cloud Platform.")
             .after_help("All documentation details can be found at <TODO figure out URL>")
             .arg(Arg::with_name("scope")
@@ -2872,7 +2872,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         }
         let mut target_grpc_proxies0 = SubCommand::with_name("target_grpc_proxies")
             .setting(AppSettings::ColoredHelp)
-            .about("methods: delete, get, insert, list and test_iam_permissions");
+            .about("methods: delete, get, insert, list, patch and test_iam_permissions");
         {
             let mcmd = SubCommand::with_name("delete")
                 .about("Deletes the specified TargetGrpcProxy in the given scope");
@@ -2890,6 +2890,10 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         {
             let mcmd = SubCommand::with_name("list")
                 .about("Lists the TargetGrpcProxies for a project in the given scope.");
+            target_grpc_proxies0 = target_grpc_proxies0.subcommand(mcmd);
+        }
+        {
+            let mcmd = SubCommand::with_name("patch").about("Patches the specified TargetGrpcProxy resource with the data included in the request. This method supports PATCH semantics and uses JSON merge patch format and processing rules.");
             target_grpc_proxies0 = target_grpc_proxies0.subcommand(mcmd);
         }
         {
@@ -2933,7 +2937,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         }
         let mut target_https_proxies0 = SubCommand::with_name("target_https_proxies")
                         .setting(AppSettings::ColoredHelp)
-                        .about("methods: aggregated_list, delete, get, insert, list, set_quic_override, set_ssl_certificates, set_ssl_policy, set_url_map and test_iam_permissions");
+                        .about("methods: aggregated_list, delete, get, insert, list, set_certificate_map, set_quic_override, set_ssl_certificates, set_ssl_policy, set_url_map and test_iam_permissions");
         {
             let mcmd = SubCommand::with_name("aggregated_list").about("Retrieves the list of all TargetHttpsProxy resources, regional and global, available to the specified project.");
             target_https_proxies0 = target_https_proxies0.subcommand(mcmd);
@@ -2953,6 +2957,11 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         }
         {
             let mcmd = SubCommand::with_name("list").about("Retrieves the list of TargetHttpsProxy resources available to the specified project.");
+            target_https_proxies0 = target_https_proxies0.subcommand(mcmd);
+        }
+        {
+            let mcmd = SubCommand::with_name("set_certificate_map")
+                .about("Changes the Certificate Map for TargetHttpsProxy.");
             target_https_proxies0 = target_https_proxies0.subcommand(mcmd);
         }
         {
@@ -3071,7 +3080,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         }
         let mut target_ssl_proxies0 = SubCommand::with_name("target_ssl_proxies")
                         .setting(AppSettings::ColoredHelp)
-                        .about("methods: delete, get, insert, list, set_backend_service, set_proxy_header, set_ssl_certificates, set_ssl_policy and test_iam_permissions");
+                        .about("methods: delete, get, insert, list, set_backend_service, set_certificate_map, set_proxy_header, set_ssl_certificates, set_ssl_policy and test_iam_permissions");
         {
             let mcmd = SubCommand::with_name("delete")
                 .about("Deletes the specified TargetSslProxy resource.");
@@ -3092,6 +3101,11 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         {
             let mcmd = SubCommand::with_name("set_backend_service")
                 .about("Changes the BackendService for TargetSslProxy.");
+            target_ssl_proxies0 = target_ssl_proxies0.subcommand(mcmd);
+        }
+        {
+            let mcmd = SubCommand::with_name("set_certificate_map")
+                .about("Changes the Certificate Map for TargetSslProxy.");
             target_ssl_proxies0 = target_ssl_proxies0.subcommand(mcmd);
         }
         {

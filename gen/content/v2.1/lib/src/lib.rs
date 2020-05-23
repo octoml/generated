@@ -13439,6 +13439,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub merchant_order_id: ::std::option::Option<String>,
+        #[doc = "The identifier of the item."]
+        #[serde(
+            rename = "orderItemId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub order_item_id: ::std::option::Option<String>,
         #[doc = "The unique ID of the settlement transaction entry."]
         #[serde(
             rename = "settlementEntryId",

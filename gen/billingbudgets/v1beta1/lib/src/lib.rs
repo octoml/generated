@@ -42,9 +42,7 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
-    #[derive(
-        Debug, Clone, PartialEq, PartialOrd, Default, :: serde :: Deserialize, :: serde :: Serialize,
-    )]
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudBillingBudgetsV1Beta1Budget {
         #[doc = "Optional. Rules to apply to all updates to the actual spend, regardless\nof the thresholds set in `threshold_rules`."]
         #[serde(
@@ -150,9 +148,7 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
-    #[derive(
-        Debug, Clone, PartialEq, PartialOrd, Default, :: serde :: Deserialize, :: serde :: Serialize,
-    )]
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudBillingBudgetsV1Beta1CreateBudgetRequest {
         #[doc = "Required. Budget to create."]
         #[serde(
@@ -174,18 +170,7 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
-    #[derive(
-        Debug,
-        Clone,
-        PartialEq,
-        Hash,
-        PartialOrd,
-        Ord,
-        Eq,
-        Default,
-        :: serde :: Deserialize,
-        :: serde :: Serialize,
-    )]
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudBillingBudgetsV1Beta1Filter {
         #[doc = "Optional. If not set, default behavior is `INCLUDE_ALL_CREDITS`."]
         #[serde(
@@ -196,6 +181,14 @@ pub mod schemas {
         pub credit_types_treatment: ::std::option::Option<
             crate::schemas::GoogleCloudBillingBudgetsV1Beta1FilterCreditTypesTreatment,
         >,
+        #[doc = "Optional. A single label and value pair specifying that usage from only this set of\nlabeled resources should be included in the budget. Multiple entries or\nmultiple values per entry are not allowed. If omitted, the report will\ninclude all labeled and unlabeled usage."]
+        #[serde(
+            rename = "labels",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub labels:
+            ::std::option::Option<::std::collections::BTreeMap<String, Vec<::serde_json::Value>>>,
         #[doc = "Optional. A set of projects of the form `projects/{project}`,\nspecifying that usage from only this set of projects should be\nincluded in the budget. If omitted, the report will include all usage for\nthe billing account, regardless of which project the usage occurred on.\nOnly zero or one project can be specified currently."]
         #[serde(
             rename = "projects",
@@ -210,6 +203,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub services: ::std::option::Option<Vec<String>>,
+        #[doc = "Optional. A set of subaccounts of the form `billingAccounts/{account_id}`, specifying\nthat usage from only this set of subaccounts should be included in the\nbudget. If a subaccount is set to the name of the master account, usage\nfrom the master account will be included. If omitted, the report will\ninclude usage from the master account and all subaccounts, if they exist."]
+        #[serde(
+            rename = "subaccounts",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub subaccounts: ::std::option::Option<Vec<String>>,
     }
     impl ::google_field_selector::FieldSelector for GoogleCloudBillingBudgetsV1Beta1Filter {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -308,9 +308,7 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
-    #[derive(
-        Debug, Clone, PartialEq, PartialOrd, Default, :: serde :: Deserialize, :: serde :: Serialize,
-    )]
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudBillingBudgetsV1Beta1ListBudgetsResponse {
         #[doc = "List of the budgets owned by the requested billing account."]
         #[serde(
@@ -472,9 +470,7 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
-    #[derive(
-        Debug, Clone, PartialEq, PartialOrd, Default, :: serde :: Deserialize, :: serde :: Serialize,
-    )]
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudBillingBudgetsV1Beta1UpdateBudgetRequest {
         #[doc = "Required. The updated budget object.\nThe budget to update is specified by the budget name in the budget."]
         #[serde(

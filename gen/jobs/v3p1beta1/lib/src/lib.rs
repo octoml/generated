@@ -1762,7 +1762,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct CustomAttribute {
-        #[doc = "Optional. If the `filterable` flag is true, custom field values are searchable.\nIf false, values are not searchable.\n\nDefault is false."]
+        #[doc = "Optional. If the `filterable` flag is true, the custom field values may be used for\ncustom attribute filters JobQuery.custom_attribute_filter.\nIf false, these values may not be used for custom attribute filters.\n\nDefault is false."]
         #[serde(
             rename = "filterable",
             default,

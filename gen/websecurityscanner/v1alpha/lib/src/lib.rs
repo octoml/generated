@@ -913,7 +913,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub authentication: ::std::option::Option<crate::schemas::Authentication>,
-        #[doc = "The blacklist URL patterns as described in\nhttps://cloud.google.com/security-scanner/docs/excluded-urls"]
+        #[doc = "The excluded URL patterns as described in\nhttps://cloud.google.com/security-command-center/docs/how-to-use-web-security-scanner#excluding_urls"]
         #[serde(
             rename = "blacklistPatterns",
             default,
@@ -962,7 +962,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub starting_urls: ::std::option::Option<Vec<String>>,
-        #[doc = "Set of Cloud Platforms targeted by the scan. If empty, APP_ENGINE will be\nused as a default."]
+        #[doc = "Set of Google Cloud platforms targeted by the scan. If empty, APP_ENGINE\nwill be used as a default."]
         #[serde(
             rename = "targetPlatforms",
             default,

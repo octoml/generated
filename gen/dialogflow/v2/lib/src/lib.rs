@@ -5485,7 +5485,7 @@ pub mod schemas {
     }
     #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudDialogflowV2DetectIntentResponse {
-        #[doc = "The audio data bytes encoded as specified in the request.\nNote: The output audio is generated based on the values of default platform\ntext responses found in the `query_result.fulfillment_messages` field. If\nmultiple default text responses exist, they will be concatenated when\ngenerating audio. If no default platform text responses exist, the\ngenerated audio content will be empty."]
+        #[doc = "The audio data bytes encoded as specified in the request.\nNote: The output audio is generated based on the values of default platform\ntext responses found in the `query_result.fulfillment_messages` field. If\nmultiple default text responses exist, they will be concatenated when\ngenerating audio. If no default platform text responses exist, the\ngenerated audio content will be empty.\n\nIn some scenarios, multiple output audio fields may be present in the\nresponse structure. In these cases, only the top-most-level audio output\nhas content."]
         #[serde(
             rename = "outputAudio",
             default,

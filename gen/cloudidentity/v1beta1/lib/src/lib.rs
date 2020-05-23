@@ -1411,6 +1411,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub compromised_state: ::std::option::Option<crate::schemas::DeviceUserCompromisedState>,
+        #[doc = "When the user first signed in to the device"]
+        #[serde(
+            rename = "createTime",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub create_time: ::std::option::Option<String>,
         #[doc = "Output only. Most recent time when user registered with this service."]
         #[serde(
             rename = "firstSyncTime",

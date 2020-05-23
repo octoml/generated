@@ -1068,7 +1068,7 @@ pub mod schemas {
         )]
         pub alternative_query_results:
             ::std::option::Option<Vec<crate::schemas::GoogleCloudDialogflowV2Beta1QueryResult>>,
-        #[doc = "The audio data bytes encoded as specified in the request.\nNote: The output audio is generated based on the values of default platform\ntext responses found in the `query_result.fulfillment_messages` field. If\nmultiple default text responses exist, they will be concatenated when\ngenerating audio. If no default platform text responses exist, the\ngenerated audio content will be empty."]
+        #[doc = "The audio data bytes encoded as specified in the request.\nNote: The output audio is generated based on the values of default platform\ntext responses found in the `query_result.fulfillment_messages` field. If\nmultiple default text responses exist, they will be concatenated when\ngenerating audio. If no default platform text responses exist, the\ngenerated audio content will be empty.\n\nIn some scenarios, multiple output audio fields may be present in the\nresponse structure. In these cases, only the top-most-level audio output\nhas content."]
         #[serde(
             rename = "outputAudio",
             default,
@@ -6553,7 +6553,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GoogleCloudDialogflowV2Beta1ReloadDocumentRequest {
-        #[doc = "Optional. The path for a Cloud Storage source file for reloading document content.\nIf not provided, the Document's existing source will be reloaded."]
+        #[doc = "The path for a Cloud Storage source file for reloading document content.\nIf not provided, the Document's existing source will be reloaded."]
         #[serde(
             rename = "gcsSource",
             default,

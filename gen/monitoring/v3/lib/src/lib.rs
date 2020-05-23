@@ -13751,7 +13751,7 @@ pub mod resources {
                         view: None,
                     }
                 }
-                #[doc = "Queries time series using the time series query language. This method does not require a Workspace."]
+                #[doc = "Queries time series using Monitoring Query Language. This method does not require a Workspace."]
                 pub fn query(
                     &self,
                     request: crate::schemas::QueryTimeSeriesRequest,

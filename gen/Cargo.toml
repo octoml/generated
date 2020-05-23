@@ -363,8 +363,6 @@ members = [
     "oslogin/v1beta/cli",
     "oslogin/v1/lib",
     "oslogin/v1/cli",
-    "pagespeedonline/v1/lib",
-    "pagespeedonline/v1/cli",
     "pagespeedonline/v2/lib",
     "pagespeedonline/v2/cli",
     "pagespeedonline/v4/lib",

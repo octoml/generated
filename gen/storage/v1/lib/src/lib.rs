@@ -614,6 +614,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub days_since_custom_time: ::std::option::Option<i32>,
+        #[doc = "Number of days elapsed since the noncurrent timestamp of an object. The condition is satisfied if the days elapsed is at least this number. This condition is relevant only for versioned objects. The value of the field must be a nonnegative integer. If it's zero, the object version will become eligible for Lifecycle action as soon as it becomes noncurrent."]
+        #[serde(
+            rename = "daysSinceNoncurrentTime",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub days_since_noncurrent_time: ::std::option::Option<i32>,
         #[doc = "Relevant only for versioned objects. If the value is true, this condition matches live objects; if the value is false, it matches archived objects."]
         #[serde(
             rename = "isLive",
@@ -635,6 +642,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub matches_storage_class: ::std::option::Option<Vec<String>>,
+        #[doc = "A timestamp in RFC 3339 format. This condition is satisfied when the noncurrent time on an object is before this timestamp. This condition is relevant only for versioned objects."]
+        #[serde(
+            rename = "noncurrentTimeBefore",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub noncurrent_time_before: ::std::option::Option<::chrono::DateTime<chrono::offset::Utc>>,
         #[doc = "Relevant only for versioned objects. If the value is N, this condition is satisfied when there are at least N versions (including the live version) newer than this version of the object."]
         #[serde(
             rename = "numNewerVersions",

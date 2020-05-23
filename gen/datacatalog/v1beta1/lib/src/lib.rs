@@ -17,7 +17,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct Binding {
-        #[doc = "The condition that is associated with this binding.\nNOTE: An unsatisfied condition will not allow user access via current\nbinding. Different bindings, including their conditions, are examined\nindependently."]
+        #[doc = "The condition that is associated with this binding.\n\nIf the condition evaluates to `true`, then this binding applies to the\ncurrent request.\n\nIf the condition evaluates to `false`, then this binding does not apply to\nthe current request. However, a different role binding might grant the same\nrole to one or more of the members in this binding.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "condition",
             default,
@@ -169,7 +169,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GetPolicyOptions {
-        #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset."]
+        #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "requestedPolicyVersion",
             default,
@@ -285,6 +285,8 @@ pub mod schemas {
     }
     #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
     pub enum GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType {
+        #[doc = "BigQuery materialized view."]
+        BigqueryMaterializedView,
         #[doc = "BigQuery native table."]
         BigqueryTable,
         #[doc = "Table view."]
@@ -294,7 +296,7 @@ pub mod schemas {
     }
     impl GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType {
         pub fn as_str(self) -> &'static str {
-            match self { GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable => "BIGQUERY_TABLE" , GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView => "BIGQUERY_VIEW" , GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified => "TABLE_SOURCE_TYPE_UNSPECIFIED" , }
+            match self { GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryMaterializedView => "BIGQUERY_MATERIALIZED_VIEW" , GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable => "BIGQUERY_TABLE" , GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView => "BIGQUERY_VIEW" , GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified => "TABLE_SOURCE_TYPE_UNSPECIFIED" , }
         }
     }
     impl ::std::convert::AsRef<str> for GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType {
@@ -308,7 +310,7 @@ pub mod schemas {
             s: &str,
         ) -> ::std::result::Result<GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType, ()>
         {
-            Ok ( match s { "BIGQUERY_TABLE" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable , "BIGQUERY_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView , "TABLE_SOURCE_TYPE_UNSPECIFIED" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified , _ => return Err ( ( ) ) , } )
+            Ok ( match s { "BIGQUERY_MATERIALIZED_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryMaterializedView , "BIGQUERY_TABLE" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable , "BIGQUERY_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView , "TABLE_SOURCE_TYPE_UNSPECIFIED" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified , _ => return Err ( ( ) ) , } )
         }
     }
     impl ::std::fmt::Display for GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType {
@@ -332,7 +334,7 @@ pub mod schemas {
             D: ::serde::de::Deserializer<'de>,
         {
             let value: &'de str = <&str>::deserialize(deserializer)?;
-            Ok ( match value { "BIGQUERY_TABLE" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable , "BIGQUERY_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView , "TABLE_SOURCE_TYPE_UNSPECIFIED" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+            Ok ( match value { "BIGQUERY_MATERIALIZED_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryMaterializedView , "BIGQUERY_TABLE" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryTable , "BIGQUERY_VIEW" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: BigqueryView , "TABLE_SOURCE_TYPE_UNSPECIFIED" => GoogleCloudDatacatalogV1Beta1BigQueryTableSpecTableSourceType :: TableSourceTypeUnspecified , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
         }
     }
     impl ::google_field_selector::FieldSelector
@@ -1102,7 +1104,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GoogleCloudDatacatalogV1Beta1ImportTaxonomiesRequest {
-        #[doc = "Inline source used for taxonomies import"]
+        #[doc = "Inline source used for taxonomies to be imported."]
         #[serde(
             rename = "inlineSource",
             default,
@@ -1603,6 +1605,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub include_project_ids: ::std::option::Option<Vec<String>>,
+        #[doc = "Optional. The list of locations to search within.\n\n1. If empty, search will be performed in all locations;\n1. If any of the locations are NOT in the valid locations list, error\n   will be returned;\n1. Otherwise, search only the given locations for matching results.\n   Typical usage is to leave this field empty. When a location is\n   unreachable as returned in the `SearchCatalogResponse.unreachable` field,\n   users can repeat the search request with this parameter set to get\n   additional information on the error.\n\nValid locations:\n\n* asia-east1\n* asia-east2\n* asia-northeast1\n* asia-northeast2\n* asia-northeast3\n* asia-south1\n* asia-southeast1\n* australia-southeast1\n* eu\n* europe-north1\n* europe-west1\n* europe-west2\n* europe-west3\n* europe-west4\n* europe-west6\n* global\n* northamerica-northeast1\n* southamerica-east1\n* us\n* us-central1\n* us-east1\n* us-east4\n* us-west1\n* us-west2"]
+        #[serde(
+            rename = "restrictedLocations",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub restricted_locations: ::std::option::Option<Vec<String>>,
     }
     impl ::google_field_selector::FieldSelector
         for GoogleCloudDatacatalogV1Beta1SearchCatalogRequestScope
@@ -1647,6 +1656,13 @@ pub mod schemas {
         pub results: ::std::option::Option<
             Vec<crate::schemas::GoogleCloudDatacatalogV1Beta1SearchCatalogResult>,
         >,
+        #[doc = "Unreachable locations. Search result does not include data from those\nlocations. Users can get additional information on the error by repeating\nthe search request with a more restrictive parameter -- setting the value\nfor `SearchDataCatalogRequest.scope.include_locations`."]
+        #[serde(
+            rename = "unreachable",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub unreachable: ::std::option::Option<Vec<String>>,
     }
     impl ::google_field_selector::FieldSelector for GoogleCloudDatacatalogV1Beta1SearchCatalogResponse {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -1820,6 +1836,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub display_name: ::std::option::Option<String>,
+        #[doc = "Resource name of the policy tag.\n\nThis field will be ignored when calling ImportTaxonomies."]
+        #[serde(
+            rename = "policyTag",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub policy_tag: ::std::option::Option<String>,
     }
     impl ::google_field_selector::FieldSelector for GoogleCloudDatacatalogV1Beta1SerializedPolicyTag {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -2388,7 +2411,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<::google_api_bytes::Bytes>,
-        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset."]
+        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "version",
             default,

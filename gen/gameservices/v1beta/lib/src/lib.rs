@@ -312,7 +312,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct Binding {
-        #[doc = "The condition that is associated with this binding.\nNOTE: An unsatisfied condition will not allow user access via current\nbinding. Different bindings, including their conditions, are examined\nindependently."]
+        #[doc = "The condition that is associated with this binding.\n\nIf the condition evaluates to `true`, then this binding applies to the\ncurrent request.\n\nIf the condition evaluates to `false`, then this binding does not apply to\nthe current request. However, a different role binding might grant the same\nrole to one or more of the members in this binding.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "condition",
             default,
@@ -1019,7 +1019,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub cluster: ::std::option::Option<String>,
-        #[doc = "The details about the Agones fleets and autoscalers created in the\nGame Server Cluster."]
+        #[doc = "The details about the Agones fleets and autoscalers created in the\ngame server cluster."]
         #[serde(
             rename = "fleetDetails",
             default,
@@ -1341,14 +1341,14 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct FetchDeploymentStateResponse {
-        #[doc = "The state of the Game Server Deployment in each Game Server Cluster."]
+        #[doc = "The state of the game server deployment in each game server cluster."]
         #[serde(
             rename = "clusterState",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub cluster_state: ::std::option::Option<Vec<crate::schemas::DeployedClusterState>>,
-        #[doc = "List of Locations that could not be reached."]
+        #[doc = "List of locations that could not be reached."]
         #[serde(
             rename = "unavailable",
             default,
@@ -1417,7 +1417,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GameServerCluster {
-        #[doc = "Game Server Cluster connection information. This information is used to\nmanage Game Server Clusters."]
+        #[doc = "The game server cluster connection information. This information is used to\nmanage game server clusters."]
         #[serde(
             rename = "connectionInfo",
             default,
@@ -1445,14 +1445,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<String>,
-        #[doc = "The labels associated with this Game Server Cluster. Each label is a\nkey-value pair."]
+        #[doc = "The labels associated with this game server cluster. Each label is a\nkey-value pair."]
         #[serde(
             rename = "labels",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub labels: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
-        #[doc = "Required. The resource name of the Game Server Cluster. Uses the form:\n\n`projects/{project}/locations/{location}/realms/{realm}/gameServerClusters/{cluster}`.\nFor example,\n\n`projects/my-project/locations/{location}/realms/zanzibar/gameServerClusters/my-onprem-cluster`."]
+        #[doc = "Required. The resource name of the game server cluster. Uses the form:\n\n`projects/{project}/locations/{location}/realms/{realm}/gameServerClusters/{cluster}`.\nFor example,\n\n`projects/my-project/locations/{location}/realms/zanzibar/gameServerClusters/my-onprem-cluster`."]
         #[serde(
             rename = "name",
             default,
@@ -1497,7 +1497,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub gke_cluster_reference: ::std::option::Option<crate::schemas::GkeClusterReference>,
-        #[doc = "Namespace designated on the Game Server Cluster where the Agones game\nserver instances will be created. Existence of the namespace will be\nvalidated during creation."]
+        #[doc = "Namespace designated on the game server cluster where the Agones game\nserver instances will be created. Existence of the namespace will be\nvalidated during creation."]
         #[serde(
             rename = "namespace",
             default,
@@ -1535,7 +1535,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub create_time: ::std::option::Option<String>,
-        #[doc = "The description of the Game Server Config."]
+        #[doc = "The description of the game server config."]
         #[serde(
             rename = "description",
             default,
@@ -1549,14 +1549,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub fleet_configs: ::std::option::Option<Vec<crate::schemas::FleetConfig>>,
-        #[doc = "The labels associated with this Game Server Config. Each label is a\nkey-value pair."]
+        #[doc = "The labels associated with this game server config. Each label is a\nkey-value pair."]
         #[serde(
             rename = "labels",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub labels: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
-        #[doc = "The resource name of the Game Server Config. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}/configs/{config}`.\nFor example,\n\n`projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`."]
+        #[doc = "The resource name of the game server config. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}/configs/{config}`.\nFor example,\n\n`projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`."]
         #[serde(
             rename = "name",
             default,
@@ -1646,7 +1646,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub create_time: ::std::option::Option<String>,
-        #[doc = "Human readable description of the Game Server Deployment."]
+        #[doc = "Human readable description of the game server delpoyment."]
         #[serde(
             rename = "description",
             default,
@@ -1660,14 +1660,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<String>,
-        #[doc = "The labels associated with this Game Server Deployment. Each label is a\nkey-value pair."]
+        #[doc = "The labels associated with this game server deployment. Each label is a\nkey-value pair."]
         #[serde(
             rename = "labels",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub labels: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
-        #[doc = "The resource name of the Game Server Deployment. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}`.\nFor example,\n\n`projects/my-project/locations/{location}/gameServerDeployments/my-deployment`."]
+        #[doc = "The resource name of the game server deployment. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}`.\nFor example,\n\n`projects/my-project/locations/{location}/gameServerDeployments/my-deployment`."]
         #[serde(
             rename = "name",
             default,
@@ -1712,7 +1712,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub create_time: ::std::option::Option<String>,
-        #[doc = "The default Game Server Config is applied to all Realms unless overridden\nin the Rollout. For example,\n\n`projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`."]
+        #[doc = "The default game server config is applied to all realms unless overridden\nin the rollout. For example,\n\n`projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config`."]
         #[serde(
             rename = "defaultGameServerConfig",
             default,
@@ -1726,7 +1726,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<String>,
-        #[doc = "Contains the Game Server Config Rollout overrides. Overrides are processed\nin the order they are listed. Once a match is found for a Realm, the rest\nof the list is not processed."]
+        #[doc = "Contains the game server config rollout overrides. Overrides are processed\nin the order they are listed. Once a match is found for a realm, the rest\nof the list is not processed."]
         #[serde(
             rename = "gameServerConfigOverrides",
             default,
@@ -1734,7 +1734,7 @@ pub mod schemas {
         )]
         pub game_server_config_overrides:
             ::std::option::Option<Vec<crate::schemas::GameServerConfigOverride>>,
-        #[doc = "The resource name of the Game Server Deployment Rollout. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}/rollout`.\nFor example,\n\n`projects/my-project/locations/{location}/gameServerDeployments/my-deployment/rollout`."]
+        #[doc = "The resource name of the game server deployment rollout. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment}/rollout`.\nFor example,\n\n`projects/my-project/locations/{location}/gameServerDeployments/my-deployment/rollout`."]
         #[serde(
             rename = "name",
             default,
@@ -1834,7 +1834,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct ListGameServerClustersResponse {
-        #[doc = "The list of Game Server Clusters."]
+        #[doc = "The list of game server clusters."]
         #[serde(
             rename = "gameServerClusters",
             default,
@@ -1848,7 +1848,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub next_page_token: ::std::option::Option<String>,
-        #[doc = "List of Locations that could not be reached."]
+        #[doc = "List of locations that could not be reached."]
         #[serde(
             rename = "unreachable",
             default,
@@ -1879,7 +1879,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct ListGameServerConfigsResponse {
-        #[doc = "The list of Game Server Configs."]
+        #[doc = "The list of game server configs."]
         #[serde(
             rename = "gameServerConfigs",
             default,
@@ -1893,7 +1893,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub next_page_token: ::std::option::Option<String>,
-        #[doc = "List of Locations that could not be reached."]
+        #[doc = "List of locations that could not be reached."]
         #[serde(
             rename = "unreachable",
             default,
@@ -1924,7 +1924,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct ListGameServerDeploymentsResponse {
-        #[doc = "The list of Game Server Delpoyments."]
+        #[doc = "The list of game server deployments."]
         #[serde(
             rename = "gameServerDeployments",
             default,
@@ -1939,7 +1939,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub next_page_token: ::std::option::Option<String>,
-        #[doc = "List of Locations that could not be reached."]
+        #[doc = "List of locations that could not be reached."]
         #[serde(
             rename = "unreachable",
             default,
@@ -2031,14 +2031,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub next_page_token: ::std::option::Option<String>,
-        #[doc = "The list of Realms."]
+        #[doc = "The list of realms."]
         #[serde(
             rename = "realms",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub realms: ::std::option::Option<Vec<crate::schemas::Realm>>,
-        #[doc = "List of Locations that could not be reached."]
+        #[doc = "List of locations that could not be reached."]
         #[serde(
             rename = "unreachable",
             default,
@@ -2234,7 +2234,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub end_time: ::std::option::Option<String>,
-        #[doc = "Output only. Operation status for gameservices API operations. Operation status is in\nthe form of key-value pairs where keys are resource IDs and the values show\nthe status of the operation. In case of failures, the value includes an\nerror code and error message."]
+        #[doc = "Output only. Operation status for Game Services API operations. Operation status is in\nthe form of key-value pairs where keys are resource IDs and the values show\nthe status of the operation. In case of failures, the value includes an\nerror code and error message."]
         #[serde(
             rename = "operationStatus",
             default,
@@ -2458,7 +2458,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub rules: ::std::option::Option<Vec<crate::schemas::Rule>>,
-        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset."]
+        #[doc = "Specifies the format of the policy.\n\nValid values are `0`, `1`, and `3`. Requests that specify an invalid value\nare rejected.\n\nAny operation that affects conditional role bindings must specify version\n`3`. This requirement applies to the following operations:\n\n* Getting a policy that includes a conditional role binding\n* Adding a conditional role binding to a policy\n* Changing a conditional role binding in a policy\n* Removing any role binding, with or without a condition, from a policy\n  that includes conditions\n\n**Important:** If you use IAM Conditions, you must include the `etag` field\nwhenever you call `setIamPolicy`. If you omit this field, then IAM allows\nyou to overwrite a version `3` policy with a version `1` policy, and all of\nthe conditions in the version `3` policy are lost.\n\nIf a policy does not include any conditions, operations on that policy may\nspecify any valid version or leave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
         #[serde(
             rename = "version",
             default,
@@ -2565,7 +2565,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct PreviewGameServerDeploymentRolloutResponse {
-        #[doc = "ETag of the Game Server Deployment."]
+        #[doc = "ETag of the game server deployment."]
         #[serde(
             rename = "etag",
             default,
@@ -2693,7 +2693,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub create_time: ::std::option::Option<String>,
-        #[doc = "Human readable description of the Realm."]
+        #[doc = "Human readable description of the realm."]
         #[serde(
             rename = "description",
             default,
@@ -2707,21 +2707,21 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<String>,
-        #[doc = "The labels associated with this Realm. Each label is a key-value pair."]
+        #[doc = "The labels associated with this realm. Each label is a key-value pair."]
         #[serde(
             rename = "labels",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub labels: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
-        #[doc = "The resource name of the Realm. Uses the form:\n`projects/{project}/locations/{location}/realms/{realm}`. For\nexample, `projects/my-project/locations/{location}/realms/my-realm`."]
+        #[doc = "The resource name of the realm. Uses the form:\n`projects/{project}/locations/{location}/realms/{realm}`. For\nexample, `projects/my-project/locations/{location}/realms/my-realm`."]
         #[serde(
             rename = "name",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub name: ::std::option::Option<String>,
-        #[doc = "Required. Time zone where all policies targeting this Realm are evaluated. The value\nof this field must be from the IANA time zone database:\nhttps://www.iana.org/time-zones."]
+        #[doc = "Required. Time zone where all policies targeting this realm are evaluated. The value\nof this field must be from the IANA time zone database:\nhttps://www.iana.org/time-zones."]
         #[serde(
             rename = "timeZone",
             default,
@@ -2759,7 +2759,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct RealmSelector {
-        #[doc = "List of Realms to match."]
+        #[doc = "List of realms to match."]
         #[serde(
             rename = "realms",
             default,
@@ -2975,7 +2975,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub schedules: ::std::option::Option<Vec<crate::schemas::Schedule>>,
-        #[doc = "Labels used to identify the Game Server Clusters to which this Agones\nscaling config applies. A Game Server Cluster is subject to this Agones\nscaling config if its labels match any of the selector entries."]
+        #[doc = "Labels used to identify the game server clusters to which this Agones\nscaling config applies. A game server cluster is subject to this Agones\nscaling config if its labels match any of the selector entries."]
         #[serde(
             rename = "selectors",
             default,
@@ -3013,7 +3013,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub cron_job_duration: ::std::option::Option<String>,
-        #[doc = "The cron definition of the scheduled event. See\nhttps://en.wikipedia.org/wiki/Cron. Cron spec specifies the local time as\ndefined by the Realm."]
+        #[doc = "The cron definition of the scheduled event. See\nhttps://en.wikipedia.org/wiki/Cron. Cron spec specifies the local time as\ndefined by the realm."]
         #[serde(
             rename = "cronSpec",
             default,
@@ -3096,7 +3096,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct SpecSource {
-        #[doc = "The Game Server Config resource. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}/configs/{config_id}`."]
+        #[doc = "The game server config resource. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}/configs/{config_id}`."]
         #[serde(
             rename = "gameServerConfigName",
             default,
@@ -3169,21 +3169,21 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct TargetDetails {
-        #[doc = "Agones fleet details for Game Server Clusters and Game Server Deployments."]
+        #[doc = "Agones fleet details for game server clusters and game server deployments."]
         #[serde(
             rename = "fleetDetails",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub fleet_details: ::std::option::Option<Vec<crate::schemas::TargetFleetDetails>>,
-        #[doc = "The Game Server Cluster name. Uses the form:\n\n`projects/{project}/locations/{location}/realms/{realm}/gameServerClusters/{cluster}`."]
+        #[doc = "The game server cluster name. Uses the form:\n\n`projects/{project}/locations/{location}/realms/{realm}/gameServerClusters/{cluster}`."]
         #[serde(
             rename = "gameServerClusterName",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub game_server_cluster_name: ::std::option::Option<String>,
-        #[doc = "The Game Server Deployment name. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}`."]
+        #[doc = "The game server deployment name. Uses the form:\n\n`projects/{project}/locations/{location}/gameServerDeployments/{deployment_id}`."]
         #[serde(
             rename = "gameServerDeploymentName",
             default,
@@ -4160,7 +4160,7 @@ pub mod resources {
                     fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                         self.auth
                     }
-                    #[doc = "Creates a new Game Server Deployment in a given project and Location."]
+                    #[doc = "Creates a new game server deployment in a given project and location."]
                     pub fn create(
                         &self,
                         request: crate::schemas::GameServerDeployment,
@@ -4185,7 +4185,7 @@ pub mod resources {
                             deployment_id: None,
                         }
                     }
-                    #[doc = "Deletes a single Game Server Deployment."]
+                    #[doc = "Deletes a single game server deployment."]
                     pub fn delete(&self, name: impl Into<String>) -> DeleteRequestBuilder {
                         DeleteRequestBuilder {
                             reqwest: &self.reqwest,
@@ -4204,7 +4204,7 @@ pub mod resources {
                             name: name.into(),
                         }
                     }
-                    #[doc = "Retrieves information about the current state of the Game Server\nDdeployment. Gathers all the Agones fleets and Agones autoscalers,\nincluding fleets running an older version of the Game Server Deployment."]
+                    #[doc = "Retrieves information about the current state of the game server\ndeployment. Gathers all the Agones fleets and Agones autoscalers,\nincluding fleets running an older version of the game server deployment."]
                     pub fn fetch_deployment_state(
                         &self,
                         request: crate::schemas::FetchDeploymentStateRequest,
@@ -4228,7 +4228,7 @@ pub mod resources {
                             name: name.into(),
                         }
                     }
-                    #[doc = "Gets details of a single Game Server Deployment."]
+                    #[doc = "Gets details of a single game server deployment."]
                     pub fn get(&self, name: impl Into<String>) -> GetRequestBuilder {
                         GetRequestBuilder {
                             reqwest: &self.reqwest,
@@ -4270,7 +4270,7 @@ pub mod resources {
                             options_requested_policy_version: None,
                         }
                     }
-                    #[doc = "Gets details a single Game Server Deployment Rollout."]
+                    #[doc = "Gets details a single game server deployment rollout."]
                     pub fn get_rollout(&self, name: impl Into<String>) -> GetRolloutRequestBuilder {
                         GetRolloutRequestBuilder {
                             reqwest: &self.reqwest,
@@ -4289,7 +4289,7 @@ pub mod resources {
                             name: name.into(),
                         }
                     }
-                    #[doc = "Lists Game Server Deployments in a given project and Location."]
+                    #[doc = "Lists game server deployments in a given project and location."]
                     pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
@@ -4312,7 +4312,7 @@ pub mod resources {
                             page_token: None,
                         }
                     }
-                    #[doc = "Patches a Game Server Deployment."]
+                    #[doc = "Patches a game server deployment."]
                     pub fn patch(
                         &self,
                         request: crate::schemas::GameServerDeployment,
@@ -4337,7 +4337,7 @@ pub mod resources {
                             update_mask: None,
                         }
                     }
-                    #[doc = "Previews the Game Server Deployment Rollout. This API does not mutate the\nRollout resource."]
+                    #[doc = "Previews the game server deployment rollout. This API does not mutate the\nrollout resource."]
                     pub fn preview_rollout(
                         &self,
                         request: crate::schemas::GameServerDeploymentRollout,
@@ -4411,7 +4411,7 @@ pub mod resources {
                             resource: resource.into(),
                         }
                     }
-                    #[doc = "Patches a single Game Server Deployment Rollout.\nThe method will not return an error if the update does not affect any\nexisting realms. For example - if the default_game_server_config is changed\nbut all existing realms use the override, that is valid. Similarly, if a\nnon existing realm is explicitly called out in game_server_config_overrides\nfield, that will also not result in an error."]
+                    #[doc = "Patches a single game server deployment rollout.\nThe method will not return an error if the update does not affect any\nexisting realms. For example - if the default_game_server_config is changed\nbut all existing realms use the override, that is valid. Similarly, if a\nnon existing realm is explicitly called out in game_server_config_overrides\nfield, that will also not result in an error."]
                     pub fn update_rollout(
                         &self,
                         request: crate::schemas::GameServerDeploymentRollout,
@@ -4461,7 +4461,7 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> CreateRequestBuilder<'a> {
-                    #[doc = "Required. The ID of the Game Server Deployment resource to be created."]
+                    #[doc = "Required. The ID of the game server delpoyment resource to be created."]
                     pub fn deployment_id(mut self, value: impl Into<String>) -> Self {
                         self.deployment_id = Some(value.into());
                         self
@@ -5117,7 +5117,7 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> GetIamPolicyRequestBuilder<'a> {
-                    #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset."]
+                    #[doc = "Optional. The policy format version to be returned.\n\nValid values are 0, 1, and 3. Requests specifying an invalid value will be\nrejected.\n\nRequests for policies with any conditional bindings must specify version 3.\nPolicies without any conditional bindings may specify any valid value or\nleave the field unset.\n\nTo learn which resources support conditions in their IAM policies, see the\n[IAM\ndocumentation](https://cloud.google.com/iam/help/conditions/resource-policies)."]
                     pub fn options_requested_policy_version(mut self, value: i32) -> Self {
                         self.options_requested_policy_version = Some(value);
                         self
@@ -5464,7 +5464,7 @@ pub mod resources {
                         self.order_by = Some(value.into());
                         self
                     }
-                    #[doc = "Optional. The maximum number of items to return.  If unspecified, server\nwill pick an appropriate default. Server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more GameServerDeployments left to be queried."]
+                    #[doc = "Optional. The maximum number of items to return.  If unspecified, the server\nwill pick an appropriate default. The server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more GameServerDeployments left to be queried."]
                     pub fn page_size(mut self, value: i32) -> Self {
                         self.page_size = Some(value);
                         self
@@ -5991,7 +5991,7 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> PreviewRolloutRequestBuilder<'a> {
-                    #[doc = "Optional. The target timestamp to compute the preview. Defaults to the immediately\nafter the proposed Rollout completes."]
+                    #[doc = "Optional. The target timestamp to compute the preview. Defaults to the immediately\nafter the proposed rollout completes."]
                     pub fn preview_time(mut self, value: impl Into<String>) -> Self {
                         self.preview_time = Some(value.into());
                         self
@@ -6660,7 +6660,7 @@ pub mod resources {
                         fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                             self.auth
                         }
-                        #[doc = "Creates a new Game Server Config in a given project, Location, and Game\nServer Deployment. Game Server Configs are immutable, and are not applied\nuntil referenced in the Game Server Deployment Rollout resource."]
+                        #[doc = "Creates a new game server config in a given project, location, and game\nserver deployment. Game server configs are immutable, and are not applied\nuntil referenced in the game server deployment rollout resource."]
                         pub fn create(
                             &self,
                             request: crate::schemas::GameServerConfig,
@@ -6685,7 +6685,7 @@ pub mod resources {
                                 config_id: None,
                             }
                         }
-                        #[doc = "Deletes a single Game Server Config. The deletion will fail if the Game\nServer Config is referenced in a Game Server Deployment Rollout."]
+                        #[doc = "Deletes a single game server config. The deletion will fail if the game\nserver config is referenced in a game server deployment rollout."]
                         pub fn delete(&self, name: impl Into<String>) -> DeleteRequestBuilder {
                             DeleteRequestBuilder {
                                 reqwest: &self.reqwest,
@@ -6704,7 +6704,7 @@ pub mod resources {
                                 name: name.into(),
                             }
                         }
-                        #[doc = "Gets details of a single Game Server Config."]
+                        #[doc = "Gets details of a single game server config."]
                         pub fn get(&self, name: impl Into<String>) -> GetRequestBuilder {
                             GetRequestBuilder {
                                 reqwest: &self.reqwest,
@@ -6723,7 +6723,7 @@ pub mod resources {
                                 name: name.into(),
                             }
                         }
-                        #[doc = "Lists Game Server Configs in a given project, Location, and Game Server\nDeployment."]
+                        #[doc = "Lists game server configs in a given project, location, and game server\ndeployment."]
                         pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                             ListRequestBuilder {
                                 reqwest: &self.reqwest,
@@ -6768,7 +6768,7 @@ pub mod resources {
                         xgafv: Option<crate::params::Xgafv>,
                     }
                     impl<'a> CreateRequestBuilder<'a> {
-                        #[doc = "Required. The ID of the Game Server Config resource to be created."]
+                        #[doc = "Required. The ID of the game server config resource to be created."]
                         pub fn config_id(mut self, value: impl Into<String>) -> Self {
                             self.config_id = Some(value.into());
                             self
@@ -7284,7 +7284,7 @@ pub mod resources {
                             self.page_size = Some(value);
                             self
                         }
-                        #[doc = "Optional. The next_page_token value returned from a previous List request, if any."]
+                        #[doc = "Optional. The next_page_token value returned from a previous list request, if any."]
                         pub fn page_token(mut self, value: impl Into<String>) -> Self {
                             self.page_token = Some(value.into());
                             self
@@ -8511,7 +8511,7 @@ pub mod resources {
                     fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                         self.auth
                     }
-                    #[doc = "Creates a new Realm in a given project and Location."]
+                    #[doc = "Creates a new realm in a given project and location."]
                     pub fn create(
                         &self,
                         request: crate::schemas::Realm,
@@ -8536,7 +8536,7 @@ pub mod resources {
                             realm_id: None,
                         }
                     }
-                    #[doc = "Deletes a single Realm."]
+                    #[doc = "Deletes a single realm."]
                     pub fn delete(&self, name: impl Into<String>) -> DeleteRequestBuilder {
                         DeleteRequestBuilder {
                             reqwest: &self.reqwest,
@@ -8555,7 +8555,7 @@ pub mod resources {
                             name: name.into(),
                         }
                     }
-                    #[doc = "Gets details of a single Realm."]
+                    #[doc = "Gets details of a single realm."]
                     pub fn get(&self, name: impl Into<String>) -> GetRequestBuilder {
                         GetRequestBuilder {
                             reqwest: &self.reqwest,
@@ -8574,7 +8574,7 @@ pub mod resources {
                             name: name.into(),
                         }
                     }
-                    #[doc = "Lists Realms in a given project and Location."]
+                    #[doc = "Lists realms in a given project and location."]
                     pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
@@ -8597,7 +8597,7 @@ pub mod resources {
                             page_token: None,
                         }
                     }
-                    #[doc = "Patches a single Realm."]
+                    #[doc = "Patches a single realm."]
                     pub fn patch(
                         &self,
                         request: crate::schemas::Realm,
@@ -8622,7 +8622,7 @@ pub mod resources {
                             update_mask: None,
                         }
                     }
-                    #[doc = "Previews patches to a single Realm."]
+                    #[doc = "Previews patches to a single realm."]
                     pub fn preview_update(
                         &self,
                         request: crate::schemas::Realm,
@@ -8673,7 +8673,7 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> CreateRequestBuilder<'a> {
-                    #[doc = "Required. The ID of the Realm resource to be created."]
+                    #[doc = "Required. The ID of the realm resource to be created."]
                     pub fn realm_id(mut self, value: impl Into<String>) -> Self {
                         self.realm_id = Some(value.into());
                         self
@@ -9175,7 +9175,7 @@ pub mod resources {
                         self.order_by = Some(value.into());
                         self
                     }
-                    #[doc = "Optional. The maximum number of items to return.  If unspecified, server\nwill pick an appropriate default. Server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more Realms left to be queried."]
+                    #[doc = "Optional. The maximum number of items to return.  If unspecified, server\nwill pick an appropriate default. Server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more realms left to be queried."]
                     pub fn page_size(mut self, value: i32) -> Self {
                         self.page_size = Some(value);
                         self
@@ -9925,7 +9925,7 @@ pub mod resources {
                                 name: name.into(),
                             }
                         }
-                        #[doc = "Lists Game Server Clusters in a given project and location."]
+                        #[doc = "Lists game server clusters in a given project and location."]
                         pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                             ListRequestBuilder {
                                 reqwest: &self.reqwest,
@@ -10070,7 +10070,7 @@ pub mod resources {
                         xgafv: Option<crate::params::Xgafv>,
                     }
                     impl<'a> CreateRequestBuilder<'a> {
-                        #[doc = "Required. The ID of the Game Server Cluster resource to be created."]
+                        #[doc = "Required. The ID of the game server cluster resource to be created."]
                         pub fn game_server_cluster_id(mut self, value: impl Into<String>) -> Self {
                             self.game_server_cluster_id = Some(value.into());
                             self
@@ -10582,7 +10582,7 @@ pub mod resources {
                             self.order_by = Some(value.into());
                             self
                         }
-                        #[doc = "Optional. The maximum number of items to return.  If unspecified, server\nwill pick an appropriate default. Server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more GameServerClusters left to be queried."]
+                        #[doc = "Optional. The maximum number of items to return.  If unspecified, the server\nwill pick an appropriate default. The server may return fewer items than\nrequested. A caller should only rely on response's\nnext_page_token to\ndetermine if there are more GameServerClusters left to be queried."]
                         pub fn page_size(mut self, value: i32) -> Self {
                             self.page_size = Some(value);
                             self
@@ -11119,7 +11119,7 @@ pub mod resources {
                         xgafv: Option<crate::params::Xgafv>,
                     }
                     impl<'a> PreviewCreateRequestBuilder<'a> {
-                        #[doc = "Required. The ID of the Game Server Cluster resource to be created."]
+                        #[doc = "Required. The ID of the game server cluster resource to be created."]
                         pub fn game_server_cluster_id(mut self, value: impl Into<String>) -> Self {
                             self.game_server_cluster_id = Some(value.into());
                             self

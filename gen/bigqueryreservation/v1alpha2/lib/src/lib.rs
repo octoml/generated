@@ -575,6 +575,8 @@ pub mod schemas {
         Flex,
         #[doc = "Slot pool cannot be removed for 30 days after becoming ACTIVE."]
         Monthly,
+        #[doc = "Trial commitments have a committed period of 182 days after becoming\nACTIVE. After that, they are converted to a new commitment based on the\nrenewal_plan. Default renewal_plan for Trial commitment is Flex so that\nit can be deleted right after committed period ends."]
+        Trial,
     }
     impl SlotPoolPlan {
         pub fn as_str(self) -> &'static str {
@@ -583,6 +585,7 @@ pub mod schemas {
                 SlotPoolPlan::CommitmentPlanUnspecified => "COMMITMENT_PLAN_UNSPECIFIED",
                 SlotPoolPlan::Flex => "FLEX",
                 SlotPoolPlan::Monthly => "MONTHLY",
+                SlotPoolPlan::Trial => "TRIAL",
             }
         }
     }
@@ -599,6 +602,7 @@ pub mod schemas {
                 "COMMITMENT_PLAN_UNSPECIFIED" => SlotPoolPlan::CommitmentPlanUnspecified,
                 "FLEX" => SlotPoolPlan::Flex,
                 "MONTHLY" => SlotPoolPlan::Monthly,
+                "TRIAL" => SlotPoolPlan::Trial,
                 _ => return Err(()),
             })
         }
@@ -627,6 +631,7 @@ pub mod schemas {
                 "COMMITMENT_PLAN_UNSPECIFIED" => SlotPoolPlan::CommitmentPlanUnspecified,
                 "FLEX" => SlotPoolPlan::Flex,
                 "MONTHLY" => SlotPoolPlan::Monthly,
+                "TRIAL" => SlotPoolPlan::Trial,
                 _ => {
                     return Err(::serde::de::Error::custom(format!(
                         "invalid enum for #name: {}",

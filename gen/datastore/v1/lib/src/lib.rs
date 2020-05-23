@@ -3708,7 +3708,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub null_value: ::std::option::Option<crate::schemas::ValueNullValue>,
-        #[doc = "A UTF-8 encoded string value.\nWhen `exclude_from_indexes` is false (it is indexed) , may have at most 1500 bytes.\nOtherwise, may be set to at least 1,000,000 bytes."]
+        #[doc = "A UTF-8 encoded string value.\nWhen `exclude_from_indexes` is false (it is indexed) , may have at most 1500 bytes.\nOtherwise, may be set to at most 1,000,000 bytes."]
         #[serde(
             rename = "stringValue",
             default,

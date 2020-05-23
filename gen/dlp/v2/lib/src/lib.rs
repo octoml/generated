@@ -4291,14 +4291,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub bucket_size: ::std::option::Option<f64>,
-        #[doc = "Required. Lower bound value of buckets. All values less than `lower_bound` are\ngrouped together into a single bucket; for example if `lower_bound` = 10,\nthen all values less than 10 are replaced with the value “-10”."]
+        #[doc = "Required. Lower bound value of buckets. All values less than `lower_bound` are\ngrouped together into a single bucket; for example if `lower_bound` = 10,\nthen all values less than 10 are replaced with the value \"-10\"."]
         #[serde(
             rename = "lowerBound",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub lower_bound: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2Value>,
-        #[doc = "Required. Upper bound value of buckets. All values greater than upper_bound are\ngrouped together into a single bucket; for example if `upper_bound` = 89,\nthen all values greater than 89 are replaced with the value “89+”."]
+        #[doc = "Required. Upper bound value of buckets. All values greater than upper_bound are\ngrouped together into a single bucket; for example if `upper_bound` = 89,\nthen all values greater than 89 are replaced with the value \"89+\"."]
         #[serde(
             rename = "upperBound",
             default,
@@ -6918,7 +6918,7 @@ pub mod schemas {
     pub enum GooglePrivacyDlpV2MetadataLocationType {
         #[doc = "Unused"]
         MetadatatypeUnspecified,
-        #[doc = "General file metadata provided by GCS."]
+        #[doc = "General file metadata provided by Cloud Storage."]
         StorageMetadata,
     }
     impl GooglePrivacyDlpV2MetadataLocationType {

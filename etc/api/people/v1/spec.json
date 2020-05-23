@@ -7,7 +7,7 @@
   "canonicalName": "People Service",
   "fullyEncodeReservedExpansion": null,
   "version": "v1",
-  "revision": "20200507",
+  "revision": "20200519",
   "title": "People API",
   "description": "Provides access to information about profiles and contacts.",
   "ownerDomain": "google.com",
@@ -3315,7 +3315,7 @@
               "description": "Provides a list of the authenticated user's contacts merged with any\nconnected profiles.\n\nThe request throws a 400 error if 'personFields' is not specified.",
               "parameters": {
                 "pageSize": {
-                  "description": "Optional. The number of connections to include in the response. Valid values are\nbetween 1 and 2000, inclusive. Defaults to 100 if not set or set to 0.",
+                  "description": "Optional. The number of connections to include in the response. Valid values are\nbetween 1 and 1000, inclusive. Defaults to 100 if not set or set to 0.",
                   "default": null,
                   "location": "query",
                   "required": false,

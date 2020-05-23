@@ -6529,7 +6529,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "Optional. The number of connections to include in the response. Valid values are\nbetween 1 and 2000, inclusive. Defaults to 100 if not set or set to 0."]
+                #[doc = "Optional. The number of connections to include in the response. Valid values are\nbetween 1 and 1000, inclusive. Defaults to 100 if not set or set to 0."]
                 pub fn page_size(mut self, value: i32) -> Self {
                     self.page_size = Some(value);
                     self

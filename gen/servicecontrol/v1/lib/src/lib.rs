@@ -496,7 +496,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub status: ::std::option::Option<crate::schemas::Status>,
-        #[doc = "Subject to whom this error applies. See the specific code enum for more\ndetails on this field. For example:\n- “project:<project-id or project-number>”\n- “folder:<folder-id>”\n- “organization:<organization-id>”"]
+        #[doc = "Subject to whom this error applies. See the specific code enum for more\ndetails on this field. For example:\n\n* \"project:<project-id or project-number>\"\n* \"folder:<folder-id>\"\n* \"organization:<organization-id>\""]
         #[serde(
             rename = "subject",
             default,

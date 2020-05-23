@@ -387,6 +387,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub code_bucket: ::std::option::Option<String>,
+        #[doc = "The type of the Cloud Firestore or Cloud Datastore database associated with this application."]
+        #[serde(
+            rename = "databaseType",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub database_type: ::std::option::Option<crate::schemas::ApplicationDatabaseType>,
         #[doc = "Google Cloud Storage bucket that can be used by this application to store content.@OutputOnly"]
         #[serde(
             rename = "defaultBucket",
@@ -470,6 +477,93 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for Application {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum ApplicationDatabaseType {
+        #[doc = "Cloud Datastore"]
+        CloudDatastore,
+        #[doc = "Cloud Firestore in Datastore Mode"]
+        CloudDatastoreCompatibility,
+        #[doc = "Cloud Firestore Native"]
+        CloudFirestore,
+        #[doc = "Database type is unspecified."]
+        DatabaseTypeUnspecified,
+    }
+    impl ApplicationDatabaseType {
+        pub fn as_str(self) -> &'static str {
+            match self {
+                ApplicationDatabaseType::CloudDatastore => "CLOUD_DATASTORE",
+                ApplicationDatabaseType::CloudDatastoreCompatibility => {
+                    "CLOUD_DATASTORE_COMPATIBILITY"
+                }
+                ApplicationDatabaseType::CloudFirestore => "CLOUD_FIRESTORE",
+                ApplicationDatabaseType::DatabaseTypeUnspecified => "DATABASE_TYPE_UNSPECIFIED",
+            }
+        }
+    }
+    impl ::std::convert::AsRef<str> for ApplicationDatabaseType {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for ApplicationDatabaseType {
+        type Err = ();
+        fn from_str(s: &str) -> ::std::result::Result<ApplicationDatabaseType, ()> {
+            Ok(match s {
+                "CLOUD_DATASTORE" => ApplicationDatabaseType::CloudDatastore,
+                "CLOUD_DATASTORE_COMPATIBILITY" => {
+                    ApplicationDatabaseType::CloudDatastoreCompatibility
+                }
+                "CLOUD_FIRESTORE" => ApplicationDatabaseType::CloudFirestore,
+                "DATABASE_TYPE_UNSPECIFIED" => ApplicationDatabaseType::DatabaseTypeUnspecified,
+                _ => return Err(()),
+            })
+        }
+    }
+    impl ::std::fmt::Display for ApplicationDatabaseType {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for ApplicationDatabaseType {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de> for ApplicationDatabaseType {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok(match value {
+                "CLOUD_DATASTORE" => ApplicationDatabaseType::CloudDatastore,
+                "CLOUD_DATASTORE_COMPATIBILITY" => {
+                    ApplicationDatabaseType::CloudDatastoreCompatibility
+                }
+                "CLOUD_FIRESTORE" => ApplicationDatabaseType::CloudFirestore,
+                "DATABASE_TYPE_UNSPECIFIED" => ApplicationDatabaseType::DatabaseTypeUnspecified,
+                _ => {
+                    return Err(::serde::de::Error::custom(format!(
+                        "invalid enum for #name: {}",
+                        value
+                    )))
+                }
+            })
+        }
+    }
+    impl ::google_field_selector::FieldSelector for ApplicationDatabaseType {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ApplicationDatabaseType {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }

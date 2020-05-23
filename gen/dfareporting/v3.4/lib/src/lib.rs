@@ -9850,7 +9850,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct CustomEvent {
-        #[doc = "Annotate an impression. This field is mutually exclusive with insertEvent and annotateImpressionEvent. This or insertEvent and annotateImpressionEvent is a required field."]
+        #[doc = "Annotate a click event. This field is mutually exclusive with insertEvent and annotateImpressionEvent. This or insertEvent and annotateImpressionEvent is a required field."]
         #[serde(
             rename = "annotateClickEvent",
             default,
@@ -9887,7 +9887,7 @@ pub mod schemas {
         )]
         #[serde(with = "crate::parsed_string")]
         pub floodlight_configuration_id: ::std::option::Option<i64>,
-        #[doc = "Annotate an impression. This field is mutually exclusive with annotateClickEvent and annotateImpressionEvent. This or annotateClickEvent and annotateImpressionEvent is a required field."]
+        #[doc = "Insert custom event. This field is mutually exclusive with annotateClickEvent and annotateImpressionEvent. This or annotateClickEvent and annotateImpressionEvent is a required field."]
         #[serde(
             rename = "insertEvent",
             default,
@@ -13433,6 +13433,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct File {
+        #[doc = "The date range for which the file has report data. The date range will always be the absolute date range for which the report is run."]
         #[serde(
             rename = "dateRange",
             default,
@@ -13459,7 +13460,7 @@ pub mod schemas {
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
-        pub format: ::std::option::Option<String>,
+        pub format: ::std::option::Option<crate::schemas::FileFormat>,
         #[doc = "The unique ID of this report file."]
         #[serde(
             rename = "id",
@@ -13497,7 +13498,7 @@ pub mod schemas {
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
-        pub status: ::std::option::Option<String>,
+        pub status: ::std::option::Option<crate::schemas::FileStatus>,
         #[doc = "The URLs where the completed report file can be downloaded."]
         #[serde(
             rename = "urls",
@@ -13512,6 +13513,152 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for File {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum FileFormat {
+        Csv,
+        Excel,
+    }
+    impl FileFormat {
+        pub fn as_str(self) -> &'static str {
+            match self {
+                FileFormat::Csv => "CSV",
+                FileFormat::Excel => "EXCEL",
+            }
+        }
+    }
+    impl ::std::convert::AsRef<str> for FileFormat {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for FileFormat {
+        type Err = ();
+        fn from_str(s: &str) -> ::std::result::Result<FileFormat, ()> {
+            Ok(match s {
+                "CSV" => FileFormat::Csv,
+                "EXCEL" => FileFormat::Excel,
+                _ => return Err(()),
+            })
+        }
+    }
+    impl ::std::fmt::Display for FileFormat {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for FileFormat {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de> for FileFormat {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok(match value {
+                "CSV" => FileFormat::Csv,
+                "EXCEL" => FileFormat::Excel,
+                _ => {
+                    return Err(::serde::de::Error::custom(format!(
+                        "invalid enum for #name: {}",
+                        value
+                    )))
+                }
+            })
+        }
+    }
+    impl ::google_field_selector::FieldSelector for FileFormat {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for FileFormat {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum FileStatus {
+        Cancelled,
+        Failed,
+        Processing,
+        ReportAvailable,
+    }
+    impl FileStatus {
+        pub fn as_str(self) -> &'static str {
+            match self {
+                FileStatus::Cancelled => "CANCELLED",
+                FileStatus::Failed => "FAILED",
+                FileStatus::Processing => "PROCESSING",
+                FileStatus::ReportAvailable => "REPORT_AVAILABLE",
+            }
+        }
+    }
+    impl ::std::convert::AsRef<str> for FileStatus {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for FileStatus {
+        type Err = ();
+        fn from_str(s: &str) -> ::std::result::Result<FileStatus, ()> {
+            Ok(match s {
+                "CANCELLED" => FileStatus::Cancelled,
+                "FAILED" => FileStatus::Failed,
+                "PROCESSING" => FileStatus::Processing,
+                "REPORT_AVAILABLE" => FileStatus::ReportAvailable,
+                _ => return Err(()),
+            })
+        }
+    }
+    impl ::std::fmt::Display for FileStatus {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for FileStatus {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de> for FileStatus {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok(match value {
+                "CANCELLED" => FileStatus::Cancelled,
+                "FAILED" => FileStatus::Failed,
+                "PROCESSING" => FileStatus::Processing,
+                "REPORT_AVAILABLE" => FileStatus::ReportAvailable,
+                _ => {
+                    return Err(::serde::de::Error::custom(format!(
+                        "invalid enum for #name: {}",
+                        value
+                    )))
+                }
+            })
+        }
+    }
+    impl ::google_field_selector::FieldSelector for FileStatus {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for FileStatus {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -13574,6 +13721,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub etag: ::std::option::Option<String>,
+        #[doc = "The files returned in this response."]
         #[serde(
             rename = "items",
             default,

@@ -15,7 +15,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         let mut app = App::new("compute1")
             .setting(clap::AppSettings::ColoredHelp)
             .author("Sebastian Thiel <byronimo@gmail.com>")
-            .version("0.1.0-20200331")
+            .version("0.1.0-20200427")
             .about("Creates and runs virtual machines on Google Cloud Platform.")
             .after_help("All documentation details can be found at <TODO figure out URL>")
             .arg(Arg::with_name("scope")
@@ -1483,7 +1483,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         }
         let mut region_disks0 = SubCommand::with_name("region_disks")
                         .setting(AppSettings::ColoredHelp)
-                        .about("methods: add_resource_policies, create_snapshot, delete, get, insert, list, remove_resource_policies, resize, set_labels and test_iam_permissions");
+                        .about("methods: add_resource_policies, create_snapshot, delete, get, get_iam_policy, insert, list, remove_resource_policies, resize, set_iam_policy, set_labels and test_iam_permissions");
         {
             let mcmd = SubCommand::with_name("add_resource_policies").about("Adds existing resource policies to a regional disk. You can only add one policy which will be applied to this disk for scheduling snapshot creation.");
             region_disks0 = region_disks0.subcommand(mcmd);
@@ -1500,6 +1500,10 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         {
             let mcmd =
                 SubCommand::with_name("get").about("Returns a specified regional persistent disk.");
+            region_disks0 = region_disks0.subcommand(mcmd);
+        }
+        {
+            let mcmd = SubCommand::with_name("get_iam_policy").about("Gets the access control policy for a resource. May be empty if no such policy or resource exists.");
             region_disks0 = region_disks0.subcommand(mcmd);
         }
         {
@@ -1520,6 +1524,10 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         {
             let mcmd = SubCommand::with_name("resize")
                 .about("Resizes the specified regional persistent disk.");
+            region_disks0 = region_disks0.subcommand(mcmd);
+        }
+        {
+            let mcmd = SubCommand::with_name("set_iam_policy").about("Sets the access control policy on the specified resource. Replaces any existing policy.");
             region_disks0 = region_disks0.subcommand(mcmd);
         }
         {

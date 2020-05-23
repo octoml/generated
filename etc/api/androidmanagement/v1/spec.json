@@ -7,7 +7,7 @@
   "canonicalName": "Android Management",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200427",
+  "revision": "20200504",
   "title": "Android Management API",
   "description": "The Android Management API provides remote enterprise management of Android devices and apps.",
   "ownerDomain": "google.com",

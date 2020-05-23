@@ -1,69 +1,35 @@
 {
   "kind": "discovery#restDescription",
-  "etag": null,
+  "etag": "\"u9GIe6H63LSGq-9_t39K2Zx_EAc/FivGHh5u6W1RctbrVrrDR-2aAQM\"",
   "discoveryVersion": "v1",
   "id": "books:v1",
   "name": "books",
   "canonicalName": null,
   "fullyEncodeReservedExpansion": null,
   "version": "v1",
-  "revision": "20200506",
+  "revision": "20200310",
   "title": "Books API",
-  "description": "The Google Books API allows clients to access the Google Books repository.",
+  "description": "Searches for books and manages your Google Books library.",
   "ownerDomain": "google.com",
   "ownerName": "Google",
   "icons": {
-    "x16": "http://www.google.com/images/icons/product/search-16.gif",
-    "x32": "http://www.google.com/images/icons/product/search-32.gif"
+    "x16": "https://www.google.com/images/icons/product/ebooks-16.png",
+    "x32": "https://www.google.com/images/icons/product/ebooks-32.png"
   },
-  "documentationLink": "https://code.google.com/apis/books/docs/v1/getting_started.html",
+  "documentationLink": "https://developers.google.com/books/docs/v1/getting_started",
   "protocol": "rest",
-  "baseUrl": "https://books.googleapis.com/",
-  "basePath": "",
-  "rootUrl": "https://books.googleapis.com/",
-  "servicePath": "",
-  "batchPath": "batch",
-  "version_module": true,
+  "baseUrl": "https://www.googleapis.com/books/v1/",
+  "basePath": "/books/v1/",
+  "rootUrl": "https://www.googleapis.com/",
+  "servicePath": "books/v1/",
+  "batchPath": "batch/books/v1",
+  "version_module": null,
   "packagePath": null,
   "labels": null,
   "features": null,
   "parameters": {
-    "$.xgafv": {
-      "description": "V1 error format.",
-      "default": null,
-      "location": "query",
-      "required": false,
-      "type": "string",
-      "format": null,
-      "minimum": null,
-      "maximum": null,
-      "pattern": null,
-      "enum": [
-        "1",
-        "2"
-      ],
-      "enumDescriptions": [
-        "v1 error format",
-        "v2 error format"
-      ],
-      "repeated": false
-    },
-    "access_token": {
-      "description": "OAuth access token.",
-      "default": null,
-      "location": "query",
-      "required": false,
-      "type": "string",
-      "format": null,
-      "minimum": null,
-      "maximum": null,
-      "pattern": null,
-      "enum": [],
-      "enumDescriptions": [],
-      "repeated": false
-    },
     "alt": {
-      "description": "Data format for response.",
+      "description": "Data format for the response.",
       "default": "json",
       "location": "query",
       "required": false,
@@ -73,29 +39,11 @@
       "maximum": null,
       "pattern": null,
       "enum": [
-        "json",
-        "media",
-        "proto"
+        "json"
       ],
       "enumDescriptions": [
-        "Responses with Content-Type of application/json",
-        "Media download with context-dependent Content-Type",
-        "Responses with Content-Type of application/x-protobuf"
+        "Responses with Content-Type of application/json"
       ],
-      "repeated": false
-    },
-    "callback": {
-      "description": "JSONP",
-      "default": null,
-      "location": "query",
-      "required": false,
-      "type": "string",
-      "format": null,
-      "minimum": null,
-      "maximum": null,
-      "pattern": null,
-      "enum": [],
-      "enumDescriptions": [],
       "repeated": false
     },
     "fields": {
@@ -155,7 +103,7 @@
       "repeated": false
     },
     "quotaUser": {
-      "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.",
+      "description": "An opaque string that represents a user for quota purposes. Must not exceed 40 characters.",
       "default": null,
       "location": "query",
       "required": false,
@@ -168,22 +116,8 @@
       "enumDescriptions": [],
       "repeated": false
     },
-    "uploadType": {
-      "description": "Legacy upload protocol for media (e.g. \"media\", \"multipart\").",
-      "default": null,
-      "location": "query",
-      "required": false,
-      "type": "string",
-      "format": null,
-      "minimum": null,
-      "maximum": null,
-      "pattern": null,
-      "enum": [],
-      "enumDescriptions": [],
-      "repeated": false
-    },
-    "upload_protocol": {
-      "description": "Upload protocol for media (e.g. \"raw\", \"multipart\").",
+    "userIp": {
+      "description": "Deprecated. Please use quotaUser instead.",
       "default": null,
       "location": "query",
       "required": false,
@@ -216,7 +150,7 @@
       "enumDescriptions": [],
       "properties": {
         "afterSelectedText": {
-          "description": "Anchor text after excerpt. For requests, if the user bookmarked a screen\nthat has no flowing text on it, then this field should be empty.",
+          "description": "Anchor text after excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -226,7 +160,7 @@
           "items": null
         },
         "beforeSelectedText": {
-          "description": "Anchor text before excerpt. For requests, if the user bookmarked a screen\nthat has no flowing text on it, then this field should be empty.",
+          "description": "Anchor text before excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -275,7 +209,7 @@
         "created": {
           "description": "Timestamp for the created time of this annotation.",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -387,7 +321,7 @@
           "enumDescriptions": [],
           "properties": {
             "allowedCharacterCount": {
-              "description": "Maximum allowed characters on this layer, especially for the \"copy\"\nlayer.",
+              "description": "Maximum allowed characters on this layer, especially for the \"copy\" layer.",
               "type": "integer",
               "format": "int32",
               "enum": [],
@@ -397,7 +331,7 @@
               "items": null
             },
             "limitType": {
-              "description": "Type of limitation on this layer. \"limited\" or \"unlimited\" for the \"copy\"\nlayer.",
+              "description": "Type of limitation on this layer. \"limited\" or \"unlimited\" for the \"copy\" layer.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -407,7 +341,7 @@
               "items": null
             },
             "remainingCharacterCount": {
-              "description": "Remaining allowed characters on this layer, especially for the \"copy\"\nlayer.",
+              "description": "Remaining allowed characters on this layer, especially for the \"copy\" layer.",
               "type": "integer",
               "format": "int32",
               "enum": [],
@@ -461,7 +395,7 @@
         "updated": {
           "description": "Timestamp for the last time this annotation was modified.",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -470,6 +404,108 @@
         },
         "volumeId": {
           "description": "The volume that this annotation belongs to.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        }
+      },
+      "additionalProperties": null,
+      "items": null
+    },
+    "Annotationdata": {
+      "id": "Annotationdata",
+      "description": null,
+      "type": "object",
+      "format": null,
+      "enum": [],
+      "enumDescriptions": [],
+      "properties": {
+        "annotationType": {
+          "description": "The type of annotation this data is for.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "data": {
+          "description": null,
+          "type": "any",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "encoded_data": {
+          "description": "Base64 encoded data for this annotation data.",
+          "type": "string",
+          "format": "byte",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "id": {
+          "description": "Unique id for this annotation data.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "kind": {
+          "description": "Resource Type",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "layerId": {
+          "description": "The Layer id for this data. *",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "selfLink": {
+          "description": "URL for this resource. *",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "updated": {
+          "description": "Timestamp for the last time this data was updated. (RFC 3339 UTC date-time format).",
+          "type": "string",
+          "format": "date-time",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "volumeId": {
+          "description": "The volume id for this data. *",
           "type": "string",
           "format": null,
           "enum": [],
@@ -513,7 +549,7 @@
           "items": null
         },
         "nextPageToken": {
-          "description": "Token to pass in for pagination for the next page. This will not be present\nif this request does not have more results.",
+          "description": "Token to pass in for pagination for the next page. This will not be present if this request does not have more results.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -523,7 +559,7 @@
           "items": null
         },
         "totalItems": {
-          "description": "Total number of annotations found. This may be greater than the number of\nnotes returned in this response if results have been paginated.",
+          "description": "Total number of annotations found. This may be greater than the number of notes returned in this response if results have been paginated.",
           "type": "integer",
           "format": "int32",
           "enum": [],
@@ -611,7 +647,7 @@
               "updated": {
                 "description": null,
                 "type": "string",
-                "format": null,
+                "format": "date-time",
                 "enum": [],
                 "enumDescriptions": [],
                 "properties": {},
@@ -644,7 +680,7 @@
           "properties": {},
           "additionalProperties": null,
           "items": {
-            "$ref": "GeoAnnotationdata"
+            "$ref": "Annotationdata"
           }
         },
         "kind": {
@@ -658,7 +694,7 @@
           "items": null
         },
         "nextPageToken": {
-          "description": "Token to pass in for pagination for the next page. This will not be present\nif this request does not have more results.",
+          "description": "Token to pass in for pagination for the next page. This will not be present if this request does not have more results.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -785,6 +821,58 @@
       "additionalProperties": null,
       "items": null
     },
+    "BooksSubscriptionReleaseInfo": {
+      "id": "BooksSubscriptionReleaseInfo",
+      "description": null,
+      "type": "object",
+      "format": null,
+      "enum": [],
+      "enumDescriptions": [],
+      "properties": {
+        "amountInMicros": {
+          "description": "Amount in micros of the specified currency code.",
+          "type": "string",
+          "format": "int64",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "currencyCode": {
+          "description": "Currency code of the amount.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "releaseNumber": {
+          "description": "The release number of this issue/volume/book.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "releaseTimestampUs": {
+          "description": "The release date.",
+          "type": "string",
+          "format": "int64",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        }
+      },
+      "additionalProperties": null,
+      "items": null
+    },
     "BooksVolumesRecommendedRateResponse": {
       "id": "BooksVolumesRecommendedRateResponse",
       "description": null,
@@ -826,9 +914,9 @@
           "items": null
         },
         "created": {
-          "description": "Created time for this bookshelf (formatted UTC timestamp with millisecond\nresolution).",
+          "description": "Created time for this bookshelf (formatted UTC timestamp with millisecond resolution).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -886,9 +974,9 @@
           "items": null
         },
         "updated": {
-          "description": "Last modified time of this bookshelf (formatted UTC timestamp with\nmillisecond resolution).",
+          "description": "Last modified time of this bookshelf (formatted UTC timestamp with millisecond resolution).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -906,9 +994,9 @@
           "items": null
         },
         "volumesLastUpdated": {
-          "description": "Last time a volume was added or removed from this bookshelf (formatted UTC\ntimestamp with millisecond resolution).",
+          "description": "Last time a volume was added or removed from this bookshelf (formatted UTC timestamp with millisecond resolution).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -1113,7 +1201,7 @@
           "items": null
         },
         "source": {
-          "description": "Client app identifier for verification. Download access and\nclient-validation only.",
+          "description": "Client app identifier for verification. Download access and client-validation only.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -1146,102 +1234,6 @@
       "additionalProperties": null,
       "items": null
     },
-    "DictionaryAnnotationdata": {
-      "id": "DictionaryAnnotationdata",
-      "description": null,
-      "type": "object",
-      "format": null,
-      "enum": [],
-      "enumDescriptions": [],
-      "properties": {
-        "annotationType": {
-          "description": "The type of annotation this data is for.",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "data": {
-          "description": "JSON encoded data for this dictionary annotation data.\nEmitted with name 'data' in JSON output. Either this or geo_data will\nbe populated.",
-          "$ref": "Dictlayerdata"
-        },
-        "encodedData": {
-          "description": "Base64 encoded data for this annotation data.",
-          "type": "string",
-          "format": "byte",
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "id": {
-          "description": "Unique id for this annotation data.",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "kind": {
-          "description": "Resource Type",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "layerId": {
-          "description": "The Layer id for this data. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "selfLink": {
-          "description": "URL for this resource. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "updated": {
-          "description": "Timestamp for the last time this data was updated. (RFC 3339 UTC date-time\nformat).",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "volumeId": {
-          "description": "The volume id for this data. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        }
-      },
-      "additionalProperties": null,
-      "items": null
-    },
     "Dictlayerdata": {
       "id": "Dictlayerdata",
       "description": null,
@@ -1258,7 +1250,7 @@
           "enumDescriptions": [],
           "properties": {
             "title": {
-              "description": "The display title and localized canonical name to use when searching for\nthis entity on Google search.",
+              "description": "The display title and localized canonical name to use when searching for this entity on Google search.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -1722,7 +1714,7 @@
                     }
                   },
                   "source": {
-                    "description": "The words with different meanings but not related words, e.g. \"go\"\n(game) and \"go\" (verb).",
+                    "description": "The words with different meanings but not related words, e.g. \"go\" (game) and \"go\" (verb).",
                     "type": "object",
                     "format": null,
                     "enum": [],
@@ -1968,7 +1960,7 @@
           "items": null
         },
         "downloadsAcquired": {
-          "description": "If restricted, the number of content download licenses already acquired\n(including the requesting client, if licensed).",
+          "description": "If restricted, the number of content download licenses already acquired (including the requesting client, if licensed).",
           "type": "integer",
           "format": "int32",
           "enum": [],
@@ -1998,7 +1990,7 @@
           "items": null
         },
         "maxDownloadDevices": {
-          "description": "If restricted, the maximum number of content download licenses for this\nvolume.",
+          "description": "If restricted, the maximum number of content download licenses for this volume.",
           "type": "integer",
           "format": "int32",
           "enum": [],
@@ -2028,7 +2020,7 @@
           "items": null
         },
         "reasonCode": {
-          "description": "Error/warning reason code.  Additional codes may be added in the future. 0\nOK 100   ACCESS_DENIED_PUBLISHER_LIMIT 101   ACCESS_DENIED_LIMIT 200\nWARNING_USED_LAST_ACCESS",
+          "description": "Error/warning reason code. Additional codes may be added in the future. 0 OK 100 ACCESS_DENIED_PUBLISHER_LIMIT 101 ACCESS_DENIED_LIMIT 200 WARNING_USED_LAST_ACCESS",
           "type": "string",
           "format": null,
           "enum": [],
@@ -2058,7 +2050,7 @@
           "items": null
         },
         "source": {
-          "description": "Client app identifier for verification. Download access and\nclient-validation only.",
+          "description": "Client app identifier for verification. Download access and client-validation only.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -2112,17 +2104,6 @@
           "items": null
         }
       },
-      "additionalProperties": null,
-      "items": null
-    },
-    "Empty": {
-      "id": "Empty",
-      "description": "A generic empty message that you can re-use to avoid defining duplicated\nempty messages in your APIs. A typical example is to use it as the request\nor the response type of an API method. For instance:\n\n    service Foo {\n      rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty);\n    }\n\nThe JSON representation for `Empty` is empty JSON object `{}`.",
-      "type": "object",
-      "format": null,
-      "enum": [],
-      "enumDescriptions": [],
-      "properties": {},
       "additionalProperties": null,
       "items": null
     },
@@ -2209,102 +2190,6 @@
       "additionalProperties": null,
       "items": null
     },
-    "GeoAnnotationdata": {
-      "id": "GeoAnnotationdata",
-      "description": null,
-      "type": "object",
-      "format": null,
-      "enum": [],
-      "enumDescriptions": [],
-      "properties": {
-        "annotationType": {
-          "description": "The type of annotation this data is for.",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "data": {
-          "description": "JSON encoded data for this geo annotation data.\nEmitted with name 'data' in JSON output. Either this or dict_data will\nbe populated.",
-          "$ref": "Geolayerdata"
-        },
-        "encodedData": {
-          "description": "Base64 encoded data for this annotation data.",
-          "type": "string",
-          "format": "byte",
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "id": {
-          "description": "Unique id for this annotation data.",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "kind": {
-          "description": "Resource Type",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "layerId": {
-          "description": "The Layer id for this data. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "selfLink": {
-          "description": "URL for this resource. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "updated": {
-          "description": "Timestamp for the last time this data was updated. (RFC 3339 UTC date-time\nformat).",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        },
-        "volumeId": {
-          "description": "The volume id for this data. *",
-          "type": "string",
-          "format": null,
-          "enum": [],
-          "enumDescriptions": [],
-          "properties": {},
-          "additionalProperties": null,
-          "items": null
-        }
-      },
-      "additionalProperties": null,
-      "items": null
-    },
     "Geolayerdata": {
       "id": "Geolayerdata",
       "description": null,
@@ -2361,7 +2246,7 @@
               "items": null
             },
             "title": {
-              "description": "The display title and localized canonical name to use when searching for\nthis entity on Google search.",
+              "description": "The display title and localized canonical name to use when searching for this entity on Google search.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -2382,7 +2267,7 @@
           "enumDescriptions": [],
           "properties": {
             "boundary": {
-              "description": "The boundary of the location as a set of loops containing pairs of\nlatitude, longitude coordinates.",
+              "description": "The boundary of the location as a set of loops containing pairs of latitude, longitude coordinates.",
               "type": "array",
               "format": null,
               "enum": [],
@@ -2390,17 +2275,46 @@
               "properties": {},
               "additionalProperties": null,
               "items": {
-                "type": "string",
+                "type": "array",
                 "format": null,
                 "enum": [],
                 "enumDescriptions": [],
                 "properties": {},
                 "additionalProperties": null,
-                "items": null
+                "items": {
+                  "type": "object",
+                  "format": null,
+                  "enum": [],
+                  "enumDescriptions": [],
+                  "properties": {
+                    "latitude": {
+                      "description": null,
+                      "type": "integer",
+                      "format": "uint32",
+                      "enum": [],
+                      "enumDescriptions": [],
+                      "properties": {},
+                      "additionalProperties": null,
+                      "items": null
+                    },
+                    "longitude": {
+                      "description": null,
+                      "type": "integer",
+                      "format": "uint32",
+                      "enum": [],
+                      "enumDescriptions": [],
+                      "properties": {},
+                      "additionalProperties": null,
+                      "items": null
+                    }
+                  },
+                  "additionalProperties": null,
+                  "items": null
+                }
               }
             },
             "cachePolicy": {
-              "description": "The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED,\nNEVER",
+              "description": "The cache policy active for this data. EX: UNRESTRICTED, RESTRICTED, NEVER",
               "type": "string",
               "format": null,
               "enum": [],
@@ -2440,7 +2354,7 @@
               "items": null
             },
             "mapType": {
-              "description": "The type of map that should be used for this location. EX: HYBRID,\nROADMAP, SATELLITE, TERRAIN",
+              "description": "The type of map that should be used for this location. EX: HYBRID, ROADMAP, SATELLITE, TERRAIN",
               "type": "string",
               "format": null,
               "enum": [],
@@ -2450,7 +2364,7 @@
               "items": null
             },
             "viewport": {
-              "description": "The viewport for showing this location. This is a latitude, longitude\nrectangle.",
+              "description": "The viewport for showing this location. This is a latitude, longitude rectangle.",
               "type": "object",
               "format": null,
               "enum": [],
@@ -2523,7 +2437,7 @@
               "items": null
             },
             "zoom": {
-              "description": "The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom\nlevel, in which the entire world can be seen on one map) to 21+ (down to\nindividual buildings). See: https:\n//developers.google.com/maps/documentation/staticmaps/#Zoomlevels",
+              "description": "The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) to 21+ (down to individual buildings). See: https://developers.google.com/maps/documentation/staticmaps/#Zoomlevels",
               "type": "integer",
               "format": "int32",
               "enum": [],
@@ -2711,9 +2625,9 @@
           "items": null
         },
         "updated": {
-          "description": "Timestamp for the last time an item in this layer was updated. (RFC 3339\nUTC date-time format).",
+          "description": "Timestamp for the last time an item in this layer was updated. (RFC 3339 UTC date-time format).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -2721,7 +2635,7 @@
           "items": null
         },
         "volumeAnnotationsVersion": {
-          "description": "The current version of this layer's volume annotations. Note that this\nversion applies only to the data in the books.layers.volumeAnnotations.*\nresponses. The actual annotation data is versioned separately.",
+          "description": "The current version of this layer's volume annotations. Note that this version applies only to the data in the books.layers.volumeAnnotations.* responses. The actual annotation data is versioned separately.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -3224,9 +3138,9 @@
           "items": null
         },
         "updated": {
-          "description": "Timestamp when this reading position was last updated (formatted UTC\ntimestamp with millisecond resolution).",
+          "description": "Timestamp when this reading position was last updated (formatted UTC timestamp with millisecond resolution).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -3247,8 +3161,8 @@
       "additionalProperties": null,
       "items": null
     },
-    "RequestAccessData": {
-      "id": "RequestAccessData",
+    "RequestAccess": {
+      "id": "RequestAccess",
       "description": null,
       "type": "object",
       "format": null,
@@ -3347,7 +3261,7 @@
           "items": null
         },
         "rating": {
-          "description": "Star rating for this review. Possible values are ONE, TWO, THREE, FOUR,\nFIVE or NOT_RATED.",
+          "description": "Star rating for this review. Possible values are ONE, TWO, THREE, FOUR, FIVE or NOT_RATED.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -3357,7 +3271,7 @@
           "items": null
         },
         "source": {
-          "description": "Information regarding the source of this review, when the review is not\nfrom a Google Books user.",
+          "description": "Information regarding the source of this review, when the review is not from a Google Books user.",
           "type": "object",
           "format": null,
           "enum": [],
@@ -3408,7 +3322,7 @@
           "items": null
         },
         "type": {
-          "description": "Source type for this review. Possible values are EDITORIAL, WEB_USER or\nGOOGLE_USER.",
+          "description": "Source type for this review. Possible values are EDITORIAL, WEB_USER or GOOGLE_USER.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -3530,10 +3444,10 @@
                 "enum": [],
                 "enumDescriptions": [],
                 "properties": {
-                  "cancelTime": {
-                    "description": null,
+                  "cancellationTimestampUs": {
+                    "description": "Cancellation date of the series subscription (or when it ends).",
                     "type": "string",
-                    "format": null,
+                    "format": "int64",
                     "enum": [],
                     "enumDescriptions": [],
                     "properties": {},
@@ -3541,109 +3455,15 @@
                     "items": null
                   },
                   "currentReleaseInfo": {
-                    "description": null,
-                    "type": "object",
-                    "format": null,
-                    "enum": [],
-                    "enumDescriptions": [],
-                    "properties": {
-                      "amountInMicros": {
-                        "description": null,
-                        "type": "number",
-                        "format": "double",
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "currencyCode": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "releaseNumber": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "releaseTime": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      }
-                    },
-                    "additionalProperties": null,
-                    "items": null
+                    "description": "Release information for the last release.",
+                    "$ref": "BooksSubscriptionReleaseInfo"
                   },
                   "nextReleaseInfo": {
-                    "description": null,
-                    "type": "object",
-                    "format": null,
-                    "enum": [],
-                    "enumDescriptions": [],
-                    "properties": {
-                      "amountInMicros": {
-                        "description": null,
-                        "type": "number",
-                        "format": "double",
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "currencyCode": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "releaseNumber": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      },
-                      "releaseTime": {
-                        "description": null,
-                        "type": "string",
-                        "format": null,
-                        "enum": [],
-                        "enumDescriptions": [],
-                        "properties": {},
-                        "additionalProperties": null,
-                        "items": null
-                      }
-                    },
-                    "additionalProperties": null,
-                    "items": null
+                    "description": "Release information for the next release.",
+                    "$ref": "BooksSubscriptionReleaseInfo"
                   },
                   "seriesSubscriptionType": {
-                    "description": null,
+                    "description": "series subscription type.",
                     "type": "string",
                     "format": null,
                     "enum": [],
@@ -3917,14 +3737,14 @@
       "enumDescriptions": [],
       "properties": {
         "accessInfo": {
-          "description": "Any information about a volume related to reading or obtaining that volume\ntext. This information can depend on country (books may be public domain in\none country but not in another, e.g.).",
+          "description": "Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in one country but not in another, e.g.).",
           "type": "object",
           "format": null,
           "enum": [],
           "enumDescriptions": [],
           "properties": {
             "accessViewStatus": {
-              "description": "Combines the access and viewability of this volume into a single status\nfield for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN,\nSAMPLE or NONE. (In LITE projection.)",
+              "description": "Combines the access and viewability of this volume into a single status field for this user. Values can be FULL_PURCHASED, FULL_PUBLIC_DOMAIN, SAMPLE or NONE. (In LITE projection.)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -3934,7 +3754,7 @@
               "items": null
             },
             "country": {
-              "description": "The two-letter ISO_3166-1 country code for which this access information\nis valid. (In LITE projection.)",
+              "description": "The two-letter ISO_3166-1 country code for which this access information is valid. (In LITE projection.)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -3948,7 +3768,7 @@
               "$ref": "DownloadAccessRestriction"
             },
             "driveImportedContentLink": {
-              "description": "URL to the Google Drive viewer if this volume is uploaded by the user by\nselecting the file from Google Drive.",
+              "description": "URL to the Google Drive viewer if this volume is uploaded by the user by selecting the file from Google Drive.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -3958,7 +3778,7 @@
               "items": null
             },
             "embeddable": {
-              "description": "Whether this volume can be embedded in a viewport using the Embedded\nViewer API.",
+              "description": "Whether this volume can be embedded in a viewport using the Embedded Viewer API.",
               "type": "boolean",
               "format": null,
               "enum": [],
@@ -3995,7 +3815,7 @@
                   "items": null
                 },
                 "isAvailable": {
-                  "description": "Is a flowing text epub available either as public domain or for\npurchase. (In LITE projection.)",
+                  "description": "Is a flowing text epub available either as public domain or for purchase. (In LITE projection.)",
                   "type": "boolean",
                   "format": null,
                   "enum": [],
@@ -4009,7 +3829,7 @@
               "items": null
             },
             "explicitOfflineLicenseManagement": {
-              "description": "Whether this volume requires that the client explicitly request offline\ndownload license rather than have it done automatically when loading the\ncontent, if the client supports it.",
+              "description": "Whether this volume requires that the client explicitly request offline download license rather than have it done automatically when loading the content, if the client supports it.",
               "type": "boolean",
               "format": null,
               "enum": [],
@@ -4046,7 +3866,7 @@
                   "items": null
                 },
                 "isAvailable": {
-                  "description": "Is a scanned image pdf available either as public domain or for\npurchase. (In LITE projection.)",
+                  "description": "Is a scanned image pdf available either as public domain or for purchase. (In LITE projection.)",
                   "type": "boolean",
                   "format": null,
                   "enum": [],
@@ -4080,7 +3900,7 @@
               "items": null
             },
             "textToSpeechPermission": {
-              "description": "Whether text-to-speech is permitted for this volume. Values can be\nALLOWED, ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.",
+              "description": "Whether text-to-speech is permitted for this volume. Values can be ALLOWED, ALLOWED_FOR_ACCESSIBILITY, or NOT_ALLOWED.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4090,7 +3910,7 @@
               "items": null
             },
             "viewOrderUrl": {
-              "description": "For ordered but not yet processed orders, we give a URL that can be used\nto go to the appropriate Google Wallet page.",
+              "description": "For ordered but not yet processed orders, we give a URL that can be used to go to the appropriate Google Wallet page.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4100,7 +3920,7 @@
               "items": null
             },
             "viewability": {
-              "description": "The read access of a volume. Possible values are PARTIAL, ALL_PAGES,\nNO_PAGES or UNKNOWN. This value depends on the country listed above. A\nvalue of PARTIAL means that the publisher has allowed some portion of the\nvolume to be viewed publicly, without purchase. This can apply to eBooks\nas well as non-eBooks. Public domain books will always have a value of\nALL_PAGES.",
+              "description": "The read access of a volume. Possible values are PARTIAL, ALL_PAGES, NO_PAGES or UNKNOWN. This value depends on the country listed above. A value of PARTIAL means that the publisher has allowed some portion of the volume to be viewed publicly, without purchase. This can apply to eBooks as well as non-eBooks. Public domain books will always have a value of ALL_PAGES.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4110,7 +3930,7 @@
               "items": null
             },
             "webReaderLink": {
-              "description": "URL to read this volume on the Google Books site. Link will not allow\nusers to read non-viewable volumes.",
+              "description": "URL to read this volume on the Google Books site. Link will not allow users to read non-viewable volumes.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4124,7 +3944,7 @@
           "items": null
         },
         "etag": {
-          "description": "Opaque identifier for a specific version of a volume resource. (In LITE\nprojection)",
+          "description": "Opaque identifier for a specific version of a volume resource. (In LITE projection)",
           "type": "string",
           "format": null,
           "enum": [],
@@ -4185,7 +4005,7 @@
                     "items": null
                   },
                   "volumeAnnotationsVersion": {
-                    "description": "The current version of this layer's volume annotations. Note that this\nversion applies only to the data in the\nbooks.layers.volumeAnnotations.* responses. The actual annotation data\nis versioned separately.",
+                    "description": "The current version of this layer's volume annotations. Note that this version applies only to the data in the books.layers.volumeAnnotations.* responses. The actual annotation data is versioned separately.",
                     "type": "string",
                     "format": null,
                     "enum": [],
@@ -4225,14 +4045,14 @@
           "items": null
         },
         "saleInfo": {
-          "description": "Any information about a volume related to the eBookstore and/or\npurchaseability. This information can depend on the country where the\nrequest originates from (i.e. books may not be for sale in certain\ncountries).",
+          "description": "Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request originates from (i.e. books may not be for sale in certain countries).",
           "type": "object",
           "format": null,
           "enum": [],
           "enumDescriptions": [],
           "properties": {
             "buyLink": {
-              "description": "URL to purchase this volume on the Google Books site. (In LITE\nprojection)",
+              "description": "URL to purchase this volume on the Google Books site. (In LITE projection)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4242,7 +4062,7 @@
               "items": null
             },
             "country": {
-              "description": "The two-letter ISO_3166-1 country code for which this sale information is\nvalid. (In LITE projection.)",
+              "description": "The two-letter ISO_3166-1 country code for which this sale information is valid. (In LITE projection.)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4252,7 +4072,7 @@
               "items": null
             },
             "isEbook": {
-              "description": "Whether or not this volume is an eBook (can be added to the My eBooks\nshelf).",
+              "description": "Whether or not this volume is an eBook (can be added to the My eBooks shelf).",
               "type": "boolean",
               "format": null,
               "enum": [],
@@ -4427,7 +4247,7 @@
             "onSaleDate": {
               "description": "The date on which this book is available for sale.",
               "type": "string",
-              "format": null,
+              "format": "date-time",
               "enum": [],
               "enumDescriptions": [],
               "properties": {},
@@ -4435,7 +4255,7 @@
               "items": null
             },
             "retailPrice": {
-              "description": "The actual selling price of the book. This is the same as the suggested\nretail or list price unless there are offers or discounts on this volume.\n(In LITE projection.)",
+              "description": "The actual selling price of the book. This is the same as the suggested retail or list price unless there are offers or discounts on this volume. (In LITE projection.)",
               "type": "object",
               "format": null,
               "enum": [],
@@ -4466,7 +4286,7 @@
               "items": null
             },
             "saleability": {
-              "description": "Whether or not this book is available for sale or offered for free in the\nGoogle eBookstore for the country listed above. Possible values are\nFOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or\nFOR_PREORDER.",
+              "description": "Whether or not this book is available for sale or offered for free in the Google eBookstore for the country listed above. Possible values are FOR_SALE, FOR_RENTAL_ONLY, FOR_SALE_AND_RENTAL, FREE, NOT_FOR_SALE, or FOR_PREORDER.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4511,16 +4331,16 @@
           "items": null
         },
         "userInfo": {
-          "description": "User specific information related to this volume. (e.g. page this user last\nread or whether they purchased this book)",
+          "description": "User specific information related to this volume. (e.g. page this user last read or whether they purchased this book)",
           "type": "object",
           "format": null,
           "enum": [],
           "enumDescriptions": [],
           "properties": {
             "acquiredTime": {
-              "description": "Timestamp when this volume was acquired by the user. (RFC 3339 UTC\ndate-time format) Acquiring includes purchase, user upload, receiving\nfamily sharing, etc.",
+              "description": "Timestamp when this volume was acquired by the user. (RFC 3339 UTC date-time format) Acquiring includes purchase, user upload, receiving family sharing, etc.",
               "type": "string",
-              "format": null,
+              "format": "date-time",
               "enum": [],
               "enumDescriptions": [],
               "properties": {},
@@ -4577,7 +4397,7 @@
                 "updated": {
                   "description": null,
                   "type": "string",
-                  "format": null,
+                  "format": "date-time",
                   "enum": [],
                   "enumDescriptions": [],
                   "properties": {},
@@ -4616,7 +4436,7 @@
                   "items": null
                 },
                 "isSharingAllowed": {
-                  "description": "Whether or not this volume can be shared with the family by the user.\nThis includes sharing eligibility of both the volume and the user. If\nthe value is true, the user can initiate a family sharing action.",
+                  "description": "Whether or not this volume can be shared with the family by the user. This includes sharing eligibility of both the volume and the user. If the value is true, the user can initiate a family sharing action.",
                   "type": "boolean",
                   "format": null,
                   "enum": [],
@@ -4626,7 +4446,7 @@
                   "items": null
                 },
                 "isSharingDisabledByFop": {
-                  "description": "Whether or not sharing this volume is temporarily disabled due to\nissues with the Family Wallet.",
+                  "description": "Whether or not sharing this volume is temporarily disabled due to issues with the Family Wallet.",
                   "type": "boolean",
                   "format": null,
                   "enum": [],
@@ -4690,7 +4510,7 @@
               "items": null
             },
             "isPreordered": {
-              "description": "Whether or not this volume was pre-ordered by the authenticated user\nmaking the request. (In LITE projection.)",
+              "description": "Whether or not this volume was pre-ordered by the authenticated user making the request. (In LITE projection.)",
               "type": "boolean",
               "format": null,
               "enum": [],
@@ -4700,7 +4520,7 @@
               "items": null
             },
             "isPurchased": {
-              "description": "Whether or not this volume was purchased by the authenticated user making\nthe request. (In LITE projection.)",
+              "description": "Whether or not this volume was purchased by the authenticated user making the request. (In LITE projection.)",
               "type": "boolean",
               "format": null,
               "enum": [],
@@ -4720,7 +4540,7 @@
               "items": null
             },
             "readingPosition": {
-              "description": "The user's current reading position in the volume, if one is available.\n(In LITE projection.)",
+              "description": "The user's current reading position in the volume, if one is available. (In LITE projection.)",
               "$ref": "ReadingPosition"
             },
             "rentalPeriod": {
@@ -4769,9 +4589,9 @@
               "$ref": "Review"
             },
             "updated": {
-              "description": "Timestamp when this volume was last modified by a user action, such as a\nreading position update, volume purchase or writing a review. (RFC 3339\nUTC date-time format).",
+              "description": "Timestamp when this volume was last modified by a user action, such as a reading position update, volume purchase or writing a review. (RFC 3339 UTC date-time format).",
               "type": "string",
-              "format": null,
+              "format": "date-time",
               "enum": [],
               "enumDescriptions": [],
               "properties": {},
@@ -4821,7 +4641,7 @@
               "items": null
             },
             "authors": {
-              "description": "The names of the authors and/or editors for this volume. (In LITE\nprojection)",
+              "description": "The names of the authors and/or editors for this volume. (In LITE projection)",
               "type": "array",
               "format": null,
               "enum": [],
@@ -4887,7 +4707,7 @@
               "items": null
             },
             "contentVersion": {
-              "description": "An identifier for the version of the volume content (text & images). (In\nLITE projection)",
+              "description": "An identifier for the version of the volume content (text & images). (In LITE projection)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4897,7 +4717,7 @@
               "items": null
             },
             "description": {
-              "description": "A synopsis of the volume. The text of the description is formatted in\nHTML and includes simple formatting elements, such as b, i, and br tags.\n(In LITE projection.)",
+              "description": "A synopsis of the volume. The text of the description is formatted in HTML and includes simple formatting elements, such as b, i, and br tags. (In LITE projection.)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -4948,14 +4768,14 @@
               "items": null
             },
             "imageLinks": {
-              "description": "A list of image links for all the sizes that are available. (In LITE\nprojection.)",
+              "description": "A list of image links for all the sizes that are available. (In LITE projection.)",
               "type": "object",
               "format": null,
               "enum": [],
               "enumDescriptions": [],
               "properties": {
                 "extraLarge": {
-                  "description": "Image link for extra large size (width of ~1280 pixels). (In LITE\nprojection)",
+                  "description": "Image link for extra large size (width of ~1280 pixels). (In LITE projection)",
                   "type": "string",
                   "format": null,
                   "enum": [],
@@ -4995,7 +4815,7 @@
                   "items": null
                 },
                 "smallThumbnail": {
-                  "description": "Image link for small thumbnail size (width of ~80 pixels). (In LITE\nprojection)",
+                  "description": "Image link for small thumbnail size (width of ~80 pixels). (In LITE projection)",
                   "type": "string",
                   "format": null,
                   "enum": [],
@@ -5005,7 +4825,7 @@
                   "items": null
                 },
                 "thumbnail": {
-                  "description": "Image link for thumbnail size (width of ~128 pixels). (In LITE\nprojection)",
+                  "description": "Image link for thumbnail size (width of ~128 pixels). (In LITE projection)",
                   "type": "string",
                   "format": null,
                   "enum": [],
@@ -5058,7 +4878,7 @@
               }
             },
             "infoLink": {
-              "description": "URL to view information about this volume on the Google Books site. (In\nLITE projection)",
+              "description": "URL to view information about this volume on the Google Books site. (In LITE projection)",
               "type": "string",
               "format": null,
               "enum": [],
@@ -5068,7 +4888,7 @@
               "items": null
             },
             "language": {
-              "description": "Best language for this volume (based on content). It is the two-letter\nISO 639-1 code such as 'fr', 'en', etc.",
+              "description": "Best language for this volume (based on content). It is the two-letter ISO 639-1 code such as 'fr', 'en', etc.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -5078,7 +4898,7 @@
               "items": null
             },
             "mainCategory": {
-              "description": "The main category to which this volume belongs. It will be the category\nfrom the categories list returned below that has the highest weight.",
+              "description": "The main category to which this volume belongs. It will be the category from the categories list returned below that has the highest weight.",
               "type": "string",
               "format": null,
               "enum": [],
@@ -5220,32 +5040,11 @@
             },
             "readingModes": {
               "description": "The reading modes available for this volume.",
-              "type": "object",
+              "type": "any",
               "format": null,
               "enum": [],
               "enumDescriptions": [],
-              "properties": {
-                "image": {
-                  "description": null,
-                  "type": "boolean",
-                  "format": null,
-                  "enum": [],
-                  "enumDescriptions": [],
-                  "properties": {},
-                  "additionalProperties": null,
-                  "items": null
-                },
-                "text": {
-                  "description": null,
-                  "type": "boolean",
-                  "format": null,
-                  "enum": [],
-                  "enumDescriptions": [],
-                  "properties": {},
-                  "additionalProperties": null,
-                  "items": null
-                }
-              },
+              "properties": {},
               "additionalProperties": null,
               "items": null
             },
@@ -5495,9 +5294,9 @@
           "items": null
         },
         "updated": {
-          "description": "Timestamp for the last time this anntoation was updated. (RFC 3339 UTC\ndate-time format).",
+          "description": "Timestamp for the last time this anntoation was updated. (RFC 3339 UTC date-time format).",
           "type": "string",
-          "format": null,
+          "format": "date-time",
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -5549,7 +5348,7 @@
           "items": null
         },
         "nextPageToken": {
-          "description": "Token to pass in for pagination for the next page. This will not be present\nif this request does not have more results.",
+          "description": "Token to pass in for pagination for the next page. This will not be present if this request does not have more results.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -5569,7 +5368,7 @@
           "items": null
         },
         "version": {
-          "description": "The version string for all of the volume annotations in this layer (not\njust the ones in this response). Note: the version string\ndoesn't apply to the annotation data, just the information in this response\n(e.g. the location of annotations in the book).",
+          "description": "The version string for all of the volume annotations in this layer (not just the ones in this response). Note: the version string doesn't apply to the annotation data, just the information in this response (e.g. the location of annotations in the book).",
           "type": "string",
           "format": null,
           "enum": [],
@@ -5613,7 +5412,7 @@
           "items": null
         },
         "totalItems": {
-          "description": "Total number of volumes found. This might be greater than the number of\nvolumes returned in this response if results have been paginated.",
+          "description": "Total number of volumes found. This might be greater than the number of volumes returned in this response if results have been paginated.",
           "type": "integer",
           "format": "int32",
           "enum": [],
@@ -5635,7 +5434,7 @@
       "enumDescriptions": [],
       "properties": {
         "bookDisplayNumber": {
-          "description": "The display number string. This should be used only for display purposes\nand the actual sequence should be inferred from the below orderNumber.",
+          "description": "The display number string. This should be used only for display purposes and the actual sequence should be inferred from the below orderNumber.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -5728,7 +5527,7 @@
                 "items": null
               },
               "seriesBookType": {
-                "description": "The book type in the context of series. Examples - Single Issue,\nCollection Edition, etc.",
+                "description": "The book type in the context of series. Examples - Single Issue, Collection Edition, etc.",
                 "type": "string",
                 "format": null,
                 "enum": [],
@@ -5765,7 +5564,7 @@
           "methods": {
             "list": {
               "id": "books.bookshelves.volumes.list",
-              "path": "books/v1/users/{userId}/bookshelves/{shelf}/volumes",
+              "path": "users/{userId}/bookshelves/{shelf}/volumes",
               "httpMethod": "GET",
               "description": "Retrieves volumes in a specific bookshelf for the specified user.",
               "parameters": {
@@ -5776,7 +5575,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -5832,7 +5631,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -5877,7 +5676,7 @@
       "methods": {
         "get": {
           "id": "books.bookshelves.get",
-          "path": "books/v1/users/{userId}/bookshelves/{shelf}",
+          "path": "users/{userId}/bookshelves/{shelf}",
           "httpMethod": "GET",
           "description": "Retrieves metadata for a specific bookshelf for the specified user.",
           "parameters": {
@@ -5943,7 +5742,7 @@
         },
         "list": {
           "id": "books.bookshelves.list",
-          "path": "books/v1/users/{userId}/bookshelves",
+          "path": "users/{userId}/bookshelves",
           "httpMethod": "GET",
           "description": "Retrieves a list of public bookshelves for the specified user.",
           "parameters": {
@@ -5999,9 +5798,9 @@
       "methods": {
         "addBook": {
           "id": "books.cloudloading.addBook",
-          "path": "books/v1/cloudloading/addBook",
+          "path": "cloudloading/addBook",
           "httpMethod": "POST",
-          "description": "Add a user-upload volume and triggers processing.",
+          "description": "",
           "parameters": {
             "drive_document_id": {
               "description": "A drive document id. The upload_client_token must not be set.",
@@ -6046,7 +5845,7 @@
               "repeated": false
             },
             "upload_client_token": {
-              "description": "Scotty upload token.",
+              "description": null,
               "default": null,
               "location": "query",
               "required": false,
@@ -6076,7 +5875,7 @@
         },
         "deleteBook": {
           "id": "books.cloudloading.deleteBook",
-          "path": "books/v1/cloudloading/deleteBook",
+          "path": "cloudloading/deleteBook",
           "httpMethod": "POST",
           "description": "Remove the book and its contents",
           "parameters": {
@@ -6084,7 +5883,7 @@
               "description": "The id of the book to be removed.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -6095,11 +5894,11 @@
               "repeated": false
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "volumeId"
+          ],
           "request": null,
-          "response": {
-            "$ref": "Empty"
-          },
+          "response": null,
           "scopes": [
             "https://www.googleapis.com/auth/books"
           ],
@@ -6111,9 +5910,9 @@
         },
         "updateBook": {
           "id": "books.cloudloading.updateBook",
-          "path": "books/v1/cloudloading/updateBook",
+          "path": "cloudloading/updateBook",
           "httpMethod": "POST",
-          "description": "Updates a user-upload volume.",
+          "description": "",
           "parameters": {},
           "parameterOrder": [],
           "request": {
@@ -6138,7 +5937,7 @@
       "methods": {
         "listOfflineMetadata": {
           "id": "books.dictionary.listOfflineMetadata",
-          "path": "books/v1/dictionary/listOfflineMetadata",
+          "path": "dictionary/listOfflineMetadata",
           "httpMethod": "GET",
           "description": "Returns a list of offline dictionary metadata available",
           "parameters": {
@@ -6146,7 +5945,7 @@
               "description": "The device/version ID from which to request the data.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -6157,7 +5956,9 @@
               "repeated": false
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "cpksver"
+          ],
           "request": null,
           "response": {
             "$ref": "Metadata"
@@ -6178,7 +5979,7 @@
       "methods": {
         "getFamilyInfo": {
           "id": "books.familysharing.getFamilyInfo",
-          "path": "books/v1/familysharing/getFamilyInfo",
+          "path": "familysharing/getFamilyInfo",
           "httpMethod": "GET",
           "description": "Gets information regarding the family that the user is part of.",
           "parameters": {
@@ -6213,9 +6014,9 @@
         },
         "share": {
           "id": "books.familysharing.share",
-          "path": "books/v1/familysharing/share",
+          "path": "familysharing/share",
           "httpMethod": "POST",
-          "description": "Initiates sharing of the content with the user's family. Empty response\nindicates success.",
+          "description": "Initiates sharing of the content with the user's family. Empty response indicates success.",
           "parameters": {
             "docId": {
               "description": "The docid to share.",
@@ -6262,9 +6063,7 @@
           },
           "parameterOrder": [],
           "request": null,
-          "response": {
-            "$ref": "Empty"
-          },
+          "response": null,
           "scopes": [
             "https://www.googleapis.com/auth/books"
           ],
@@ -6276,9 +6075,9 @@
         },
         "unshare": {
           "id": "books.familysharing.unshare",
-          "path": "books/v1/familysharing/unshare",
+          "path": "familysharing/unshare",
           "httpMethod": "POST",
-          "description": "Initiates revoking content that has already been shared with the user's\nfamily. Empty response indicates success.",
+          "description": "Initiates revoking content that has already been shared with the user's family. Empty response indicates success.",
           "parameters": {
             "docId": {
               "description": "The docid to unshare.",
@@ -6325,9 +6124,7 @@
           },
           "parameterOrder": [],
           "request": null,
-          "response": {
-            "$ref": "Empty"
-          },
+          "response": null,
           "scopes": [
             "https://www.googleapis.com/auth/books"
           ],
@@ -6346,7 +6143,7 @@
           "methods": {
             "get": {
               "id": "books.layers.annotationData.get",
-              "path": "books/v1/volumes/{volumeId}/layers/{layerId}/data/{annotationDataId}",
+              "path": "volumes/{volumeId}/layers/{layerId}/data/{annotationDataId}",
               "httpMethod": "GET",
               "description": "Gets the annotation data.",
               "parameters": {
@@ -6382,7 +6179,7 @@
                   "description": "The content version for the volume you are trying to retrieve.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -6393,7 +6190,7 @@
                   "repeated": false
                 },
                 "h": {
-                  "description": "The requested pixel height for any images. If height is provided width must\nalso be provided.",
+                  "description": "The requested pixel height for any images. If height is provided width must also be provided.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6421,7 +6218,7 @@
                   "repeated": false
                 },
                 "locale": {
-                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1\ncountry code. Ex: 'en_US'.",
+                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6441,7 +6238,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "int32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -6477,7 +6274,7 @@
                   "repeated": false
                 },
                 "w": {
-                  "description": "The requested pixel width for any images. If width is provided height must\nalso be provided.",
+                  "description": "The requested pixel width for any images. If width is provided height must also be provided.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6494,11 +6291,12 @@
               "parameterOrder": [
                 "volumeId",
                 "layerId",
-                "annotationDataId"
+                "annotationDataId",
+                "contentVersion"
               ],
               "request": null,
               "response": {
-                "$ref": "DictionaryAnnotationdata"
+                "$ref": "Annotationdata"
               },
               "scopes": [
                 "https://www.googleapis.com/auth/books"
@@ -6511,12 +6309,12 @@
             },
             "list": {
               "id": "books.layers.annotationData.list",
-              "path": "books/v1/volumes/{volumeId}/layers/{layerId}/data",
+              "path": "volumes/{volumeId}/layers/{layerId}/data",
               "httpMethod": "GET",
               "description": "Gets the annotation data for a volume and layer.",
               "parameters": {
                 "annotationDataId": {
-                  "description": "The list of Annotation Data Ids to retrieve. Pagination is ignored if this\nis set.",
+                  "description": "The list of Annotation Data Ids to retrieve. Pagination is ignored if this is set.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6533,7 +6331,7 @@
                   "description": "The content version for the requested volume.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -6544,7 +6342,7 @@
                   "repeated": false
                 },
                 "h": {
-                  "description": "The requested pixel height for any images. If height is provided width must\nalso be provided.",
+                  "description": "The requested pixel height for any images. If height is provided width must also be provided.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6572,7 +6370,7 @@
                   "repeated": false
                 },
                 "locale": {
-                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1\ncountry code. Ex: 'en_US'.",
+                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6592,8 +6390,8 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
-                  "maximum": null,
+                  "minimum": "0",
+                  "maximum": "200",
                   "pattern": null,
                   "enum": [],
                   "enumDescriptions": [],
@@ -6620,7 +6418,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "int32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -6642,7 +6440,7 @@
                   "repeated": false
                 },
                 "updatedMax": {
-                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp\n(exclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6656,7 +6454,7 @@
                   "repeated": false
                 },
                 "updatedMin": {
-                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp\n(inclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6684,7 +6482,7 @@
                   "repeated": false
                 },
                 "w": {
-                  "description": "The requested pixel width for any images. If width is provided height must\nalso be provided.",
+                  "description": "The requested pixel width for any images. If width is provided height must also be provided.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6700,7 +6498,8 @@
               },
               "parameterOrder": [
                 "volumeId",
-                "layerId"
+                "layerId",
+                "contentVersion"
               ],
               "request": null,
               "response": {
@@ -6722,7 +6521,7 @@
           "methods": {
             "get": {
               "id": "books.layers.volumeAnnotations.get",
-              "path": "books/v1/volumes/{volumeId}/layers/{layerId}/annotations/{annotationId}",
+              "path": "volumes/{volumeId}/layers/{layerId}/annotations/{annotationId}",
               "httpMethod": "GET",
               "description": "Gets the volume annotation.",
               "parameters": {
@@ -6755,7 +6554,7 @@
                   "repeated": false
                 },
                 "locale": {
-                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1\ncountry code. Ex: 'en_US'.",
+                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6817,7 +6616,7 @@
             },
             "list": {
               "id": "books.layers.volumeAnnotations.list",
-              "path": "books/v1/volumes/{volumeId}/layers/{layerId}",
+              "path": "volumes/{volumeId}/layers/{layerId}",
               "httpMethod": "GET",
               "description": "Gets the volume annotations for a volume and layer.",
               "parameters": {
@@ -6825,7 +6624,7 @@
                   "description": "The content version for the requested volume.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -6878,7 +6677,7 @@
                   "repeated": false
                 },
                 "locale": {
-                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1\ncountry code. Ex: 'en_US'.",
+                  "description": "The locale information for the data. ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6898,8 +6697,8 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
-                  "maximum": null,
+                  "minimum": "0",
+                  "maximum": "200",
                   "pattern": null,
                   "enum": [],
                   "enumDescriptions": [],
@@ -6920,7 +6719,7 @@
                   "repeated": false
                 },
                 "showDeleted": {
-                  "description": "Set to true to return deleted annotations. updatedMin must be in the\nrequest to use this. Defaults to false.",
+                  "description": "Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6976,7 +6775,7 @@
                   "repeated": false
                 },
                 "updatedMax": {
-                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp\n(exclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -6990,7 +6789,7 @@
                   "repeated": false
                 },
                 "updatedMin": {
-                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp\n(inclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -7034,7 +6833,8 @@
               },
               "parameterOrder": [
                 "volumeId",
-                "layerId"
+                "layerId",
+                "contentVersion"
               ],
               "request": null,
               "response": {
@@ -7055,7 +6855,7 @@
       "methods": {
         "get": {
           "id": "books.layers.get",
-          "path": "books/v1/volumes/{volumeId}/layersummary/{summaryId}",
+          "path": "volumes/{volumeId}/layersummary/{summaryId}",
           "httpMethod": "GET",
           "description": "Gets the layer summary for a volume.",
           "parameters": {
@@ -7135,7 +6935,7 @@
         },
         "list": {
           "id": "books.layers.list",
-          "path": "books/v1/volumes/{volumeId}/layersummary",
+          "path": "volumes/{volumeId}/layersummary",
           "httpMethod": "GET",
           "description": "List the layer summaries for a volume.",
           "parameters": {
@@ -7160,8 +6960,8 @@
               "required": false,
               "type": "integer",
               "format": "uint32",
-              "minimum": null,
-              "maximum": null,
+              "minimum": "0",
+              "maximum": "200",
               "pattern": null,
               "enum": [],
               "enumDescriptions": [],
@@ -7233,25 +7033,10 @@
       "methods": {
         "getUserSettings": {
           "id": "books.myconfig.getUserSettings",
-          "path": "books/v1/myconfig/getUserSettings",
+          "path": "myconfig/getUserSettings",
           "httpMethod": "GET",
           "description": "Gets the current settings for the user.",
-          "parameters": {
-            "country": {
-              "description": "Unused. Added only to workaround TEX mandatory request template requirement",
-              "default": null,
-              "location": "query",
-              "required": false,
-              "type": "string",
-              "format": null,
-              "minimum": null,
-              "maximum": null,
-              "pattern": null,
-              "enum": [],
-              "enumDescriptions": [],
-              "repeated": false
-            }
-          },
+          "parameters": {},
           "parameterOrder": [],
           "request": null,
           "response": {
@@ -7268,7 +7053,7 @@
         },
         "releaseDownloadAccess": {
           "id": "books.myconfig.releaseDownloadAccess",
-          "path": "books/v1/myconfig/releaseDownloadAccess",
+          "path": "myconfig/releaseDownloadAccess",
           "httpMethod": "POST",
           "description": "Release downloaded content access restriction.",
           "parameters": {
@@ -7276,7 +7061,7 @@
               "description": "The device/version ID from which to release the restriction.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7318,7 +7103,7 @@
               "description": "The volume(s) to release restrictions for.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7329,7 +7114,10 @@
               "repeated": true
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "volumeIds",
+            "cpksver"
+          ],
           "request": null,
           "response": {
             "$ref": "DownloadAccesses"
@@ -7345,7 +7133,7 @@
         },
         "requestAccess": {
           "id": "books.myconfig.requestAccess",
-          "path": "books/v1/myconfig/requestAccess",
+          "path": "myconfig/requestAccess",
           "httpMethod": "POST",
           "description": "Request concurrent and download access restrictions.",
           "parameters": {
@@ -7353,7 +7141,7 @@
               "description": "The device/version ID from which to request the restrictions.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7364,7 +7152,7 @@
               "repeated": false
             },
             "licenseTypes": {
-              "description": "The type of access license to request. If not specified, the default is\nBOTH.",
+              "description": "The type of access license to request. If not specified, the default is BOTH.",
               "default": null,
               "location": "query",
               "required": false,
@@ -7374,12 +7162,15 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "LICENSE_TYPES_UNDEFINED",
                 "BOTH",
                 "CONCURRENT",
                 "DOWNLOAD"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Both concurrent and download licenses.",
+                "Concurrent access license.",
+                "Offline download access license."
+              ],
               "repeated": false
             },
             "locale": {
@@ -7400,7 +7191,7 @@
               "description": "The client nonce value.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7414,7 +7205,7 @@
               "description": "String to identify the originator of this request.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7428,7 +7219,7 @@
               "description": "The volume to request concurrent/download restrictions for.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7439,10 +7230,15 @@
               "repeated": false
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "source",
+            "volumeId",
+            "nonce",
+            "cpksver"
+          ],
           "request": null,
           "response": {
-            "$ref": "RequestAccessData"
+            "$ref": "RequestAccess"
           },
           "scopes": [
             "https://www.googleapis.com/auth/books"
@@ -7455,15 +7251,15 @@
         },
         "syncVolumeLicenses": {
           "id": "books.myconfig.syncVolumeLicenses",
-          "path": "books/v1/myconfig/syncVolumeLicenses",
+          "path": "myconfig/syncVolumeLicenses",
           "httpMethod": "POST",
-          "description": "Request downloaded content access for specified volumes on the My eBooks\nshelf.",
+          "description": "Request downloaded content access for specified volumes on the My eBooks shelf.",
           "parameters": {
             "cpksver": {
               "description": "The device/version ID from which to release the restriction.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7484,10 +7280,11 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "FEATURES_UNDEFINED",
                 "RENTALS"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Client supports rentals."
+              ],
               "repeated": true
             },
             "includeNonComicsSeries": {
@@ -7522,7 +7319,7 @@
               "description": "The client nonce value.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7550,7 +7347,7 @@
               "description": "String to identify the originator of this request.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -7575,7 +7372,11 @@
               "repeated": true
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "source",
+            "nonce",
+            "cpksver"
+          ],
           "request": null,
           "response": {
             "$ref": "Volumes"
@@ -7591,9 +7392,9 @@
         },
         "updateUserSettings": {
           "id": "books.myconfig.updateUserSettings",
-          "path": "books/v1/myconfig/updateUserSettings",
+          "path": "myconfig/updateUserSettings",
           "httpMethod": "POST",
-          "description": "Sets the settings for the user. If a sub-object is specified, it will\noverwrite the existing sub-object stored in the server. Unspecified\nsub-objects will retain the existing value.",
+          "description": "Sets the settings for the user. If a sub-object is specified, it will overwrite the existing sub-object stored in the server. Unspecified sub-objects will retain the existing value.",
           "parameters": {},
           "parameterOrder": [],
           "request": {
@@ -7620,7 +7421,7 @@
           "methods": {
             "delete": {
               "id": "books.mylibrary.annotations.delete",
-              "path": "books/v1/mylibrary/annotations/{annotationId}",
+              "path": "mylibrary/annotations/{annotationId}",
               "httpMethod": "DELETE",
               "description": "Deletes an annotation.",
               "parameters": {
@@ -7657,9 +7458,7 @@
                 "annotationId"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -7671,7 +7470,7 @@
             },
             "insert": {
               "id": "books.mylibrary.annotations.insert",
-              "path": "books/v1/mylibrary/annotations",
+              "path": "mylibrary/annotations",
               "httpMethod": "POST",
               "description": "Inserts a new annotation.",
               "parameters": {
@@ -7704,7 +7503,7 @@
                   "repeated": false
                 },
                 "showOnlySummaryInResponse": {
-                  "description": "Requests that only the summary of the specified layer be provided in the\nresponse.",
+                  "description": "Requests that only the summary of the specified layer be provided in the response.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -7750,7 +7549,7 @@
             },
             "list": {
               "id": "books.mylibrary.annotations.list",
-              "path": "books/v1/mylibrary/annotations",
+              "path": "mylibrary/annotations",
               "httpMethod": "GET",
               "description": "Retrieves a list of annotations, possibly filtered.",
               "parameters": {
@@ -7803,8 +7602,8 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
-                  "maximum": null,
+                  "minimum": "0",
+                  "maximum": "40",
                   "pattern": null,
                   "enum": [],
                   "enumDescriptions": [],
@@ -7825,7 +7624,7 @@
                   "repeated": false
                 },
                 "showDeleted": {
-                  "description": "Set to true to return deleted annotations. updatedMin must be in the\nrequest to use this. Defaults to false.",
+                  "description": "Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -7853,7 +7652,7 @@
                   "repeated": false
                 },
                 "updatedMax": {
-                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp\n(exclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -7867,7 +7666,7 @@
                   "repeated": false
                 },
                 "updatedMin": {
-                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp\n(inclusive).",
+                  "description": "RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -7911,7 +7710,7 @@
             },
             "summary": {
               "id": "books.mylibrary.annotations.summary",
-              "path": "books/v1/mylibrary/annotations/summary",
+              "path": "mylibrary/annotations/summary",
               "httpMethod": "POST",
               "description": "Gets the summary of specified layers.",
               "parameters": {
@@ -7919,7 +7718,7 @@
                   "description": "Array of layer IDs to get the summary for.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -7933,7 +7732,7 @@
                   "description": "Volume id to get the summary for.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -7944,7 +7743,10 @@
                   "repeated": false
                 }
               },
-              "parameterOrder": [],
+              "parameterOrder": [
+                "layerIds",
+                "volumeId"
+              ],
               "request": null,
               "response": {
                 "$ref": "AnnotationsSummary"
@@ -7960,7 +7762,7 @@
             },
             "update": {
               "id": "books.mylibrary.annotations.update",
-              "path": "books/v1/mylibrary/annotations/{annotationId}",
+              "path": "mylibrary/annotations/{annotationId}",
               "httpMethod": "PUT",
               "description": "Updates an existing annotation.",
               "parameters": {
@@ -8020,7 +7822,7 @@
               "methods": {
                 "list": {
                   "id": "books.mylibrary.bookshelves.volumes.list",
-                  "path": "books/v1/mylibrary/bookshelves/{shelf}/volumes",
+                  "path": "mylibrary/bookshelves/{shelf}/volumes",
                   "httpMethod": "GET",
                   "description": "Gets volume information for volumes on a bookshelf.",
                   "parameters": {
@@ -8045,7 +7847,7 @@
                       "required": false,
                       "type": "integer",
                       "format": "uint32",
-                      "minimum": null,
+                      "minimum": "0",
                       "maximum": null,
                       "pattern": null,
                       "enum": [],
@@ -8063,11 +7865,13 @@
                       "maximum": null,
                       "pattern": null,
                       "enum": [
-                        "PROJECTION_UNDEFINED",
-                        "FULL",
-                        "LITE"
+                        "full",
+                        "lite"
                       ],
-                      "enumDescriptions": [],
+                      "enumDescriptions": [
+                        "Includes all volume data.",
+                        "Includes a subset of fields in volumeInfo and accessInfo."
+                      ],
                       "repeated": false
                     },
                     "q": {
@@ -8133,7 +7937,7 @@
                       "required": false,
                       "type": "integer",
                       "format": "uint32",
-                      "minimum": null,
+                      "minimum": "0",
                       "maximum": null,
                       "pattern": null,
                       "enum": [],
@@ -8163,7 +7967,7 @@
           "methods": {
             "addVolume": {
               "id": "books.mylibrary.bookshelves.addVolume",
-              "path": "books/v1/mylibrary/bookshelves/{shelf}/addVolume",
+              "path": "mylibrary/bookshelves/{shelf}/addVolume",
               "httpMethod": "POST",
               "description": "Adds a volume to a bookshelf.",
               "parameters": {
@@ -8178,12 +7982,15 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "REASON_UNDEFINED",
                     "IOS_PREX",
                     "IOS_SEARCH",
                     "ONBOARDING"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Volumes added from the PREX flow on iOS.",
+                    "Volumes added from the Search flow on iOS.",
+                    "Volumes added from the Onboarding flow."
+                  ],
                   "repeated": false
                 },
                 "shelf": {
@@ -8218,7 +8025,7 @@
                   "description": "ID of volume to add.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -8230,12 +8037,11 @@
                 }
               },
               "parameterOrder": [
-                "shelf"
+                "shelf",
+                "volumeId"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -8247,7 +8053,7 @@
             },
             "clearVolumes": {
               "id": "books.mylibrary.bookshelves.clearVolumes",
-              "path": "books/v1/mylibrary/bookshelves/{shelf}/clearVolumes",
+              "path": "mylibrary/bookshelves/{shelf}/clearVolumes",
               "httpMethod": "POST",
               "description": "Clears all volumes from a bookshelf.",
               "parameters": {
@@ -8284,9 +8090,7 @@
                 "shelf"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -8298,9 +8102,9 @@
             },
             "get": {
               "id": "books.mylibrary.bookshelves.get",
-              "path": "books/v1/mylibrary/bookshelves/{shelf}",
+              "path": "mylibrary/bookshelves/{shelf}",
               "httpMethod": "GET",
-              "description": "Retrieves metadata for a specific bookshelf belonging to the authenticated\nuser.",
+              "description": "Retrieves metadata for a specific bookshelf belonging to the authenticated user.",
               "parameters": {
                 "shelf": {
                   "description": "ID of bookshelf to retrieve.",
@@ -8349,7 +8153,7 @@
             },
             "list": {
               "id": "books.mylibrary.bookshelves.list",
-              "path": "books/v1/mylibrary/bookshelves",
+              "path": "mylibrary/bookshelves",
               "httpMethod": "GET",
               "description": "Retrieves a list of bookshelves belonging to the authenticated user.",
               "parameters": {
@@ -8384,7 +8188,7 @@
             },
             "moveVolume": {
               "id": "books.mylibrary.bookshelves.moveVolume",
-              "path": "books/v1/mylibrary/bookshelves/{shelf}/moveVolume",
+              "path": "mylibrary/bookshelves/{shelf}/moveVolume",
               "httpMethod": "POST",
               "description": "Moves a volume within a bookshelf.",
               "parameters": {
@@ -8420,7 +8224,7 @@
                   "description": "ID of volume to move.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -8431,10 +8235,10 @@
                   "repeated": false
                 },
                 "volumePosition": {
-                  "description": "Position on shelf to move the item (0 puts the item before the current\nfirst item, 1 puts it between the first and the second and so on.)",
+                  "description": "Position on shelf to move the item (0 puts the item before the current first item, 1 puts it between the first and the second and so on.)",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "integer",
                   "format": "int32",
                   "minimum": null,
@@ -8446,12 +8250,12 @@
                 }
               },
               "parameterOrder": [
-                "shelf"
+                "shelf",
+                "volumeId",
+                "volumePosition"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -8463,7 +8267,7 @@
             },
             "removeVolume": {
               "id": "books.mylibrary.bookshelves.removeVolume",
-              "path": "books/v1/mylibrary/bookshelves/{shelf}/removeVolume",
+              "path": "mylibrary/bookshelves/{shelf}/removeVolume",
               "httpMethod": "POST",
               "description": "Removes a volume from a bookshelf.",
               "parameters": {
@@ -8478,10 +8282,11 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "REASON_UNDEFINED",
                     "ONBOARDING"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Samples removed from the Onboarding flow."
+                  ],
                   "repeated": false
                 },
                 "shelf": {
@@ -8516,7 +8321,7 @@
                   "description": "ID of volume to remove.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -8528,12 +8333,11 @@
                 }
               },
               "parameterOrder": [
-                "shelf"
+                "shelf",
+                "volumeId"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -8550,7 +8354,7 @@
           "methods": {
             "get": {
               "id": "books.mylibrary.readingpositions.get",
-              "path": "books/v1/mylibrary/readingpositions/{volumeId}",
+              "path": "mylibrary/readingpositions/{volumeId}",
               "httpMethod": "GET",
               "description": "Retrieves my reading position information for a volume.",
               "parameters": {
@@ -8615,7 +8419,7 @@
             },
             "setPosition": {
               "id": "books.mylibrary.readingpositions.setPosition",
-              "path": "books/v1/mylibrary/readingpositions/{volumeId}/setPosition",
+              "path": "mylibrary/readingpositions/{volumeId}/setPosition",
               "httpMethod": "POST",
               "description": "Sets my reading position information for a volume.",
               "parameters": {
@@ -8630,7 +8434,6 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "ACTION_UNDEFINED",
                     "bookmark",
                     "chapter",
                     "next-page",
@@ -8638,7 +8441,14 @@
                     "scroll",
                     "search"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "User chose bookmark within volume.",
+                    "User selected chapter from list.",
+                    "Next page event.",
+                    "Previous page event.",
+                    "User navigated to page.",
+                    "User chose search results within volume."
+                  ],
                   "repeated": false
                 },
                 "contentVersion": {
@@ -8673,7 +8483,7 @@
                   "description": "Position string for the new volume reading position.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -8701,7 +8511,7 @@
                   "description": "RFC 3339 UTC format timestamp associated with this reading position.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -8727,12 +8537,12 @@
                 }
               },
               "parameterOrder": [
-                "volumeId"
+                "volumeId",
+                "timestamp",
+                "position"
               ],
               "request": null,
-              "response": {
-                "$ref": "Empty"
-              },
+              "response": null,
               "scopes": [
                 "https://www.googleapis.com/auth/books"
               ],
@@ -8752,12 +8562,12 @@
       "methods": {
         "get": {
           "id": "books.notification.get",
-          "path": "books/v1/notification/get",
+          "path": "notification/get",
           "httpMethod": "GET",
           "description": "Returns notification details for a given notification id.",
           "parameters": {
             "locale": {
-              "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating notification title and body.",
+              "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating notification title and body.",
               "default": null,
               "location": "query",
               "required": false,
@@ -8774,7 +8584,7 @@
               "description": "String to identify the notification.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -8799,7 +8609,9 @@
               "repeated": false
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "notification_id"
+          ],
           "request": null,
           "response": {
             "$ref": "Notification"
@@ -8820,7 +8632,7 @@
       "methods": {
         "listCategories": {
           "id": "books.onboarding.listCategories",
-          "path": "books/v1/onboarding/listCategories",
+          "path": "onboarding/listCategories",
           "httpMethod": "GET",
           "description": "List categories for onboarding experience.",
           "parameters": {
@@ -8855,7 +8667,7 @@
         },
         "listCategoryVolumes": {
           "id": "books.onboarding.listCategoryVolumes",
-          "path": "books/v1/onboarding/listCategoryVolumes",
+          "path": "onboarding/listCategoryVolumes",
           "httpMethod": "GET",
           "description": "List available volumes under categories for onboarding experience.",
           "parameters": {
@@ -8888,7 +8700,7 @@
               "repeated": false
             },
             "maxAllowedMaturityRating": {
-              "description": "The maximum allowed maturity rating of returned volumes. Books with a\nhigher maturity rating are filtered out.",
+              "description": "The maximum allowed maturity rating of returned volumes. Books with a higher maturity rating are filtered out.",
               "default": null,
               "location": "query",
               "required": false,
@@ -8898,11 +8710,13 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "MAX_ALLOWED_MATURITY_RATING_UNDEFINED",
-                "MATURE",
+                "mature",
                 "not-mature"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Show books which are rated mature or lower.",
+                "Show books which are rated not mature."
+              ],
               "repeated": false
             },
             "pageSize": {
@@ -8955,12 +8769,12 @@
       "methods": {
         "get": {
           "id": "books.personalizedstream.get",
-          "path": "books/v1/personalizedstream/get",
+          "path": "personalizedstream/get",
           "httpMethod": "GET",
           "description": "Returns a stream of personalized book clusters",
           "parameters": {
             "locale": {
-              "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating recommendations.",
+              "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating recommendations.",
               "default": null,
               "location": "query",
               "required": false,
@@ -8974,7 +8788,7 @@
               "repeated": false
             },
             "maxAllowedMaturityRating": {
-              "description": "The maximum allowed maturity rating of returned recommendations. Books with\na higher maturity rating are filtered out.",
+              "description": "The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.",
               "default": null,
               "location": "query",
               "required": false,
@@ -8984,11 +8798,13 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "MAX_ALLOWED_MATURITY_RATING_UNDEFINED",
-                "MATURE",
+                "mature",
                 "not-mature"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Show books which are rated mature or lower.",
+                "Show books which are rated not mature."
+              ],
               "repeated": false
             },
             "source": {
@@ -9027,9 +8843,9 @@
       "methods": {
         "accept": {
           "id": "books.promooffer.accept",
-          "path": "books/v1/promooffer/accept",
+          "path": "promooffer/accept",
           "httpMethod": "POST",
-          "description": "Accepts the promo offer.",
+          "description": "",
           "parameters": {
             "androidId": {
               "description": "device android_id",
@@ -9146,9 +8962,7 @@
           },
           "parameterOrder": [],
           "request": null,
-          "response": {
-            "$ref": "Empty"
-          },
+          "response": null,
           "scopes": [
             "https://www.googleapis.com/auth/books"
           ],
@@ -9160,9 +8974,9 @@
         },
         "dismiss": {
           "id": "books.promooffer.dismiss",
-          "path": "books/v1/promooffer/dismiss",
+          "path": "promooffer/dismiss",
           "httpMethod": "POST",
-          "description": "Marks the promo offer as dismissed.",
+          "description": "",
           "parameters": {
             "androidId": {
               "description": "device android_id",
@@ -9265,9 +9079,7 @@
           },
           "parameterOrder": [],
           "request": null,
-          "response": {
-            "$ref": "Empty"
-          },
+          "response": null,
           "scopes": [
             "https://www.googleapis.com/auth/books"
           ],
@@ -9279,7 +9091,7 @@
         },
         "get": {
           "id": "books.promooffer.get",
-          "path": "books/v1/promooffer/get",
+          "path": "promooffer/get",
           "httpMethod": "GET",
           "description": "Returns a list of promo offers available to the user",
           "parameters": {
@@ -9391,7 +9203,7 @@
           "methods": {
             "get": {
               "id": "books.series.membership.get",
-              "path": "books/v1/series/membership/get",
+              "path": "series/membership/get",
               "httpMethod": "GET",
               "description": "Returns Series membership data given the series id.",
               "parameters": {
@@ -9427,7 +9239,7 @@
                   "description": "String that identifies the series",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -9438,7 +9250,9 @@
                   "repeated": false
                 }
               },
-              "parameterOrder": [],
+              "parameterOrder": [
+                "series_id"
+              ],
               "request": null,
               "response": {
                 "$ref": "Seriesmembership"
@@ -9458,7 +9272,7 @@
       "methods": {
         "get": {
           "id": "books.series.get",
-          "path": "books/v1/series/get",
+          "path": "series/get",
           "httpMethod": "GET",
           "description": "Returns Series metadata for the given series ids.",
           "parameters": {
@@ -9466,7 +9280,7 @@
               "description": "String that identifies the series",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -9477,7 +9291,9 @@
               "repeated": true
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "series_id"
+          ],
           "request": null,
           "response": {
             "$ref": "Series"
@@ -9500,7 +9316,7 @@
           "methods": {
             "list": {
               "id": "books.volumes.associated.list",
-              "path": "books/v1/volumes/{volumeId}/associated",
+              "path": "volumes/{volumeId}/associated",
               "httpMethod": "GET",
               "description": "Return a list of associated books.",
               "parameters": {
@@ -9515,16 +9331,19 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "ASSOCIATION_UNDEFINED",
                     "end-of-sample",
                     "end-of-volume",
                     "related-for-play"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Recommendations for display end-of-sample.",
+                    "Recommendations for display end-of-volume.",
+                    "Related volumes for Play Store."
+                  ],
                   "repeated": false
                 },
                 "locale": {
-                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating recommendations.",
+                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating recommendations.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9538,7 +9357,7 @@
                   "repeated": false
                 },
                 "maxAllowedMaturityRating": {
-                  "description": "The maximum allowed maturity rating of returned recommendations. Books with\na higher maturity rating are filtered out.",
+                  "description": "The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9548,11 +9367,13 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "MAX_ALLOWED_MATURITY_RATING_UNDEFINED",
-                    "MATURE",
+                    "mature",
                     "not-mature"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Show books which are rated mature or lower.",
+                    "Show books which are rated not mature."
+                  ],
                   "repeated": false
                 },
                 "source": {
@@ -9607,7 +9428,7 @@
           "methods": {
             "list": {
               "id": "books.volumes.mybooks.list",
-              "path": "books/v1/volumes/mybooks",
+              "path": "volumes/mybooks",
               "httpMethod": "GET",
               "description": "Return a list of books in My Library.",
               "parameters": {
@@ -9622,7 +9443,6 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "ACQUIRE_METHOD_UNDEFINED",
                     "FAMILY_SHARED",
                     "PREORDERED",
                     "PREVIOUSLY_RENTED",
@@ -9632,7 +9452,16 @@
                     "SAMPLE",
                     "UPLOADED"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Books acquired via Family Sharing",
+                    "Preordered books (not yet available)",
+                    "User-rented books past their expiration time",
+                    "Public domain books",
+                    "Purchased books",
+                    "User-rented books",
+                    "Sample books",
+                    "User uploaded books"
+                  ],
                   "repeated": true
                 },
                 "country": {
@@ -9650,7 +9479,7 @@
                   "repeated": false
                 },
                 "locale": {
-                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex:'en_US'. Used for\ngenerating recommendations.",
+                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex:'en_US'. Used for generating recommendations.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9670,15 +9499,15 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
-                  "maximum": null,
+                  "minimum": "0",
+                  "maximum": "100",
                   "pattern": null,
                   "enum": [],
                   "enumDescriptions": [],
                   "repeated": false
                 },
                 "processingState": {
-                  "description": "The processing state of the user uploaded volumes to be returned.\nApplicable only if the UPLOADED is specified in the acquireMethod.",
+                  "description": "The processing state of the user uploaded volumes to be returned. Applicable only if the UPLOADED is specified in the acquireMethod.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9688,12 +9517,15 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "PROCESSING_STATE_UNDEFINED",
                     "COMPLETED_FAILED",
                     "COMPLETED_SUCCESS",
                     "RUNNING"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "The volume processing hase failed.",
+                    "The volume processing was completed.",
+                    "The volume processing is not completed."
+                  ],
                   "repeated": true
                 },
                 "source": {
@@ -9717,7 +9549,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -9746,12 +9578,12 @@
           "methods": {
             "list": {
               "id": "books.volumes.recommended.list",
-              "path": "books/v1/volumes/recommended",
+              "path": "volumes/recommended",
               "httpMethod": "GET",
               "description": "Return a list of recommended books for the current user.",
               "parameters": {
                 "locale": {
-                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating recommendations.",
+                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating recommendations.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9765,7 +9597,7 @@
                   "repeated": false
                 },
                 "maxAllowedMaturityRating": {
-                  "description": "The maximum allowed maturity rating of returned recommendations. Books with\na higher maturity rating are filtered out.",
+                  "description": "The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9775,11 +9607,13 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "MAX_ALLOWED_MATURITY_RATING_UNDEFINED",
-                    "MATURE",
+                    "mature",
                     "not-mature"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Show books which are rated mature or lower.",
+                    "Show books which are rated not mature."
+                  ],
                   "repeated": false
                 },
                 "source": {
@@ -9813,12 +9647,12 @@
             },
             "rate": {
               "id": "books.volumes.recommended.rate",
-              "path": "books/v1/volumes/recommended/rate",
+              "path": "volumes/recommended/rate",
               "httpMethod": "POST",
               "description": "Rate a recommended book for the current user.",
               "parameters": {
                 "locale": {
-                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating recommendations.",
+                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating recommendations.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9835,18 +9669,20 @@
                   "description": "Rating to be given to the volume.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "RATING_UNDEFINED",
                     "HAVE_IT",
                     "NOT_INTERESTED"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "Rating indicating a dismissal due to ownership.",
+                    "Rating indicating a negative dismissal of a volume."
+                  ],
                   "repeated": false
                 },
                 "source": {
@@ -9867,7 +9703,7 @@
                   "description": "ID of the source volume.",
                   "default": null,
                   "location": "query",
-                  "required": false,
+                  "required": true,
                   "type": "string",
                   "format": null,
                   "minimum": null,
@@ -9878,7 +9714,10 @@
                   "repeated": false
                 }
               },
-              "parameterOrder": [],
+              "parameterOrder": [
+                "rating",
+                "volumeId"
+              ],
               "request": null,
               "response": {
                 "$ref": "BooksVolumesRecommendedRateResponse"
@@ -9899,12 +9738,12 @@
           "methods": {
             "list": {
               "id": "books.volumes.useruploaded.list",
-              "path": "books/v1/volumes/useruploaded",
+              "path": "volumes/useruploaded",
               "httpMethod": "GET",
               "description": "Return a list of books uploaded by the current user.",
               "parameters": {
                 "locale": {
-                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for\ngenerating recommendations.",
+                  "description": "ISO-639-1 language and ISO-3166-1 country code. Ex: 'en_US'. Used for generating recommendations.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -9924,8 +9763,8 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
-                  "maximum": null,
+                  "minimum": "0",
+                  "maximum": "40",
                   "pattern": null,
                   "enum": [],
                   "enumDescriptions": [],
@@ -9942,12 +9781,15 @@
                   "maximum": null,
                   "pattern": null,
                   "enum": [
-                    "PROCESSING_STATE_UNDEFINED",
                     "COMPLETED_FAILED",
                     "COMPLETED_SUCCESS",
                     "RUNNING"
                   ],
-                  "enumDescriptions": [],
+                  "enumDescriptions": [
+                    "The volume processing hase failed.",
+                    "The volume processing was completed.",
+                    "The volume processing is not completed."
+                  ],
                   "repeated": true
                 },
                 "source": {
@@ -9971,7 +9813,7 @@
                   "required": false,
                   "type": "integer",
                   "format": "uint32",
-                  "minimum": null,
+                  "minimum": "0",
                   "maximum": null,
                   "pattern": null,
                   "enum": [],
@@ -9979,7 +9821,7 @@
                   "repeated": false
                 },
                 "volumeId": {
-                  "description": "The ids of the volumes to be returned. If not specified all that match the\nprocessingState are returned.",
+                  "description": "The ids of the volumes to be returned. If not specified all that match the processingState are returned.",
                   "default": null,
                   "location": "query",
                   "required": false,
@@ -10013,7 +9855,7 @@
       "methods": {
         "get": {
           "id": "books.volumes.get",
-          "path": "books/v1/volumes/{volumeId}",
+          "path": "volumes/{volumeId}",
           "httpMethod": "GET",
           "description": "Gets volume information for a single volume.",
           "parameters": {
@@ -10070,15 +9912,17 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "PROJECTION_UNDEFINED",
-                "FULL",
-                "LITE"
+                "full",
+                "lite"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Includes all volume data.",
+                "Includes a subset of fields in volumeInfo and accessInfo."
+              ],
               "repeated": false
             },
             "source": {
-              "description": "string  to identify the originator of this request.",
+              "description": "String to identify the originator of this request.",
               "default": null,
               "location": "query",
               "required": false,
@@ -10138,7 +9982,7 @@
         },
         "list": {
           "id": "books.volumes.list",
-          "path": "books/v1/volumes",
+          "path": "volumes",
           "httpMethod": "GET",
           "description": "Performs a book search.",
           "parameters": {
@@ -10153,10 +9997,11 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "DOWNLOAD_UNDEFINED",
-                "EPUB"
+                "epub"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "All volumes with epub."
+              ],
               "repeated": false
             },
             "filter": {
@@ -10170,14 +10015,19 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "FILTER_UNDEFINED",
                 "ebooks",
                 "free-ebooks",
                 "full",
                 "paid-ebooks",
                 "partial"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "All Google eBooks.",
+                "Google eBook with full volume text viewability.",
+                "Public can view entire volume text.",
+                "Google eBook with a price.",
+                "Public able to see parts of text."
+              ],
               "repeated": false
             },
             "langRestrict": {
@@ -10205,15 +10055,17 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "LIBRARY_RESTRICT_UNDEFINED",
                 "my-library",
                 "no-restrict"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Restrict to the user's library, any shelf.",
+                "Do not restrict based on user's library."
+              ],
               "repeated": false
             },
             "maxAllowedMaturityRating": {
-              "description": "The maximum allowed maturity rating of returned recommendations. Books with\na higher maturity rating are filtered out.",
+              "description": "The maximum allowed maturity rating of returned recommendations. Books with a higher maturity rating are filtered out.",
               "default": null,
               "location": "query",
               "required": false,
@@ -10223,11 +10075,13 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "MAX_ALLOWED_MATURITY_RATING_UNDEFINED",
-                "MATURE",
+                "mature",
                 "not-mature"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Show books which are rated mature or lower.",
+                "Show books which are rated not mature."
+              ],
               "repeated": false
             },
             "maxResults": {
@@ -10237,8 +10091,8 @@
               "required": false,
               "type": "integer",
               "format": "uint32",
-              "minimum": null,
-              "maximum": null,
+              "minimum": "0",
+              "maximum": "40",
               "pattern": null,
               "enum": [],
               "enumDescriptions": [],
@@ -10255,11 +10109,13 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "ORDER_BY_UNDEFINED",
                 "newest",
                 "relevance"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Most recently published.",
+                "Relevance to search terms."
+              ],
               "repeated": false
             },
             "partner": {
@@ -10287,12 +10143,15 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "PRINT_TYPE_UNDEFINED",
-                "ALL",
-                "BOOKS",
-                "MAGAZINES"
+                "all",
+                "books",
+                "magazines"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "All volume content types.",
+                "Just books.",
+                "Just magazines."
+              ],
               "repeated": false
             },
             "projection": {
@@ -10306,18 +10165,20 @@
               "maximum": null,
               "pattern": null,
               "enum": [
-                "PROJECTION_UNDEFINED",
-                "FULL",
-                "LITE"
+                "full",
+                "lite"
               ],
-              "enumDescriptions": [],
+              "enumDescriptions": [
+                "Includes all volume data.",
+                "Includes a subset of fields in volumeInfo and accessInfo."
+              ],
               "repeated": false
             },
             "q": {
               "description": "Full-text search query string.",
               "default": null,
               "location": "query",
-              "required": false,
+              "required": true,
               "type": "string",
               "format": null,
               "minimum": null,
@@ -10362,7 +10223,7 @@
               "required": false,
               "type": "integer",
               "format": "uint32",
-              "minimum": null,
+              "minimum": "0",
               "maximum": null,
               "pattern": null,
               "enum": [],
@@ -10370,7 +10231,9 @@
               "repeated": false
             }
           },
-          "parameterOrder": [],
+          "parameterOrder": [
+            "q"
+          ],
           "request": null,
           "response": {
             "$ref": "Volumes"

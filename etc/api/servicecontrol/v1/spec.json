@@ -7,7 +7,7 @@
   "canonicalName": "Service Control",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200420",
+  "revision": "20200511",
   "title": "Service Control API",
   "description": "Provides control plane functionality to managed services, such as logging, monitoring, and status checks.",
   "ownerDomain": "google.com",
@@ -895,7 +895,7 @@
           "$ref": "Status"
         },
         "subject": {
-          "description": "Subject to whom this error applies. See the specific code enum for more\ndetails on this field. For example:\n    - “project:<project-id or project-number>”\n    - “folder:<folder-id>”\n    - “organization:<organization-id>”",
+          "description": "Subject to whom this error applies. See the specific code enum for more\ndetails on this field. For example:\n\n- \"project:<project-id or project-number>\"\n- \"folder:<folder-id>\"\n- \"organization:<organization-id>\"",
           "type": "string",
           "format": null,
           "enum": [],

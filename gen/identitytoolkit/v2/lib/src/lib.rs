@@ -429,7 +429,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub enabled: ::std::option::Option<bool>,
-        #[doc = "The proto for storing SAML IdP (Identity Provider) configuration when the\nproject acts as the relying party."]
+        #[doc = "The SAML IdP (Identity Provider) configuration when the\nproject acts as the relying party."]
         #[serde(
             rename = "idpConfig",
             default,
@@ -444,7 +444,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub name: ::std::option::Option<String>,
-        #[doc = "The proto for storing SAML SP (Service Provider) configuration when the\nproject acts as the relying party to receive and accept an authentication\nassertion issued by a SAML identity provider."]
+        #[doc = "The SAML SP (Service Provider) configuration when the\nproject acts as the relying party to receive and accept an authentication\nassertion issued by a SAML identity provider."]
         #[serde(
             rename = "spConfig",
             default,

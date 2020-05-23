@@ -15,7 +15,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
         let mut app = App::new("cloudasset1_beta1")
             .setting(clap::AppSettings::ColoredHelp)
             .author("Sebastian Thiel <byronimo@gmail.com>")
-            .version("0.1.0-20200508")
+            .version("0.1.0-20200515")
             .about("The cloud asset API manages the history and inventory of cloud resources.")
             .after_help("All documentation details can be found at <TODO figure out URL>")
             .arg(Arg::with_name("scope")
@@ -37,7 +37,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
             .setting(AppSettings::ColoredHelp)
             .about("methods: export_assets");
         {
-            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export.");
+            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export. We recommend intervals of at least 2 seconds\nwith exponential retry to poll the export operation result. For\nregular-size resource parent, the export operation usually finishes within\n5 minutes.");
             folders0 = folders0.subcommand(mcmd);
         }
         let mut organizations0 = SubCommand::with_name("organizations")
@@ -48,7 +48,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
             organizations0 = organizations0.subcommand(mcmd);
         }
         {
-            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export.");
+            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export. We recommend intervals of at least 2 seconds\nwith exponential retry to poll the export operation result. For\nregular-size resource parent, the export operation usually finishes within\n5 minutes.");
             organizations0 = organizations0.subcommand(mcmd);
         }
         let mut projects0 = SubCommand::with_name("projects")
@@ -59,7 +59,7 @@ impl<'a, 'b> Default for HeapApp<'a, 'b> {
             projects0 = projects0.subcommand(mcmd);
         }
         {
-            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export.");
+            let mcmd = SubCommand::with_name("export_assets").about("Exports assets with time and resource types to a given Cloud Storage\nlocation. The output format is newline-delimited JSON.\nThis API implements the google.longrunning.Operation API allowing you\nto keep track of the export. We recommend intervals of at least 2 seconds\nwith exponential retry to poll the export operation result. For\nregular-size resource parent, the export operation usually finishes within\n5 minutes.");
             projects0 = projects0.subcommand(mcmd);
         }
         let mut operations1 = SubCommand::with_name("operations")
