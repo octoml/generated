@@ -17,4 +17,5 @@ mime = "0.3"
 textnonce = "0.6"
 percent-encoding = "2"
 [dependencies.google_api_bytes]
-git = "https://github.com/google-apis-rs/generator"
+git = "https://github.com/octoml/generator"
+branch = "octo_master"
