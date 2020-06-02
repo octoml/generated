@@ -242,14 +242,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub min_cpu_platform: ::std::option::Option<String>,
-        #[doc = "Scopes that are used by NAP when creating node pools. If oauth_scopes are\nspecified, service_account should be empty."]
+        #[doc = "Scopes that are used by NAP when creating node pools."]
         #[serde(
             rename = "oauthScopes",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub oauth_scopes: ::std::option::Option<Vec<String>>,
-        #[doc = "The Google Cloud Platform Service Account to be used by the node VMs. If\nservice_account is specified, scopes should be empty."]
+        #[doc = "The Google Cloud Platform Service Account to be used by the node VMs."]
         #[serde(
             rename = "serviceAccount",
             default,
@@ -736,6 +736,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub maintenance_policy: ::std::option::Option<crate::schemas::MaintenancePolicy>,
+        #[doc = "Configuration for master components."]
+        #[serde(
+            rename = "master",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub master: ::std::option::Option<crate::schemas::Master>,
         #[doc = "The authentication information for accessing the master endpoint.\nIf unspecified, the defaults are used:\nFor clusters before v1.12, if master_auth is unspecified, `username` will\nbe set to \"admin\", a random password will be generated, and a client\ncertificate will be issued."]
         #[serde(
             rename = "masterAuth",
@@ -1376,6 +1383,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub desired_logging_service: ::std::option::Option<String>,
+        #[doc = "Configuration for master components."]
+        #[serde(
+            rename = "desiredMaster",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub desired_master: ::std::option::Option<crate::schemas::Master>,
         #[doc = "The desired configuration options for master authorized networks feature."]
         #[serde(
             rename = "desiredMasterAuthorizedNetworksConfig",
@@ -3029,6 +3043,30 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for MaintenanceWindow {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Copy,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct Master {}
+    impl ::google_field_selector::FieldSelector for Master {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for Master {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }

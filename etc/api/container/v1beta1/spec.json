@@ -7,7 +7,7 @@
   "canonicalName": "Container",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200505",
+  "revision": "20200519",
   "title": "Kubernetes Engine API",
   "description": "Builds and manages container-based applications, powered by the open source Kubernetes technology.",
   "ownerDomain": "google.com",
@@ -378,7 +378,7 @@
           "items": null
         },
         "oauthScopes": {
-          "description": "Scopes that are used by NAP when creating node pools. If oauth_scopes are\nspecified, service_account should be empty.",
+          "description": "Scopes that are used by NAP when creating node pools.",
           "type": "array",
           "format": null,
           "enum": [],
@@ -396,7 +396,7 @@
           }
         },
         "serviceAccount": {
-          "description": "The Google Cloud Platform Service Account to be used by the node VMs. If\nservice_account is specified, scopes should be empty.",
+          "description": "The Google Cloud Platform Service Account to be used by the node VMs.",
           "type": "string",
           "format": null,
           "enum": [],
@@ -863,6 +863,10 @@
           "description": "Configure the maintenance policy for this cluster.",
           "$ref": "MaintenancePolicy"
         },
+        "master": {
+          "description": "Configuration for master components.",
+          "$ref": "Master"
+        },
         "masterAuth": {
           "description": "The authentication information for accessing the master endpoint.\nIf unspecified, the defaults are used:\nFor clusters before v1.12, if master_auth is unspecified, `username` will\nbe set to \"admin\", a random password will be generated, and a client\ncertificate will be issued.",
           "$ref": "MasterAuth"
@@ -1275,6 +1279,10 @@
           "properties": {},
           "additionalProperties": null,
           "items": null
+        },
+        "desiredMaster": {
+          "description": "Configuration for master components.",
+          "$ref": "Master"
         },
         "desiredMasterAuthorizedNetworksConfig": {
           "description": "The desired configuration options for master authorized networks feature.",
@@ -2609,6 +2617,17 @@
           "$ref": "RecurringTimeWindow"
         }
       },
+      "additionalProperties": null,
+      "items": null
+    },
+    "Master": {
+      "id": "Master",
+      "description": "Master is the configuration for components on master.",
+      "type": "object",
+      "format": null,
+      "enum": [],
+      "enumDescriptions": [],
+      "properties": {},
       "additionalProperties": null,
       "items": null
     },

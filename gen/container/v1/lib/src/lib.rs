@@ -199,14 +199,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub management: ::std::option::Option<crate::schemas::NodeManagement>,
-        #[doc = "Scopes that are used by NAP when creating node pools."]
+        #[doc = "Scopes that are used by NAP when creating node pools. If oauth_scopes are\nspecified, service_account should be empty."]
         #[serde(
             rename = "oauthScopes",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub oauth_scopes: ::std::option::Option<Vec<String>>,
-        #[doc = "The Google Cloud Platform Service Account to be used by the node VMs."]
+        #[doc = "The Google Cloud Platform Service Account to be used by the node VMs. If\nservice_account is specified, scopes should be empty."]
         #[serde(
             rename = "serviceAccount",
             default,

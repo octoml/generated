@@ -7,7 +7,7 @@
   "canonicalName": "Clouderrorreporting",
   "fullyEncodeReservedExpansion": null,
   "version": "v1beta1",
-  "revision": "20200526",
+  "revision": "20200519",
   "title": "Error Reporting API",
   "description": "Groups and counts similar errors from cloud services and applications, reports new errors, and provides access to error groups and their associated errors.\n",
   "ownerDomain": "google.com",
