@@ -7,7 +7,7 @@
   "canonicalName": "Games Management",
   "fullyEncodeReservedExpansion": null,
   "version": "v1management",
-  "revision": "20200519",
+  "revision": "20200528",
   "title": "Google Play Game Management",
   "description": "The Google Play Game Management API allows developers to manage resources from the Google\n     Play Game service.",
   "ownerDomain": "google.com",

@@ -1,4 +1,4 @@
-#![doc = "# Resources and Methods\n    * [advertisers](resources/advertisers/struct.AdvertisersActions.html)\n      * [*create*](resources/advertisers/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/struct.GetRequestBuilder.html), [*list*](resources/advertisers/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/struct.PatchRequestBuilder.html)\n      * [assets](resources/advertisers/assets/struct.AssetsActions.html)\n        * [*upload*](resources/advertisers/assets/struct.UploadRequestBuilder.html)\n      * [campaigns](resources/advertisers/campaigns/struct.CampaignsActions.html)\n        * [*create*](resources/advertisers/campaigns/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/campaigns/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/campaigns/struct.GetRequestBuilder.html), [*list*](resources/advertisers/campaigns/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/campaigns/struct.PatchRequestBuilder.html)\n      * [channels](resources/advertisers/channels/struct.ChannelsActions.html)\n        * [*get*](resources/advertisers/channels/struct.GetRequestBuilder.html), [*list*](resources/advertisers/channels/struct.ListRequestBuilder.html)\n      * [creatives](resources/advertisers/creatives/struct.CreativesActions.html)\n        * [*create*](resources/advertisers/creatives/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/creatives/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/creatives/struct.GetRequestBuilder.html), [*list*](resources/advertisers/creatives/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/creatives/struct.PatchRequestBuilder.html)\n      * [insertion_orders](resources/advertisers/insertion_orders/struct.InsertionOrdersActions.html)\n        * [*create*](resources/advertisers/insertion_orders/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/insertion_orders/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/insertion_orders/struct.GetRequestBuilder.html), [*list*](resources/advertisers/insertion_orders/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/insertion_orders/struct.PatchRequestBuilder.html)\n      * [line_items](resources/advertisers/line_items/struct.LineItemsActions.html)\n        * [*bulkEditLineItemAssignedTargetingOptions*](resources/advertisers/line_items/struct.BulkEditLineItemAssignedTargetingOptionsRequestBuilder.html), [*bulkListLineItemAssignedTargetingOptions*](resources/advertisers/line_items/struct.BulkListLineItemAssignedTargetingOptionsRequestBuilder.html), [*create*](resources/advertisers/line_items/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/line_items/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/line_items/struct.GetRequestBuilder.html), [*list*](resources/advertisers/line_items/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/line_items/struct.PatchRequestBuilder.html)\n        * [targeting_types](resources/advertisers/line_items/targeting_types/struct.TargetingTypesActions.html)\n          * [assigned_targeting_options](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.AssignedTargetingOptionsActions.html)\n            * [*create*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.GetRequestBuilder.html), [*list*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.ListRequestBuilder.html)\n      * [location_lists](resources/advertisers/location_lists/struct.LocationListsActions.html)\n        * [*get*](resources/advertisers/location_lists/struct.GetRequestBuilder.html), [*list*](resources/advertisers/location_lists/struct.ListRequestBuilder.html)\n      * [negative_keyword_lists](resources/advertisers/negative_keyword_lists/struct.NegativeKeywordListsActions.html)\n        * [*get*](resources/advertisers/negative_keyword_lists/struct.GetRequestBuilder.html), [*list*](resources/advertisers/negative_keyword_lists/struct.ListRequestBuilder.html)\n    * [combined_audiences](resources/combined_audiences/struct.CombinedAudiencesActions.html)\n      * [*get*](resources/combined_audiences/struct.GetRequestBuilder.html), [*list*](resources/combined_audiences/struct.ListRequestBuilder.html)\n    * [custom_lists](resources/custom_lists/struct.CustomListsActions.html)\n      * [*get*](resources/custom_lists/struct.GetRequestBuilder.html), [*list*](resources/custom_lists/struct.ListRequestBuilder.html)\n    * [first_and_third_party_audiences](resources/first_and_third_party_audiences/struct.FirstAndThirdPartyAudiencesActions.html)\n      * [*get*](resources/first_and_third_party_audiences/struct.GetRequestBuilder.html), [*list*](resources/first_and_third_party_audiences/struct.ListRequestBuilder.html)\n    * [floodlight_groups](resources/floodlight_groups/struct.FloodlightGroupsActions.html)\n      * [*get*](resources/floodlight_groups/struct.GetRequestBuilder.html), [*patch*](resources/floodlight_groups/struct.PatchRequestBuilder.html)\n    * [google_audiences](resources/google_audiences/struct.GoogleAudiencesActions.html)\n      * [*get*](resources/google_audiences/struct.GetRequestBuilder.html), [*list*](resources/google_audiences/struct.ListRequestBuilder.html)\n    * [inventory_source_groups](resources/inventory_source_groups/struct.InventorySourceGroupsActions.html)\n      * [*get*](resources/inventory_source_groups/struct.GetRequestBuilder.html), [*list*](resources/inventory_source_groups/struct.ListRequestBuilder.html)\n    * [inventory_sources](resources/inventory_sources/struct.InventorySourcesActions.html)\n      * [*get*](resources/inventory_sources/struct.GetRequestBuilder.html), [*list*](resources/inventory_sources/struct.ListRequestBuilder.html)\n    * [media](resources/media/struct.MediaActions.html)\n      * [*download*](resources/media/struct.DownloadRequestBuilder.html)\n    * [partners](resources/partners/struct.PartnersActions.html)\n      * [channels](resources/partners/channels/struct.ChannelsActions.html)\n        * [*get*](resources/partners/channels/struct.GetRequestBuilder.html), [*list*](resources/partners/channels/struct.ListRequestBuilder.html)\n    * [sdfdownloadtasks](resources/sdfdownloadtasks/struct.SdfdownloadtasksActions.html)\n      * [*create*](resources/sdfdownloadtasks/struct.CreateRequestBuilder.html)\n      * [operations](resources/sdfdownloadtasks/operations/struct.OperationsActions.html)\n        * [*get*](resources/sdfdownloadtasks/operations/struct.GetRequestBuilder.html)\n    * [targeting_types](resources/targeting_types/struct.TargetingTypesActions.html)\n      * [targeting_options](resources/targeting_types/targeting_options/struct.TargetingOptionsActions.html)\n        * [*get*](resources/targeting_types/targeting_options/struct.GetRequestBuilder.html), [*list*](resources/targeting_types/targeting_options/struct.ListRequestBuilder.html)\n"]
+#![doc = "# Resources and Methods\n    * [advertisers](resources/advertisers/struct.AdvertisersActions.html)\n      * [*bulkEditAdvertiserAssignedTargetingOptions*](resources/advertisers/struct.BulkEditAdvertiserAssignedTargetingOptionsRequestBuilder.html), [*bulkListAdvertiserAssignedTargetingOptions*](resources/advertisers/struct.BulkListAdvertiserAssignedTargetingOptionsRequestBuilder.html), [*create*](resources/advertisers/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/struct.GetRequestBuilder.html), [*list*](resources/advertisers/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/struct.PatchRequestBuilder.html)\n      * [assets](resources/advertisers/assets/struct.AssetsActions.html)\n        * [*upload*](resources/advertisers/assets/struct.UploadRequestBuilder.html)\n      * [campaigns](resources/advertisers/campaigns/struct.CampaignsActions.html)\n        * [*create*](resources/advertisers/campaigns/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/campaigns/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/campaigns/struct.GetRequestBuilder.html), [*list*](resources/advertisers/campaigns/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/campaigns/struct.PatchRequestBuilder.html)\n      * [channels](resources/advertisers/channels/struct.ChannelsActions.html)\n        * [*get*](resources/advertisers/channels/struct.GetRequestBuilder.html), [*list*](resources/advertisers/channels/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/channels/struct.PatchRequestBuilder.html)\n        * [sites](resources/advertisers/channels/sites/struct.SitesActions.html)\n          * [*bulkEdit*](resources/advertisers/channels/sites/struct.BulkEditRequestBuilder.html), [*create*](resources/advertisers/channels/sites/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/channels/sites/struct.DeleteRequestBuilder.html), [*list*](resources/advertisers/channels/sites/struct.ListRequestBuilder.html)\n      * [creatives](resources/advertisers/creatives/struct.CreativesActions.html)\n        * [*create*](resources/advertisers/creatives/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/creatives/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/creatives/struct.GetRequestBuilder.html), [*list*](resources/advertisers/creatives/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/creatives/struct.PatchRequestBuilder.html)\n      * [insertion_orders](resources/advertisers/insertion_orders/struct.InsertionOrdersActions.html)\n        * [*create*](resources/advertisers/insertion_orders/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/insertion_orders/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/insertion_orders/struct.GetRequestBuilder.html), [*list*](resources/advertisers/insertion_orders/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/insertion_orders/struct.PatchRequestBuilder.html)\n      * [line_items](resources/advertisers/line_items/struct.LineItemsActions.html)\n        * [*bulkEditLineItemAssignedTargetingOptions*](resources/advertisers/line_items/struct.BulkEditLineItemAssignedTargetingOptionsRequestBuilder.html), [*bulkListLineItemAssignedTargetingOptions*](resources/advertisers/line_items/struct.BulkListLineItemAssignedTargetingOptionsRequestBuilder.html), [*create*](resources/advertisers/line_items/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/line_items/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/line_items/struct.GetRequestBuilder.html), [*list*](resources/advertisers/line_items/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/line_items/struct.PatchRequestBuilder.html)\n        * [targeting_types](resources/advertisers/line_items/targeting_types/struct.TargetingTypesActions.html)\n          * [assigned_targeting_options](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.AssignedTargetingOptionsActions.html)\n            * [*create*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.GetRequestBuilder.html), [*list*](resources/advertisers/line_items/targeting_types/assigned_targeting_options/struct.ListRequestBuilder.html)\n      * [location_lists](resources/advertisers/location_lists/struct.LocationListsActions.html)\n        * [*create*](resources/advertisers/location_lists/struct.CreateRequestBuilder.html), [*get*](resources/advertisers/location_lists/struct.GetRequestBuilder.html), [*list*](resources/advertisers/location_lists/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/location_lists/struct.PatchRequestBuilder.html)\n        * [assigned_locations](resources/advertisers/location_lists/assigned_locations/struct.AssignedLocationsActions.html)\n          * [*bulkEdit*](resources/advertisers/location_lists/assigned_locations/struct.BulkEditRequestBuilder.html), [*create*](resources/advertisers/location_lists/assigned_locations/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/location_lists/assigned_locations/struct.DeleteRequestBuilder.html), [*list*](resources/advertisers/location_lists/assigned_locations/struct.ListRequestBuilder.html)\n      * [negative_keyword_lists](resources/advertisers/negative_keyword_lists/struct.NegativeKeywordListsActions.html)\n        * [*create*](resources/advertisers/negative_keyword_lists/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/negative_keyword_lists/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/negative_keyword_lists/struct.GetRequestBuilder.html), [*list*](resources/advertisers/negative_keyword_lists/struct.ListRequestBuilder.html), [*patch*](resources/advertisers/negative_keyword_lists/struct.PatchRequestBuilder.html)\n        * [negative_keywords](resources/advertisers/negative_keyword_lists/negative_keywords/struct.NegativeKeywordsActions.html)\n          * [*bulkEdit*](resources/advertisers/negative_keyword_lists/negative_keywords/struct.BulkEditRequestBuilder.html), [*create*](resources/advertisers/negative_keyword_lists/negative_keywords/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/negative_keyword_lists/negative_keywords/struct.DeleteRequestBuilder.html), [*list*](resources/advertisers/negative_keyword_lists/negative_keywords/struct.ListRequestBuilder.html)\n      * [targeting_types](resources/advertisers/targeting_types/struct.TargetingTypesActions.html)\n        * [assigned_targeting_options](resources/advertisers/targeting_types/assigned_targeting_options/struct.AssignedTargetingOptionsActions.html)\n          * [*create*](resources/advertisers/targeting_types/assigned_targeting_options/struct.CreateRequestBuilder.html), [*delete*](resources/advertisers/targeting_types/assigned_targeting_options/struct.DeleteRequestBuilder.html), [*get*](resources/advertisers/targeting_types/assigned_targeting_options/struct.GetRequestBuilder.html), [*list*](resources/advertisers/targeting_types/assigned_targeting_options/struct.ListRequestBuilder.html)\n    * [combined_audiences](resources/combined_audiences/struct.CombinedAudiencesActions.html)\n      * [*get*](resources/combined_audiences/struct.GetRequestBuilder.html), [*list*](resources/combined_audiences/struct.ListRequestBuilder.html)\n    * [custom_lists](resources/custom_lists/struct.CustomListsActions.html)\n      * [*get*](resources/custom_lists/struct.GetRequestBuilder.html), [*list*](resources/custom_lists/struct.ListRequestBuilder.html)\n    * [first_and_third_party_audiences](resources/first_and_third_party_audiences/struct.FirstAndThirdPartyAudiencesActions.html)\n      * [*get*](resources/first_and_third_party_audiences/struct.GetRequestBuilder.html), [*list*](resources/first_and_third_party_audiences/struct.ListRequestBuilder.html)\n    * [floodlight_groups](resources/floodlight_groups/struct.FloodlightGroupsActions.html)\n      * [*get*](resources/floodlight_groups/struct.GetRequestBuilder.html), [*patch*](resources/floodlight_groups/struct.PatchRequestBuilder.html)\n    * [google_audiences](resources/google_audiences/struct.GoogleAudiencesActions.html)\n      * [*get*](resources/google_audiences/struct.GetRequestBuilder.html), [*list*](resources/google_audiences/struct.ListRequestBuilder.html)\n    * [inventory_source_groups](resources/inventory_source_groups/struct.InventorySourceGroupsActions.html)\n      * [*create*](resources/inventory_source_groups/struct.CreateRequestBuilder.html), [*delete*](resources/inventory_source_groups/struct.DeleteRequestBuilder.html), [*get*](resources/inventory_source_groups/struct.GetRequestBuilder.html), [*list*](resources/inventory_source_groups/struct.ListRequestBuilder.html), [*patch*](resources/inventory_source_groups/struct.PatchRequestBuilder.html)\n      * [assigned_inventory_sources](resources/inventory_source_groups/assigned_inventory_sources/struct.AssignedInventorySourcesActions.html)\n        * [*bulkEdit*](resources/inventory_source_groups/assigned_inventory_sources/struct.BulkEditRequestBuilder.html), [*create*](resources/inventory_source_groups/assigned_inventory_sources/struct.CreateRequestBuilder.html), [*delete*](resources/inventory_source_groups/assigned_inventory_sources/struct.DeleteRequestBuilder.html), [*list*](resources/inventory_source_groups/assigned_inventory_sources/struct.ListRequestBuilder.html)\n    * [inventory_sources](resources/inventory_sources/struct.InventorySourcesActions.html)\n      * [*get*](resources/inventory_sources/struct.GetRequestBuilder.html), [*list*](resources/inventory_sources/struct.ListRequestBuilder.html)\n    * [media](resources/media/struct.MediaActions.html)\n      * [*download*](resources/media/struct.DownloadRequestBuilder.html)\n    * [partners](resources/partners/struct.PartnersActions.html)\n      * [channels](resources/partners/channels/struct.ChannelsActions.html)\n        * [*get*](resources/partners/channels/struct.GetRequestBuilder.html), [*list*](resources/partners/channels/struct.ListRequestBuilder.html), [*patch*](resources/partners/channels/struct.PatchRequestBuilder.html)\n        * [sites](resources/partners/channels/sites/struct.SitesActions.html)\n          * [*bulkEdit*](resources/partners/channels/sites/struct.BulkEditRequestBuilder.html), [*create*](resources/partners/channels/sites/struct.CreateRequestBuilder.html), [*delete*](resources/partners/channels/sites/struct.DeleteRequestBuilder.html), [*list*](resources/partners/channels/sites/struct.ListRequestBuilder.html)\n    * [sdfdownloadtasks](resources/sdfdownloadtasks/struct.SdfdownloadtasksActions.html)\n      * [*create*](resources/sdfdownloadtasks/struct.CreateRequestBuilder.html)\n      * [operations](resources/sdfdownloadtasks/operations/struct.OperationsActions.html)\n        * [*get*](resources/sdfdownloadtasks/operations/struct.GetRequestBuilder.html)\n    * [targeting_types](resources/targeting_types/struct.TargetingTypesActions.html)\n      * [targeting_options](resources/targeting_types/targeting_options/struct.TargetingOptionsActions.html)\n        * [*get*](resources/targeting_types/targeting_options/struct.GetRequestBuilder.html), [*list*](resources/targeting_types/targeting_options/struct.ListRequestBuilder.html)\n"]
 pub mod scopes {
     #[doc = "Create, see, edit, and permanently delete your Display & Video 360 entities and reports\n\n`https://www.googleapis.com/auth/display-video`"]
     pub const DISPLAY_VIDEO: &str = "https://www.googleapis.com/auth/display-video";
@@ -806,6 +806,13 @@ pub mod schemas {
         )]
         #[serde(with = "crate::parsed_string")]
         pub partner_id: ::std::option::Option<i64>,
+        #[doc = "Targeting settings related to ad serving of the advertiser."]
+        #[serde(
+            rename = "servingConfig",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub serving_config: ::std::option::Option<crate::schemas::AdvertiserTargetingConfig>,
         #[doc = "Output only. The timestamp when the advertiser was last updated. Assigned by the system."]
         #[serde(
             rename = "updateTime",
@@ -1122,6 +1129,37 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for AdvertiserSdfConfig {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct AdvertiserTargetingConfig {
+        #[doc = "Whether or not connected TV devices are exempt from viewability targeting\nfor all video line items under the advertiser."]
+        #[serde(
+            rename = "exemptTvFromViewabilityTargeting",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub exempt_tv_from_viewability_targeting: ::std::option::Option<bool>,
+    }
+    impl ::google_field_selector::FieldSelector for AdvertiserTargetingConfig {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AdvertiserTargetingConfig {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -1781,6 +1819,98 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct AssignedInventorySource {
+        #[doc = "Output only. The unique ID of the assigned inventory source. The ID is only\nunique within a given inventory source group. It may be reused in other\ncontexts."]
+        #[serde(
+            rename = "assignedInventorySourceId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub assigned_inventory_source_id: ::std::option::Option<i64>,
+        #[doc = "Required. The ID of the inventory source entity being targeted."]
+        #[serde(
+            rename = "inventorySourceId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub inventory_source_id: ::std::option::Option<String>,
+        #[doc = "Output only. The resource name of the assigned inventory source."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for AssignedInventorySource {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AssignedInventorySource {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct AssignedLocation {
+        #[doc = "Output only. The unique ID of the assigned location. The ID is only unique within a\nlocation list. It may be reused in other contexts."]
+        #[serde(
+            rename = "assignedLocationId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub assigned_location_id: ::std::option::Option<i64>,
+        #[doc = "Output only. The resource name of the assigned location."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+        #[doc = "Required. The ID of the targeting option assigned to the location list. Must be of\ntype TARGETING_TYPE_GEO_REGION."]
+        #[serde(
+            rename = "targetingOptionId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub targeting_option_id: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for AssignedLocation {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for AssignedLocation {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct AssignedTargetingOption {
         #[doc = "Age range details. This field will be populated when the\nTargetingType is `TARGETING_TYPE_AGE_RANGE`."]
         #[serde(
@@ -2282,8 +2412,6 @@ pub mod schemas {
         TargetingTypeOperatingSystem,
         #[doc = "Target ads to a specific parental status (for example, parent or not a\nparent)."]
         TargetingTypeParentalStatus,
-        #[doc = "Target ads to business chains, individual points of interests (POIs),\nstreet addresses, and latitude/longitude coordinates."]
-        TargetingTypeProximityLocation,
         #[doc = "Target ads to the specified points of interest on a proximity location\nlist."]
         TargetingTypeProximityLocationList,
         #[doc = "Target ads to the specified regions on a regional location list."]
@@ -2389,9 +2517,6 @@ pub mod schemas {
                 }
                 AssignedTargetingOptionTargetingType::TargetingTypeParentalStatus => {
                     "TARGETING_TYPE_PARENTAL_STATUS"
-                }
-                AssignedTargetingOptionTargetingType::TargetingTypeProximityLocation => {
-                    "TARGETING_TYPE_PROXIMITY_LOCATION"
                 }
                 AssignedTargetingOptionTargetingType::TargetingTypeProximityLocationList => {
                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
@@ -2514,9 +2639,6 @@ pub mod schemas {
                 }
                 "TARGETING_TYPE_PARENTAL_STATUS" => {
                     AssignedTargetingOptionTargetingType::TargetingTypeParentalStatus
-                }
-                "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                    AssignedTargetingOptionTargetingType::TargetingTypeProximityLocation
                 }
                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                     AssignedTargetingOptionTargetingType::TargetingTypeProximityLocationList
@@ -2651,9 +2773,6 @@ pub mod schemas {
                 }
                 "TARGETING_TYPE_PARENTAL_STATUS" => {
                     AssignedTargetingOptionTargetingType::TargetingTypeParentalStatus
-                }
-                "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                    AssignedTargetingOptionTargetingType::TargetingTypeProximityLocation
                 }
                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                     AssignedTargetingOptionTargetingType::TargetingTypeProximityLocationList
@@ -3152,6 +3271,235 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct BulkEditAdvertiserAssignedTargetingOptionsRequest {
+        #[doc = "The assigned targeting options to create in batch, specified as a list of\n`CreateAssignedTargetingOptionsRequest`."]
+        #[serde(
+            rename = "createRequests",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub create_requests:
+            ::std::option::Option<Vec<crate::schemas::CreateAssignedTargetingOptionsRequest>>,
+        #[doc = "The assigned targeting options to delete in batch, specified as a list of\n`DeleteAssignedTargetingOptionsRequest`."]
+        #[serde(
+            rename = "deleteRequests",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub delete_requests:
+            ::std::option::Option<Vec<crate::schemas::DeleteAssignedTargetingOptionsRequest>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAdvertiserAssignedTargetingOptionsRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAdvertiserAssignedTargetingOptionsRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditAdvertiserAssignedTargetingOptionsResponse {
+        #[doc = "The list of assigned targeting options that have been successfully created.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "createdAssignedTargetingOptions",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub created_assigned_targeting_options:
+            ::std::option::Option<Vec<crate::schemas::AssignedTargetingOption>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAdvertiserAssignedTargetingOptionsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAdvertiserAssignedTargetingOptionsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditAssignedInventorySourcesRequest {
+        #[doc = "The ID of the advertiser that owns the parent inventory source group.\n\nThe parent partner does not have access to these assigned inventory\nsources."]
+        #[serde(
+            rename = "advertiserId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub advertiser_id: ::std::option::Option<i64>,
+        #[doc = "The assigned inventory sources to create in bulk, specified as a list of\nAssignedInventorySources."]
+        #[serde(
+            rename = "createdAssignedInventorySources",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub created_assigned_inventory_sources:
+            ::std::option::Option<Vec<crate::schemas::AssignedInventorySource>>,
+        #[doc = "The IDs of the assigned inventory sources to delete in bulk, specified as a\nlist of\nassigned_inventory_source_ids."]
+        #[serde(
+            rename = "deletedAssignedInventorySources",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub deleted_assigned_inventory_sources: ::std::option::Option<Vec<i64>>,
+        #[doc = "The ID of the partner that owns the inventory source group.\n\nOnly this partner has write access to these assigned inventory sources."]
+        #[serde(
+            rename = "partnerId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub partner_id: ::std::option::Option<i64>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAssignedInventorySourcesRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAssignedInventorySourcesRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditAssignedInventorySourcesResponse {
+        #[doc = "The list of assigned inventory sources that have been successfully created.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedInventorySources",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_inventory_sources:
+            ::std::option::Option<Vec<crate::schemas::AssignedInventorySource>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAssignedInventorySourcesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAssignedInventorySourcesResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditAssignedLocationsRequest {
+        #[doc = "The assigned locations to create in bulk, specified as a list of\nAssignedLocations."]
+        #[serde(
+            rename = "createdAssignedLocations",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub created_assigned_locations:
+            ::std::option::Option<Vec<crate::schemas::AssignedLocation>>,
+        #[doc = "The IDs of the assigned locations to delete in bulk, specified as a list of\nassigned_location_ids."]
+        #[serde(
+            rename = "deletedAssignedLocations",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub deleted_assigned_locations: ::std::option::Option<Vec<i64>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAssignedLocationsRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAssignedLocationsRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditAssignedLocationsResponse {
+        #[doc = "The list of assigned locations that have been successfully created.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedLocations",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_locations: ::std::option::Option<Vec<crate::schemas::AssignedLocation>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditAssignedLocationsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditAssignedLocationsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct BulkEditLineItemAssignedTargetingOptionsRequest {
         #[doc = "The assigned targeting options to create in batch, specified as a list of\n`CreateAssignedTargetingOptionsRequest`."]
         #[serde(
@@ -3208,6 +3556,199 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for BulkEditLineItemAssignedTargetingOptionsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditNegativeKeywordsRequest {
+        #[doc = "The negative keywords to create in batch, specified as a list of\nNegativeKeywords."]
+        #[serde(
+            rename = "createdNegativeKeywords",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub created_negative_keywords: ::std::option::Option<Vec<crate::schemas::NegativeKeyword>>,
+        #[doc = "The negative keywords to delete in batch, specified as a list of\nkeyword_values."]
+        #[serde(
+            rename = "deletedNegativeKeywords",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub deleted_negative_keywords: ::std::option::Option<Vec<String>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditNegativeKeywordsRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditNegativeKeywordsRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditNegativeKeywordsResponse {
+        #[doc = "The list of negative keywords that have been successfully created.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "negativeKeywords",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub negative_keywords: ::std::option::Option<Vec<crate::schemas::NegativeKeyword>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditNegativeKeywordsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditNegativeKeywordsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditSitesRequest {
+        #[doc = "The ID of the advertiser that owns the parent channel."]
+        #[serde(
+            rename = "advertiserId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub advertiser_id: ::std::option::Option<i64>,
+        #[doc = "The sites to create in batch, specified as a list of Sites."]
+        #[serde(
+            rename = "createdSites",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub created_sites: ::std::option::Option<Vec<crate::schemas::Site>>,
+        #[doc = "The sites to delete in batch, specified as a list of site\nurl_or_app_ids."]
+        #[serde(
+            rename = "deletedSites",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub deleted_sites: ::std::option::Option<Vec<String>>,
+        #[doc = "The ID of the partner that owns the parent channel."]
+        #[serde(
+            rename = "partnerId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub partner_id: ::std::option::Option<i64>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditSitesRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditSitesRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkEditSitesResponse {
+        #[doc = "The list of sites that have been successfully created.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "sites",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub sites: ::std::option::Option<Vec<crate::schemas::Site>>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkEditSitesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkEditSitesResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct BulkListAdvertiserAssignedTargetingOptionsResponse {
+        #[doc = "The list of assigned targeting options.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedTargetingOptions",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_targeting_options:
+            ::std::option::Option<Vec<crate::schemas::AssignedTargetingOption>>,
+        #[doc = "A token identifying the next page of results. This value should be\nspecified as the\npageToken\nin a subsequent BulkListAdvertiserAssignedTargetingOptionsRequest to\nfetch the next page of results. This token will be absent if there are no\nmore\nassigned_targeting_options\nto return."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for BulkListAdvertiserAssignedTargetingOptionsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for BulkListAdvertiserAssignedTargetingOptionsResponse {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -4880,8 +5421,6 @@ pub mod schemas {
         TargetingTypeOperatingSystem,
         #[doc = "Target ads to a specific parental status (for example, parent or not a\nparent)."]
         TargetingTypeParentalStatus,
-        #[doc = "Target ads to business chains, individual points of interests (POIs),\nstreet addresses, and latitude/longitude coordinates."]
-        TargetingTypeProximityLocation,
         #[doc = "Target ads to the specified points of interest on a proximity location\nlist."]
         TargetingTypeProximityLocationList,
         #[doc = "Target ads to the specified regions on a regional location list."]
@@ -4905,7 +5444,7 @@ pub mod schemas {
     }
     impl CreateAssignedTargetingOptionsRequestTargetingType {
         pub fn as_str(self) -> &'static str {
-            match self { CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation => "TARGETING_TYPE_PROXIMITY_LOCATION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
+            match self { CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
         }
     }
     impl ::std::convert::AsRef<str> for CreateAssignedTargetingOptionsRequestTargetingType {
@@ -4918,7 +5457,7 @@ pub mod schemas {
         fn from_str(
             s: &str,
         ) -> ::std::result::Result<CreateAssignedTargetingOptionsRequestTargetingType, ()> {
-            Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
+            Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
         }
     }
     impl ::std::fmt::Display for CreateAssignedTargetingOptionsRequestTargetingType {
@@ -4940,7 +5479,7 @@ pub mod schemas {
             D: ::serde::de::Deserializer<'de>,
         {
             let value: &'de str = <&str>::deserialize(deserializer)?;
-            Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+            Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
         }
     }
     impl ::google_field_selector::FieldSelector for CreateAssignedTargetingOptionsRequestTargetingType {
@@ -5299,6 +5838,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub js_tracker_url: ::std::option::Option<String>,
+        #[doc = "Output only. The IDs of the line items this creative associated with.\n\nTo associate a creative to a line item, use\nLineItem.creative_ids instead."]
+        #[serde(
+            rename = "lineItemIds",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub line_item_ids: ::std::option::Option<Vec<i64>>,
         #[doc = "Output only. Media duration of the creative.\nApplicable when creative_type\nis one of:\n\n* `CREATIVE_TYPE_VIDEO`\n* `CREATIVE_TYPE_AUDIO`\n* `CREATIVE_TYPE_NATIVE_VIDEO`\n* `CREATIVE_TYPE_PUBLISHER_HOSTED`"]
         #[serde(
             rename = "mediaDuration",
@@ -6824,8 +7370,6 @@ pub mod schemas {
         TargetingTypeOperatingSystem,
         #[doc = "Target ads to a specific parental status (for example, parent or not a\nparent)."]
         TargetingTypeParentalStatus,
-        #[doc = "Target ads to business chains, individual points of interests (POIs),\nstreet addresses, and latitude/longitude coordinates."]
-        TargetingTypeProximityLocation,
         #[doc = "Target ads to the specified points of interest on a proximity location\nlist."]
         TargetingTypeProximityLocationList,
         #[doc = "Target ads to the specified regions on a regional location list."]
@@ -6849,7 +7393,7 @@ pub mod schemas {
     }
     impl DeleteAssignedTargetingOptionsRequestTargetingType {
         pub fn as_str(self) -> &'static str {
-            match self { DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation => "TARGETING_TYPE_PROXIMITY_LOCATION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
+            match self { DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
         }
     }
     impl ::std::convert::AsRef<str> for DeleteAssignedTargetingOptionsRequestTargetingType {
@@ -6862,7 +7406,7 @@ pub mod schemas {
         fn from_str(
             s: &str,
         ) -> ::std::result::Result<DeleteAssignedTargetingOptionsRequestTargetingType, ()> {
-            Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
+            Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
         }
     }
     impl ::std::fmt::Display for DeleteAssignedTargetingOptionsRequestTargetingType {
@@ -6884,7 +7428,7 @@ pub mod schemas {
             D: ::serde::de::Deserializer<'de>,
         {
             let value: &'de str = <&str>::deserialize(deserializer)?;
-            Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+            Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteAssignedTargetingOptionsRequestTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
         }
     }
     impl ::google_field_selector::FieldSelector for DeleteAssignedTargetingOptionsRequestTargetingType {
@@ -16544,6 +17088,45 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct ListAdvertiserAssignedTargetingOptionsResponse {
+        #[doc = "The list of assigned targeting options.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedTargetingOptions",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_targeting_options:
+            ::std::option::Option<Vec<crate::schemas::AssignedTargetingOption>>,
+        #[doc = "A token identifying the next page of results. This value should be\nspecified as the\npageToken in a\nsubsequent ListAdvertiserAssignedTargetingOptionsRequest to fetch the\nnext page of results. This token will be absent if there are no more\nassigned_targeting_options\nto return."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for ListAdvertiserAssignedTargetingOptionsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ListAdvertiserAssignedTargetingOptionsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct ListAdvertisersResponse {
         #[doc = "The list of advertisers.\n\nThis list will be absent if empty."]
         #[serde(
@@ -16566,6 +17149,83 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for ListAdvertisersResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct ListAssignedInventorySourcesResponse {
+        #[doc = "The list of assigned inventory sources.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedInventorySources",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_inventory_sources:
+            ::std::option::Option<Vec<crate::schemas::AssignedInventorySource>>,
+        #[doc = "A token to retrieve the next page of results.\n\nPass this value in the\npage_token field\nin the subsequent call to `ListAssignedInventorySources` method to\nretrieve the next page of results."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for ListAssignedInventorySourcesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ListAssignedInventorySourcesResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct ListAssignedLocationsResponse {
+        #[doc = "The list of assigned locations.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "assignedLocations",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub assigned_locations: ::std::option::Option<Vec<crate::schemas::AssignedLocation>>,
+        #[doc = "A token to retrieve the next page of results.\n\nPass this value in the\npage_token field\nin the subsequent call to `ListAssignedLocations` method to\nretrieve the next page of results."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for ListAssignedLocationsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ListAssignedLocationsResponse {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -17108,6 +17768,82 @@ pub mod schemas {
         :: serde :: Deserialize,
         :: serde :: Serialize,
     )]
+    pub struct ListNegativeKeywordsResponse {
+        #[doc = "The list of negative keywords.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "negativeKeywords",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub negative_keywords: ::std::option::Option<Vec<crate::schemas::NegativeKeyword>>,
+        #[doc = "A token to retrieve the next page of results.\n\nPass this value in the page_token\nfield in the subsequent call to `ListNegativeKeywords` method to retrieve\nthe next page of results."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for ListNegativeKeywordsResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ListNegativeKeywordsResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct ListSitesResponse {
+        #[doc = "A token to retrieve the next page of results.\n\nPass this value in the page_token field\nin the subsequent call to `ListSites` method to retrieve the next page\nof results."]
+        #[serde(
+            rename = "nextPageToken",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page_token: ::std::option::Option<String>,
+        #[doc = "The list of sites.\n\nThis list will be absent if empty."]
+        #[serde(
+            rename = "sites",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub sites: ::std::option::Option<Vec<crate::schemas::Site>>,
+    }
+    impl ::google_field_selector::FieldSelector for ListSitesResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for ListSitesResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
     pub struct ListTargetingOptionsResponse {
         #[doc = "A token to retrieve the next page of results.\nPass this value in the\npage_token\nfield in the subsequent call to `ListTargetingOptions` method to retrieve\nthe next page of results."]
         #[serde(
@@ -17476,6 +18212,44 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for Money {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct NegativeKeyword {
+        #[doc = "Required. Immutable. The negatively targeted keyword, for example `car insurance`.\n\nMust be UTF-8 encoded with a maximum size of 255 bytes. Maximum number\nof characters is 80. Maximum number of words is 10.\n\nValid characters are restricted to ASCII characters only. The only\nURL-escaping permitted is for representing whitespace between words.\nLeading or trailing whitespace is ignored."]
+        #[serde(
+            rename = "keywordValue",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub keyword_value: ::std::option::Option<String>,
+        #[doc = "Output only. The resource name of the negative keyword."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for NegativeKeyword {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for NegativeKeyword {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -21150,6 +21924,44 @@ pub mod schemas {
             ::google_field_selector::FieldType::Leaf
         }
     }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct Site {
+        #[doc = "Output only. The resource name of the site."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
+        #[doc = "Required. The URL or app ID of the site.\nMust be UTF-8 encoded with a maximum length of 240 bytes."]
+        #[serde(
+            rename = "urlOrAppId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub url_or_app_id: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for Site {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for Site {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
     #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct Status {
         #[doc = "The status code, which should be an enum value of google.rpc.Code."]
@@ -21545,8 +22357,6 @@ pub mod schemas {
         TargetingTypeOperatingSystem,
         #[doc = "Target ads to a specific parental status (for example, parent or not a\nparent)."]
         TargetingTypeParentalStatus,
-        #[doc = "Target ads to business chains, individual points of interests (POIs),\nstreet addresses, and latitude/longitude coordinates."]
-        TargetingTypeProximityLocation,
         #[doc = "Target ads to the specified points of interest on a proximity location\nlist."]
         TargetingTypeProximityLocationList,
         #[doc = "Target ads to the specified regions on a regional location list."]
@@ -21634,9 +22444,6 @@ pub mod schemas {
                 }
                 TargetingOptionTargetingType::TargetingTypeParentalStatus => {
                     "TARGETING_TYPE_PARENTAL_STATUS"
-                }
-                TargetingOptionTargetingType::TargetingTypeProximityLocation => {
-                    "TARGETING_TYPE_PROXIMITY_LOCATION"
                 }
                 TargetingOptionTargetingType::TargetingTypeProximityLocationList => {
                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
@@ -21741,9 +22548,6 @@ pub mod schemas {
                 }
                 "TARGETING_TYPE_PARENTAL_STATUS" => {
                     TargetingOptionTargetingType::TargetingTypeParentalStatus
-                }
-                "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                    TargetingOptionTargetingType::TargetingTypeProximityLocation
                 }
                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                     TargetingOptionTargetingType::TargetingTypeProximityLocationList
@@ -21860,9 +22664,6 @@ pub mod schemas {
                 }
                 "TARGETING_TYPE_PARENTAL_STATUS" => {
                     TargetingOptionTargetingType::TargetingTypeParentalStatus
-                }
-                "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                    TargetingOptionTargetingType::TargetingTypeProximityLocation
                 }
                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                     TargetingOptionTargetingType::TargetingTypeProximityLocationList
@@ -23771,6 +24572,56 @@ pub mod resources {
             fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                 self.auth
             }
+            #[doc = "Bulk edits targeting options under a single advertiser.\nThe operation will delete the assigned targeting options provided in\nBulkEditAdvertiserAssignedTargetingOptionsRequest.delete_requests and\nthen create the assigned targeting options provided in\nBulkEditAdvertiserAssignedTargetingOptionsRequest.create_requests ."]
+            pub fn bulk_edit_advertiser_assigned_targeting_options(
+                &self,
+                request: crate::schemas::BulkEditAdvertiserAssignedTargetingOptionsRequest,
+                advertiser_id: i64,
+            ) -> BulkEditAdvertiserAssignedTargetingOptionsRequestBuilder {
+                BulkEditAdvertiserAssignedTargetingOptionsRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    request,
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    advertiser_id,
+                }
+            }
+            #[doc = "Lists assigned targeting options of an advertiser across targeting types."]
+            pub fn bulk_list_advertiser_assigned_targeting_options(
+                &self,
+                advertiser_id: i64,
+            ) -> BulkListAdvertiserAssignedTargetingOptionsRequestBuilder {
+                BulkListAdvertiserAssignedTargetingOptionsRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    advertiser_id,
+                    filter: None,
+                    order_by: None,
+                    page_size: None,
+                    page_token: None,
+                }
+            }
             #[doc = "Creates a new advertiser.\nReturns the newly created advertiser if successful.\nThis method can take up to 180 seconds to complete."]
             pub fn create(&self, request: crate::schemas::Advertiser) -> CreateRequestBuilder {
                 CreateRequestBuilder {
@@ -23941,6 +24792,493 @@ pub mod resources {
                     reqwest: &self.reqwest,
                     auth: self.auth_ref(),
                 }
+            }
+            #[doc = "Actions that can be performed on the targeting_types resource"]
+            pub fn targeting_types(
+                &self,
+            ) -> crate::resources::advertisers::targeting_types::TargetingTypesActions {
+                crate::resources::advertisers::targeting_types::TargetingTypesActions {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                }
+            }
+        }
+        #[doc = "Created via [AdvertisersActions::bulk_edit_advertiser_assigned_targeting_options()](struct.AdvertisersActions.html#method.bulk_edit_advertiser_assigned_targeting_options)"]
+        #[derive(Debug, Clone)]
+        pub struct BulkEditAdvertiserAssignedTargetingOptionsRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            request: crate::schemas::BulkEditAdvertiserAssignedTargetingOptionsRequest,
+            advertiser_id: i64,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> BulkEditAdvertiserAssignedTargetingOptionsRequestBuilder<'a> {
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<
+                crate::schemas::BulkEditAdvertiserAssignedTargetingOptionsResponse,
+                crate::Error,
+            > {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<
+                crate::schemas::BulkEditAdvertiserAssignedTargetingOptionsResponse,
+                crate::Error,
+            > {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                let req = req.json(&self.request);
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                output.push_str("v1/advertisers/");
+                {
+                    let var_as_string = self.advertiser_id.to_string();
+                    let var_as_str = &var_as_string;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::RESERVED,
+                    ));
+                }
+                output.push_str(":bulkEditAdvertiserAssignedTargetingOptions");
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::POST, path);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        #[doc = "Created via [AdvertisersActions::bulk_list_advertiser_assigned_targeting_options()](struct.AdvertisersActions.html#method.bulk_list_advertiser_assigned_targeting_options)"]
+        #[derive(Debug, Clone)]
+        pub struct BulkListAdvertiserAssignedTargetingOptionsRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            advertiser_id: i64,
+            filter: Option<String>,
+            order_by: Option<String>,
+            page_size: Option<i32>,
+            page_token: Option<String>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> BulkListAdvertiserAssignedTargetingOptionsRequestBuilder<'a> {
+            #[doc = "Allows filtering by assigned targeting option properties.\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by the logical operator `OR`..\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `EQUALS (=)`.\n* Supported fields:\n  * `targetingType`\n\nExamples:\n\n* targetingType with value TARGETING_TYPE_CHANNEL\n  `targetingType=\"TARGETING_TYPE_CHANNEL\"`\n\nThe length of this field should be no more than 500 characters."]
+            pub fn filter(mut self, value: impl Into<String>) -> Self {
+                self.filter = Some(value.into());
+                self
+            }
+            #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `targetingType` (default)\n\nThe default sorting order is ascending. To specify descending order for\na field, a suffix \"desc\" should be added to the field name. Example:\n`targetingType desc`."]
+            pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                self.order_by = Some(value.into());
+                self
+            }
+            #[doc = "Requested page size.\nThe size must be an integer between `1` and `5000`. If unspecified,\nthe default is '5000'. Returns error code `INVALID_ARGUMENT` if an invalid\nvalue is specified."]
+            pub fn page_size(mut self, value: i32) -> Self {
+                self.page_size = Some(value);
+                self
+            }
+            #[doc = "A token that lets the client fetch the next page of results.\nTypically, this is the value of\nnext_page_token\nreturned from the previous call to\n`BulkListAdvertiserAssignedTargetingOptions` method.\nIf not specified, the first page of results will be returned."]
+            pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                self.page_token = Some(value.into());
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+            #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+            #[doc = r" populated fields in the yielded items will be determined by the"]
+            #[doc = r" `FieldSelector` implementation."]
+            pub fn iter_assigned_targeting_options<T>(self) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_assigned_targeting_options_with_fields(fields)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be the default fields populated by"]
+            #[doc = r" the server."]
+            pub fn iter_assigned_targeting_options_with_default_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedTargetingOption>
+            {
+                self.iter_assigned_targeting_options_with_fields(None::<String>)
+            }
+            #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+            #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+            #[doc = r" fields in `#items_type` will be all fields available. This should"]
+            #[doc = r" primarily be used during developement and debugging as fetching"]
+            #[doc = r" all fields can be expensive both in bandwidth and server"]
+            #[doc = r" resources."]
+            pub fn iter_assigned_targeting_options_with_all_fields(
+                self,
+            ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedTargetingOption>
+            {
+                self.iter_assigned_targeting_options_with_fields(Some("*"))
+            }
+            pub fn iter_assigned_targeting_options_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageItemIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                self.fields = Some({
+                    let mut selector =
+                        concat!("nextPageToken,", "assignedTargetingOptions").to_owned();
+                    let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                    if !items_fields.is_empty() {
+                        selector.push_str("(");
+                        selector.push_str(items_fields);
+                        selector.push_str(")");
+                    }
+                    selector
+                });
+                crate::iter::PageItemIter::new(self, "assignedTargetingOptions")
+            }
+            pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.iter_with_fields(fields)
+            }
+            pub fn iter_with_default_fields(
+                self,
+            ) -> crate::iter::PageIter<
+                Self,
+                crate::schemas::BulkListAdvertiserAssignedTargetingOptionsResponse,
+            > {
+                self.iter_with_fields(None::<&str>)
+            }
+            pub fn iter_with_all_fields(
+                self,
+            ) -> crate::iter::PageIter<
+                Self,
+                crate::schemas::BulkListAdvertiserAssignedTargetingOptionsResponse,
+            > {
+                self.iter_with_fields(Some("*"))
+            }
+            pub fn iter_with_fields<T, F>(
+                mut self,
+                fields: Option<F>,
+            ) -> crate::iter::PageIter<Self, T>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: AsRef<str>,
+            {
+                let mut fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                if !fields.is_empty() {
+                    match fields.chars().rev().nth(0) {
+                        Some(',') | None => {}
+                        _ => fields.push_str(","),
+                    }
+                    fields.push_str("nextPageToken");
+                    self.fields = Some(fields);
+                }
+                crate::iter::PageIter::new(self)
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<
+                crate::schemas::BulkListAdvertiserAssignedTargetingOptionsResponse,
+                crate::Error,
+            > {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<
+                crate::schemas::BulkListAdvertiserAssignedTargetingOptionsResponse,
+                crate::Error,
+            > {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                output.push_str("v1/advertisers/");
+                {
+                    let var_as_string = self.advertiser_id.to_string();
+                    let var_as_str = &var_as_string;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::RESERVED,
+                    ));
+                }
+                output.push_str(":bulkListAdvertiserAssignedTargetingOptions");
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::GET, path);
+                let req = req.query(&[("filter", &self.filter)]);
+                let req = req.query(&[("orderBy", &self.order_by)]);
+                let req = req.query(&[("pageSize", &self.page_size)]);
+                let req = req.query(&[("pageToken", &self.page_token)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        impl<'a> crate::iter::IterableMethod
+            for BulkListAdvertiserAssignedTargetingOptionsRequestBuilder<'a>
+        {
+            fn set_page_token(&mut self, value: String) {
+                self.page_token = value.into();
+            }
+            fn execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                self._execute()
             }
         }
         #[doc = "Created via [AdvertisersActions::create()](struct.AdvertisersActions.html#method.create)"]
@@ -26271,6 +27609,43 @@ pub mod resources {
                         partner_id: None,
                     }
                 }
+                #[doc = "Updates a channel. Returns the updated channel if successful."]
+                pub fn patch(
+                    &self,
+                    request: crate::schemas::Channel,
+                    advertiser_id: i64,
+                    channel_id: i64,
+                ) -> PatchRequestBuilder {
+                    PatchRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                        channel_id,
+                        partner_id: None,
+                        update_mask: None,
+                    }
+                }
+                #[doc = "Actions that can be performed on the sites resource"]
+                pub fn sites(
+                    &self,
+                ) -> crate::resources::advertisers::channels::sites::SitesActions {
+                    crate::resources::advertisers::channels::sites::SitesActions {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                    }
+                }
             }
             #[doc = "Created via [ChannelsActions::get()](struct.ChannelsActions.html#method.get)"]
             #[derive(Debug, Clone)]
@@ -26754,6 +28129,1174 @@ pub mod resources {
                     T: ::serde::de::DeserializeOwned,
                 {
                     self._execute()
+                }
+            }
+            #[doc = "Created via [ChannelsActions::patch()](struct.ChannelsActions.html#method.patch)"]
+            #[derive(Debug, Clone)]
+            pub struct PatchRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::Channel,
+                advertiser_id: i64,
+                channel_id: i64,
+                partner_id: Option<i64>,
+                update_mask: Option<String>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> PatchRequestBuilder<'a> {
+                #[doc = "The ID of the partner that owns the created channel."]
+                pub fn partner_id(mut self, value: i64) -> Self {
+                    self.partner_id = Some(value);
+                    self
+                }
+                #[doc = "Required. The mask to control which fields to update."]
+                pub fn update_mask(mut self, value: impl Into<String>) -> Self {
+                    self.update_mask = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::Channel, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::Channel, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/channels/");
+                    {
+                        let var_as_string = self.channel_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::SIMPLE,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::PATCH, path);
+                    let req = req.query(&[("partnerId", &self.partner_id)]);
+                    let req = req.query(&[("updateMask", &self.update_mask)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            pub mod sites {
+                pub mod params {}
+                pub struct SitesActions<'a> {
+                    pub(crate) reqwest: &'a reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                }
+                impl<'a> SitesActions<'a> {
+                    fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                        self.auth
+                    }
+                    #[doc = "Bulk edits sites under a single channel.\n\nThe operation will delete the sites provided in\nBulkEditSitesRequest.deleted_sites and then create the sites\nprovided in BulkEditSitesRequest.created_sites."]
+                    pub fn bulk_edit(
+                        &self,
+                        request: crate::schemas::BulkEditSitesRequest,
+                        advertiser_id: i64,
+                        channel_id: i64,
+                    ) -> BulkEditRequestBuilder {
+                        BulkEditRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            channel_id,
+                        }
+                    }
+                    #[doc = "Creates a site in a channel."]
+                    pub fn create(
+                        &self,
+                        request: crate::schemas::Site,
+                        advertiser_id: i64,
+                        channel_id: i64,
+                    ) -> CreateRequestBuilder {
+                        CreateRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            channel_id,
+                            partner_id: None,
+                        }
+                    }
+                    #[doc = "Deletes a site from a channel."]
+                    pub fn delete(
+                        &self,
+                        advertiser_id: i64,
+                        channel_id: i64,
+                        url_or_app_id: impl Into<String>,
+                    ) -> DeleteRequestBuilder {
+                        DeleteRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            channel_id,
+                            url_or_app_id: url_or_app_id.into(),
+                            partner_id: None,
+                        }
+                    }
+                    #[doc = "Lists sites in a channel."]
+                    pub fn list(&self, advertiser_id: i64, channel_id: i64) -> ListRequestBuilder {
+                        ListRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            channel_id,
+                            filter: None,
+                            order_by: None,
+                            page_size: None,
+                            page_token: None,
+                            partner_id: None,
+                        }
+                    }
+                }
+                #[doc = "Created via [SitesActions::bulk_edit()](struct.SitesActions.html#method.bulk_edit)"]
+                #[derive(Debug, Clone)]
+                pub struct BulkEditRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::BulkEditSitesRequest,
+                    advertiser_id: i64,
+                    channel_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> BulkEditRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites:bulkEdit");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::create()](struct.SitesActions.html#method.create)"]
+                #[derive(Debug, Clone)]
+                pub struct CreateRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::Site,
+                    advertiser_id: i64,
+                    channel_id: i64,
+                    partner_id: Option<i64>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> CreateRequestBuilder<'a> {
+                    #[doc = "The ID of the partner that owns the parent channel."]
+                    pub fn partner_id(mut self, value: i64) -> Self {
+                        self.partner_id = Some(value);
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Site, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Site, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("partnerId", &self.partner_id)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::delete()](struct.SitesActions.html#method.delete)"]
+                #[derive(Debug, Clone)]
+                pub struct DeleteRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    channel_id: i64,
+                    url_or_app_id: String,
+                    partner_id: Option<i64>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> DeleteRequestBuilder<'a> {
+                    #[doc = "The ID of the partner that owns the parent channel."]
+                    pub fn partner_id(mut self, value: i64) -> Self {
+                        self.partner_id = Some(value);
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites/");
+                        {
+                            let var_as_str = &self.url_or_app_id;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                        let req = req.query(&[("partnerId", &self.partner_id)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::list()](struct.SitesActions.html#method.list)"]
+                #[derive(Debug, Clone)]
+                pub struct ListRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    channel_id: i64,
+                    filter: Option<String>,
+                    order_by: Option<String>,
+                    page_size: Option<i32>,
+                    page_token: Option<String>,
+                    partner_id: Option<i64>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Allows filtering by site fields.\n\nSupported syntax:\n\n* Filter expressions for site currently can only contain at most one\n* restriction.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `CONTAINS (:)`.\n* Supported fields:\n  * `urlOrAppId`\n\nExamples:\n\n* All sites for which the URL or app ID contains \"google\":\n  `urlOrAppId : \"google\"`"]
+                    pub fn filter(mut self, value: impl Into<String>) -> Self {
+                        self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `urlOrAppId` (default)\n\nThe default sorting order is ascending. To specify descending order for a\nfield, a suffix \" desc\" should be added to the field name. Example:\n`urlOrAppId desc`."]
+                    pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                        self.order_by = Some(value.into());
+                        self
+                    }
+                    #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "A token identifying a page of results the server should return.\n\nTypically, this is the value of\nnext_page_token returned from the\nprevious call to `ListSites` method. If not specified, the first page\nof results will be returned."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "The ID of the partner that owns the parent channel."]
+                    pub fn partner_id(mut self, value: i64) -> Self {
+                        self.partner_id = Some(value);
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_sites<T>(self) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_sites_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_sites_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::Site> {
+                        self.iter_sites_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_sites_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::Site> {
+                        self.iter_sites_with_fields(Some("*"))
+                    }
+                    pub fn iter_sites_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector = concat!("nextPageToken,", "sites").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "sites")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListSitesResponse>
+                    {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListSitesResponse>
+                    {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("orderBy", &self.order_by)]);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("partnerId", &self.partner_id)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
+                    }
                 }
             }
         }
@@ -30709,7 +33252,6 @@ pub mod resources {
                             TargetingTypeOnScreenPosition,
                             TargetingTypeOperatingSystem,
                             TargetingTypeParentalStatus,
-                            TargetingTypeProximityLocation,
                             TargetingTypeProximityLocationList,
                             TargetingTypeRegionalLocationList,
                             TargetingTypeSensitiveCategoryExclusion,
@@ -30723,7 +33265,7 @@ pub mod resources {
                         }
                         impl CreateTargetingType {
                             pub fn as_str(self) -> &'static str {
-                                match self { CreateTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , CreateTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , CreateTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , CreateTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , CreateTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , CreateTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , CreateTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , CreateTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , CreateTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , CreateTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , CreateTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , CreateTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , CreateTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , CreateTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , CreateTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , CreateTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , CreateTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , CreateTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , CreateTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , CreateTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , CreateTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , CreateTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , CreateTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , CreateTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , CreateTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , CreateTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , CreateTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , CreateTargetingType :: TargetingTypeProximityLocation => "TARGETING_TYPE_PROXIMITY_LOCATION" , CreateTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , CreateTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , CreateTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , CreateTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , CreateTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , CreateTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , CreateTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , CreateTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , CreateTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
+                                match self { CreateTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , CreateTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , CreateTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , CreateTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , CreateTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , CreateTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , CreateTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , CreateTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , CreateTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , CreateTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , CreateTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , CreateTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , CreateTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , CreateTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , CreateTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , CreateTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , CreateTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , CreateTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , CreateTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , CreateTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , CreateTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , CreateTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , CreateTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , CreateTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , CreateTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , CreateTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , CreateTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , CreateTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , CreateTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , CreateTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , CreateTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , CreateTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , CreateTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , CreateTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , CreateTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , CreateTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
                             }
                         }
                         impl ::std::convert::AsRef<str> for CreateTargetingType {
@@ -30734,7 +33276,7 @@ pub mod resources {
                         impl ::std::str::FromStr for CreateTargetingType {
                             type Err = ();
                             fn from_str(s: &str) -> ::std::result::Result<CreateTargetingType, ()> {
-                                Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => CreateTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => CreateTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
+                                Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => CreateTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
                             }
                         }
                         impl ::std::fmt::Display for CreateTargetingType {
@@ -30761,7 +33303,7 @@ pub mod resources {
                                 D: ::serde::de::Deserializer<'de>,
                             {
                                 let value: &'de str = <&str>::deserialize(deserializer)?;
-                                Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => CreateTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => CreateTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+                                Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => CreateTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => CreateTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => CreateTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => CreateTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => CreateTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => CreateTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => CreateTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => CreateTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => CreateTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => CreateTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => CreateTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => CreateTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => CreateTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => CreateTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => CreateTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => CreateTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => CreateTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => CreateTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => CreateTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => CreateTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => CreateTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => CreateTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => CreateTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => CreateTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => CreateTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => CreateTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => CreateTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => CreateTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => CreateTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => CreateTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => CreateTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => CreateTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => CreateTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => CreateTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => CreateTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => CreateTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => CreateTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
                             }
                         }
                         impl ::google_field_selector::FieldSelector for CreateTargetingType {
@@ -30804,7 +33346,6 @@ pub mod resources {
                             TargetingTypeOnScreenPosition,
                             TargetingTypeOperatingSystem,
                             TargetingTypeParentalStatus,
-                            TargetingTypeProximityLocation,
                             TargetingTypeProximityLocationList,
                             TargetingTypeRegionalLocationList,
                             TargetingTypeSensitiveCategoryExclusion,
@@ -30818,7 +33359,7 @@ pub mod resources {
                         }
                         impl DeleteTargetingType {
                             pub fn as_str(self) -> &'static str {
-                                match self { DeleteTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , DeleteTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , DeleteTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , DeleteTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , DeleteTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , DeleteTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , DeleteTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , DeleteTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , DeleteTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , DeleteTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , DeleteTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , DeleteTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , DeleteTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , DeleteTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , DeleteTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , DeleteTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , DeleteTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , DeleteTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , DeleteTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , DeleteTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , DeleteTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , DeleteTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , DeleteTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , DeleteTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , DeleteTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , DeleteTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , DeleteTargetingType :: TargetingTypeProximityLocation => "TARGETING_TYPE_PROXIMITY_LOCATION" , DeleteTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , DeleteTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , DeleteTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , DeleteTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , DeleteTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , DeleteTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , DeleteTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , DeleteTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , DeleteTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
+                                match self { DeleteTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , DeleteTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , DeleteTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , DeleteTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , DeleteTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , DeleteTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , DeleteTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , DeleteTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , DeleteTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , DeleteTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , DeleteTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , DeleteTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , DeleteTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , DeleteTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , DeleteTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , DeleteTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , DeleteTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , DeleteTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , DeleteTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , DeleteTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , DeleteTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , DeleteTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , DeleteTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , DeleteTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , DeleteTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , DeleteTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , DeleteTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , DeleteTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , DeleteTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , DeleteTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , DeleteTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , DeleteTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , DeleteTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , DeleteTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , DeleteTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
                             }
                         }
                         impl ::std::convert::AsRef<str> for DeleteTargetingType {
@@ -30829,7 +33370,7 @@ pub mod resources {
                         impl ::std::str::FromStr for DeleteTargetingType {
                             type Err = ();
                             fn from_str(s: &str) -> ::std::result::Result<DeleteTargetingType, ()> {
-                                Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => DeleteTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => DeleteTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
+                                Ok ( match s { "TARGETING_TYPE_AGE_RANGE" => DeleteTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteTargetingType :: TargetingTypeViewability , _ => return Err ( ( ) ) , } )
                             }
                         }
                         impl ::std::fmt::Display for DeleteTargetingType {
@@ -30856,7 +33397,7 @@ pub mod resources {
                                 D: ::serde::de::Deserializer<'de>,
                             {
                                 let value: &'de str = <&str>::deserialize(deserializer)?;
-                                Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => DeleteTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION" => DeleteTargetingType :: TargetingTypeProximityLocation , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+                                Ok ( match value { "TARGETING_TYPE_AGE_RANGE" => DeleteTargetingType :: TargetingTypeAgeRange , "TARGETING_TYPE_APP" => DeleteTargetingType :: TargetingTypeApp , "TARGETING_TYPE_APP_CATEGORY" => DeleteTargetingType :: TargetingTypeAppCategory , "TARGETING_TYPE_AUDIENCE_GROUP" => DeleteTargetingType :: TargetingTypeAudienceGroup , "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => DeleteTargetingType :: TargetingTypeAuthorizedSellerStatus , "TARGETING_TYPE_BROWSER" => DeleteTargetingType :: TargetingTypeBrowser , "TARGETING_TYPE_CARRIER_AND_ISP" => DeleteTargetingType :: TargetingTypeCarrierAndIsp , "TARGETING_TYPE_CATEGORY" => DeleteTargetingType :: TargetingTypeCategory , "TARGETING_TYPE_CHANNEL" => DeleteTargetingType :: TargetingTypeChannel , "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentInstreamPosition , "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => DeleteTargetingType :: TargetingTypeContentOutstreamPosition , "TARGETING_TYPE_DAY_AND_TIME" => DeleteTargetingType :: TargetingTypeDayAndTime , "TARGETING_TYPE_DEVICE_MAKE_MODEL" => DeleteTargetingType :: TargetingTypeDeviceMakeModel , "TARGETING_TYPE_DEVICE_TYPE" => DeleteTargetingType :: TargetingTypeDeviceType , "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => DeleteTargetingType :: TargetingTypeDigitalContentLabelExclusion , "TARGETING_TYPE_ENVIRONMENT" => DeleteTargetingType :: TargetingTypeEnvironment , "TARGETING_TYPE_EXCHANGE" => DeleteTargetingType :: TargetingTypeExchange , "TARGETING_TYPE_GENDER" => DeleteTargetingType :: TargetingTypeGender , "TARGETING_TYPE_GEO_REGION" => DeleteTargetingType :: TargetingTypeGeoRegion , "TARGETING_TYPE_HOUSEHOLD_INCOME" => DeleteTargetingType :: TargetingTypeHouseholdIncome , "TARGETING_TYPE_INVENTORY_SOURCE" => DeleteTargetingType :: TargetingTypeInventorySource , "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => DeleteTargetingType :: TargetingTypeInventorySourceGroup , "TARGETING_TYPE_KEYWORD" => DeleteTargetingType :: TargetingTypeKeyword , "TARGETING_TYPE_LANGUAGE" => DeleteTargetingType :: TargetingTypeLanguage , "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => DeleteTargetingType :: TargetingTypeNegativeKeywordList , "TARGETING_TYPE_ON_SCREEN_POSITION" => DeleteTargetingType :: TargetingTypeOnScreenPosition , "TARGETING_TYPE_OPERATING_SYSTEM" => DeleteTargetingType :: TargetingTypeOperatingSystem , "TARGETING_TYPE_PARENTAL_STATUS" => DeleteTargetingType :: TargetingTypeParentalStatus , "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeProximityLocationList , "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => DeleteTargetingType :: TargetingTypeRegionalLocationList , "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => DeleteTargetingType :: TargetingTypeSensitiveCategoryExclusion , "TARGETING_TYPE_SUB_EXCHANGE" => DeleteTargetingType :: TargetingTypeSubExchange , "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => DeleteTargetingType :: TargetingTypeThirdPartyVerifier , "TARGETING_TYPE_UNSPECIFIED" => DeleteTargetingType :: TargetingTypeUnspecified , "TARGETING_TYPE_URL" => DeleteTargetingType :: TargetingTypeUrl , "TARGETING_TYPE_USER_REWARDED_CONTENT" => DeleteTargetingType :: TargetingTypeUserRewardedContent , "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => DeleteTargetingType :: TargetingTypeVideoPlayerSize , "TARGETING_TYPE_VIEWABILITY" => DeleteTargetingType :: TargetingTypeViewability , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
                             }
                         }
                         impl ::google_field_selector::FieldSelector for DeleteTargetingType {
@@ -30899,7 +33440,6 @@ pub mod resources {
                             TargetingTypeOnScreenPosition,
                             TargetingTypeOperatingSystem,
                             TargetingTypeParentalStatus,
-                            TargetingTypeProximityLocation,
                             TargetingTypeProximityLocationList,
                             TargetingTypeRegionalLocationList,
                             TargetingTypeSensitiveCategoryExclusion,
@@ -30995,9 +33535,6 @@ pub mod resources {
                                     }
                                     GetTargetingType::TargetingTypeParentalStatus => {
                                         "TARGETING_TYPE_PARENTAL_STATUS"
-                                    }
-                                    GetTargetingType::TargetingTypeProximityLocation => {
-                                        "TARGETING_TYPE_PROXIMITY_LOCATION"
                                     }
                                     GetTargetingType::TargetingTypeProximityLocationList => {
                                         "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
@@ -31120,9 +33657,6 @@ pub mod resources {
                                     }
                                     "TARGETING_TYPE_PARENTAL_STATUS" => {
                                         GetTargetingType::TargetingTypeParentalStatus
-                                    }
-                                    "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                        GetTargetingType::TargetingTypeProximityLocation
                                     }
                                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                         GetTargetingType::TargetingTypeProximityLocationList
@@ -31263,9 +33797,6 @@ pub mod resources {
                                     "TARGETING_TYPE_PARENTAL_STATUS" => {
                                         GetTargetingType::TargetingTypeParentalStatus
                                     }
-                                    "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                        GetTargetingType::TargetingTypeProximityLocation
-                                    }
                                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                         GetTargetingType::TargetingTypeProximityLocationList
                                     }
@@ -31343,7 +33874,6 @@ pub mod resources {
                             TargetingTypeOnScreenPosition,
                             TargetingTypeOperatingSystem,
                             TargetingTypeParentalStatus,
-                            TargetingTypeProximityLocation,
                             TargetingTypeProximityLocationList,
                             TargetingTypeRegionalLocationList,
                             TargetingTypeSensitiveCategoryExclusion,
@@ -31357,7 +33887,7 @@ pub mod resources {
                         }
                         impl ListTargetingType {
                             pub fn as_str(self) -> &'static str {
-                                match self { ListTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , ListTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , ListTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , ListTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , ListTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , ListTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , ListTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , ListTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , ListTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , ListTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , ListTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , ListTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , ListTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , ListTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , ListTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , ListTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , ListTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , ListTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , ListTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , ListTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , ListTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , ListTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , ListTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , ListTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , ListTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , ListTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , ListTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , ListTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , ListTargetingType :: TargetingTypeProximityLocation => "TARGETING_TYPE_PROXIMITY_LOCATION" , ListTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , ListTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , ListTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , ListTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , ListTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , ListTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , ListTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , ListTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , ListTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , ListTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
+                                match self { ListTargetingType :: TargetingTypeAgeRange => "TARGETING_TYPE_AGE_RANGE" , ListTargetingType :: TargetingTypeApp => "TARGETING_TYPE_APP" , ListTargetingType :: TargetingTypeAppCategory => "TARGETING_TYPE_APP_CATEGORY" , ListTargetingType :: TargetingTypeAudienceGroup => "TARGETING_TYPE_AUDIENCE_GROUP" , ListTargetingType :: TargetingTypeAuthorizedSellerStatus => "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" , ListTargetingType :: TargetingTypeBrowser => "TARGETING_TYPE_BROWSER" , ListTargetingType :: TargetingTypeCarrierAndIsp => "TARGETING_TYPE_CARRIER_AND_ISP" , ListTargetingType :: TargetingTypeCategory => "TARGETING_TYPE_CATEGORY" , ListTargetingType :: TargetingTypeChannel => "TARGETING_TYPE_CHANNEL" , ListTargetingType :: TargetingTypeContentInstreamPosition => "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" , ListTargetingType :: TargetingTypeContentOutstreamPosition => "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" , ListTargetingType :: TargetingTypeDayAndTime => "TARGETING_TYPE_DAY_AND_TIME" , ListTargetingType :: TargetingTypeDeviceMakeModel => "TARGETING_TYPE_DEVICE_MAKE_MODEL" , ListTargetingType :: TargetingTypeDeviceType => "TARGETING_TYPE_DEVICE_TYPE" , ListTargetingType :: TargetingTypeDigitalContentLabelExclusion => "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" , ListTargetingType :: TargetingTypeEnvironment => "TARGETING_TYPE_ENVIRONMENT" , ListTargetingType :: TargetingTypeExchange => "TARGETING_TYPE_EXCHANGE" , ListTargetingType :: TargetingTypeGender => "TARGETING_TYPE_GENDER" , ListTargetingType :: TargetingTypeGeoRegion => "TARGETING_TYPE_GEO_REGION" , ListTargetingType :: TargetingTypeHouseholdIncome => "TARGETING_TYPE_HOUSEHOLD_INCOME" , ListTargetingType :: TargetingTypeInventorySource => "TARGETING_TYPE_INVENTORY_SOURCE" , ListTargetingType :: TargetingTypeInventorySourceGroup => "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" , ListTargetingType :: TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD" , ListTargetingType :: TargetingTypeLanguage => "TARGETING_TYPE_LANGUAGE" , ListTargetingType :: TargetingTypeNegativeKeywordList => "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" , ListTargetingType :: TargetingTypeOnScreenPosition => "TARGETING_TYPE_ON_SCREEN_POSITION" , ListTargetingType :: TargetingTypeOperatingSystem => "TARGETING_TYPE_OPERATING_SYSTEM" , ListTargetingType :: TargetingTypeParentalStatus => "TARGETING_TYPE_PARENTAL_STATUS" , ListTargetingType :: TargetingTypeProximityLocationList => "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" , ListTargetingType :: TargetingTypeRegionalLocationList => "TARGETING_TYPE_REGIONAL_LOCATION_LIST" , ListTargetingType :: TargetingTypeSensitiveCategoryExclusion => "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" , ListTargetingType :: TargetingTypeSubExchange => "TARGETING_TYPE_SUB_EXCHANGE" , ListTargetingType :: TargetingTypeThirdPartyVerifier => "TARGETING_TYPE_THIRD_PARTY_VERIFIER" , ListTargetingType :: TargetingTypeUnspecified => "TARGETING_TYPE_UNSPECIFIED" , ListTargetingType :: TargetingTypeUrl => "TARGETING_TYPE_URL" , ListTargetingType :: TargetingTypeUserRewardedContent => "TARGETING_TYPE_USER_REWARDED_CONTENT" , ListTargetingType :: TargetingTypeVideoPlayerSize => "TARGETING_TYPE_VIDEO_PLAYER_SIZE" , ListTargetingType :: TargetingTypeViewability => "TARGETING_TYPE_VIEWABILITY" , }
                             }
                         }
                         impl ::std::convert::AsRef<str> for ListTargetingType {
@@ -31450,9 +33980,6 @@ pub mod resources {
                                     }
                                     "TARGETING_TYPE_PARENTAL_STATUS" => {
                                         ListTargetingType::TargetingTypeParentalStatus
-                                    }
-                                    "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                        ListTargetingType::TargetingTypeProximityLocation
                                     }
                                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                         ListTargetingType::TargetingTypeProximityLocationList
@@ -31592,9 +34119,6 @@ pub mod resources {
                                     }
                                     "TARGETING_TYPE_PARENTAL_STATUS" => {
                                         ListTargetingType::TargetingTypeParentalStatus
-                                    }
-                                    "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                        ListTargetingType::TargetingTypeProximityLocation
                                     }
                                     "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                         ListTargetingType::TargetingTypeProximityLocationList
@@ -32618,6 +35142,30 @@ pub mod resources {
                 fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                     self.auth
                 }
+                #[doc = "Creates a new location list. Returns the newly created location list if\nsuccessful."]
+                pub fn create(
+                    &self,
+                    request: crate::schemas::LocationList,
+                    advertiser_id: i64,
+                ) -> CreateRequestBuilder {
+                    CreateRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                    }
+                }
                 #[doc = "Gets a location list."]
                 pub fn get(&self, advertiser_id: i64, location_list_id: i64) -> GetRequestBuilder {
                     GetRequestBuilder {
@@ -32660,6 +35208,199 @@ pub mod resources {
                         page_size: None,
                         page_token: None,
                     }
+                }
+                #[doc = "Updates a location list. Returns the updated location list if successful."]
+                pub fn patch(
+                    &self,
+                    request: crate::schemas::LocationList,
+                    advertiser_id: i64,
+                    location_list_id: i64,
+                ) -> PatchRequestBuilder {
+                    PatchRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                        location_list_id,
+                        update_mask: None,
+                    }
+                }
+                #[doc = "Actions that can be performed on the assigned_locations resource"]pub fn assigned_locations ( & self ) -> crate :: resources :: advertisers :: location_lists :: assigned_locations :: AssignedLocationsActions{
+                    crate :: resources :: advertisers :: location_lists :: assigned_locations :: AssignedLocationsActions { reqwest : & self . reqwest , auth : self . auth_ref ( ) , }
+                }
+            }
+            #[doc = "Created via [LocationListsActions::create()](struct.LocationListsActions.html#method.create)"]
+            #[derive(Debug, Clone)]
+            pub struct CreateRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::LocationList,
+                advertiser_id: i64,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> CreateRequestBuilder<'a> {
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::LocationList, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::LocationList, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/locationLists");
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::POST, path);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
                 }
             }
             #[doc = "Created via [LocationListsActions::get()](struct.LocationListsActions.html#method.get)"]
@@ -33134,6 +35875,1153 @@ pub mod resources {
                     self._execute()
                 }
             }
+            #[doc = "Created via [LocationListsActions::patch()](struct.LocationListsActions.html#method.patch)"]
+            #[derive(Debug, Clone)]
+            pub struct PatchRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::LocationList,
+                advertiser_id: i64,
+                location_list_id: i64,
+                update_mask: Option<String>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> PatchRequestBuilder<'a> {
+                #[doc = "Required. The mask to control which fields to update."]
+                pub fn update_mask(mut self, value: impl Into<String>) -> Self {
+                    self.update_mask = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::LocationList, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::LocationList, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/locationLists/");
+                    {
+                        let var_as_string = self.location_list_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::SIMPLE,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::PATCH, path);
+                    let req = req.query(&[("updateMask", &self.update_mask)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            pub mod assigned_locations {
+                pub mod params {}
+                pub struct AssignedLocationsActions<'a> {
+                    pub(crate) reqwest: &'a reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                }
+                impl<'a> AssignedLocationsActions<'a> {
+                    fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                        self.auth
+                    }
+                    #[doc = "Bulk edits multiple assignments between locations and a single location\nlist.\n\nThe operation will delete the assigned locations provided in\nBulkEditAssignedLocationsRequest.deleted_assigned_locations and then\ncreate the assigned locations provided in\nBulkEditAssignedLocationsRequest.created_assigned_locations."]
+                    pub fn bulk_edit(
+                        &self,
+                        request: crate::schemas::BulkEditAssignedLocationsRequest,
+                        advertiser_id: i64,
+                        location_list_id: i64,
+                    ) -> BulkEditRequestBuilder {
+                        BulkEditRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            location_list_id,
+                        }
+                    }
+                    #[doc = "Creates an assignment between a location and a location list."]
+                    pub fn create(
+                        &self,
+                        request: crate::schemas::AssignedLocation,
+                        advertiser_id: i64,
+                        location_list_id: i64,
+                    ) -> CreateRequestBuilder {
+                        CreateRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            location_list_id,
+                        }
+                    }
+                    #[doc = "Deletes the assignment between a location and a location list."]
+                    pub fn delete(
+                        &self,
+                        advertiser_id: i64,
+                        location_list_id: i64,
+                        assigned_location_id: i64,
+                    ) -> DeleteRequestBuilder {
+                        DeleteRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            location_list_id,
+                            assigned_location_id,
+                        }
+                    }
+                    #[doc = "Lists locations assigned to a location list."]
+                    pub fn list(
+                        &self,
+                        advertiser_id: i64,
+                        location_list_id: i64,
+                    ) -> ListRequestBuilder {
+                        ListRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            location_list_id,
+                            filter: None,
+                            order_by: None,
+                            page_size: None,
+                            page_token: None,
+                        }
+                    }
+                }
+                #[doc = "Created via [AssignedLocationsActions::bulk_edit()](struct.AssignedLocationsActions.html#method.bulk_edit)"]
+                #[derive(Debug, Clone)]
+                pub struct BulkEditRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::BulkEditAssignedLocationsRequest,
+                    advertiser_id: i64,
+                    location_list_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> BulkEditRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditAssignedLocationsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditAssignedLocationsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/locationLists/");
+                        {
+                            let var_as_string = self.location_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/assignedLocations:bulkEdit");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedLocationsActions::create()](struct.AssignedLocationsActions.html#method.create)"]
+                #[derive(Debug, Clone)]
+                pub struct CreateRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::AssignedLocation,
+                    advertiser_id: i64,
+                    location_list_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> CreateRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedLocation, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedLocation, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/locationLists/");
+                        {
+                            let var_as_string = self.location_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/assignedLocations");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedLocationsActions::delete()](struct.AssignedLocationsActions.html#method.delete)"]
+                #[derive(Debug, Clone)]
+                pub struct DeleteRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    location_list_id: i64,
+                    assigned_location_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> DeleteRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/locationLists/");
+                        {
+                            let var_as_string = self.location_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/assignedLocations/");
+                        {
+                            let var_as_string = self.assigned_location_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedLocationsActions::list()](struct.AssignedLocationsActions.html#method.list)"]
+                #[derive(Debug, Clone)]
+                pub struct ListRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    location_list_id: i64,
+                    filter: Option<String>,
+                    order_by: Option<String>,
+                    page_size: Option<i32>,
+                    page_token: Option<String>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Allows filtering by location list assignment fields.\n\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by the logical operator `OR`.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `EQUALS (=)`.\n* Supported fields:\n  * `assignedLocationId`\n\nThe length of this field should be no more than 500 characters."]
+                    pub fn filter(mut self, value: impl Into<String>) -> Self {
+                        self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `assignedLocationId` (default)\n\nThe default sorting order is ascending. To specify descending order for a\nfield, a suffix \" desc\" should be added to the field name. Example:\n`assignedLocationId desc`."]
+                    pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                        self.order_by = Some(value.into());
+                        self
+                    }
+                    #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "A token identifying a page of results the server should return.\n\nTypically, this is the value of\nnext_page_token\nreturned from the previous call to `ListAssignedLocations`\nmethod. If not specified, the first page of results will be returned."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_assigned_locations<T>(self) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_assigned_locations_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_assigned_locations_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedLocation>
+                    {
+                        self.iter_assigned_locations_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_assigned_locations_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedLocation>
+                    {
+                        self.iter_assigned_locations_with_fields(Some("*"))
+                    }
+                    pub fn iter_assigned_locations_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector =
+                                concat!("nextPageToken,", "assignedLocations").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "assignedLocations")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListAssignedLocationsResponse>
+                    {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListAssignedLocationsResponse>
+                    {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListAssignedLocationsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListAssignedLocationsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/locationLists/");
+                        {
+                            let var_as_string = self.location_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/assignedLocations");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("orderBy", &self.order_by)]);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
+                    }
+                }
+            }
         }
         pub mod negative_keyword_lists {
             pub mod params {}
@@ -33144,6 +37032,54 @@ pub mod resources {
             impl<'a> NegativeKeywordListsActions<'a> {
                 fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                     self.auth
+                }
+                #[doc = "Creates a new negative keyword list. Returns the newly created negative\nkeyword list if successful."]
+                pub fn create(
+                    &self,
+                    request: crate::schemas::NegativeKeywordList,
+                    advertiser_id: i64,
+                ) -> CreateRequestBuilder {
+                    CreateRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                    }
+                }
+                #[doc = "Deletes a negative keyword list given an advertiser ID and a negative\nkeyword list ID."]
+                pub fn delete(
+                    &self,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                ) -> DeleteRequestBuilder {
+                    DeleteRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                        negative_keyword_list_id,
+                    }
                 }
                 #[doc = "Gets a negative keyword list given an advertiser ID and a negative keyword\nlist ID."]
                 pub fn get(
@@ -33189,6 +37125,369 @@ pub mod resources {
                         page_size: None,
                         page_token: None,
                     }
+                }
+                #[doc = "Updates a negative keyword list. Returns the updated negative keyword list\nif successful."]
+                pub fn patch(
+                    &self,
+                    request: crate::schemas::NegativeKeywordList,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                ) -> PatchRequestBuilder {
+                    PatchRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        advertiser_id,
+                        negative_keyword_list_id,
+                        update_mask: None,
+                    }
+                }
+                #[doc = "Actions that can be performed on the negative_keywords resource"]pub fn negative_keywords ( & self ) -> crate :: resources :: advertisers :: negative_keyword_lists :: negative_keywords :: NegativeKeywordsActions{
+                    crate :: resources :: advertisers :: negative_keyword_lists :: negative_keywords :: NegativeKeywordsActions { reqwest : & self . reqwest , auth : self . auth_ref ( ) , }
+                }
+            }
+            #[doc = "Created via [NegativeKeywordListsActions::create()](struct.NegativeKeywordListsActions.html#method.create)"]
+            #[derive(Debug, Clone)]
+            pub struct CreateRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::NegativeKeywordList,
+                advertiser_id: i64,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> CreateRequestBuilder<'a> {
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::NegativeKeywordList, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::NegativeKeywordList, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/negativeKeywordLists");
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::POST, path);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            #[doc = "Created via [NegativeKeywordListsActions::delete()](struct.NegativeKeywordListsActions.html#method.delete)"]
+            #[derive(Debug, Clone)]
+            pub struct DeleteRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                advertiser_id: i64,
+                negative_keyword_list_id: i64,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> DeleteRequestBuilder<'a> {
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::Empty, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::Empty, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/negativeKeywordLists/");
+                    {
+                        let var_as_string = self.negative_keyword_list_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
                 }
             }
             #[doc = "Created via [NegativeKeywordListsActions::get()](struct.NegativeKeywordListsActions.html#method.get)"]
@@ -33650,6 +37949,3746 @@ pub mod resources {
                     T: ::serde::de::DeserializeOwned,
                 {
                     self._execute()
+                }
+            }
+            #[doc = "Created via [NegativeKeywordListsActions::patch()](struct.NegativeKeywordListsActions.html#method.patch)"]
+            #[derive(Debug, Clone)]
+            pub struct PatchRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::NegativeKeywordList,
+                advertiser_id: i64,
+                negative_keyword_list_id: i64,
+                update_mask: Option<String>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> PatchRequestBuilder<'a> {
+                #[doc = "Required. The mask to control which fields to update."]
+                pub fn update_mask(mut self, value: impl Into<String>) -> Self {
+                    self.update_mask = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::NegativeKeywordList, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::NegativeKeywordList, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/advertisers/");
+                    {
+                        let var_as_string = self.advertiser_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/negativeKeywordLists/");
+                    {
+                        let var_as_string = self.negative_keyword_list_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::SIMPLE,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::PATCH, path);
+                    let req = req.query(&[("updateMask", &self.update_mask)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            pub mod negative_keywords {
+                pub mod params {}
+                pub struct NegativeKeywordsActions<'a> {
+                    pub(crate) reqwest: &'a reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                }
+                impl<'a> NegativeKeywordsActions<'a> {
+                    fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                        self.auth
+                    }
+                    #[doc = "Bulk edits negative keywords in a single negative keyword list.\n\nThe operation will delete the negative keywords provided in\nBulkEditNegativeKeywordsRequest.deleted_negative_keywords and then\ncreate the negative keywords provided in\nBulkEditNegativeKeywordsRequest.created_negative_keywords.\n\nThis operation is guaranteed to be atomic and will never result in a\npartial success or partial failure."]
+                    pub fn bulk_edit(
+                        &self,
+                        request: crate::schemas::BulkEditNegativeKeywordsRequest,
+                        advertiser_id: i64,
+                        negative_keyword_list_id: i64,
+                    ) -> BulkEditRequestBuilder {
+                        BulkEditRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            negative_keyword_list_id,
+                        }
+                    }
+                    #[doc = "Creates a negative keyword in a negative keyword list."]
+                    pub fn create(
+                        &self,
+                        request: crate::schemas::NegativeKeyword,
+                        advertiser_id: i64,
+                        negative_keyword_list_id: i64,
+                    ) -> CreateRequestBuilder {
+                        CreateRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            negative_keyword_list_id,
+                        }
+                    }
+                    #[doc = "Deletes a negative keyword from a negative keyword list."]
+                    pub fn delete(
+                        &self,
+                        advertiser_id: i64,
+                        negative_keyword_list_id: i64,
+                        keyword_value: impl Into<String>,
+                    ) -> DeleteRequestBuilder {
+                        DeleteRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            negative_keyword_list_id,
+                            keyword_value: keyword_value.into(),
+                        }
+                    }
+                    #[doc = "Lists negative keywords in a negative keyword list."]
+                    pub fn list(
+                        &self,
+                        advertiser_id: i64,
+                        negative_keyword_list_id: i64,
+                    ) -> ListRequestBuilder {
+                        ListRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            negative_keyword_list_id,
+                            filter: None,
+                            order_by: None,
+                            page_size: None,
+                            page_token: None,
+                        }
+                    }
+                }
+                #[doc = "Created via [NegativeKeywordsActions::bulk_edit()](struct.NegativeKeywordsActions.html#method.bulk_edit)"]
+                #[derive(Debug, Clone)]
+                pub struct BulkEditRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::BulkEditNegativeKeywordsRequest,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> BulkEditRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditNegativeKeywordsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditNegativeKeywordsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/negativeKeywordLists/");
+                        {
+                            let var_as_string = self.negative_keyword_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/negativeKeywords:bulkEdit");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [NegativeKeywordsActions::create()](struct.NegativeKeywordsActions.html#method.create)"]
+                #[derive(Debug, Clone)]
+                pub struct CreateRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::NegativeKeyword,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> CreateRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::NegativeKeyword, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::NegativeKeyword, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/negativeKeywordLists/");
+                        {
+                            let var_as_string = self.negative_keyword_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/negativeKeywords");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [NegativeKeywordsActions::delete()](struct.NegativeKeywordsActions.html#method.delete)"]
+                #[derive(Debug, Clone)]
+                pub struct DeleteRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                    keyword_value: String,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> DeleteRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/negativeKeywordLists/");
+                        {
+                            let var_as_string = self.negative_keyword_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/negativeKeywords/");
+                        {
+                            let var_as_str = &self.keyword_value;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [NegativeKeywordsActions::list()](struct.NegativeKeywordsActions.html#method.list)"]
+                #[derive(Debug, Clone)]
+                pub struct ListRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    advertiser_id: i64,
+                    negative_keyword_list_id: i64,
+                    filter: Option<String>,
+                    order_by: Option<String>,
+                    page_size: Option<i32>,
+                    page_token: Option<String>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Allows filtering by negative keyword fields.\n\nSupported syntax:\n\n* Filter expressions for negative keyword currently can only contain at\n  most one\n* restriction.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `CONTAINS (:)`.\n* Supported fields:\n  * `keywordValue`\n\nExamples:\n\n* All negative keywords for which the keyword value contains \"google\":\n  `keywordValue : \"google\"`"]
+                    pub fn filter(mut self, value: impl Into<String>) -> Self {
+                        self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `keywordValue` (default)\n\nThe default sorting order is ascending. To specify descending order for a\nfield, a suffix \" desc\" should be added to the field name. Example:\n`keywordValue desc`."]
+                    pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                        self.order_by = Some(value.into());
+                        self
+                    }
+                    #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "A token identifying a page of results the server should return.\n\nTypically, this is the value of\nnext_page_token returned\nfrom the previous call to `ListNegativeKeywords` method. If not specified,\nthe first page of results will be returned."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_negative_keywords<T>(self) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_negative_keywords_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_negative_keywords_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::NegativeKeyword>
+                    {
+                        self.iter_negative_keywords_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_negative_keywords_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::NegativeKeyword>
+                    {
+                        self.iter_negative_keywords_with_fields(Some("*"))
+                    }
+                    pub fn iter_negative_keywords_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector =
+                                concat!("nextPageToken,", "negativeKeywords").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "negativeKeywords")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListNegativeKeywordsResponse>
+                    {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListNegativeKeywordsResponse>
+                    {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListNegativeKeywordsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListNegativeKeywordsResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/negativeKeywordLists/");
+                        {
+                            let var_as_string = self.negative_keyword_list_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/negativeKeywords");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("orderBy", &self.order_by)]);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
+                    }
+                }
+            }
+        }
+        pub mod targeting_types {
+            pub mod params {}
+            pub struct TargetingTypesActions<'a> {
+                pub(crate) reqwest: &'a reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            }
+            impl<'a> TargetingTypesActions<'a> {
+                fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                    self.auth
+                }
+                #[doc = "Actions that can be performed on the assigned_targeting_options resource"]pub fn assigned_targeting_options ( & self ) -> crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: AssignedTargetingOptionsActions{
+                    crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: AssignedTargetingOptionsActions { reqwest : & self . reqwest , auth : self . auth_ref ( ) , }
+                }
+            }
+            pub mod assigned_targeting_options {
+                pub mod params {
+                    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+                    pub enum CreateTargetingType {
+                        TargetingTypeAgeRange,
+                        TargetingTypeApp,
+                        TargetingTypeAppCategory,
+                        TargetingTypeAudienceGroup,
+                        TargetingTypeAuthorizedSellerStatus,
+                        TargetingTypeBrowser,
+                        TargetingTypeCarrierAndIsp,
+                        TargetingTypeCategory,
+                        TargetingTypeChannel,
+                        TargetingTypeContentInstreamPosition,
+                        TargetingTypeContentOutstreamPosition,
+                        TargetingTypeDayAndTime,
+                        TargetingTypeDeviceMakeModel,
+                        TargetingTypeDeviceType,
+                        TargetingTypeDigitalContentLabelExclusion,
+                        TargetingTypeEnvironment,
+                        TargetingTypeExchange,
+                        TargetingTypeGender,
+                        TargetingTypeGeoRegion,
+                        TargetingTypeHouseholdIncome,
+                        TargetingTypeInventorySource,
+                        TargetingTypeInventorySourceGroup,
+                        TargetingTypeKeyword,
+                        TargetingTypeLanguage,
+                        TargetingTypeNegativeKeywordList,
+                        TargetingTypeOnScreenPosition,
+                        TargetingTypeOperatingSystem,
+                        TargetingTypeParentalStatus,
+                        TargetingTypeProximityLocationList,
+                        TargetingTypeRegionalLocationList,
+                        TargetingTypeSensitiveCategoryExclusion,
+                        TargetingTypeSubExchange,
+                        TargetingTypeThirdPartyVerifier,
+                        TargetingTypeUnspecified,
+                        TargetingTypeUrl,
+                        TargetingTypeUserRewardedContent,
+                        TargetingTypeVideoPlayerSize,
+                        TargetingTypeViewability,
+                    }
+                    impl CreateTargetingType {
+                        pub fn as_str(self) -> &'static str {
+                            match self {
+                                CreateTargetingType::TargetingTypeAgeRange => {
+                                    "TARGETING_TYPE_AGE_RANGE"
+                                }
+                                CreateTargetingType::TargetingTypeApp => "TARGETING_TYPE_APP",
+                                CreateTargetingType::TargetingTypeAppCategory => {
+                                    "TARGETING_TYPE_APP_CATEGORY"
+                                }
+                                CreateTargetingType::TargetingTypeAudienceGroup => {
+                                    "TARGETING_TYPE_AUDIENCE_GROUP"
+                                }
+                                CreateTargetingType::TargetingTypeAuthorizedSellerStatus => {
+                                    "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS"
+                                }
+                                CreateTargetingType::TargetingTypeBrowser => {
+                                    "TARGETING_TYPE_BROWSER"
+                                }
+                                CreateTargetingType::TargetingTypeCarrierAndIsp => {
+                                    "TARGETING_TYPE_CARRIER_AND_ISP"
+                                }
+                                CreateTargetingType::TargetingTypeCategory => {
+                                    "TARGETING_TYPE_CATEGORY"
+                                }
+                                CreateTargetingType::TargetingTypeChannel => {
+                                    "TARGETING_TYPE_CHANNEL"
+                                }
+                                CreateTargetingType::TargetingTypeContentInstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_INSTREAM_POSITION"
+                                }
+                                CreateTargetingType::TargetingTypeContentOutstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION"
+                                }
+                                CreateTargetingType::TargetingTypeDayAndTime => {
+                                    "TARGETING_TYPE_DAY_AND_TIME"
+                                }
+                                CreateTargetingType::TargetingTypeDeviceMakeModel => {
+                                    "TARGETING_TYPE_DEVICE_MAKE_MODEL"
+                                }
+                                CreateTargetingType::TargetingTypeDeviceType => {
+                                    "TARGETING_TYPE_DEVICE_TYPE"
+                                }
+                                CreateTargetingType::TargetingTypeDigitalContentLabelExclusion => {
+                                    "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION"
+                                }
+                                CreateTargetingType::TargetingTypeEnvironment => {
+                                    "TARGETING_TYPE_ENVIRONMENT"
+                                }
+                                CreateTargetingType::TargetingTypeExchange => {
+                                    "TARGETING_TYPE_EXCHANGE"
+                                }
+                                CreateTargetingType::TargetingTypeGender => "TARGETING_TYPE_GENDER",
+                                CreateTargetingType::TargetingTypeGeoRegion => {
+                                    "TARGETING_TYPE_GEO_REGION"
+                                }
+                                CreateTargetingType::TargetingTypeHouseholdIncome => {
+                                    "TARGETING_TYPE_HOUSEHOLD_INCOME"
+                                }
+                                CreateTargetingType::TargetingTypeInventorySource => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE"
+                                }
+                                CreateTargetingType::TargetingTypeInventorySourceGroup => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE_GROUP"
+                                }
+                                CreateTargetingType::TargetingTypeKeyword => {
+                                    "TARGETING_TYPE_KEYWORD"
+                                }
+                                CreateTargetingType::TargetingTypeLanguage => {
+                                    "TARGETING_TYPE_LANGUAGE"
+                                }
+                                CreateTargetingType::TargetingTypeNegativeKeywordList => {
+                                    "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST"
+                                }
+                                CreateTargetingType::TargetingTypeOnScreenPosition => {
+                                    "TARGETING_TYPE_ON_SCREEN_POSITION"
+                                }
+                                CreateTargetingType::TargetingTypeOperatingSystem => {
+                                    "TARGETING_TYPE_OPERATING_SYSTEM"
+                                }
+                                CreateTargetingType::TargetingTypeParentalStatus => {
+                                    "TARGETING_TYPE_PARENTAL_STATUS"
+                                }
+                                CreateTargetingType::TargetingTypeProximityLocationList => {
+                                    "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
+                                }
+                                CreateTargetingType::TargetingTypeRegionalLocationList => {
+                                    "TARGETING_TYPE_REGIONAL_LOCATION_LIST"
+                                }
+                                CreateTargetingType::TargetingTypeSensitiveCategoryExclusion => {
+                                    "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION"
+                                }
+                                CreateTargetingType::TargetingTypeSubExchange => {
+                                    "TARGETING_TYPE_SUB_EXCHANGE"
+                                }
+                                CreateTargetingType::TargetingTypeThirdPartyVerifier => {
+                                    "TARGETING_TYPE_THIRD_PARTY_VERIFIER"
+                                }
+                                CreateTargetingType::TargetingTypeUnspecified => {
+                                    "TARGETING_TYPE_UNSPECIFIED"
+                                }
+                                CreateTargetingType::TargetingTypeUrl => "TARGETING_TYPE_URL",
+                                CreateTargetingType::TargetingTypeUserRewardedContent => {
+                                    "TARGETING_TYPE_USER_REWARDED_CONTENT"
+                                }
+                                CreateTargetingType::TargetingTypeVideoPlayerSize => {
+                                    "TARGETING_TYPE_VIDEO_PLAYER_SIZE"
+                                }
+                                CreateTargetingType::TargetingTypeViewability => {
+                                    "TARGETING_TYPE_VIEWABILITY"
+                                }
+                            }
+                        }
+                    }
+                    impl ::std::convert::AsRef<str> for CreateTargetingType {
+                        fn as_ref(&self) -> &str {
+                            self.as_str()
+                        }
+                    }
+                    impl ::std::str::FromStr for CreateTargetingType {
+                        type Err = ();
+                        fn from_str(s: &str) -> ::std::result::Result<CreateTargetingType, ()> {
+                            Ok(match s {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    CreateTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => CreateTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    CreateTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    CreateTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    CreateTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => {
+                                    CreateTargetingType::TargetingTypeBrowser
+                                }
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    CreateTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    CreateTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => {
+                                    CreateTargetingType::TargetingTypeChannel
+                                }
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    CreateTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    CreateTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    CreateTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    CreateTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    CreateTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    CreateTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    CreateTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    CreateTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => CreateTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    CreateTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    CreateTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    CreateTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    CreateTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => {
+                                    CreateTargetingType::TargetingTypeKeyword
+                                }
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    CreateTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    CreateTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    CreateTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    CreateTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    CreateTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    CreateTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    CreateTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    CreateTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    CreateTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    CreateTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    CreateTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => CreateTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    CreateTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    CreateTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    CreateTargetingType::TargetingTypeViewability
+                                }
+                                _ => return Err(()),
+                            })
+                        }
+                    }
+                    impl ::std::fmt::Display for CreateTargetingType {
+                        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+                            f.write_str(self.as_str())
+                        }
+                    }
+                    impl ::serde::Serialize for CreateTargetingType {
+                        fn serialize<S>(
+                            &self,
+                            serializer: S,
+                        ) -> ::std::result::Result<S::Ok, S::Error>
+                        where
+                            S: ::serde::ser::Serializer,
+                        {
+                            serializer.serialize_str(self.as_str())
+                        }
+                    }
+                    impl<'de> ::serde::Deserialize<'de> for CreateTargetingType {
+                        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+                        where
+                            D: ::serde::de::Deserializer<'de>,
+                        {
+                            let value: &'de str = <&str>::deserialize(deserializer)?;
+                            Ok(match value {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    CreateTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => CreateTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    CreateTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    CreateTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    CreateTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => {
+                                    CreateTargetingType::TargetingTypeBrowser
+                                }
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    CreateTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    CreateTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => {
+                                    CreateTargetingType::TargetingTypeChannel
+                                }
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    CreateTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    CreateTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    CreateTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    CreateTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    CreateTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    CreateTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    CreateTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    CreateTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => CreateTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    CreateTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    CreateTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    CreateTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    CreateTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => {
+                                    CreateTargetingType::TargetingTypeKeyword
+                                }
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    CreateTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    CreateTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    CreateTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    CreateTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    CreateTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    CreateTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    CreateTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    CreateTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    CreateTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    CreateTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    CreateTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => CreateTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    CreateTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    CreateTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    CreateTargetingType::TargetingTypeViewability
+                                }
+                                _ => {
+                                    return Err(::serde::de::Error::custom(format!(
+                                        "invalid enum for #name: {}",
+                                        value
+                                    )))
+                                }
+                            })
+                        }
+                    }
+                    impl ::google_field_selector::FieldSelector for CreateTargetingType {
+                        fn fields() -> Vec<::google_field_selector::Field> {
+                            Vec::new()
+                        }
+                    }
+                    impl ::google_field_selector::ToFieldType for CreateTargetingType {
+                        fn field_type() -> ::google_field_selector::FieldType {
+                            ::google_field_selector::FieldType::Leaf
+                        }
+                    }
+                    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+                    pub enum DeleteTargetingType {
+                        TargetingTypeAgeRange,
+                        TargetingTypeApp,
+                        TargetingTypeAppCategory,
+                        TargetingTypeAudienceGroup,
+                        TargetingTypeAuthorizedSellerStatus,
+                        TargetingTypeBrowser,
+                        TargetingTypeCarrierAndIsp,
+                        TargetingTypeCategory,
+                        TargetingTypeChannel,
+                        TargetingTypeContentInstreamPosition,
+                        TargetingTypeContentOutstreamPosition,
+                        TargetingTypeDayAndTime,
+                        TargetingTypeDeviceMakeModel,
+                        TargetingTypeDeviceType,
+                        TargetingTypeDigitalContentLabelExclusion,
+                        TargetingTypeEnvironment,
+                        TargetingTypeExchange,
+                        TargetingTypeGender,
+                        TargetingTypeGeoRegion,
+                        TargetingTypeHouseholdIncome,
+                        TargetingTypeInventorySource,
+                        TargetingTypeInventorySourceGroup,
+                        TargetingTypeKeyword,
+                        TargetingTypeLanguage,
+                        TargetingTypeNegativeKeywordList,
+                        TargetingTypeOnScreenPosition,
+                        TargetingTypeOperatingSystem,
+                        TargetingTypeParentalStatus,
+                        TargetingTypeProximityLocationList,
+                        TargetingTypeRegionalLocationList,
+                        TargetingTypeSensitiveCategoryExclusion,
+                        TargetingTypeSubExchange,
+                        TargetingTypeThirdPartyVerifier,
+                        TargetingTypeUnspecified,
+                        TargetingTypeUrl,
+                        TargetingTypeUserRewardedContent,
+                        TargetingTypeVideoPlayerSize,
+                        TargetingTypeViewability,
+                    }
+                    impl DeleteTargetingType {
+                        pub fn as_str(self) -> &'static str {
+                            match self {
+                                DeleteTargetingType::TargetingTypeAgeRange => {
+                                    "TARGETING_TYPE_AGE_RANGE"
+                                }
+                                DeleteTargetingType::TargetingTypeApp => "TARGETING_TYPE_APP",
+                                DeleteTargetingType::TargetingTypeAppCategory => {
+                                    "TARGETING_TYPE_APP_CATEGORY"
+                                }
+                                DeleteTargetingType::TargetingTypeAudienceGroup => {
+                                    "TARGETING_TYPE_AUDIENCE_GROUP"
+                                }
+                                DeleteTargetingType::TargetingTypeAuthorizedSellerStatus => {
+                                    "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS"
+                                }
+                                DeleteTargetingType::TargetingTypeBrowser => {
+                                    "TARGETING_TYPE_BROWSER"
+                                }
+                                DeleteTargetingType::TargetingTypeCarrierAndIsp => {
+                                    "TARGETING_TYPE_CARRIER_AND_ISP"
+                                }
+                                DeleteTargetingType::TargetingTypeCategory => {
+                                    "TARGETING_TYPE_CATEGORY"
+                                }
+                                DeleteTargetingType::TargetingTypeChannel => {
+                                    "TARGETING_TYPE_CHANNEL"
+                                }
+                                DeleteTargetingType::TargetingTypeContentInstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_INSTREAM_POSITION"
+                                }
+                                DeleteTargetingType::TargetingTypeContentOutstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION"
+                                }
+                                DeleteTargetingType::TargetingTypeDayAndTime => {
+                                    "TARGETING_TYPE_DAY_AND_TIME"
+                                }
+                                DeleteTargetingType::TargetingTypeDeviceMakeModel => {
+                                    "TARGETING_TYPE_DEVICE_MAKE_MODEL"
+                                }
+                                DeleteTargetingType::TargetingTypeDeviceType => {
+                                    "TARGETING_TYPE_DEVICE_TYPE"
+                                }
+                                DeleteTargetingType::TargetingTypeDigitalContentLabelExclusion => {
+                                    "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION"
+                                }
+                                DeleteTargetingType::TargetingTypeEnvironment => {
+                                    "TARGETING_TYPE_ENVIRONMENT"
+                                }
+                                DeleteTargetingType::TargetingTypeExchange => {
+                                    "TARGETING_TYPE_EXCHANGE"
+                                }
+                                DeleteTargetingType::TargetingTypeGender => "TARGETING_TYPE_GENDER",
+                                DeleteTargetingType::TargetingTypeGeoRegion => {
+                                    "TARGETING_TYPE_GEO_REGION"
+                                }
+                                DeleteTargetingType::TargetingTypeHouseholdIncome => {
+                                    "TARGETING_TYPE_HOUSEHOLD_INCOME"
+                                }
+                                DeleteTargetingType::TargetingTypeInventorySource => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE"
+                                }
+                                DeleteTargetingType::TargetingTypeInventorySourceGroup => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE_GROUP"
+                                }
+                                DeleteTargetingType::TargetingTypeKeyword => {
+                                    "TARGETING_TYPE_KEYWORD"
+                                }
+                                DeleteTargetingType::TargetingTypeLanguage => {
+                                    "TARGETING_TYPE_LANGUAGE"
+                                }
+                                DeleteTargetingType::TargetingTypeNegativeKeywordList => {
+                                    "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST"
+                                }
+                                DeleteTargetingType::TargetingTypeOnScreenPosition => {
+                                    "TARGETING_TYPE_ON_SCREEN_POSITION"
+                                }
+                                DeleteTargetingType::TargetingTypeOperatingSystem => {
+                                    "TARGETING_TYPE_OPERATING_SYSTEM"
+                                }
+                                DeleteTargetingType::TargetingTypeParentalStatus => {
+                                    "TARGETING_TYPE_PARENTAL_STATUS"
+                                }
+                                DeleteTargetingType::TargetingTypeProximityLocationList => {
+                                    "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
+                                }
+                                DeleteTargetingType::TargetingTypeRegionalLocationList => {
+                                    "TARGETING_TYPE_REGIONAL_LOCATION_LIST"
+                                }
+                                DeleteTargetingType::TargetingTypeSensitiveCategoryExclusion => {
+                                    "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION"
+                                }
+                                DeleteTargetingType::TargetingTypeSubExchange => {
+                                    "TARGETING_TYPE_SUB_EXCHANGE"
+                                }
+                                DeleteTargetingType::TargetingTypeThirdPartyVerifier => {
+                                    "TARGETING_TYPE_THIRD_PARTY_VERIFIER"
+                                }
+                                DeleteTargetingType::TargetingTypeUnspecified => {
+                                    "TARGETING_TYPE_UNSPECIFIED"
+                                }
+                                DeleteTargetingType::TargetingTypeUrl => "TARGETING_TYPE_URL",
+                                DeleteTargetingType::TargetingTypeUserRewardedContent => {
+                                    "TARGETING_TYPE_USER_REWARDED_CONTENT"
+                                }
+                                DeleteTargetingType::TargetingTypeVideoPlayerSize => {
+                                    "TARGETING_TYPE_VIDEO_PLAYER_SIZE"
+                                }
+                                DeleteTargetingType::TargetingTypeViewability => {
+                                    "TARGETING_TYPE_VIEWABILITY"
+                                }
+                            }
+                        }
+                    }
+                    impl ::std::convert::AsRef<str> for DeleteTargetingType {
+                        fn as_ref(&self) -> &str {
+                            self.as_str()
+                        }
+                    }
+                    impl ::std::str::FromStr for DeleteTargetingType {
+                        type Err = ();
+                        fn from_str(s: &str) -> ::std::result::Result<DeleteTargetingType, ()> {
+                            Ok(match s {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    DeleteTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => DeleteTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    DeleteTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    DeleteTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    DeleteTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => {
+                                    DeleteTargetingType::TargetingTypeBrowser
+                                }
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    DeleteTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    DeleteTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => {
+                                    DeleteTargetingType::TargetingTypeChannel
+                                }
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    DeleteTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    DeleteTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    DeleteTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    DeleteTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    DeleteTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    DeleteTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => DeleteTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    DeleteTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    DeleteTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    DeleteTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    DeleteTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => {
+                                    DeleteTargetingType::TargetingTypeKeyword
+                                }
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    DeleteTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    DeleteTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    DeleteTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    DeleteTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    DeleteTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    DeleteTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    DeleteTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    DeleteTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    DeleteTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    DeleteTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => DeleteTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    DeleteTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    DeleteTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    DeleteTargetingType::TargetingTypeViewability
+                                }
+                                _ => return Err(()),
+                            })
+                        }
+                    }
+                    impl ::std::fmt::Display for DeleteTargetingType {
+                        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+                            f.write_str(self.as_str())
+                        }
+                    }
+                    impl ::serde::Serialize for DeleteTargetingType {
+                        fn serialize<S>(
+                            &self,
+                            serializer: S,
+                        ) -> ::std::result::Result<S::Ok, S::Error>
+                        where
+                            S: ::serde::ser::Serializer,
+                        {
+                            serializer.serialize_str(self.as_str())
+                        }
+                    }
+                    impl<'de> ::serde::Deserialize<'de> for DeleteTargetingType {
+                        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+                        where
+                            D: ::serde::de::Deserializer<'de>,
+                        {
+                            let value: &'de str = <&str>::deserialize(deserializer)?;
+                            Ok(match value {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    DeleteTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => DeleteTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    DeleteTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    DeleteTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    DeleteTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => {
+                                    DeleteTargetingType::TargetingTypeBrowser
+                                }
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    DeleteTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    DeleteTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => {
+                                    DeleteTargetingType::TargetingTypeChannel
+                                }
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    DeleteTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    DeleteTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    DeleteTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    DeleteTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    DeleteTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    DeleteTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => DeleteTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    DeleteTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    DeleteTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    DeleteTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    DeleteTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => {
+                                    DeleteTargetingType::TargetingTypeKeyword
+                                }
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    DeleteTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    DeleteTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    DeleteTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    DeleteTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    DeleteTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    DeleteTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    DeleteTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    DeleteTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    DeleteTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    DeleteTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    DeleteTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => DeleteTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    DeleteTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    DeleteTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    DeleteTargetingType::TargetingTypeViewability
+                                }
+                                _ => {
+                                    return Err(::serde::de::Error::custom(format!(
+                                        "invalid enum for #name: {}",
+                                        value
+                                    )))
+                                }
+                            })
+                        }
+                    }
+                    impl ::google_field_selector::FieldSelector for DeleteTargetingType {
+                        fn fields() -> Vec<::google_field_selector::Field> {
+                            Vec::new()
+                        }
+                    }
+                    impl ::google_field_selector::ToFieldType for DeleteTargetingType {
+                        fn field_type() -> ::google_field_selector::FieldType {
+                            ::google_field_selector::FieldType::Leaf
+                        }
+                    }
+                    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+                    pub enum GetTargetingType {
+                        TargetingTypeAgeRange,
+                        TargetingTypeApp,
+                        TargetingTypeAppCategory,
+                        TargetingTypeAudienceGroup,
+                        TargetingTypeAuthorizedSellerStatus,
+                        TargetingTypeBrowser,
+                        TargetingTypeCarrierAndIsp,
+                        TargetingTypeCategory,
+                        TargetingTypeChannel,
+                        TargetingTypeContentInstreamPosition,
+                        TargetingTypeContentOutstreamPosition,
+                        TargetingTypeDayAndTime,
+                        TargetingTypeDeviceMakeModel,
+                        TargetingTypeDeviceType,
+                        TargetingTypeDigitalContentLabelExclusion,
+                        TargetingTypeEnvironment,
+                        TargetingTypeExchange,
+                        TargetingTypeGender,
+                        TargetingTypeGeoRegion,
+                        TargetingTypeHouseholdIncome,
+                        TargetingTypeInventorySource,
+                        TargetingTypeInventorySourceGroup,
+                        TargetingTypeKeyword,
+                        TargetingTypeLanguage,
+                        TargetingTypeNegativeKeywordList,
+                        TargetingTypeOnScreenPosition,
+                        TargetingTypeOperatingSystem,
+                        TargetingTypeParentalStatus,
+                        TargetingTypeProximityLocationList,
+                        TargetingTypeRegionalLocationList,
+                        TargetingTypeSensitiveCategoryExclusion,
+                        TargetingTypeSubExchange,
+                        TargetingTypeThirdPartyVerifier,
+                        TargetingTypeUnspecified,
+                        TargetingTypeUrl,
+                        TargetingTypeUserRewardedContent,
+                        TargetingTypeVideoPlayerSize,
+                        TargetingTypeViewability,
+                    }
+                    impl GetTargetingType {
+                        pub fn as_str(self) -> &'static str {
+                            match self {
+                                GetTargetingType::TargetingTypeAgeRange => {
+                                    "TARGETING_TYPE_AGE_RANGE"
+                                }
+                                GetTargetingType::TargetingTypeApp => "TARGETING_TYPE_APP",
+                                GetTargetingType::TargetingTypeAppCategory => {
+                                    "TARGETING_TYPE_APP_CATEGORY"
+                                }
+                                GetTargetingType::TargetingTypeAudienceGroup => {
+                                    "TARGETING_TYPE_AUDIENCE_GROUP"
+                                }
+                                GetTargetingType::TargetingTypeAuthorizedSellerStatus => {
+                                    "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS"
+                                }
+                                GetTargetingType::TargetingTypeBrowser => "TARGETING_TYPE_BROWSER",
+                                GetTargetingType::TargetingTypeCarrierAndIsp => {
+                                    "TARGETING_TYPE_CARRIER_AND_ISP"
+                                }
+                                GetTargetingType::TargetingTypeCategory => {
+                                    "TARGETING_TYPE_CATEGORY"
+                                }
+                                GetTargetingType::TargetingTypeChannel => "TARGETING_TYPE_CHANNEL",
+                                GetTargetingType::TargetingTypeContentInstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_INSTREAM_POSITION"
+                                }
+                                GetTargetingType::TargetingTypeContentOutstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION"
+                                }
+                                GetTargetingType::TargetingTypeDayAndTime => {
+                                    "TARGETING_TYPE_DAY_AND_TIME"
+                                }
+                                GetTargetingType::TargetingTypeDeviceMakeModel => {
+                                    "TARGETING_TYPE_DEVICE_MAKE_MODEL"
+                                }
+                                GetTargetingType::TargetingTypeDeviceType => {
+                                    "TARGETING_TYPE_DEVICE_TYPE"
+                                }
+                                GetTargetingType::TargetingTypeDigitalContentLabelExclusion => {
+                                    "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION"
+                                }
+                                GetTargetingType::TargetingTypeEnvironment => {
+                                    "TARGETING_TYPE_ENVIRONMENT"
+                                }
+                                GetTargetingType::TargetingTypeExchange => {
+                                    "TARGETING_TYPE_EXCHANGE"
+                                }
+                                GetTargetingType::TargetingTypeGender => "TARGETING_TYPE_GENDER",
+                                GetTargetingType::TargetingTypeGeoRegion => {
+                                    "TARGETING_TYPE_GEO_REGION"
+                                }
+                                GetTargetingType::TargetingTypeHouseholdIncome => {
+                                    "TARGETING_TYPE_HOUSEHOLD_INCOME"
+                                }
+                                GetTargetingType::TargetingTypeInventorySource => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE"
+                                }
+                                GetTargetingType::TargetingTypeInventorySourceGroup => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE_GROUP"
+                                }
+                                GetTargetingType::TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD",
+                                GetTargetingType::TargetingTypeLanguage => {
+                                    "TARGETING_TYPE_LANGUAGE"
+                                }
+                                GetTargetingType::TargetingTypeNegativeKeywordList => {
+                                    "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST"
+                                }
+                                GetTargetingType::TargetingTypeOnScreenPosition => {
+                                    "TARGETING_TYPE_ON_SCREEN_POSITION"
+                                }
+                                GetTargetingType::TargetingTypeOperatingSystem => {
+                                    "TARGETING_TYPE_OPERATING_SYSTEM"
+                                }
+                                GetTargetingType::TargetingTypeParentalStatus => {
+                                    "TARGETING_TYPE_PARENTAL_STATUS"
+                                }
+                                GetTargetingType::TargetingTypeProximityLocationList => {
+                                    "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
+                                }
+                                GetTargetingType::TargetingTypeRegionalLocationList => {
+                                    "TARGETING_TYPE_REGIONAL_LOCATION_LIST"
+                                }
+                                GetTargetingType::TargetingTypeSensitiveCategoryExclusion => {
+                                    "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION"
+                                }
+                                GetTargetingType::TargetingTypeSubExchange => {
+                                    "TARGETING_TYPE_SUB_EXCHANGE"
+                                }
+                                GetTargetingType::TargetingTypeThirdPartyVerifier => {
+                                    "TARGETING_TYPE_THIRD_PARTY_VERIFIER"
+                                }
+                                GetTargetingType::TargetingTypeUnspecified => {
+                                    "TARGETING_TYPE_UNSPECIFIED"
+                                }
+                                GetTargetingType::TargetingTypeUrl => "TARGETING_TYPE_URL",
+                                GetTargetingType::TargetingTypeUserRewardedContent => {
+                                    "TARGETING_TYPE_USER_REWARDED_CONTENT"
+                                }
+                                GetTargetingType::TargetingTypeVideoPlayerSize => {
+                                    "TARGETING_TYPE_VIDEO_PLAYER_SIZE"
+                                }
+                                GetTargetingType::TargetingTypeViewability => {
+                                    "TARGETING_TYPE_VIEWABILITY"
+                                }
+                            }
+                        }
+                    }
+                    impl ::std::convert::AsRef<str> for GetTargetingType {
+                        fn as_ref(&self) -> &str {
+                            self.as_str()
+                        }
+                    }
+                    impl ::std::str::FromStr for GetTargetingType {
+                        type Err = ();
+                        fn from_str(s: &str) -> ::std::result::Result<GetTargetingType, ()> {
+                            Ok(match s {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    GetTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => GetTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    GetTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    GetTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    GetTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => GetTargetingType::TargetingTypeBrowser,
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    GetTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    GetTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => GetTargetingType::TargetingTypeChannel,
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    GetTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    GetTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    GetTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    GetTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    GetTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    GetTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    GetTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    GetTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => GetTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    GetTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    GetTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    GetTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    GetTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => GetTargetingType::TargetingTypeKeyword,
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    GetTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    GetTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    GetTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    GetTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    GetTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    GetTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    GetTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    GetTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    GetTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    GetTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    GetTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => GetTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    GetTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    GetTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    GetTargetingType::TargetingTypeViewability
+                                }
+                                _ => return Err(()),
+                            })
+                        }
+                    }
+                    impl ::std::fmt::Display for GetTargetingType {
+                        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+                            f.write_str(self.as_str())
+                        }
+                    }
+                    impl ::serde::Serialize for GetTargetingType {
+                        fn serialize<S>(
+                            &self,
+                            serializer: S,
+                        ) -> ::std::result::Result<S::Ok, S::Error>
+                        where
+                            S: ::serde::ser::Serializer,
+                        {
+                            serializer.serialize_str(self.as_str())
+                        }
+                    }
+                    impl<'de> ::serde::Deserialize<'de> for GetTargetingType {
+                        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+                        where
+                            D: ::serde::de::Deserializer<'de>,
+                        {
+                            let value: &'de str = <&str>::deserialize(deserializer)?;
+                            Ok(match value {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    GetTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => GetTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    GetTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    GetTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    GetTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => GetTargetingType::TargetingTypeBrowser,
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    GetTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    GetTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => GetTargetingType::TargetingTypeChannel,
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    GetTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    GetTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    GetTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    GetTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    GetTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    GetTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    GetTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    GetTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => GetTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    GetTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    GetTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    GetTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    GetTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => GetTargetingType::TargetingTypeKeyword,
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    GetTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    GetTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    GetTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    GetTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    GetTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    GetTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    GetTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    GetTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    GetTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    GetTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    GetTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => GetTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    GetTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    GetTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    GetTargetingType::TargetingTypeViewability
+                                }
+                                _ => {
+                                    return Err(::serde::de::Error::custom(format!(
+                                        "invalid enum for #name: {}",
+                                        value
+                                    )))
+                                }
+                            })
+                        }
+                    }
+                    impl ::google_field_selector::FieldSelector for GetTargetingType {
+                        fn fields() -> Vec<::google_field_selector::Field> {
+                            Vec::new()
+                        }
+                    }
+                    impl ::google_field_selector::ToFieldType for GetTargetingType {
+                        fn field_type() -> ::google_field_selector::FieldType {
+                            ::google_field_selector::FieldType::Leaf
+                        }
+                    }
+                    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+                    pub enum ListTargetingType {
+                        TargetingTypeAgeRange,
+                        TargetingTypeApp,
+                        TargetingTypeAppCategory,
+                        TargetingTypeAudienceGroup,
+                        TargetingTypeAuthorizedSellerStatus,
+                        TargetingTypeBrowser,
+                        TargetingTypeCarrierAndIsp,
+                        TargetingTypeCategory,
+                        TargetingTypeChannel,
+                        TargetingTypeContentInstreamPosition,
+                        TargetingTypeContentOutstreamPosition,
+                        TargetingTypeDayAndTime,
+                        TargetingTypeDeviceMakeModel,
+                        TargetingTypeDeviceType,
+                        TargetingTypeDigitalContentLabelExclusion,
+                        TargetingTypeEnvironment,
+                        TargetingTypeExchange,
+                        TargetingTypeGender,
+                        TargetingTypeGeoRegion,
+                        TargetingTypeHouseholdIncome,
+                        TargetingTypeInventorySource,
+                        TargetingTypeInventorySourceGroup,
+                        TargetingTypeKeyword,
+                        TargetingTypeLanguage,
+                        TargetingTypeNegativeKeywordList,
+                        TargetingTypeOnScreenPosition,
+                        TargetingTypeOperatingSystem,
+                        TargetingTypeParentalStatus,
+                        TargetingTypeProximityLocationList,
+                        TargetingTypeRegionalLocationList,
+                        TargetingTypeSensitiveCategoryExclusion,
+                        TargetingTypeSubExchange,
+                        TargetingTypeThirdPartyVerifier,
+                        TargetingTypeUnspecified,
+                        TargetingTypeUrl,
+                        TargetingTypeUserRewardedContent,
+                        TargetingTypeVideoPlayerSize,
+                        TargetingTypeViewability,
+                    }
+                    impl ListTargetingType {
+                        pub fn as_str(self) -> &'static str {
+                            match self {
+                                ListTargetingType::TargetingTypeAgeRange => {
+                                    "TARGETING_TYPE_AGE_RANGE"
+                                }
+                                ListTargetingType::TargetingTypeApp => "TARGETING_TYPE_APP",
+                                ListTargetingType::TargetingTypeAppCategory => {
+                                    "TARGETING_TYPE_APP_CATEGORY"
+                                }
+                                ListTargetingType::TargetingTypeAudienceGroup => {
+                                    "TARGETING_TYPE_AUDIENCE_GROUP"
+                                }
+                                ListTargetingType::TargetingTypeAuthorizedSellerStatus => {
+                                    "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS"
+                                }
+                                ListTargetingType::TargetingTypeBrowser => "TARGETING_TYPE_BROWSER",
+                                ListTargetingType::TargetingTypeCarrierAndIsp => {
+                                    "TARGETING_TYPE_CARRIER_AND_ISP"
+                                }
+                                ListTargetingType::TargetingTypeCategory => {
+                                    "TARGETING_TYPE_CATEGORY"
+                                }
+                                ListTargetingType::TargetingTypeChannel => "TARGETING_TYPE_CHANNEL",
+                                ListTargetingType::TargetingTypeContentInstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_INSTREAM_POSITION"
+                                }
+                                ListTargetingType::TargetingTypeContentOutstreamPosition => {
+                                    "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION"
+                                }
+                                ListTargetingType::TargetingTypeDayAndTime => {
+                                    "TARGETING_TYPE_DAY_AND_TIME"
+                                }
+                                ListTargetingType::TargetingTypeDeviceMakeModel => {
+                                    "TARGETING_TYPE_DEVICE_MAKE_MODEL"
+                                }
+                                ListTargetingType::TargetingTypeDeviceType => {
+                                    "TARGETING_TYPE_DEVICE_TYPE"
+                                }
+                                ListTargetingType::TargetingTypeDigitalContentLabelExclusion => {
+                                    "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION"
+                                }
+                                ListTargetingType::TargetingTypeEnvironment => {
+                                    "TARGETING_TYPE_ENVIRONMENT"
+                                }
+                                ListTargetingType::TargetingTypeExchange => {
+                                    "TARGETING_TYPE_EXCHANGE"
+                                }
+                                ListTargetingType::TargetingTypeGender => "TARGETING_TYPE_GENDER",
+                                ListTargetingType::TargetingTypeGeoRegion => {
+                                    "TARGETING_TYPE_GEO_REGION"
+                                }
+                                ListTargetingType::TargetingTypeHouseholdIncome => {
+                                    "TARGETING_TYPE_HOUSEHOLD_INCOME"
+                                }
+                                ListTargetingType::TargetingTypeInventorySource => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE"
+                                }
+                                ListTargetingType::TargetingTypeInventorySourceGroup => {
+                                    "TARGETING_TYPE_INVENTORY_SOURCE_GROUP"
+                                }
+                                ListTargetingType::TargetingTypeKeyword => "TARGETING_TYPE_KEYWORD",
+                                ListTargetingType::TargetingTypeLanguage => {
+                                    "TARGETING_TYPE_LANGUAGE"
+                                }
+                                ListTargetingType::TargetingTypeNegativeKeywordList => {
+                                    "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST"
+                                }
+                                ListTargetingType::TargetingTypeOnScreenPosition => {
+                                    "TARGETING_TYPE_ON_SCREEN_POSITION"
+                                }
+                                ListTargetingType::TargetingTypeOperatingSystem => {
+                                    "TARGETING_TYPE_OPERATING_SYSTEM"
+                                }
+                                ListTargetingType::TargetingTypeParentalStatus => {
+                                    "TARGETING_TYPE_PARENTAL_STATUS"
+                                }
+                                ListTargetingType::TargetingTypeProximityLocationList => {
+                                    "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
+                                }
+                                ListTargetingType::TargetingTypeRegionalLocationList => {
+                                    "TARGETING_TYPE_REGIONAL_LOCATION_LIST"
+                                }
+                                ListTargetingType::TargetingTypeSensitiveCategoryExclusion => {
+                                    "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION"
+                                }
+                                ListTargetingType::TargetingTypeSubExchange => {
+                                    "TARGETING_TYPE_SUB_EXCHANGE"
+                                }
+                                ListTargetingType::TargetingTypeThirdPartyVerifier => {
+                                    "TARGETING_TYPE_THIRD_PARTY_VERIFIER"
+                                }
+                                ListTargetingType::TargetingTypeUnspecified => {
+                                    "TARGETING_TYPE_UNSPECIFIED"
+                                }
+                                ListTargetingType::TargetingTypeUrl => "TARGETING_TYPE_URL",
+                                ListTargetingType::TargetingTypeUserRewardedContent => {
+                                    "TARGETING_TYPE_USER_REWARDED_CONTENT"
+                                }
+                                ListTargetingType::TargetingTypeVideoPlayerSize => {
+                                    "TARGETING_TYPE_VIDEO_PLAYER_SIZE"
+                                }
+                                ListTargetingType::TargetingTypeViewability => {
+                                    "TARGETING_TYPE_VIEWABILITY"
+                                }
+                            }
+                        }
+                    }
+                    impl ::std::convert::AsRef<str> for ListTargetingType {
+                        fn as_ref(&self) -> &str {
+                            self.as_str()
+                        }
+                    }
+                    impl ::std::str::FromStr for ListTargetingType {
+                        type Err = ();
+                        fn from_str(s: &str) -> ::std::result::Result<ListTargetingType, ()> {
+                            Ok(match s {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    ListTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => ListTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    ListTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    ListTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    ListTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => ListTargetingType::TargetingTypeBrowser,
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    ListTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    ListTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => ListTargetingType::TargetingTypeChannel,
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    ListTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    ListTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    ListTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    ListTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    ListTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    ListTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    ListTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    ListTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => ListTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    ListTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    ListTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    ListTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    ListTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => ListTargetingType::TargetingTypeKeyword,
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    ListTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    ListTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    ListTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    ListTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    ListTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    ListTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    ListTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    ListTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    ListTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    ListTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    ListTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => ListTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    ListTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    ListTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    ListTargetingType::TargetingTypeViewability
+                                }
+                                _ => return Err(()),
+                            })
+                        }
+                    }
+                    impl ::std::fmt::Display for ListTargetingType {
+                        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+                            f.write_str(self.as_str())
+                        }
+                    }
+                    impl ::serde::Serialize for ListTargetingType {
+                        fn serialize<S>(
+                            &self,
+                            serializer: S,
+                        ) -> ::std::result::Result<S::Ok, S::Error>
+                        where
+                            S: ::serde::ser::Serializer,
+                        {
+                            serializer.serialize_str(self.as_str())
+                        }
+                    }
+                    impl<'de> ::serde::Deserialize<'de> for ListTargetingType {
+                        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+                        where
+                            D: ::serde::de::Deserializer<'de>,
+                        {
+                            let value: &'de str = <&str>::deserialize(deserializer)?;
+                            Ok(match value {
+                                "TARGETING_TYPE_AGE_RANGE" => {
+                                    ListTargetingType::TargetingTypeAgeRange
+                                }
+                                "TARGETING_TYPE_APP" => ListTargetingType::TargetingTypeApp,
+                                "TARGETING_TYPE_APP_CATEGORY" => {
+                                    ListTargetingType::TargetingTypeAppCategory
+                                }
+                                "TARGETING_TYPE_AUDIENCE_GROUP" => {
+                                    ListTargetingType::TargetingTypeAudienceGroup
+                                }
+                                "TARGETING_TYPE_AUTHORIZED_SELLER_STATUS" => {
+                                    ListTargetingType::TargetingTypeAuthorizedSellerStatus
+                                }
+                                "TARGETING_TYPE_BROWSER" => ListTargetingType::TargetingTypeBrowser,
+                                "TARGETING_TYPE_CARRIER_AND_ISP" => {
+                                    ListTargetingType::TargetingTypeCarrierAndIsp
+                                }
+                                "TARGETING_TYPE_CATEGORY" => {
+                                    ListTargetingType::TargetingTypeCategory
+                                }
+                                "TARGETING_TYPE_CHANNEL" => ListTargetingType::TargetingTypeChannel,
+                                "TARGETING_TYPE_CONTENT_INSTREAM_POSITION" => {
+                                    ListTargetingType::TargetingTypeContentInstreamPosition
+                                }
+                                "TARGETING_TYPE_CONTENT_OUTSTREAM_POSITION" => {
+                                    ListTargetingType::TargetingTypeContentOutstreamPosition
+                                }
+                                "TARGETING_TYPE_DAY_AND_TIME" => {
+                                    ListTargetingType::TargetingTypeDayAndTime
+                                }
+                                "TARGETING_TYPE_DEVICE_MAKE_MODEL" => {
+                                    ListTargetingType::TargetingTypeDeviceMakeModel
+                                }
+                                "TARGETING_TYPE_DEVICE_TYPE" => {
+                                    ListTargetingType::TargetingTypeDeviceType
+                                }
+                                "TARGETING_TYPE_DIGITAL_CONTENT_LABEL_EXCLUSION" => {
+                                    ListTargetingType::TargetingTypeDigitalContentLabelExclusion
+                                }
+                                "TARGETING_TYPE_ENVIRONMENT" => {
+                                    ListTargetingType::TargetingTypeEnvironment
+                                }
+                                "TARGETING_TYPE_EXCHANGE" => {
+                                    ListTargetingType::TargetingTypeExchange
+                                }
+                                "TARGETING_TYPE_GENDER" => ListTargetingType::TargetingTypeGender,
+                                "TARGETING_TYPE_GEO_REGION" => {
+                                    ListTargetingType::TargetingTypeGeoRegion
+                                }
+                                "TARGETING_TYPE_HOUSEHOLD_INCOME" => {
+                                    ListTargetingType::TargetingTypeHouseholdIncome
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE" => {
+                                    ListTargetingType::TargetingTypeInventorySource
+                                }
+                                "TARGETING_TYPE_INVENTORY_SOURCE_GROUP" => {
+                                    ListTargetingType::TargetingTypeInventorySourceGroup
+                                }
+                                "TARGETING_TYPE_KEYWORD" => ListTargetingType::TargetingTypeKeyword,
+                                "TARGETING_TYPE_LANGUAGE" => {
+                                    ListTargetingType::TargetingTypeLanguage
+                                }
+                                "TARGETING_TYPE_NEGATIVE_KEYWORD_LIST" => {
+                                    ListTargetingType::TargetingTypeNegativeKeywordList
+                                }
+                                "TARGETING_TYPE_ON_SCREEN_POSITION" => {
+                                    ListTargetingType::TargetingTypeOnScreenPosition
+                                }
+                                "TARGETING_TYPE_OPERATING_SYSTEM" => {
+                                    ListTargetingType::TargetingTypeOperatingSystem
+                                }
+                                "TARGETING_TYPE_PARENTAL_STATUS" => {
+                                    ListTargetingType::TargetingTypeParentalStatus
+                                }
+                                "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
+                                    ListTargetingType::TargetingTypeProximityLocationList
+                                }
+                                "TARGETING_TYPE_REGIONAL_LOCATION_LIST" => {
+                                    ListTargetingType::TargetingTypeRegionalLocationList
+                                }
+                                "TARGETING_TYPE_SENSITIVE_CATEGORY_EXCLUSION" => {
+                                    ListTargetingType::TargetingTypeSensitiveCategoryExclusion
+                                }
+                                "TARGETING_TYPE_SUB_EXCHANGE" => {
+                                    ListTargetingType::TargetingTypeSubExchange
+                                }
+                                "TARGETING_TYPE_THIRD_PARTY_VERIFIER" => {
+                                    ListTargetingType::TargetingTypeThirdPartyVerifier
+                                }
+                                "TARGETING_TYPE_UNSPECIFIED" => {
+                                    ListTargetingType::TargetingTypeUnspecified
+                                }
+                                "TARGETING_TYPE_URL" => ListTargetingType::TargetingTypeUrl,
+                                "TARGETING_TYPE_USER_REWARDED_CONTENT" => {
+                                    ListTargetingType::TargetingTypeUserRewardedContent
+                                }
+                                "TARGETING_TYPE_VIDEO_PLAYER_SIZE" => {
+                                    ListTargetingType::TargetingTypeVideoPlayerSize
+                                }
+                                "TARGETING_TYPE_VIEWABILITY" => {
+                                    ListTargetingType::TargetingTypeViewability
+                                }
+                                _ => {
+                                    return Err(::serde::de::Error::custom(format!(
+                                        "invalid enum for #name: {}",
+                                        value
+                                    )))
+                                }
+                            })
+                        }
+                    }
+                    impl ::google_field_selector::FieldSelector for ListTargetingType {
+                        fn fields() -> Vec<::google_field_selector::Field> {
+                            Vec::new()
+                        }
+                    }
+                    impl ::google_field_selector::ToFieldType for ListTargetingType {
+                        fn field_type() -> ::google_field_selector::FieldType {
+                            ::google_field_selector::FieldType::Leaf
+                        }
+                    }
+                }
+                pub struct AssignedTargetingOptionsActions<'a> {
+                    pub(crate) reqwest: &'a reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                }
+                impl<'a> AssignedTargetingOptionsActions<'a> {
+                    fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                        self.auth
+                    }
+                    #[doc = "Assigns a targeting option to an advertiser.\nReturns the assigned targeting option if successful."]
+                    pub fn create(
+                        &self,
+                        request: crate::schemas::AssignedTargetingOption,
+                        advertiser_id: i64,
+                        targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: CreateTargetingType,
+                    ) -> CreateRequestBuilder {
+                        CreateRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            targeting_type,
+                        }
+                    }
+                    #[doc = "Deletes an assigned targeting option from an advertiser."]
+                    pub fn delete(
+                        &self,
+                        advertiser_id: i64,
+                        targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: DeleteTargetingType,
+                        assigned_targeting_option_id: impl Into<String>,
+                    ) -> DeleteRequestBuilder {
+                        DeleteRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            targeting_type,
+                            assigned_targeting_option_id: assigned_targeting_option_id.into(),
+                        }
+                    }
+                    #[doc = "Gets a single targeting option assigned to an advertiser."]
+                    pub fn get(
+                        &self,
+                        advertiser_id: i64,
+                        targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: GetTargetingType,
+                        assigned_targeting_option_id: impl Into<String>,
+                    ) -> GetRequestBuilder {
+                        GetRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            targeting_type,
+                            assigned_targeting_option_id: assigned_targeting_option_id.into(),
+                        }
+                    }
+                    #[doc = "Lists the targeting options assigned to an advertiser."]
+                    pub fn list(
+                        &self,
+                        advertiser_id: i64,
+                        targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: ListTargetingType,
+                    ) -> ListRequestBuilder {
+                        ListRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            advertiser_id,
+                            targeting_type,
+                            filter: None,
+                            order_by: None,
+                            page_size: None,
+                            page_token: None,
+                        }
+                    }
+                }
+                #[doc = "Created via [AssignedTargetingOptionsActions::create()](struct.AssignedTargetingOptionsActions.html#method.create)"]
+                #[derive(Debug, Clone)]
+                pub struct CreateRequestBuilder < 'a > { pub ( crate ) reqwest : & 'a :: reqwest :: blocking :: Client , pub ( crate ) auth : & 'a dyn :: google_api_auth :: GetAccessToken , request : crate :: schemas :: AssignedTargetingOption , advertiser_id : i64 , targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: CreateTargetingType , access_token : Option < String > , alt : Option < crate :: params :: Alt > , callback : Option < String > , fields : Option < String > , key : Option < String > , oauth_token : Option < String > , pretty_print : Option < bool > , quota_user : Option < String > , upload_protocol : Option < String > , upload_type : Option < String > , xgafv : Option < crate :: params :: Xgafv > , }
+                impl<'a> CreateRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedTargetingOption, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedTargetingOption, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/targetingTypes/");
+                        {
+                            let var_as_string = self.targeting_type.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/assignedTargetingOptions");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedTargetingOptionsActions::delete()](struct.AssignedTargetingOptionsActions.html#method.delete)"]
+                #[derive(Debug, Clone)]
+                pub struct DeleteRequestBuilder < 'a > { pub ( crate ) reqwest : & 'a :: reqwest :: blocking :: Client , pub ( crate ) auth : & 'a dyn :: google_api_auth :: GetAccessToken , advertiser_id : i64 , targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: DeleteTargetingType , assigned_targeting_option_id : String , access_token : Option < String > , alt : Option < crate :: params :: Alt > , callback : Option < String > , fields : Option < String > , key : Option < String > , oauth_token : Option < String > , pretty_print : Option < bool > , quota_user : Option < String > , upload_protocol : Option < String > , upload_type : Option < String > , xgafv : Option < crate :: params :: Xgafv > , }
+                impl<'a> DeleteRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/targetingTypes/");
+                        {
+                            let var_as_string = self.targeting_type.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/assignedTargetingOptions/");
+                        {
+                            let var_as_str = &self.assigned_targeting_option_id;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedTargetingOptionsActions::get()](struct.AssignedTargetingOptionsActions.html#method.get)"]
+                #[derive(Debug, Clone)]
+                pub struct GetRequestBuilder < 'a > { pub ( crate ) reqwest : & 'a :: reqwest :: blocking :: Client , pub ( crate ) auth : & 'a dyn :: google_api_auth :: GetAccessToken , advertiser_id : i64 , targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: GetTargetingType , assigned_targeting_option_id : String , access_token : Option < String > , alt : Option < crate :: params :: Alt > , callback : Option < String > , fields : Option < String > , key : Option < String > , oauth_token : Option < String > , pretty_print : Option < bool > , quota_user : Option < String > , upload_protocol : Option < String > , upload_type : Option < String > , xgafv : Option < crate :: params :: Xgafv > , }
+                impl<'a> GetRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedTargetingOption, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::AssignedTargetingOption, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/targetingTypes/");
+                        {
+                            let var_as_string = self.targeting_type.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/assignedTargetingOptions/");
+                        {
+                            let var_as_str = &self.assigned_targeting_option_id;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [AssignedTargetingOptionsActions::list()](struct.AssignedTargetingOptionsActions.html#method.list)"]
+                #[derive(Debug, Clone)]
+                pub struct ListRequestBuilder < 'a > { pub ( crate ) reqwest : & 'a :: reqwest :: blocking :: Client , pub ( crate ) auth : & 'a dyn :: google_api_auth :: GetAccessToken , advertiser_id : i64 , targeting_type : crate :: resources :: advertisers :: targeting_types :: assigned_targeting_options :: params :: ListTargetingType , filter : Option < String > , order_by : Option < String > , page_size : Option < i32 > , page_token : Option < String > , access_token : Option < String > , alt : Option < crate :: params :: Alt > , callback : Option < String > , fields : Option < String > , key : Option < String > , oauth_token : Option < String > , pretty_print : Option < bool > , quota_user : Option < String > , upload_protocol : Option < String > , upload_type : Option < String > , xgafv : Option < crate :: params :: Xgafv > , }
+                impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Allows filtering by assigned targeting option properties.\n\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by the logical operator `OR`.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `EQUALS (=)`.\n* Supported fields:\n  * `assignedTargetingOptionId`\n\nExamples:\n\n* AssignedTargetingOption with ID 123456\n  `assignedTargetingOptionId=\"123456\"`\n\nThe length of this field should be no more than 500 characters."]
+                    pub fn filter(mut self, value: impl Into<String>) -> Self {
+                        self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `assignedTargetingOptionId` (default)\n\nThe default sorting order is ascending. To specify descending order for\na field, a suffix \"desc\" should be added to the field name. Example:\n`assignedTargetingOptionId desc`."]
+                    pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                        self.order_by = Some(value.into());
+                        self
+                    }
+                    #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "A token identifying a page of results the server should return.\nTypically, this is the value of\nnext_page_token\nreturned from the previous call to `ListAdvertiserAssignedTargetingOptions`\nmethod. If not specified, the first page of results will be returned."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_assigned_targeting_options<T>(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_assigned_targeting_options_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_assigned_targeting_options_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedTargetingOption>
+                    {
+                        self.iter_assigned_targeting_options_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_assigned_targeting_options_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedTargetingOption>
+                    {
+                        self.iter_assigned_targeting_options_with_fields(Some("*"))
+                    }
+                    pub fn iter_assigned_targeting_options_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector =
+                                concat!("nextPageToken,", "assignedTargetingOptions").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "assignedTargetingOptions")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<
+                        Self,
+                        crate::schemas::ListAdvertiserAssignedTargetingOptionsResponse,
+                    > {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<
+                        Self,
+                        crate::schemas::ListAdvertiserAssignedTargetingOptionsResponse,
+                    > {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<
+                        crate::schemas::ListAdvertiserAssignedTargetingOptionsResponse,
+                        crate::Error,
+                    > {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<
+                        crate::schemas::ListAdvertiserAssignedTargetingOptionsResponse,
+                        crate::Error,
+                    > {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/advertisers/");
+                        {
+                            let var_as_string = self.advertiser_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/targetingTypes/");
+                        {
+                            let var_as_string = self.targeting_type.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/assignedTargetingOptions");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("orderBy", &self.order_by)]);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
+                    }
                 }
             }
         }
@@ -36164,6 +44203,51 @@ pub mod resources {
             fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
                 self.auth
             }
+            #[doc = "Creates a new inventory source group. Returns the newly created inventory\nsource group if successful."]
+            pub fn create(
+                &self,
+                request: crate::schemas::InventorySourceGroup,
+            ) -> CreateRequestBuilder {
+                CreateRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    request,
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    advertiser_id: None,
+                    partner_id: None,
+                }
+            }
+            #[doc = "Deletes an inventory source group."]
+            pub fn delete(&self, inventory_source_group_id: i64) -> DeleteRequestBuilder {
+                DeleteRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    inventory_source_group_id,
+                    advertiser_id: None,
+                    partner_id: None,
+                }
+            }
             #[doc = "Gets an inventory source group."]
             pub fn get(&self, inventory_source_group_id: i64) -> GetRequestBuilder {
                 GetRequestBuilder {
@@ -36208,6 +44292,369 @@ pub mod resources {
                     page_token: None,
                     partner_id: None,
                 }
+            }
+            #[doc = "Updates an inventory source group. Returns the updated inventory source\ngroup if successful."]
+            pub fn patch(
+                &self,
+                request: crate::schemas::InventorySourceGroup,
+                inventory_source_group_id: i64,
+            ) -> PatchRequestBuilder {
+                PatchRequestBuilder {
+                    reqwest: &self.reqwest,
+                    auth: self.auth_ref(),
+                    request,
+                    access_token: None,
+                    alt: None,
+                    callback: None,
+                    fields: None,
+                    key: None,
+                    oauth_token: None,
+                    pretty_print: None,
+                    quota_user: None,
+                    upload_protocol: None,
+                    upload_type: None,
+                    xgafv: None,
+                    inventory_source_group_id,
+                    advertiser_id: None,
+                    partner_id: None,
+                    update_mask: None,
+                }
+            }
+            #[doc = "Actions that can be performed on the assigned_inventory_sources resource"]pub fn assigned_inventory_sources ( & self ) -> crate :: resources :: inventory_source_groups :: assigned_inventory_sources :: AssignedInventorySourcesActions{
+                crate :: resources :: inventory_source_groups :: assigned_inventory_sources :: AssignedInventorySourcesActions { reqwest : & self . reqwest , auth : self . auth_ref ( ) , }
+            }
+        }
+        #[doc = "Created via [InventorySourceGroupsActions::create()](struct.InventorySourceGroupsActions.html#method.create)"]
+        #[derive(Debug, Clone)]
+        pub struct CreateRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            request: crate::schemas::InventorySourceGroup,
+            advertiser_id: Option<i64>,
+            partner_id: Option<i64>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> CreateRequestBuilder<'a> {
+            #[doc = "The ID of the advertiser that owns the inventory source group.\n\nThe parent partner will not have access to this group."]
+            pub fn advertiser_id(mut self, value: i64) -> Self {
+                self.advertiser_id = Some(value);
+                self
+            }
+            #[doc = "The ID of the partner that owns the inventory source group.\n\nOnly this partner will have write access to this group. Only advertisers\nto which this group is explicitly shared will have read access to this\ngroup."]
+            pub fn partner_id(mut self, value: i64) -> Self {
+                self.partner_id = Some(value);
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<crate::schemas::InventorySourceGroup, crate::Error> {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<crate::schemas::InventorySourceGroup, crate::Error> {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                let req = req.json(&self.request);
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                output.push_str("v1/inventorySourceGroups");
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::POST, path);
+                let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                let req = req.query(&[("partnerId", &self.partner_id)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        #[doc = "Created via [InventorySourceGroupsActions::delete()](struct.InventorySourceGroupsActions.html#method.delete)"]
+        #[derive(Debug, Clone)]
+        pub struct DeleteRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            inventory_source_group_id: i64,
+            advertiser_id: Option<i64>,
+            partner_id: Option<i64>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> DeleteRequestBuilder<'a> {
+            #[doc = "The ID of the advertiser that owns the inventory source group.\n\nThe parent partner does not have access to this group."]
+            pub fn advertiser_id(mut self, value: i64) -> Self {
+                self.advertiser_id = Some(value);
+                self
+            }
+            #[doc = "The ID of the partner that owns the inventory source group.\n\nOnly this partner has write access to this group."]
+            pub fn partner_id(mut self, value: i64) -> Self {
+                self.partner_id = Some(value);
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<crate::schemas::Empty, crate::Error> {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(self) -> Result<crate::schemas::Empty, crate::Error> {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                output.push_str("v1/inventorySourceGroups/");
+                {
+                    let var_as_string = self.inventory_source_group_id.to_string();
+                    let var_as_str = &var_as_string;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::RESERVED,
+                    ));
+                }
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                let req = req.query(&[("partnerId", &self.partner_id)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
             }
         }
         #[doc = "Created via [InventorySourceGroupsActions::get()](struct.InventorySourceGroupsActions.html#method.get)"]
@@ -36683,6 +45130,1146 @@ pub mod resources {
                 T: ::serde::de::DeserializeOwned,
             {
                 self._execute()
+            }
+        }
+        #[doc = "Created via [InventorySourceGroupsActions::patch()](struct.InventorySourceGroupsActions.html#method.patch)"]
+        #[derive(Debug, Clone)]
+        pub struct PatchRequestBuilder<'a> {
+            pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+            pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            request: crate::schemas::InventorySourceGroup,
+            inventory_source_group_id: i64,
+            advertiser_id: Option<i64>,
+            partner_id: Option<i64>,
+            update_mask: Option<String>,
+            access_token: Option<String>,
+            alt: Option<crate::params::Alt>,
+            callback: Option<String>,
+            fields: Option<String>,
+            key: Option<String>,
+            oauth_token: Option<String>,
+            pretty_print: Option<bool>,
+            quota_user: Option<String>,
+            upload_protocol: Option<String>,
+            upload_type: Option<String>,
+            xgafv: Option<crate::params::Xgafv>,
+        }
+        impl<'a> PatchRequestBuilder<'a> {
+            #[doc = "The ID of the advertiser that owns the inventory source group.\n\nThe parent partner does not have access to this group."]
+            pub fn advertiser_id(mut self, value: i64) -> Self {
+                self.advertiser_id = Some(value);
+                self
+            }
+            #[doc = "The ID of the partner that owns the inventory source group.\n\nOnly this partner has write access to this group."]
+            pub fn partner_id(mut self, value: i64) -> Self {
+                self.partner_id = Some(value);
+                self
+            }
+            #[doc = "Required. The mask to control which fields to update."]
+            pub fn update_mask(mut self, value: impl Into<String>) -> Self {
+                self.update_mask = Some(value.into());
+                self
+            }
+            #[doc = "OAuth access token."]
+            pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                self.access_token = Some(value.into());
+                self
+            }
+            #[doc = "JSONP"]
+            pub fn callback(mut self, value: impl Into<String>) -> Self {
+                self.callback = Some(value.into());
+                self
+            }
+            #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+            pub fn key(mut self, value: impl Into<String>) -> Self {
+                self.key = Some(value.into());
+                self
+            }
+            #[doc = "OAuth 2.0 token for the current user."]
+            pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                self.oauth_token = Some(value.into());
+                self
+            }
+            #[doc = "Returns response with indentations and line breaks."]
+            pub fn pretty_print(mut self, value: bool) -> Self {
+                self.pretty_print = Some(value);
+                self
+            }
+            #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+            pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                self.quota_user = Some(value.into());
+                self
+            }
+            #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+            pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                self.upload_protocol = Some(value.into());
+                self
+            }
+            #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+            pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                self.upload_type = Some(value.into());
+                self
+            }
+            #[doc = "V1 error format."]
+            pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                self.xgafv = Some(value);
+                self
+            }
+            #[doc = r" Execute the given operation. The fields requested are"]
+            #[doc = r" determined by the FieldSelector attribute of the return type."]
+            #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+            #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+            #[doc = r" are not generic over the return type and deserialize the"]
+            #[doc = r" response into an auto-generated struct will all possible"]
+            #[doc = r" fields."]
+            pub fn execute<T>(self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+            {
+                let fields = ::google_field_selector::to_string::<T>();
+                let fields: Option<String> = if fields.is_empty() {
+                    None
+                } else {
+                    Some(fields)
+                };
+                self.execute_with_fields(fields)
+            }
+            #[doc = r" Execute the given operation. This will not provide any"]
+            #[doc = r" `fields` selector indicating that the server will determine"]
+            #[doc = r" the fields returned. This typically includes the most common"]
+            #[doc = r" fields, but it will not include every possible attribute of"]
+            #[doc = r" the response resource."]
+            pub fn execute_with_default_fields(
+                self,
+            ) -> Result<crate::schemas::InventorySourceGroup, crate::Error> {
+                self.execute_with_fields(None::<&str>)
+            }
+            #[doc = r" Execute the given operation. This will provide a `fields`"]
+            #[doc = r" selector of `*`. This will include every attribute of the"]
+            #[doc = r" response resource and should be limited to use during"]
+            #[doc = r" development or debugging."]
+            pub fn execute_with_all_fields(
+                self,
+            ) -> Result<crate::schemas::InventorySourceGroup, crate::Error> {
+                self.execute_with_fields(Some("*"))
+            }
+            #[doc = r" Execute the given operation. This will use the `fields`"]
+            #[doc = r" selector provided and will deserialize the response into"]
+            #[doc = r" whatever return value is provided."]
+            pub fn execute_with_fields<T, F>(mut self, fields: Option<F>) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+                F: Into<String>,
+            {
+                self.fields = fields.map(Into::into);
+                self._execute()
+            }
+            fn _execute<T>(&mut self) -> Result<T, crate::Error>
+            where
+                T: ::serde::de::DeserializeOwned,
+            {
+                let req = self._request(&self._path())?;
+                let req = req.json(&self.request);
+                Ok(crate::error_from_response(req.send()?)?.json()?)
+            }
+            fn _path(&self) -> String {
+                let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                output.push_str("v1/inventorySourceGroups/");
+                {
+                    let var_as_string = self.inventory_source_group_id.to_string();
+                    let var_as_str = &var_as_string;
+                    output.extend(::percent_encoding::utf8_percent_encode(
+                        &var_as_str,
+                        crate::SIMPLE,
+                    ));
+                }
+                output
+            }
+            fn _request(
+                &self,
+                path: &str,
+            ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                let req = self.reqwest.request(::reqwest::Method::PATCH, path);
+                let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                let req = req.query(&[("partnerId", &self.partner_id)]);
+                let req = req.query(&[("updateMask", &self.update_mask)]);
+                let req = req.query(&[("access_token", &self.access_token)]);
+                let req = req.query(&[("alt", &self.alt)]);
+                let req = req.query(&[("callback", &self.callback)]);
+                let req = req.query(&[("fields", &self.fields)]);
+                let req = req.query(&[("key", &self.key)]);
+                let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                let req = req.query(&[("quotaUser", &self.quota_user)]);
+                let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                let req = req.query(&[("uploadType", &self.upload_type)]);
+                let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                let req = req.bearer_auth(
+                    self.auth
+                        .access_token()
+                        .map_err(|err| crate::Error::OAuth2(err))?,
+                );
+                Ok(req)
+            }
+        }
+        pub mod assigned_inventory_sources {
+            pub mod params {}
+            pub struct AssignedInventorySourcesActions<'a> {
+                pub(crate) reqwest: &'a reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+            }
+            impl<'a> AssignedInventorySourcesActions<'a> {
+                fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                    self.auth
+                }
+                #[doc = "Bulk edits multiple assignments between inventory sources and a single\ninventory source group.\n\nThe operation will delete the assigned inventory sources provided in\nBulkEditAssignedInventorySourcesRequest.deleted_assigned_inventory_sources\nand then create the assigned inventory sources provided in\nBulkEditAssignedInventorySourcesRequest.created_assigned_inventory_sources."]
+                pub fn bulk_edit(
+                    &self,
+                    request: crate::schemas::BulkEditAssignedInventorySourcesRequest,
+                    inventory_source_group_id: i64,
+                ) -> BulkEditRequestBuilder {
+                    BulkEditRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        inventory_source_group_id,
+                    }
+                }
+                #[doc = "Creates an assignment between an inventory source and an inventory source\ngroup."]
+                pub fn create(
+                    &self,
+                    request: crate::schemas::AssignedInventorySource,
+                    inventory_source_group_id: i64,
+                ) -> CreateRequestBuilder {
+                    CreateRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        inventory_source_group_id,
+                        advertiser_id: None,
+                        partner_id: None,
+                    }
+                }
+                #[doc = "Deletes the assignment between an inventory source and an inventory source\ngroup."]
+                pub fn delete(
+                    &self,
+                    inventory_source_group_id: i64,
+                    assigned_inventory_source_id: i64,
+                ) -> DeleteRequestBuilder {
+                    DeleteRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        inventory_source_group_id,
+                        assigned_inventory_source_id,
+                        advertiser_id: None,
+                        partner_id: None,
+                    }
+                }
+                #[doc = "Lists inventory sources assigned to an inventory source group."]
+                pub fn list(&self, inventory_source_group_id: i64) -> ListRequestBuilder {
+                    ListRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        inventory_source_group_id,
+                        advertiser_id: None,
+                        filter: None,
+                        order_by: None,
+                        page_size: None,
+                        page_token: None,
+                        partner_id: None,
+                    }
+                }
+            }
+            #[doc = "Created via [AssignedInventorySourcesActions::bulk_edit()](struct.AssignedInventorySourcesActions.html#method.bulk_edit)"]
+            #[derive(Debug, Clone)]
+            pub struct BulkEditRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::BulkEditAssignedInventorySourcesRequest,
+                inventory_source_group_id: i64,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> BulkEditRequestBuilder<'a> {
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::BulkEditAssignedInventorySourcesResponse, crate::Error>
+                {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::BulkEditAssignedInventorySourcesResponse, crate::Error>
+                {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/inventorySourceGroups/");
+                    {
+                        let var_as_string = self.inventory_source_group_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/assignedInventorySources:bulkEdit");
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::POST, path);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            #[doc = "Created via [AssignedInventorySourcesActions::create()](struct.AssignedInventorySourcesActions.html#method.create)"]
+            #[derive(Debug, Clone)]
+            pub struct CreateRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::AssignedInventorySource,
+                inventory_source_group_id: i64,
+                advertiser_id: Option<i64>,
+                partner_id: Option<i64>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> CreateRequestBuilder<'a> {
+                #[doc = "The ID of the advertiser that owns the parent inventory source group.\n\nThe parent partner will not have access to this assigned inventory\nsource."]
+                pub fn advertiser_id(mut self, value: i64) -> Self {
+                    self.advertiser_id = Some(value);
+                    self
+                }
+                #[doc = "The ID of the partner that owns the parent inventory source group.\n\nOnly this partner will have write access to this assigned inventory\nsource."]
+                pub fn partner_id(mut self, value: i64) -> Self {
+                    self.partner_id = Some(value);
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::AssignedInventorySource, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::AssignedInventorySource, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/inventorySourceGroups/");
+                    {
+                        let var_as_string = self.inventory_source_group_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/assignedInventorySources");
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::POST, path);
+                    let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                    let req = req.query(&[("partnerId", &self.partner_id)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            #[doc = "Created via [AssignedInventorySourcesActions::delete()](struct.AssignedInventorySourcesActions.html#method.delete)"]
+            #[derive(Debug, Clone)]
+            pub struct DeleteRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                inventory_source_group_id: i64,
+                assigned_inventory_source_id: i64,
+                advertiser_id: Option<i64>,
+                partner_id: Option<i64>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> DeleteRequestBuilder<'a> {
+                #[doc = "The ID of the advertiser that owns the parent inventory source group.\n\nThe parent partner does not have access to this assigned inventory\nsource."]
+                pub fn advertiser_id(mut self, value: i64) -> Self {
+                    self.advertiser_id = Some(value);
+                    self
+                }
+                #[doc = "The ID of the partner that owns the parent inventory source group.\n\nOnly this partner has write access to this assigned inventory source."]
+                pub fn partner_id(mut self, value: i64) -> Self {
+                    self.partner_id = Some(value);
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::Empty, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::Empty, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/inventorySourceGroups/");
+                    {
+                        let var_as_string = self.inventory_source_group_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/assignedInventorySources/");
+                    {
+                        let var_as_string = self.assigned_inventory_source_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                    let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                    let req = req.query(&[("partnerId", &self.partner_id)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            #[doc = "Created via [AssignedInventorySourcesActions::list()](struct.AssignedInventorySourcesActions.html#method.list)"]
+            #[derive(Debug, Clone)]
+            pub struct ListRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                inventory_source_group_id: i64,
+                advertiser_id: Option<i64>,
+                filter: Option<String>,
+                order_by: Option<String>,
+                page_size: Option<i32>,
+                page_token: Option<String>,
+                partner_id: Option<i64>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> ListRequestBuilder<'a> {
+                #[doc = "The ID of the advertiser that has access to the assignment.\n\nIf the parent inventory source group is partner-owned, only advertisers\nto which the parent group is explicitly shared can access the assigned\ninventory source."]
+                pub fn advertiser_id(mut self, value: i64) -> Self {
+                    self.advertiser_id = Some(value);
+                    self
+                }
+                #[doc = "Allows filtering by assigned inventory source fields.\n\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by the logical operator `OR`.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `EQUALS (=)`.\n* Supported fields:\n  * `assignedInventorySourceId`\n\nThe length of this field should be no more than 500 characters."]
+                pub fn filter(mut self, value: impl Into<String>) -> Self {
+                    self.filter = Some(value.into());
+                    self
+                }
+                #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `assignedInventorySourceId` (default)\n\nThe default sorting order is ascending. To specify descending order for a\nfield, a suffix \" desc\" should be added to the field name. Example:\n`assignedInventorySourceId desc`."]
+                pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                    self.order_by = Some(value.into());
+                    self
+                }
+                #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                pub fn page_size(mut self, value: i32) -> Self {
+                    self.page_size = Some(value);
+                    self
+                }
+                #[doc = "A token identifying a page of results the server should return.\n\nTypically, this is the value of\nnext_page_token\nreturned from the previous call to `ListAssignedInventorySources`\nmethod. If not specified, the first page of results will be returned."]
+                pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                    self.page_token = Some(value.into());
+                    self
+                }
+                #[doc = "The ID of the partner that has access to the assignment.\n\nIf the parent inventory source group is advertiser-owned, the assignment\ncannot be accessed via a partner."]
+                pub fn partner_id(mut self, value: i64) -> Self {
+                    self.partner_id = Some(value);
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                #[doc = r" populated fields in the yielded items will be determined by the"]
+                #[doc = r" `FieldSelector` implementation."]
+                pub fn iter_assigned_inventory_sources<T>(
+                    self,
+                ) -> crate::iter::PageItemIter<Self, T>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.iter_assigned_inventory_sources_with_fields(fields)
+                }
+                #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                #[doc = r" the server."]
+                pub fn iter_assigned_inventory_sources_with_default_fields(
+                    self,
+                ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedInventorySource>
+                {
+                    self.iter_assigned_inventory_sources_with_fields(None::<String>)
+                }
+                #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                #[doc = r" primarily be used during developement and debugging as fetching"]
+                #[doc = r" all fields can be expensive both in bandwidth and server"]
+                #[doc = r" resources."]
+                pub fn iter_assigned_inventory_sources_with_all_fields(
+                    self,
+                ) -> crate::iter::PageItemIter<Self, crate::schemas::AssignedInventorySource>
+                {
+                    self.iter_assigned_inventory_sources_with_fields(Some("*"))
+                }
+                pub fn iter_assigned_inventory_sources_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> crate::iter::PageItemIter<Self, T>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: AsRef<str>,
+                {
+                    self.fields = Some({
+                        let mut selector =
+                            concat!("nextPageToken,", "assignedInventorySources").to_owned();
+                        let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                        if !items_fields.is_empty() {
+                            selector.push_str("(");
+                            selector.push_str(items_fields);
+                            selector.push_str(")");
+                        }
+                        selector
+                    });
+                    crate::iter::PageItemIter::new(self, "assignedInventorySources")
+                }
+                pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.iter_with_fields(fields)
+                }
+                pub fn iter_with_default_fields(
+                    self,
+                ) -> crate::iter::PageIter<Self, crate::schemas::ListAssignedInventorySourcesResponse>
+                {
+                    self.iter_with_fields(None::<&str>)
+                }
+                pub fn iter_with_all_fields(
+                    self,
+                ) -> crate::iter::PageIter<Self, crate::schemas::ListAssignedInventorySourcesResponse>
+                {
+                    self.iter_with_fields(Some("*"))
+                }
+                pub fn iter_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> crate::iter::PageIter<Self, T>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: AsRef<str>,
+                {
+                    let mut fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                    if !fields.is_empty() {
+                        match fields.chars().rev().nth(0) {
+                            Some(',') | None => {}
+                            _ => fields.push_str(","),
+                        }
+                        fields.push_str("nextPageToken");
+                        self.fields = Some(fields);
+                    }
+                    crate::iter::PageIter::new(self)
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::ListAssignedInventorySourcesResponse, crate::Error>
+                {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::ListAssignedInventorySourcesResponse, crate::Error>
+                {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/inventorySourceGroups/");
+                    {
+                        let var_as_string = self.inventory_source_group_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/assignedInventorySources");
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::GET, path);
+                    let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                    let req = req.query(&[("filter", &self.filter)]);
+                    let req = req.query(&[("orderBy", &self.order_by)]);
+                    let req = req.query(&[("pageSize", &self.page_size)]);
+                    let req = req.query(&[("pageToken", &self.page_token)]);
+                    let req = req.query(&[("partnerId", &self.partner_id)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                fn set_page_token(&mut self, value: String) {
+                    self.page_token = value.into();
+                }
+                fn execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    self._execute()
+                }
             }
         }
     }
@@ -37489,6 +47076,41 @@ pub mod resources {
                         page_token: None,
                     }
                 }
+                #[doc = "Updates a channel. Returns the updated channel if successful."]
+                pub fn patch(
+                    &self,
+                    request: crate::schemas::Channel,
+                    partner_id: i64,
+                    channel_id: i64,
+                ) -> PatchRequestBuilder {
+                    PatchRequestBuilder {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                        request,
+                        access_token: None,
+                        alt: None,
+                        callback: None,
+                        fields: None,
+                        key: None,
+                        oauth_token: None,
+                        pretty_print: None,
+                        quota_user: None,
+                        upload_protocol: None,
+                        upload_type: None,
+                        xgafv: None,
+                        partner_id,
+                        channel_id,
+                        advertiser_id: None,
+                        update_mask: None,
+                    }
+                }
+                #[doc = "Actions that can be performed on the sites resource"]
+                pub fn sites(&self) -> crate::resources::partners::channels::sites::SitesActions {
+                    crate::resources::partners::channels::sites::SitesActions {
+                        reqwest: &self.reqwest,
+                        auth: self.auth_ref(),
+                    }
+                }
             }
             #[doc = "Created via [ChannelsActions::get()](struct.ChannelsActions.html#method.get)"]
             #[derive(Debug, Clone)]
@@ -37974,6 +47596,1174 @@ pub mod resources {
                     self._execute()
                 }
             }
+            #[doc = "Created via [ChannelsActions::patch()](struct.ChannelsActions.html#method.patch)"]
+            #[derive(Debug, Clone)]
+            pub struct PatchRequestBuilder<'a> {
+                pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                request: crate::schemas::Channel,
+                partner_id: i64,
+                channel_id: i64,
+                advertiser_id: Option<i64>,
+                update_mask: Option<String>,
+                access_token: Option<String>,
+                alt: Option<crate::params::Alt>,
+                callback: Option<String>,
+                fields: Option<String>,
+                key: Option<String>,
+                oauth_token: Option<String>,
+                pretty_print: Option<bool>,
+                quota_user: Option<String>,
+                upload_protocol: Option<String>,
+                upload_type: Option<String>,
+                xgafv: Option<crate::params::Xgafv>,
+            }
+            impl<'a> PatchRequestBuilder<'a> {
+                #[doc = "The ID of the advertiser that owns the created channel."]
+                pub fn advertiser_id(mut self, value: i64) -> Self {
+                    self.advertiser_id = Some(value);
+                    self
+                }
+                #[doc = "Required. The mask to control which fields to update."]
+                pub fn update_mask(mut self, value: impl Into<String>) -> Self {
+                    self.update_mask = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth access token."]
+                pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                    self.access_token = Some(value.into());
+                    self
+                }
+                #[doc = "JSONP"]
+                pub fn callback(mut self, value: impl Into<String>) -> Self {
+                    self.callback = Some(value.into());
+                    self
+                }
+                #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                pub fn key(mut self, value: impl Into<String>) -> Self {
+                    self.key = Some(value.into());
+                    self
+                }
+                #[doc = "OAuth 2.0 token for the current user."]
+                pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                    self.oauth_token = Some(value.into());
+                    self
+                }
+                #[doc = "Returns response with indentations and line breaks."]
+                pub fn pretty_print(mut self, value: bool) -> Self {
+                    self.pretty_print = Some(value);
+                    self
+                }
+                #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                    self.quota_user = Some(value.into());
+                    self
+                }
+                #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                    self.upload_protocol = Some(value.into());
+                    self
+                }
+                #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                    self.upload_type = Some(value.into());
+                    self
+                }
+                #[doc = "V1 error format."]
+                pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                    self.xgafv = Some(value);
+                    self
+                }
+                #[doc = r" Execute the given operation. The fields requested are"]
+                #[doc = r" determined by the FieldSelector attribute of the return type."]
+                #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                #[doc = r" are not generic over the return type and deserialize the"]
+                #[doc = r" response into an auto-generated struct will all possible"]
+                #[doc = r" fields."]
+                pub fn execute<T>(self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                {
+                    let fields = ::google_field_selector::to_string::<T>();
+                    let fields: Option<String> = if fields.is_empty() {
+                        None
+                    } else {
+                        Some(fields)
+                    };
+                    self.execute_with_fields(fields)
+                }
+                #[doc = r" Execute the given operation. This will not provide any"]
+                #[doc = r" `fields` selector indicating that the server will determine"]
+                #[doc = r" the fields returned. This typically includes the most common"]
+                #[doc = r" fields, but it will not include every possible attribute of"]
+                #[doc = r" the response resource."]
+                pub fn execute_with_default_fields(
+                    self,
+                ) -> Result<crate::schemas::Channel, crate::Error> {
+                    self.execute_with_fields(None::<&str>)
+                }
+                #[doc = r" Execute the given operation. This will provide a `fields`"]
+                #[doc = r" selector of `*`. This will include every attribute of the"]
+                #[doc = r" response resource and should be limited to use during"]
+                #[doc = r" development or debugging."]
+                pub fn execute_with_all_fields(
+                    self,
+                ) -> Result<crate::schemas::Channel, crate::Error> {
+                    self.execute_with_fields(Some("*"))
+                }
+                #[doc = r" Execute the given operation. This will use the `fields`"]
+                #[doc = r" selector provided and will deserialize the response into"]
+                #[doc = r" whatever return value is provided."]
+                pub fn execute_with_fields<T, F>(
+                    mut self,
+                    fields: Option<F>,
+                ) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                    F: Into<String>,
+                {
+                    self.fields = fields.map(Into::into);
+                    self._execute()
+                }
+                fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                where
+                    T: ::serde::de::DeserializeOwned,
+                {
+                    let req = self._request(&self._path())?;
+                    let req = req.json(&self.request);
+                    Ok(crate::error_from_response(req.send()?)?.json()?)
+                }
+                fn _path(&self) -> String {
+                    let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                    output.push_str("v1/partners/");
+                    {
+                        let var_as_string = self.partner_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::RESERVED,
+                        ));
+                    }
+                    output.push_str("/channels/");
+                    {
+                        let var_as_string = self.channel_id.to_string();
+                        let var_as_str = &var_as_string;
+                        output.extend(::percent_encoding::utf8_percent_encode(
+                            &var_as_str,
+                            crate::SIMPLE,
+                        ));
+                    }
+                    output
+                }
+                fn _request(
+                    &self,
+                    path: &str,
+                ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error> {
+                    let req = self.reqwest.request(::reqwest::Method::PATCH, path);
+                    let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                    let req = req.query(&[("updateMask", &self.update_mask)]);
+                    let req = req.query(&[("access_token", &self.access_token)]);
+                    let req = req.query(&[("alt", &self.alt)]);
+                    let req = req.query(&[("callback", &self.callback)]);
+                    let req = req.query(&[("fields", &self.fields)]);
+                    let req = req.query(&[("key", &self.key)]);
+                    let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                    let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                    let req = req.query(&[("quotaUser", &self.quota_user)]);
+                    let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                    let req = req.query(&[("uploadType", &self.upload_type)]);
+                    let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                    let req = req.bearer_auth(
+                        self.auth
+                            .access_token()
+                            .map_err(|err| crate::Error::OAuth2(err))?,
+                    );
+                    Ok(req)
+                }
+            }
+            pub mod sites {
+                pub mod params {}
+                pub struct SitesActions<'a> {
+                    pub(crate) reqwest: &'a reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                }
+                impl<'a> SitesActions<'a> {
+                    fn auth_ref(&self) -> &dyn ::google_api_auth::GetAccessToken {
+                        self.auth
+                    }
+                    #[doc = "Bulk edits sites under a single channel.\n\nThe operation will delete the sites provided in\nBulkEditSitesRequest.deleted_sites and then create the sites\nprovided in BulkEditSitesRequest.created_sites."]
+                    pub fn bulk_edit(
+                        &self,
+                        request: crate::schemas::BulkEditSitesRequest,
+                        partner_id: i64,
+                        channel_id: i64,
+                    ) -> BulkEditRequestBuilder {
+                        BulkEditRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            partner_id,
+                            channel_id,
+                        }
+                    }
+                    #[doc = "Creates a site in a channel."]
+                    pub fn create(
+                        &self,
+                        request: crate::schemas::Site,
+                        partner_id: i64,
+                        channel_id: i64,
+                    ) -> CreateRequestBuilder {
+                        CreateRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            request,
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            partner_id,
+                            channel_id,
+                            advertiser_id: None,
+                        }
+                    }
+                    #[doc = "Deletes a site from a channel."]
+                    pub fn delete(
+                        &self,
+                        partner_id: i64,
+                        channel_id: i64,
+                        url_or_app_id: impl Into<String>,
+                    ) -> DeleteRequestBuilder {
+                        DeleteRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            partner_id,
+                            channel_id,
+                            url_or_app_id: url_or_app_id.into(),
+                            advertiser_id: None,
+                        }
+                    }
+                    #[doc = "Lists sites in a channel."]
+                    pub fn list(&self, partner_id: i64, channel_id: i64) -> ListRequestBuilder {
+                        ListRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            partner_id,
+                            channel_id,
+                            advertiser_id: None,
+                            filter: None,
+                            order_by: None,
+                            page_size: None,
+                            page_token: None,
+                        }
+                    }
+                }
+                #[doc = "Created via [SitesActions::bulk_edit()](struct.SitesActions.html#method.bulk_edit)"]
+                #[derive(Debug, Clone)]
+                pub struct BulkEditRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::BulkEditSitesRequest,
+                    partner_id: i64,
+                    channel_id: i64,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> BulkEditRequestBuilder<'a> {
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::BulkEditSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/partners/");
+                        {
+                            let var_as_string = self.partner_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites:bulkEdit");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::create()](struct.SitesActions.html#method.create)"]
+                #[derive(Debug, Clone)]
+                pub struct CreateRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    request: crate::schemas::Site,
+                    partner_id: i64,
+                    channel_id: i64,
+                    advertiser_id: Option<i64>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> CreateRequestBuilder<'a> {
+                    #[doc = "The ID of the advertiser that owns the parent channel."]
+                    pub fn advertiser_id(mut self, value: i64) -> Self {
+                        self.advertiser_id = Some(value);
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Site, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Site, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        let req = req.json(&self.request);
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/partners/");
+                        {
+                            let var_as_string = self.partner_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::POST, path);
+                        let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::delete()](struct.SitesActions.html#method.delete)"]
+                #[derive(Debug, Clone)]
+                pub struct DeleteRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    partner_id: i64,
+                    channel_id: i64,
+                    url_or_app_id: String,
+                    advertiser_id: Option<i64>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> DeleteRequestBuilder<'a> {
+                    #[doc = "The ID of the advertiser that owns the parent channel."]
+                    pub fn advertiser_id(mut self, value: i64) -> Self {
+                        self.advertiser_id = Some(value);
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::Empty, crate::Error> {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/partners/");
+                        {
+                            let var_as_string = self.partner_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::SIMPLE,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites/");
+                        {
+                            let var_as_str = &self.url_or_app_id;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::DELETE, path);
+                        let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                #[doc = "Created via [SitesActions::list()](struct.SitesActions.html#method.list)"]
+                #[derive(Debug, Clone)]
+                pub struct ListRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    partner_id: i64,
+                    channel_id: i64,
+                    advertiser_id: Option<i64>,
+                    filter: Option<String>,
+                    order_by: Option<String>,
+                    page_size: Option<i32>,
+                    page_token: Option<String>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "The ID of the advertiser that owns the parent channel."]
+                    pub fn advertiser_id(mut self, value: i64) -> Self {
+                        self.advertiser_id = Some(value);
+                        self
+                    }
+                    #[doc = "Allows filtering by site fields.\n\nSupported syntax:\n\n* Filter expressions for site currently can only contain at most one\n* restriction.\n* A restriction has the form of `{field} {operator} {value}`.\n* The operator must be `CONTAINS (:)`.\n* Supported fields:\n  * `urlOrAppId`\n\nExamples:\n\n* All sites for which the URL or app ID contains \"google\":\n  `urlOrAppId : \"google\"`"]
+                    pub fn filter(mut self, value: impl Into<String>) -> Self {
+                        self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Field by which to sort the list.\nAcceptable values are:\n\n* `urlOrAppId` (default)\n\nThe default sorting order is ascending. To specify descending order for a\nfield, a suffix \" desc\" should be added to the field name. Example:\n`urlOrAppId desc`."]
+                    pub fn order_by(mut self, value: impl Into<String>) -> Self {
+                        self.order_by = Some(value.into());
+                        self
+                    }
+                    #[doc = "Requested page size. Must be between `1` and `100`. If unspecified will\ndefault to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value\nis specified."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "A token identifying a page of results the server should return.\n\nTypically, this is the value of\nnext_page_token returned from the\nprevious call to `ListSites` method. If not specified, the first page\nof results will be returned."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_sites<T>(self) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_sites_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_sites_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::Site> {
+                        self.iter_sites_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_sites_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<Self, crate::schemas::Site> {
+                        self.iter_sites_with_fields(Some("*"))
+                    }
+                    pub fn iter_sites_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector = concat!("nextPageToken,", "sites").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "sites")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListSitesResponse>
+                    {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<Self, crate::schemas::ListSitesResponse>
+                    {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<crate::schemas::ListSitesResponse, crate::Error>
+                    {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://displayvideo.googleapis.com/".to_owned();
+                        output.push_str("v1/partners/");
+                        {
+                            let var_as_string = self.partner_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/channels/");
+                        {
+                            let var_as_string = self.channel_id.to_string();
+                            let var_as_str = &var_as_string;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/sites");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("advertiserId", &self.advertiser_id)]);
+                        let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("orderBy", &self.order_by)]);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for ListRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
+                    }
+                }
+            }
         }
     }
     pub mod sdfdownloadtasks {
@@ -38412,7 +49202,6 @@ pub mod resources {
                     TargetingTypeOnScreenPosition,
                     TargetingTypeOperatingSystem,
                     TargetingTypeParentalStatus,
-                    TargetingTypeProximityLocation,
                     TargetingTypeProximityLocationList,
                     TargetingTypeRegionalLocationList,
                     TargetingTypeSensitiveCategoryExclusion,
@@ -38490,9 +49279,6 @@ pub mod resources {
                             }
                             GetTargetingType::TargetingTypeParentalStatus => {
                                 "TARGETING_TYPE_PARENTAL_STATUS"
-                            }
-                            GetTargetingType::TargetingTypeProximityLocation => {
-                                "TARGETING_TYPE_PROXIMITY_LOCATION"
                             }
                             GetTargetingType::TargetingTypeProximityLocationList => {
                                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
@@ -38597,9 +49383,6 @@ pub mod resources {
                             }
                             "TARGETING_TYPE_PARENTAL_STATUS" => {
                                 GetTargetingType::TargetingTypeParentalStatus
-                            }
-                            "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                GetTargetingType::TargetingTypeProximityLocation
                             }
                             "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                 GetTargetingType::TargetingTypeProximityLocationList
@@ -38717,9 +49500,6 @@ pub mod resources {
                             "TARGETING_TYPE_PARENTAL_STATUS" => {
                                 GetTargetingType::TargetingTypeParentalStatus
                             }
-                            "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                GetTargetingType::TargetingTypeProximityLocation
-                            }
                             "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                 GetTargetingType::TargetingTypeProximityLocationList
                             }
@@ -38797,7 +49577,6 @@ pub mod resources {
                     TargetingTypeOnScreenPosition,
                     TargetingTypeOperatingSystem,
                     TargetingTypeParentalStatus,
-                    TargetingTypeProximityLocation,
                     TargetingTypeProximityLocationList,
                     TargetingTypeRegionalLocationList,
                     TargetingTypeSensitiveCategoryExclusion,
@@ -38877,9 +49656,6 @@ pub mod resources {
                             }
                             ListTargetingType::TargetingTypeParentalStatus => {
                                 "TARGETING_TYPE_PARENTAL_STATUS"
-                            }
-                            ListTargetingType::TargetingTypeProximityLocation => {
-                                "TARGETING_TYPE_PROXIMITY_LOCATION"
                             }
                             ListTargetingType::TargetingTypeProximityLocationList => {
                                 "TARGETING_TYPE_PROXIMITY_LOCATION_LIST"
@@ -38986,9 +49762,6 @@ pub mod resources {
                             }
                             "TARGETING_TYPE_PARENTAL_STATUS" => {
                                 ListTargetingType::TargetingTypeParentalStatus
-                            }
-                            "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                ListTargetingType::TargetingTypeProximityLocation
                             }
                             "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                 ListTargetingType::TargetingTypeProximityLocationList
@@ -39107,9 +49880,6 @@ pub mod resources {
                             }
                             "TARGETING_TYPE_PARENTAL_STATUS" => {
                                 ListTargetingType::TargetingTypeParentalStatus
-                            }
-                            "TARGETING_TYPE_PROXIMITY_LOCATION" => {
-                                ListTargetingType::TargetingTypeProximityLocation
                             }
                             "TARGETING_TYPE_PROXIMITY_LOCATION_LIST" => {
                                 ListTargetingType::TargetingTypeProximityLocationList

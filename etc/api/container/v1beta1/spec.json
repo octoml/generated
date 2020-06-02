@@ -7,7 +7,7 @@
   "canonicalName": "Container",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200501",
+  "revision": "20200505",
   "title": "Kubernetes Engine API",
   "description": "Builds and manages container-based applications, powered by the open source Kubernetes technology.",
   "ownerDomain": "google.com",
@@ -1230,6 +1230,10 @@
           "description": "Configuration of etcd encryption.",
           "$ref": "DatabaseEncryption"
         },
+        "desiredDefaultSnatStatus": {
+          "description": "The desired status of whether to disable default sNAT for this cluster.",
+          "$ref": "DefaultSnatStatus"
+        },
         "desiredImageType": {
           "description": "The desired image type for the node pool.\nNOTE: Set the \"desired_node_pool\" field as well.",
           "type": "string",
@@ -1618,6 +1622,28 @@
             "Secrets in etcd are encrypted.",
             "Secrets in etcd are stored in plain text (at etcd level) - this is\nunrelated to Compute Engine level full disk encryption."
           ],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        }
+      },
+      "additionalProperties": null,
+      "items": null
+    },
+    "DefaultSnatStatus": {
+      "id": "DefaultSnatStatus",
+      "description": "DefaultSnatStatus contains the desired state of whether default sNAT should\nbe disabled on the cluster.",
+      "type": "object",
+      "format": null,
+      "enum": [],
+      "enumDescriptions": [],
+      "properties": {
+        "disabled": {
+          "description": "Disables cluster default sNAT rules.",
+          "type": "boolean",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
           "properties": {},
           "additionalProperties": null,
           "items": null
@@ -2768,6 +2794,10 @@
       "enum": [],
       "enumDescriptions": [],
       "properties": {
+        "defaultSnatStatus": {
+          "description": "Whether the cluster disables default in-node sNAT rules. In-node sNAT rules\nwill be disabled when default_snat_status is disabled. When disabled is set\nto false, default IP masquerade rules will be applied to the nodes to\nprevent sNAT on cluster internal traffic.",
+          "$ref": "DefaultSnatStatus"
+        },
         "enableIntraNodeVisibility": {
           "description": "Whether Intra-node visibility is enabled for this cluster.\nThis makes same node pod to pod traffic visible for VPC network.",
           "type": "boolean",

@@ -923,7 +923,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct ExportResourcesRequest {
-        #[doc = "The BigQuery output destination.\n\nThe BigQuery location requires two IAM roles:\n`roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.\n\nThe output will be one BigQuery table per resource type."]
+        #[doc = "The BigQuery output destination.\n\nThe BigQuery location requires two IAM roles:\n`roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.\n\nThe output is one BigQuery table per resource type."]
         #[serde(
             rename = "bigqueryDestination",
             default,
@@ -931,7 +931,7 @@ pub mod schemas {
         )]
         pub bigquery_destination:
             ::std::option::Option<crate::schemas::GoogleCloudHealthcareV1FhirBigQueryDestination>,
-        #[doc = "The Cloud Storage output destination.\n\nThe Cloud Storage location requires the `roles/storage.objectAdmin` Cloud\nIAM role.\n\nThe exported outputs are\norganized by FHIR resource types. The server will create one object per\nresource type. Each object contains newline delimited JSON, and each line\nis a FHIR resource."]
+        #[doc = "The Cloud Storage output destination.\n\nThe Cloud Storage location requires the `roles/storage.objectAdmin` Cloud\nIAM role.\n\nThe exported outputs are\norganized by FHIR resource types. The server creates one object per\nresource type. Each object contains newline delimited JSON, and each line\nis a FHIR resource."]
         #[serde(
             rename = "gcsDestination",
             default,
@@ -1176,7 +1176,7 @@ pub mod schemas {
         R4,
         #[doc = "Standard for Trial Use, [Release 3](https://www.hl7.org/fhir/STU3)"]
         Stu3,
-        #[doc = "Users must specify a version on store creation or an error will be\nreturned."]
+        #[doc = "Users must specify a version on store creation or an error is\nreturned."]
         VersionUnspecified,
     }
     impl FhirStoreVersion {
@@ -1269,7 +1269,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub action: ::std::option::Option<crate::schemas::FieldMetadataAction>,
-        #[doc = "List of paths to FHIR fields to be redacted. Each path is a\nperiod-separated list where each component is either a field name or\nFHIR type name, for example: Patient, HumanName.\nFor \"choice\" types (those defined in the FHIR spec with the form:\nfield[x]) we use two separate components. For example,\n\"deceasedAge.unit\" is matched by \"Deceased.Age.unit\".\nSupported types are: AdministrativeGenderCode, Code, Date, DateTime,\nDecimal, HumanName, Id, LanguageCode, Markdown, Oid, String, Uri, Uuid,\nXhtml."]
+        #[doc = "List of paths to FHIR fields to be redacted. Each path is a\nperiod-separated list where each component is either a field name or\nFHIR type name, for example: Patient, HumanName.\nFor \"choice\" types (those defined in the FHIR spec with the form:\nfield[x]) we use two separate components. For example,\n\"deceasedAge.unit\" is matched by \"Deceased.Age.unit\".\nSupported types are: AdministrativeGenderCode, Code, Date, DateTime,\nDecimal, HumanName, Id, LanguageCode, Markdown, Oid, String, Uri, Uuid,\nXhtml.\nBase64Binary is also supported, but may only be kept as-is or have all\nthe content removed."]
         #[serde(
             rename = "paths",
             default,
@@ -1551,7 +1551,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub dataset_uri: ::std::option::Option<String>,
-        #[doc = "If this flag is `TRUE`, all tables will be deleted from the dataset before\nthe new exported tables are written. If the flag is not set and the\ndestination dataset contains tables, the export call returns an error."]
+        #[doc = "If this flag is `TRUE`, all tables are deleted from the dataset before\nthe new exported tables are written. If the flag is not set and the\ndestination dataset contains tables, the export call returns an error."]
         #[serde(
             rename = "force",
             default,
@@ -1589,7 +1589,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct GoogleCloudHealthcareV1FhirGcsDestination {
-        #[doc = "URI for a Cloud Storage directory where result files should be written (in\nthe format `gs://{bucket-id}/{path/to/destination/dir}`). If there is no\ntrailing slash, the service will append one when composing the object path.\nThe user is responsible for creating the Cloud Storage bucket referenced in\n`uri_prefix`."]
+        #[doc = "URI for a Cloud Storage directory where result files should be written, in\nthe format of `gs://{bucket-id}/{path/to/destination/dir}`. If there is no\ntrailing slash, the service appends one when composing the object path.\nThe user is responsible for creating the Cloud Storage bucket referenced in\n`uri_prefix`."]
         #[serde(
             rename = "uriPrefix",
             default,
@@ -1651,14 +1651,14 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct Hl7V2NotificationConfig {
-        #[doc = "Restricts notifications sent for messages matching a filter. If this is\nempty, all messages are matched. Syntax:\nhttps://cloud.google.com/appengine/docs/standard/python/search/query_strings\n\nFields/functions available for filtering are:\n\n* `message_type`, from the MSH-9.1 field. For example,\n  `NOT message_type = \"ADT\"`.\n* `send_date` or `sendDate`, the YYYY-MM-DD date the message was sent in\n  the dataset's time_zone, from the MSH-7 segment. For example,\n  `send_date < \"2017-01-02\"`.\n* `send_time`, the timestamp when the message was sent, using the\n  RFC3339 time format for comparisons, from the MSH-7 segment. For example,\n  `send_time < \"2017-01-02T00:00:00-05:00\"`.\n* `send_facility`, the care center that the message came from, from the\n  MSH-4 segment. For example, `send_facility = \"ABC\"`.\n* `PatientId(value, type)`, which matches if the message lists a patient\n  having an ID of the given value and type in the PID-2, PID-3, or PID-4\n  segments. For example, `PatientId(\"123456\", \"MRN\")`.\n* `labels.x`, a string value of the label with key `x` as set using the\n  Message.labels\n  map. For example, `labels.\"priority\"=\"high\"`. The operator `:*` can be\n  used to assert the existence of a label. For example,\n  `labels.\"priority\":*`."]
+        #[doc = "Restricts notifications sent for messages matching a filter. If this is\nempty, all messages are matched. Syntax:\nhttps://cloud.google.com/appengine/docs/standard/python/search/query_strings\n\nThe following fields and functions are available for filtering:\n\n* `message_type`, from the MSH-9.1 field. For example,\n  `NOT message_type = \"ADT\"`.\n* `send_date` or `sendDate`, the YYYY-MM-DD date the message was sent in\n  the dataset's time_zone, from the MSH-7 segment. For example,\n  `send_date < \"2017-01-02\"`.\n* `send_time`, the timestamp when the message was sent, using the\n  RFC3339 time format for comparisons, from the MSH-7 segment. For example,\n  `send_time < \"2017-01-02T00:00:00-05:00\"`.\n* `send_facility`, the care center that the message came from, from the\n  MSH-4 segment. For example, `send_facility = \"ABC\"`.\n* `PatientId(value, type)`, which matches if the message lists a patient\n  having an ID of the given value and type in the PID-2, PID-3, or PID-4\n  segments. For example, `PatientId(\"123456\", \"MRN\")`.\n* `labels.x`, a string value of the label with key `x` as set using the\n  Message.labels\n  map. For example, `labels.\"priority\"=\"high\"`. The operator `:*` can be\n  used to assert the existence of a label. For example,\n  `labels.\"priority\":*`."]
         #[serde(
             rename = "filter",
             default,
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub filter: ::std::option::Option<String>,
-        #[doc = "The [Cloud Pub/Sub](https://cloud.google.com/pubsub/docs/) topic that\nnotifications of changes are published on. Supplied by the client. The\nnotification is a `PubsubMessage` with the following fields:\n\n* `PubsubMessage.Data` contains the resource name.\n* `PubsubMessage.MessageId` is the ID of this notification. It is\n  guaranteed to be unique within the topic.\n* `PubsubMessage.PublishTime` is the time at which the message was\n  published.\n\nNote that notifications are only sent if the topic is non-empty. [Topic\nnames](https://cloud.google.com/pubsub/docs/overview#names) must be\nscoped to a project. Cloud Healthcare API service account must have\npublisher permissions on the given Pub/Sub topic. Not having adequate\npermissions causes the calls that send notifications to fail.\n\nIf a notification cannot be published to Cloud Pub/Sub, errors will be\nlogged to Cloud Logging (see [Viewing logs](/healthcare/docs/how-\ntos/logging))."]
+        #[doc = "The [Cloud Pub/Sub](https://cloud.google.com/pubsub/docs/) topic that\nnotifications of changes are published on. Supplied by the client.\n\nThe notification is a `PubsubMessage` with the following fields:\n\n* `PubsubMessage.Data` contains the resource name.\n* `PubsubMessage.MessageId` is the ID of this notification. It's\n  guaranteed to be unique within the topic.\n* `PubsubMessage.PublishTime` is the time when the message was\n  published.\n\nNote that notifications are only sent if the topic is non-empty. [Topic\nnames](https://cloud.google.com/pubsub/docs/overview#names) must be\nscoped to a project.\n\nThe Cloud Healthcare API service account,\nservice-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com,\nmust have\npublisher permissions on the given Pub/Sub topic. Not having adequate\npermissions causes the calls that send notifications to fail.\n\nIf a notification cannot be published to Cloud Pub/Sub, errors are\nlogged to Cloud Logging. For more information, see\n[Viewing error logs in Cloud Logging](/healthcare/docs/how-tos/logging))."]
         #[serde(
             rename = "pubsubTopic",
             default,
@@ -1718,7 +1718,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub parser_config: ::std::option::Option<crate::schemas::ParserConfig>,
-        #[doc = "Determines whether duplicate messages should be rejected. A duplicate\nmessage is a message with the same raw bytes as a message that has already\nbeen ingested/created in this HL7v2 store.\nThe default value is false, meaning that the store accepts the duplicate\nmessages and it also returns the same ACK message in the\nIngestMessageResponse as has been returned previously. Note that only\none resource is created in the store.\nWhen this field is set to true,\nCreateMessage/IngestMessage\nrequests with a duplicate message will be rejected by the store, and\nIngestMessageErrorDetail returns a NACK message upon rejection."]
+        #[doc = "Determines whether to reject duplicate messages. A duplicate\nmessage is a message with the same raw bytes as a message that has already\nbeen ingested/created in this HL7v2 store.\nThe default value is false, meaning that the store accepts the duplicate\nmessages and it also returns the same ACK message in the\nIngestMessageResponse as has been returned previously. Note that only\none resource is created in the store.\nWhen this field is set to true,\nCreateMessage/IngestMessage\nrequests with a duplicate message will be rejected by the store, and\nIngestMessageErrorDetail returns a NACK message upon rejection."]
         #[serde(
             rename = "rejectDuplicateMessage",
             default,
@@ -1987,11 +1987,11 @@ pub mod schemas {
     }
     #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
     pub enum ImportResourcesRequestContentStructure {
-        #[doc = "The source file contains one or more lines of newline-delimited JSON\n(ndjson). Each line is a bundle, which contains one or more resources.\nSet the bundle type to `history` to import resource versions."]
+        #[doc = "The source file contains one or more lines of newline-delimited JSON\n(ndjson). Each line is a bundle that contains one or more resources.\nSet the bundle type to `history` to import resource versions."]
         Bundle,
         #[doc = "The entire file is one JSON bundle. The JSON can span multiple lines."]
         BundlePretty,
-        #[doc = "If the content structure is not specified, the default value `BUNDLE`\nwill be used."]
+        #[doc = "If the content structure is not specified, the default value `BUNDLE`\nis used."]
         ContentStructureUnspecified,
         #[doc = "The source file contains one or more lines of newline-delimited JSON\n(ndjson). Each line is a single resource."]
         Resource,
@@ -3244,7 +3244,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct StreamConfig {
-        #[doc = "The destination BigQuery structure that contains both the dataset\nlocation and corresponding schema config.\n\nThe output is organized in one table per resource type. The server\nreuses the existing tables (if any) that are named after the resource\ntypes, e.g. \"Patient\", \"Observation\". When there is no existing table\nfor a given resource type, the server attempts to create one.\n\nWhen a table schema doesn't align with the schema config, either\nbecause of existing incompatible schema or out of band incompatible\nmodification, the server does not stream in new data.\n\nBigQuery imposes a 1 MB limit on streaming insert row size, therefore\nany resource mutation that generates more than 1 MB of BigQuery data\nwill not be streamed.\n\nOne resolution in this case is to delete the incompatible\ntable and let the server recreate one, though the newly created table\nonly contains data after the table recreation.\n\nResults are appended to the corresponding BigQuery tables. Different\nversions of the same resource are distinguishable by the meta.versionId\nand meta.lastUpdated columns. The operation (CREATE/UPDATE/DELETE) that\nresults in the new version is recorded in the meta.tag.\n\nThe tables contain all historical resource versions since streaming was\nenabled. For query convenience, the server also creates one view per\ntable of the same name containing only the current resource version.\n\nThe streamed data in the BigQuery dataset is not guaranteed to be\ncompletely unique. The combination of the id and meta.versionId columns\nshould ideally identify a single unique row. But in rare cases,\nduplicates may exist. At query time, users may use the SQL select\nstatement to keep only one of the duplicate rows given an id and\nmeta.versionId pair. Alternatively, the server created view mentioned\nabove also filters out duplicates.\n\nIf a resource mutation cannot be streamed to BigQuery, errors will be\nlogged to Cloud Logging (see\n[Viewing logs](/healthcare/docs/how-tos/logging))."]
+        #[doc = "The destination BigQuery structure that contains both the dataset\nlocation and corresponding schema config.\n\nThe output is organized in one table per resource type. The server\nreuses the existing tables (if any) that are named after the resource\ntypes. For example, \"Patient\", \"Observation\". When there is no existing\ntable for a given resource type, the server attempts to create one.\n\nWhen a table schema doesn't align with the schema config, either\nbecause of existing incompatible schema or out of band incompatible\nmodification, the server does not stream in new data.\n\nBigQuery imposes a 1 MB limit on streaming insert row size, therefore\nany resource mutation that generates more than 1 MB of BigQuery data\nis not streamed.\n\nOne resolution in this case is to delete the incompatible\ntable and let the server recreate one, though the newly created table\nonly contains data after the table recreation.\n\nResults are appended to the corresponding BigQuery tables. Different\nversions of the same resource are distinguishable by the meta.versionId\nand meta.lastUpdated columns. The operation (CREATE/UPDATE/DELETE) that\nresults in the new version is recorded in the meta.tag.\n\nThe tables contain all historical resource versions since streaming was\nenabled. For query convenience, the server also creates one view per\ntable of the same name containing only the current resource version.\n\nThe streamed data in the BigQuery dataset is not guaranteed to be\ncompletely unique. The combination of the id and meta.versionId columns\nshould ideally identify a single unique row. But in rare cases,\nduplicates may exist. At query time, users may use the SQL select\nstatement to keep only one of the duplicate rows given an id and\nmeta.versionId pair. Alternatively, the server created view mentioned\nabove also filters out duplicates.\n\nIf a resource mutation cannot be streamed to BigQuery, errors are\nlogged to Cloud Logging. For more information, see\n[Viewing error logs in Cloud\nLogging](/healthcare/docs/how-tos/logging))."]
         #[serde(
             rename = "bigqueryDestination",
             default,
@@ -5675,7 +5675,7 @@ pub mod resources {
                                 update_mask: None,
                             }
                         }
-                        #[doc = "SearchForInstances returns a list of matching instances. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                        #[doc = "SearchForInstances returns a list of matching instances. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                         pub fn search_for_instances(
                             &self,
                             parent: impl Into<String>,
@@ -5699,7 +5699,7 @@ pub mod resources {
                                 dicom_web_path: dicom_web_path.into(),
                             }
                         }
-                        #[doc = "SearchForSeries returns a list of matching series. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                        #[doc = "SearchForSeries returns a list of matching series. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                         pub fn search_for_series(
                             &self,
                             parent: impl Into<String>,
@@ -5723,7 +5723,7 @@ pub mod resources {
                                 dicom_web_path: dicom_web_path.into(),
                             }
                         }
-                        #[doc = "SearchForStudies returns a list of matching studies. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                        #[doc = "SearchForStudies returns a list of matching studies. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                         pub fn search_for_studies(
                             &self,
                             parent: impl Into<String>,
@@ -5771,7 +5771,7 @@ pub mod resources {
                                 resource: resource.into(),
                             }
                         }
-                        #[doc = "StoreInstances stores DICOM instances associated with study instance unique\nidentifiers (SUID). See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5."]
+                        #[doc = "StoreInstances stores DICOM instances associated with study instance unique\nidentifiers (SUID). See\n[Store Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5)."]
                         pub fn store_instances(
                             &self,
                             request: crate::schemas::HttpBody,
@@ -8521,7 +8521,7 @@ pub mod resources {
                                     dicom_web_path: dicom_web_path.into(),
                                 }
                             }
-                            #[doc = "RetrieveStudyMetadata returns instance associated with the given study\npresented as metadata with the bulk data removed. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                            #[doc = "RetrieveStudyMetadata returns instance associated with the given study\npresented as metadata with the bulk data removed. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                             pub fn retrieve_metadata(
                                 &self,
                                 parent: impl Into<String>,
@@ -8545,7 +8545,7 @@ pub mod resources {
                                     dicom_web_path: dicom_web_path.into(),
                                 }
                             }
-                            #[doc = "RetrieveStudy returns all instances within the given study. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                            #[doc = "RetrieveStudy returns all instances within the given study. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                             pub fn retrieve_study(
                                 &self,
                                 parent: impl Into<String>,
@@ -8569,7 +8569,7 @@ pub mod resources {
                                     dicom_web_path: dicom_web_path.into(),
                                 }
                             }
-                            #[doc = "SearchForInstances returns a list of matching instances. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                            #[doc = "SearchForInstances returns a list of matching instances. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                             pub fn search_for_instances(
                                 &self,
                                 parent: impl Into<String>,
@@ -8593,7 +8593,7 @@ pub mod resources {
                                     dicom_web_path: dicom_web_path.into(),
                                 }
                             }
-                            #[doc = "SearchForSeries returns a list of matching series. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                            #[doc = "SearchForSeries returns a list of matching series. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                             pub fn search_for_series(
                                 &self,
                                 parent: impl Into<String>,
@@ -8617,7 +8617,7 @@ pub mod resources {
                                     dicom_web_path: dicom_web_path.into(),
                                 }
                             }
-                            #[doc = "StoreInstances stores DICOM instances associated with study instance unique\nidentifiers (SUID). See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5."]
+                            #[doc = "StoreInstances stores DICOM instances associated with study instance unique\nidentifiers (SUID). See\n[Store Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.5)."]
                             pub fn store_instances(
                                 &self,
                                 request: crate::schemas::HttpBody,
@@ -9715,7 +9715,7 @@ pub mod resources {
                                         dicom_web_path: dicom_web_path.into(),
                                     }
                                 }
-                                #[doc = "RetrieveSeriesMetadata returns instance associated with the given study and\nseries, presented as metadata with the bulk data removed. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                #[doc = "RetrieveSeriesMetadata returns instance associated with the given study and\nseries, presented as metadata with the bulk data removed. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                 pub fn retrieve_metadata(
                                     &self,
                                     parent: impl Into<String>,
@@ -9740,7 +9740,7 @@ pub mod resources {
                                         dicom_web_path: dicom_web_path.into(),
                                     }
                                 }
-                                #[doc = "RetrieveSeries returns all instances within the given study and series. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                #[doc = "RetrieveSeries returns all instances within the given study and series. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                 pub fn retrieve_series(
                                     &self,
                                     parent: impl Into<String>,
@@ -9764,7 +9764,7 @@ pub mod resources {
                                         dicom_web_path: dicom_web_path.into(),
                                     }
                                 }
-                                #[doc = "SearchForInstances returns a list of matching instances. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6."]
+                                #[doc = "SearchForInstances returns a list of matching instances. See\n[Search Transaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.6)."]
                                 pub fn search_for_instances(
                                     &self,
                                     parent: impl Into<String>,
@@ -10523,7 +10523,7 @@ pub mod resources {
                                             dicom_web_path: dicom_web_path.into(),
                                         }
                                     }
-                                    #[doc = "RetrieveInstance returns instance associated with the given study, series,\nand SOP Instance UID. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                    #[doc = "RetrieveInstance returns instance associated with the given study, series,\nand SOP Instance UID. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                     pub fn retrieve_instance(
                                         &self,
                                         parent: impl Into<String>,
@@ -10548,7 +10548,7 @@ pub mod resources {
                                             dicom_web_path: dicom_web_path.into(),
                                         }
                                     }
-                                    #[doc = "RetrieveInstanceMetadata returns instance associated with the given study,\nseries, and SOP Instance UID presented as metadata with the bulk data\nremoved. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                    #[doc = "RetrieveInstanceMetadata returns instance associated with the given study,\nseries, and SOP Instance UID presented as metadata with the bulk data\nremoved. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                     pub fn retrieve_metadata(
                                         &self,
                                         parent: impl Into<String>,
@@ -10573,7 +10573,7 @@ pub mod resources {
                                             dicom_web_path: dicom_web_path.into(),
                                         }
                                     }
-                                    #[doc = "RetrieveRenderedInstance returns instance associated with the given study,\nseries, and SOP Instance UID in an acceptable Rendered Media Type. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                    #[doc = "RetrieveRenderedInstance returns instance associated with the given study,\nseries, and SOP Instance UID in an acceptable Rendered Media Type. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                     pub fn retrieve_rendered(
                                         &self,
                                         parent: impl Into<String>,
@@ -11343,7 +11343,7 @@ pub mod resources {
                                         {
                                             self.auth
                                         }
-                                        #[doc = "RetrieveFrames returns instances associated with the given study, series,\nSOP Instance UID and frame numbers. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                        #[doc = "RetrieveFrames returns instances associated with the given study, series,\nSOP Instance UID and frame numbers. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4}."]
                                         pub fn retrieve_frames(
                                             &self,
                                             parent: impl Into<String>,
@@ -11368,7 +11368,7 @@ pub mod resources {
                                                 dicom_web_path: dicom_web_path.into(),
                                             }
                                         }
-                                        #[doc = "RetrieveRenderedFrames returns instances associated with the given study,\nseries, SOP Instance UID and frame numbers in an acceptable Rendered Media\nType. See\nhttp://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4."]
+                                        #[doc = "RetrieveRenderedFrames returns instances associated with the given study,\nseries, SOP Instance UID and frame numbers in an acceptable Rendered Media\nType. See\n[RetrieveTransaction]\n(http://dicom.nema.org/medical/dicom/current/output/html/part18.html#sect_10.4)."]
                                         pub fn retrieve_rendered(
                                             &self,
                                             parent: impl Into<String>,
@@ -11955,7 +11955,7 @@ pub mod resources {
                                 options_requested_policy_version: None,
                             }
                         }
-                        #[doc = "Import resources to the FHIR store by loading data from the specified\nsources. This method is optimized to load large quantities of data using\nimport semantics that ignore some FHIR store configuration options and are\nnot suitable for all use cases. It is primarily intended to load data into\nan empty FHIR store that is not being used by other clients. In cases\nwhere this method is not appropriate, consider using ExecuteBundle to\nload data.\n\nEvery resource in the input must contain a client-supplied ID, and will be\nstored using that ID regardless of the\nenable_update_create setting on the FHIR\nstore.\n\nThe import process does not enforce referential integrity, regardless of\nthe\ndisable_referential_integrity\nsetting on the FHIR store. This allows the import of resources with\narbitrary interdependencies without considering grouping or ordering, but\nif the input data contains invalid references or if some resources fail to\nbe imported, the FHIR store might be left in a state that violates\nreferential integrity.\n\nThe import process does not trigger Pub/Sub notification or BigQuery\nstreaming update, regardless of how those are configured on the FHIR store.\n\nIf a resource with the specified ID already exists, the most recent\nversion of the resource is overwritten without creating a new historical\nversion, regardless of the\ndisable_resource_versioning\nsetting on the FHIR store. If transient failures occur during the import,\nit is possible that successfully imported resources will be overwritten\nmore than once.\n\nThe import operation is idempotent unless the input data contains multiple\nvalid resources with the same ID but different contents. In that case,\nafter the import completes, the store will contain exactly one resource\nwith that ID but there is no ordering guarantee on which version of the\ncontents it will have. The operation result counters do not count\nduplicate IDs as an error and will count one success for each resource in\nthe input, which might result in a success count larger than the number\nof resources in the FHIR store. This often occurs when importing data\norganized in bundles produced by Patient-everything\nwhere each bundle contains its own copy of a resource such as Practitioner\nthat might be referred to by many patients.\n\nIf some resources fail to import, for example due to parsing errors,\nsuccessfully imported resources are not rolled back.\n\nThe location and format of the input data is specified by the parameters\nbelow. Note that if no format is specified, this method assumes the\n`BUNDLE` format. When using the `BUNDLE` format this method ignores the\n`Bundle.type` field, except that `history` bundles are rejected, and does\nnot apply any of the bundle processing semantics for batch or transaction\nbundles. Unlike in ExecuteBundle, transaction bundles are not executed\nas a single transaction and bundle-internal references are not rewritten.\nThe bundle is treated as a collection of resources to be written as\nprovided in `Bundle.entry.resource`, ignoring `Bundle.entry.request`. As\nan example, this allows the import of `searchset` bundles produced by a\nFHIR search or\nPatient-everything operation.\n\nThis method returns an Operation that can\nbe used to track the status of the import by calling\nGetOperation.\n\nImmediate fatal errors appear in the\nerror field, errors are also logged\nto Cloud Logging (see [Viewing\nlogs](/healthcare/docs/how-tos/logging)). Otherwise, when the\noperation finishes, a detailed response of type ImportResourcesResponse\nis returned in the response field.\nThe metadata field type for this\noperation is OperationMetadata."]
+                        #[doc = "Imports resources to the FHIR store by loading data from the specified\nsources. This method is optimized to load large quantities of data using\nimport semantics that ignore some FHIR store configuration options and are\nnot suitable for all use cases. It is primarily intended to load data into\nan empty FHIR store that is not being used by other clients. In cases\nwhere this method is not appropriate, consider using ExecuteBundle to\nload data.\n\nEvery resource in the input must contain a client-supplied ID. Each\nresource is stored using the supplied ID regardless of the\nenable_update_create setting on the FHIR\nstore.\n\nThe import process does not enforce referential integrity, regardless of\nthe\ndisable_referential_integrity\nsetting on the FHIR store. This allows the import of resources with\narbitrary interdependencies without considering grouping or ordering, but\nif the input data contains invalid references or if some resources fail to\nbe imported, the FHIR store might be left in a state that violates\nreferential integrity.\n\nThe import process does not trigger Pub/Sub notification or BigQuery\nstreaming update, regardless of how those are configured on the FHIR store.\n\nIf a resource with the specified ID already exists, the most recent\nversion of the resource is overwritten without creating a new historical\nversion, regardless of the\ndisable_resource_versioning\nsetting on the FHIR store. If transient failures occur during the import,\nit's possible that successfully imported resources will be overwritten\nmore than once.\n\nThe import operation is idempotent unless the input data contains multiple\nvalid resources with the same ID but different contents. In that case,\nafter the import completes, the store contains exactly one resource\nwith that ID but there is no ordering guarantee on which version of the\ncontents it will have. The operation result counters do not count\nduplicate IDs as an error and count one success for each resource in\nthe input, which might result in a success count larger than the number\nof resources in the FHIR store. This often occurs when importing data\norganized in bundles produced by Patient-everything\nwhere each bundle contains its own copy of a resource such as Practitioner\nthat might be referred to by many patients.\n\nIf some resources fail to import, for example due to parsing errors,\nsuccessfully imported resources are not rolled back.\n\nThe location and format of the input data is specified by the parameters\nbelow. Note that if no format is specified, this method assumes the\n`BUNDLE` format. When using the `BUNDLE` format this method ignores the\n`Bundle.type` field, except that `history` bundles are rejected, and does\nnot apply any of the bundle processing semantics for batch or transaction\nbundles. Unlike in ExecuteBundle, transaction bundles are not executed\nas a single transaction and bundle-internal references are not rewritten.\nThe bundle is treated as a collection of resources to be written as\nprovided in `Bundle.entry.resource`, ignoring `Bundle.entry.request`. As\nan example, this allows the import of `searchset` bundles produced by a\nFHIR search or\nPatient-everything operation.\n\nThis method returns an Operation that can\nbe used to track the status of the import by calling\nGetOperation.\n\nImmediate fatal errors appear in the\nerror field, errors are also logged\nto Cloud Logging (see [Viewing\nlogs](/healthcare/docs/how-tos/logging)). Otherwise, when the\noperation finishes, a detailed response of type ImportResourcesResponse\nis returned in the response field.\nThe metadata field type for this\noperation is OperationMetadata."]
                         pub fn import(
                             &self,
                             request: crate::schemas::ImportResourcesRequest,
@@ -16410,7 +16410,7 @@ pub mod resources {
                                 hl_7v2_store_id: None,
                             }
                         }
-                        #[doc = "Deletes the specified HL7v2 store and removes all messages that are\ncontained within it."]
+                        #[doc = "Deletes the specified HL7v2 store and removes all messages that it\ncontains."]
                         pub fn delete(&self, name: impl Into<String>) -> DeleteRequestBuilder {
                             DeleteRequestBuilder {
                                 reqwest: &self.reqwest,

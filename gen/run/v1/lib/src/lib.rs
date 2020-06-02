@@ -972,6 +972,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub resource_records: ::std::option::Option<Vec<crate::schemas::ResourceRecord>>,
+        #[doc = "Cloud Run fully managed: not supported\n\nCloud Run on GKE: supported\n\nHolds the URL that will serve the traffic of the DomainMapping.\n+optional"]
+        #[serde(
+            rename = "url",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub url: ::std::option::Option<String>,
     }
     impl ::google_field_selector::FieldSelector for DomainMappingStatus {
         fn fields() -> Vec<::google_field_selector::Field> {

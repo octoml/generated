@@ -871,6 +871,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct SchedulingConfig {
+        #[doc = "Defines whether the node is preemptible."]
         #[serde(
             rename = "preemptible",
             default,

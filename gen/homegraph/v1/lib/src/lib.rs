@@ -494,7 +494,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub event_id: ::std::option::Option<String>,
-        #[doc = "Token to maintain state in the follow up notification response."]
+        #[doc = "Token to maintain state in the follow up notification response.\nDeprecated. See the [notifications\nguide](https://developers.google.com/assistant/smarthome/develop/notifications)\nfor details on implementing follow up notifications."]
         #[serde(
             rename = "followUpToken",
             default,

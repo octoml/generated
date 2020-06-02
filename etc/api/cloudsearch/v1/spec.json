@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Search",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200505",
+  "revision": "20200519",
   "title": "Cloud Search API",
   "description": "Cloud Search provides cloud-based search capabilities over G Suite data.  The Cloud Search API allows indexing of non-G Suite data into Cloud Search.",
   "ownerDomain": "google.com",
@@ -7692,7 +7692,7 @@
                   "repeated": false
                 },
                 "name": {
-                  "description": "Name of the search application.\n<br />Format: applications/{application_id}.",
+                  "description": "Name of the search application.\n<br />Format: searchapplications/{application_id}.",
                   "default": null,
                   "location": "path",
                   "required": true,

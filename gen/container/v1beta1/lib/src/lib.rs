@@ -1340,6 +1340,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub desired_database_encryption: ::std::option::Option<crate::schemas::DatabaseEncryption>,
+        #[doc = "The desired status of whether to disable default sNAT for this cluster."]
+        #[serde(
+            rename = "desiredDefaultSnatStatus",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub desired_default_snat_status: ::std::option::Option<crate::schemas::DefaultSnatStatus>,
         #[doc = "The desired image type for the node pool.\nNOTE: Set the \"desired_node_pool\" field as well."]
         #[serde(
             rename = "desiredImageType",
@@ -1858,6 +1865,37 @@ pub mod schemas {
         }
     }
     impl ::google_field_selector::ToFieldType for DatabaseEncryptionState {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct DefaultSnatStatus {
+        #[doc = "Disables cluster default sNAT rules."]
+        #[serde(
+            rename = "disabled",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub disabled: ::std::option::Option<bool>,
+    }
+    impl ::google_field_selector::FieldSelector for DefaultSnatStatus {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for DefaultSnatStatus {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf
         }
@@ -3188,6 +3226,13 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct NetworkConfig {
+        #[doc = "Whether the cluster disables default in-node sNAT rules. In-node sNAT rules\nwill be disabled when default_snat_status is disabled. When disabled is set\nto false, default IP masquerade rules will be applied to the nodes to\nprevent sNAT on cluster internal traffic."]
+        #[serde(
+            rename = "defaultSnatStatus",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub default_snat_status: ::std::option::Option<crate::schemas::DefaultSnatStatus>,
         #[doc = "Whether Intra-node visibility is enabled for this cluster.\nThis makes same node pod to pod traffic visible for VPC network."]
         #[serde(
             rename = "enableIntraNodeVisibility",

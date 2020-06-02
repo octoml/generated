@@ -611,6 +611,15 @@ pub mod schemas {
                 crate::schemas::GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule,
             >,
         >,
+        #[doc = "Optional. The MaintenanceSettings associated with instance."]
+        #[serde(
+            rename = "maintenanceSettings",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub maintenance_settings: ::std::option::Option<
+            crate::schemas::GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings,
+        >,
         #[doc = "Unique name of the resource. It uses the form:\n`projects/{project_id}/locations/{location_id}/instances/{instance_id}`"]
         #[serde(
             rename = "name",
@@ -881,6 +890,41 @@ pub mod schemas {
     }
     impl ::google_field_selector::ToFieldType
         for GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
+        #[doc = "Optional. Exclude instance from maintenance. When true, rollout service will not\nattempt maintenance on the instance. Rollout service will include the\ninstance in reported rollout progress as not attempted."]
+        #[serde(
+            rename = "exclude",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub exclude: ::std::option::Option<bool>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings
     {
         fn field_type() -> ::google_field_selector::FieldType {
             ::google_field_selector::FieldType::Leaf

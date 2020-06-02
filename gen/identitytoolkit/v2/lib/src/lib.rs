@@ -1158,6 +1158,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub name: ::std::option::Option<String>,
+        #[doc = "A map of <test phone number, fake code> pairs that can be used for MFA.\nThe phone number should be in E.164 format\n(https://www.itu.int/rec/T-REC-E.164/) and a maximum of 10 pairs can be\nadded (error will be thrown once exceeded)."]
+        #[serde(
+            rename = "testPhoneNumbers",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub test_phone_numbers: ::std::option::Option<::std::collections::BTreeMap<String, String>>,
     }
     impl ::google_field_selector::FieldSelector for GoogleCloudIdentitytoolkitAdminV2Tenant {
         fn fields() -> Vec<::google_field_selector::Field> {

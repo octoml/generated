@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Filestore",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200513",
+  "revision": "20200528",
   "title": "Cloud Filestore API",
   "description": "The Cloud Filestore API is used for creating and managing cloud file servers.",
   "ownerDomain": "google.com",
@@ -840,6 +840,10 @@
           },
           "items": null
         },
+        "maintenanceSettings": {
+          "description": "Optional. The MaintenanceSettings associated with instance.",
+          "$ref": "GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings"
+        },
         "name": {
           "description": "Unique name of the resource. It uses the form:\n `projects/{project_id}/locations/{location_id}/instances/{instance_id}`",
           "type": "string",
@@ -1006,6 +1010,28 @@
           "description": "The scheduled start time for the maintenance.",
           "type": "string",
           "format": "google-datetime",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        }
+      },
+      "additionalProperties": null,
+      "items": null
+    },
+    "GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings": {
+      "id": "GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings",
+      "description": "Maintenance settings associated with instance. Allows service producers and\nend users to assign settings that controls maintenance on this instance.",
+      "type": "object",
+      "format": null,
+      "enum": [],
+      "enumDescriptions": [],
+      "properties": {
+        "exclude": {
+          "description": "Optional. Exclude instance from maintenance. When true, rollout service will not\nattempt maintenance on the instance. Rollout service will include the\ninstance in reported rollout progress as not attempted.",
+          "type": "boolean",
+          "format": null,
           "enum": [],
           "enumDescriptions": [],
           "properties": {},

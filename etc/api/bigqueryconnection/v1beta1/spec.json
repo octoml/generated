@@ -7,7 +7,7 @@
   "canonicalName": "BigQuery Connection Service",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200515",
+  "revision": "20200522",
   "title": "BigQuery Connection API",
   "description": "Allows users to manage BigQuery connections to external data sources.",
   "ownerDomain": "google.com",

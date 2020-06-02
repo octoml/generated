@@ -7,7 +7,7 @@
   "canonicalName": "Texttospeech",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200501",
+  "revision": "20200515",
   "title": "Cloud Text-to-Speech API",
   "description": "Synthesizes natural-sounding speech by applying powerful neural network models.",
   "ownerDomain": "google.com",

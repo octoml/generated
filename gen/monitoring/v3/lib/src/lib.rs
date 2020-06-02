@@ -2776,6 +2776,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub next_page_token: ::std::option::Option<String>,
+        #[doc = "The total number of alert policies in all pages. This number is only an estimate, and may change in subsequent pages. https://aip.dev/158"]
+        #[serde(
+            rename = "totalSize",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub total_size: ::std::option::Option<i32>,
     }
     impl ::google_field_selector::FieldSelector for ListAlertPoliciesResponse {
         fn fields() -> Vec<::google_field_selector::Field> {

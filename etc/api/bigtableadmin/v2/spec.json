@@ -7,7 +7,7 @@
   "canonicalName": "Bigtable Admin",
   "fullyEncodeReservedExpansion": true,
   "version": "v2",
-  "revision": "20200424",
+  "revision": "20200415",
   "title": "Cloud Bigtable Admin API",
   "description": "Administer your Cloud Bigtable tables and instances.",
   "ownerDomain": "google.com",
@@ -970,7 +970,7 @@
       "enumDescriptions": [],
       "properties": {
         "options": {
-          "description": "OPTIONAL: A `GetPolicyOptions` object for specifying options to\n`GetIamPolicy`. This field is only used by Cloud IAM.",
+          "description": "OPTIONAL: A `GetPolicyOptions` object for specifying options to\n`GetIamPolicy`.",
           "$ref": "GetPolicyOptions"
         }
       },
@@ -1692,7 +1692,7 @@
           "$ref": "Policy"
         },
         "updateMask": {
-          "description": "OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only\nthe fields in the mask will be modified. If no mask is provided, the\nfollowing default mask is used:\npaths: \"bindings, etag\"\nThis field is only used by Cloud IAM.",
+          "description": "OPTIONAL: A FieldMask specifying which fields of the policy to modify. Only\nthe fields in the mask will be modified. If no mask is provided, the\nfollowing default mask is used:\n\n`paths: \"bindings, etag\"`",
           "type": "string",
           "format": "google-fieldmask",
           "enum": [],

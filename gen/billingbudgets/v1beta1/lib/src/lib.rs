@@ -181,7 +181,7 @@ pub mod schemas {
         pub credit_types_treatment: ::std::option::Option<
             crate::schemas::GoogleCloudBillingBudgetsV1Beta1FilterCreditTypesTreatment,
         >,
-        #[doc = "Optional. A single label and value pair specifying that usage from only this set of\nlabeled resources should be included in the budget. Multiple entries or\nmultiple values per entry are not allowed. If omitted, the report will\ninclude all labeled and unlabeled usage."]
+        #[doc = "Optional. A single label and value pair specifying that usage from only this set of\nlabeled resources should be included in the budget. Currently, multiple\nentries or multiple values per entry are not allowed. If omitted, the\nreport will include all labeled and unlabeled usage."]
         #[serde(
             rename = "labels",
             default,

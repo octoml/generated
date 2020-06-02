@@ -1822,7 +1822,7 @@ pub mod schemas {
         )]
         pub deidentify_template:
             ::std::option::Option<crate::schemas::GooglePrivacyDlpV2DeidentifyTemplate>,
-        #[doc = "The geographic location to store the deidentification template. Reserved\nfor future extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -1874,7 +1874,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub job_id: ::std::option::Option<String>,
-        #[doc = "The geographic location to store and process the job. Reserved for\nfuture extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -1921,7 +1921,7 @@ pub mod schemas {
         )]
         pub inspect_template:
             ::std::option::Option<crate::schemas::GooglePrivacyDlpV2InspectTemplate>,
-        #[doc = "The geographic location to store the inspection template. Reserved for\nfuture extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -1955,7 +1955,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub job_trigger: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2JobTrigger>,
-        #[doc = "The geographic location to store the job trigger. Reserved for\nfuture extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -2000,7 +2000,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub config: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2StoredInfoTypeConfig>,
-        #[doc = "The geographic location to store the stored infoType. Reserved for\nfuture extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -2907,7 +2907,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub item: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2ContentItem>,
-        #[doc = "The geographic location to process de-identification. Reserved for future\nextensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -5284,7 +5284,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub item: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2ContentItem>,
-        #[doc = "The geographic location to process content inspection. Reserved for future\nextensions.\nWhen inspecting images location is restricted to 'global', 'us', 'asia',\nand 'europe'."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -8029,7 +8029,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub inspect_config: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2InspectConfig>,
-        #[doc = "The geographic location to process the request. Reserved for future\nextensions.\nLocation is restricted to 'global', 'us', 'asia', and 'europe'."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -8155,7 +8155,7 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub item: ::std::option::Option<crate::schemas::GooglePrivacyDlpV2ContentItem>,
-        #[doc = "The geographic location to process content reidentification.  Reserved for\nfuture extensions."]
+        #[doc = "Deprecated. This field has no effect."]
         #[serde(
             rename = "locationId",
             default,
@@ -10483,6 +10483,7 @@ pub mod resources {
                     filter: None,
                     language_code: None,
                     location_id: None,
+                    parent: None,
                 }
             }
         }
@@ -10494,6 +10495,7 @@ pub mod resources {
             filter: Option<String>,
             language_code: Option<String>,
             location_id: Option<String>,
+            parent: Option<String>,
             access_token: Option<String>,
             alt: Option<crate::params::Alt>,
             callback: Option<String>,
@@ -10517,9 +10519,14 @@ pub mod resources {
                 self.language_code = Some(value.into());
                 self
             }
-            #[doc = "The geographic location to list info types. Reserved for future\nextensions."]
+            #[doc = "Deprecated. This field has no effect."]
             pub fn location_id(mut self, value: impl Into<String>) -> Self {
                 self.location_id = Some(value.into());
+                self
+            }
+            #[doc = "The parent resource name, for example locations/{location_id}."]
+            pub fn parent(mut self, value: impl Into<String>) -> Self {
+                self.parent = Some(value.into());
                 self
             }
             #[doc = "OAuth access token."]
@@ -10638,6 +10645,7 @@ pub mod resources {
                 let req = req.query(&[("filter", &self.filter)]);
                 let req = req.query(&[("languageCode", &self.language_code)]);
                 let req = req.query(&[("locationId", &self.location_id)]);
+                let req = req.query(&[("parent", &self.parent)]);
                 let req = req.query(&[("access_token", &self.access_token)]);
                 let req = req.query(&[("alt", &self.alt)]);
                 let req = req.query(&[("callback", &self.callback)]);
@@ -10687,7 +10695,7 @@ pub mod resources {
                     self.auth
                 }
                 #[doc = "Returns a list of the sensitive information types that the DLP API\nsupports. See https://cloud.google.com/dlp/docs/infotypes-reference to\nlearn more."]
-                pub fn list(&self, location_id: impl Into<String>) -> ListRequestBuilder {
+                pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                     ListRequestBuilder {
                         reqwest: &self.reqwest,
                         auth: self.auth_ref(),
@@ -10702,9 +10710,10 @@ pub mod resources {
                         upload_protocol: None,
                         upload_type: None,
                         xgafv: None,
-                        location_id: location_id.into(),
+                        parent: parent.into(),
                         filter: None,
                         language_code: None,
+                        location_id: None,
                     }
                 }
             }
@@ -10713,9 +10722,10 @@ pub mod resources {
             pub struct ListRequestBuilder<'a> {
                 pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                 pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
-                location_id: String,
+                parent: String,
                 filter: Option<String>,
                 language_code: Option<String>,
+                location_id: Option<String>,
                 access_token: Option<String>,
                 alt: Option<crate::params::Alt>,
                 callback: Option<String>,
@@ -10737,6 +10747,11 @@ pub mod resources {
                 #[doc = "BCP-47 language code for localized infoType friendly\nnames. If omitted, or if localized strings are not available,\nen-US strings will be returned."]
                 pub fn language_code(mut self, value: impl Into<String>) -> Self {
                     self.language_code = Some(value.into());
+                    self
+                }
+                #[doc = "Deprecated. This field has no effect."]
+                pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                    self.location_id = Some(value.into());
                     self
                 }
                 #[doc = "OAuth access token."]
@@ -10847,12 +10862,12 @@ pub mod resources {
                 }
                 fn _path(&self) -> String {
                     let mut output = "https://dlp.googleapis.com/".to_owned();
-                    output.push_str("v2/locations/");
+                    output.push_str("v2/");
                     {
-                        let var_as_str = &self.location_id;
+                        let var_as_str = &self.parent;
                         output.extend(::percent_encoding::utf8_percent_encode(
                             &var_as_str,
-                            crate::SIMPLE,
+                            crate::RESERVED,
                         ));
                     }
                     output.push_str("/infoTypes");
@@ -10865,6 +10880,7 @@ pub mod resources {
                     let req = self.reqwest.request(::reqwest::Method::GET, path);
                     let req = req.query(&[("filter", &self.filter)]);
                     let req = req.query(&[("languageCode", &self.language_code)]);
+                    let req = req.query(&[("locationId", &self.location_id)]);
                     let req = req.query(&[("access_token", &self.access_token)]);
                     let req = req.query(&[("alt", &self.alt)]);
                     let req = req.query(&[("callback", &self.callback)]);
@@ -11563,7 +11579,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where deidentifications templates will be retrieved\nfrom. Use `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -12647,7 +12663,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where inspection templates will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -13138,7 +13154,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateDeidentifyTemplateRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -13156,7 +13171,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a DeidentifyTemplate.\nSee https://cloud.google.com/dlp/docs/creating-templates-deid to learn\nmore."]
@@ -13198,11 +13212,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists DeidentifyTemplates.\nSee https://cloud.google.com/dlp/docs/creating-templates-deid to learn\nmore."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -13218,7 +13228,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -13256,7 +13266,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateDeidentifyTemplateRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -13385,14 +13394,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/deidentifyTemplates");
@@ -13753,7 +13754,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -13770,6 +13771,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc,update_time, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the template was created.\n* `update_time`: corresponds to time the template was last updated.\n* `name`: corresponds to template's name.\n* `display_name`: corresponds to template's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -14017,14 +14023,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/deidentifyTemplates");
                         output
                     }
@@ -14034,6 +14032,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -14247,7 +14246,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateInspectTemplateRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -14265,7 +14263,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes an InspectTemplate.\nSee https://cloud.google.com/dlp/docs/creating-templates to learn more."]
@@ -14307,11 +14304,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists InspectTemplates.\nSee https://cloud.google.com/dlp/docs/creating-templates to learn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -14327,7 +14320,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -14365,7 +14358,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateInspectTemplateRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -14494,14 +14486,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/inspectTemplates");
@@ -14862,7 +14846,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -14879,6 +14863,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc,update_time, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the template was created.\n* `update_time`: corresponds to time the template was last updated.\n* `name`: corresponds to template's name.\n* `display_name`: corresponds to template's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -15126,14 +15115,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/inspectTemplates");
                         output
                     }
@@ -15143,6 +15124,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -15356,7 +15338,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateStoredInfoTypeRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -15374,7 +15355,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a stored infoType.\nSee https://cloud.google.com/dlp/docs/creating-stored-infotypes to\nlearn more."]
@@ -15416,11 +15396,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists stored infoTypes.\nSee https://cloud.google.com/dlp/docs/creating-stored-infotypes to\nlearn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -15436,7 +15412,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -15474,7 +15450,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateStoredInfoTypeRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -15603,14 +15578,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/storedInfoTypes");
@@ -15971,7 +15938,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -15988,6 +15955,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc, display_name, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the most recent version of the\n  resource was created.\n* `state`: corresponds to the state of the resource.\n* `name`: corresponds to resource name.\n* `display_name`: corresponds to info type's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -16235,14 +16207,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/storedInfoTypes");
                         output
                     }
@@ -16252,6 +16216,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -17078,7 +17043,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where stored infoTypes will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -18811,7 +18776,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where deidentifications templates will be retrieved\nfrom. Use `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -20140,7 +20105,7 @@ pub mod resources {
                     self.filter = Some(value.into());
                     self
                 }
-                #[doc = "The geographic location where jobs will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -21262,7 +21227,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where inspection templates will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -22540,7 +22505,7 @@ pub mod resources {
                     self.filter = Some(value.into());
                     self
                 }
-                #[doc = "The geographic location where job triggers will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self
@@ -23069,7 +23034,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2DeidentifyContentRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> DeidentifyRequestBuilder {
                         DeidentifyRequestBuilder {
                             reqwest: &self.reqwest,
@@ -23087,7 +23051,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Finds potentially sensitive info in content.\nThis method has limits on input size, processing time, and output size.\n\nWhen no InfoTypes or CustomInfoTypes are specified in this request, the\nsystem will automatically choose what detectors to run. By default this may\nbe all types, but may change over time as detectors are updated.\n\nFor how to guides, see https://cloud.google.com/dlp/docs/inspecting-images\nand https://cloud.google.com/dlp/docs/inspecting-text,"]
@@ -23095,7 +23058,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2InspectContentRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> InspectRequestBuilder {
                         InspectRequestBuilder {
                             reqwest: &self.reqwest,
@@ -23113,7 +23075,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Re-identifies content that has been de-identified.\nSee\nhttps://cloud.google.com/dlp/docs/pseudonymization#re-identification_in_free_text_code_example\nto learn more."]
@@ -23121,7 +23082,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2ReidentifyContentRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> ReidentifyRequestBuilder {
                         ReidentifyRequestBuilder {
                             reqwest: &self.reqwest,
@@ -23139,7 +23099,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                 }
@@ -23150,7 +23109,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2DeidentifyContentRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -23285,14 +23243,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/content:deidentify");
                         output
                     }
@@ -23328,7 +23278,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2InspectContentRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -23463,14 +23412,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/content:inspect");
                         output
                     }
@@ -23506,7 +23447,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2ReidentifyContentRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -23641,14 +23581,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/content:reidentify");
                         output
                     }
@@ -23693,7 +23625,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateDeidentifyTemplateRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -23711,7 +23642,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a DeidentifyTemplate.\nSee https://cloud.google.com/dlp/docs/creating-templates-deid to learn\nmore."]
@@ -23753,11 +23683,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists DeidentifyTemplates.\nSee https://cloud.google.com/dlp/docs/creating-templates-deid to learn\nmore."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -23773,7 +23699,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -23811,7 +23737,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateDeidentifyTemplateRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -23940,14 +23865,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/deidentifyTemplates");
@@ -24308,7 +24225,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -24325,6 +24242,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc,update_time, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the template was created.\n* `update_time`: corresponds to time the template was last updated.\n* `name`: corresponds to template's name.\n* `display_name`: corresponds to template's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -24572,14 +24494,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/deidentifyTemplates");
                         output
                     }
@@ -24589,6 +24503,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -24903,7 +24818,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateDlpJobRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -24921,7 +24835,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a long-running DlpJob. This method indicates that the client is\nno longer interested in the DlpJob result. The job will be cancelled if\npossible.\nSee https://cloud.google.com/dlp/docs/inspecting-storage and\nhttps://cloud.google.com/dlp/docs/compute-risk-analysis to learn more."]
@@ -25011,11 +24924,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists DlpJobs that match the specified filter in the request.\nSee https://cloud.google.com/dlp/docs/inspecting-storage and\nhttps://cloud.google.com/dlp/docs/compute-risk-analysis to learn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -25031,8 +24940,8 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                             filter: None,
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -25212,7 +25121,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateDlpJobRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -25341,14 +25249,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/dlpJobs");
@@ -26039,8 +25939,8 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
                     filter: Option<String>,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -26062,6 +25962,11 @@ pub mod resources {
                     #[doc = "Allows filtering.\n\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by `AND` or `OR` logical operators. A\n  sequence of restrictions implicitly uses `AND`.\n* A restriction has the form of `{field} {operator} {value}`.\n* Supported fields/values for inspect jobs:\n  * `state` - PENDING|RUNNING|CANCELED|FINISHED|FAILED\n  * `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY\n  * `trigger_name` - The resource name of the trigger that created job.\n  * 'end_time` - Corresponds to time the job finished.\n  * 'start_time` - Corresponds to time the job finished.\n* Supported fields for risk analysis jobs:\n  * `state` - RUNNING|CANCELED|FINISHED|FAILED\n  * 'end_time` - Corresponds to time the job finished.\n  * 'start_time` - Corresponds to time the job finished.\n* The operator must be `=` or `!=`.\n\nExamples:\n\n* inspected_storage = cloud_storage AND state = done\n* inspected_storage = cloud_storage OR inspected_storage = bigquery\n* inspected_storage = cloud_storage AND (state = done OR state = canceled)\n* end_time > \"2017-12-12T00:00:00+00:00\"\n\nThe length of this field should be no more than 500 characters."]
                     pub fn filter(mut self, value: impl Into<String>) -> Self {
                         self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
                         self
                     }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc, end_time asc, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the job was created.\n* `end_time`: corresponds to time the job ended.\n* `name`: corresponds to job's name.\n* `state`: corresponds to `state`"]
@@ -26310,14 +26215,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/dlpJobs");
                         output
                     }
@@ -26328,6 +26225,7 @@ pub mod resources {
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
                         let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -26378,7 +26276,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2RedactImageRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> RedactRequestBuilder {
                         RedactRequestBuilder {
                             reqwest: &self.reqwest,
@@ -26396,7 +26293,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                 }
@@ -26407,7 +26303,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2RedactImageRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -26538,14 +26433,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/image:redact");
                         output
                     }
@@ -26590,7 +26477,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateInspectTemplateRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -26608,7 +26494,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes an InspectTemplate.\nSee https://cloud.google.com/dlp/docs/creating-templates to learn more."]
@@ -26650,11 +26535,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists InspectTemplates.\nSee https://cloud.google.com/dlp/docs/creating-templates to learn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -26670,7 +26551,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -26708,7 +26589,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateInspectTemplateRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -26837,14 +26717,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/inspectTemplates");
@@ -27205,7 +27077,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -27222,6 +27094,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc,update_time, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the template was created.\n* `update_time`: corresponds to time the template was last updated.\n* `name`: corresponds to template's name.\n* `display_name`: corresponds to template's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -27469,14 +27346,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/inspectTemplates");
                         output
                     }
@@ -27486,6 +27355,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -27723,7 +27593,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateJobTriggerRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -27741,7 +27610,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a job trigger.\nSee https://cloud.google.com/dlp/docs/creating-job-triggers to learn more."]
@@ -27807,11 +27675,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists job triggers.\nSee https://cloud.google.com/dlp/docs/creating-job-triggers to learn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -27827,8 +27691,8 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                             filter: None,
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -28031,7 +27895,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateJobTriggerRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -28160,14 +28023,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/jobTriggers");
@@ -28693,8 +28548,8 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
                     filter: Option<String>,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -28714,6 +28569,11 @@ pub mod resources {
                     #[doc = "Allows filtering.\n\nSupported syntax:\n\n* Filter expressions are made up of one or more restrictions.\n* Restrictions can be combined by `AND` or `OR` logical operators. A\n  sequence of restrictions implicitly uses `AND`.\n* A restriction has the form of `{field} {operator} {value}`.\n* Supported fields/values for inspect jobs:\n  * `status` - HEALTHY|PAUSED|CANCELLED\n  * `inspected_storage` - DATASTORE|CLOUD_STORAGE|BIGQUERY\n  * 'last_run_time` - RFC 3339 formatted timestamp, surrounded by\n    quotation marks. Nanoseconds are ignored.\n  * 'error_count' - Number of errors that have occurred while running.\n* The operator must be `=` or `!=` for status and inspected_storage.\n\nExamples:\n\n* inspected_storage = cloud_storage AND status = HEALTHY\n* inspected_storage = cloud_storage OR inspected_storage = bigquery\n* inspected_storage = cloud_storage AND (state = PAUSED OR state = HEALTHY)\n* last_run_time > \"2017-12-12T00:00:00+00:00\"\n\nThe length of this field should be no more than 500 characters."]
                     pub fn filter(mut self, value: impl Into<String>) -> Self {
                         self.filter = Some(value.into());
+                        self
+                    }
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
                         self
                     }
                     #[doc = "Comma separated list of triggeredJob fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc,update_time, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the JobTrigger was created.\n* `update_time`: corresponds to time the JobTrigger was last updated.\n* `last_run_time`: corresponds to the last time the JobTrigger ran.\n* `name`: corresponds to JobTrigger's name.\n* `display_name`: corresponds to JobTrigger's display name.\n* `status`: corresponds to JobTrigger's status."]
@@ -28958,14 +28818,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/jobTriggers");
                         output
                     }
@@ -28976,6 +28828,7 @@ pub mod resources {
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
                         let req = req.query(&[("filter", &self.filter)]);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -29189,7 +29042,6 @@ pub mod resources {
                         &self,
                         request: crate::schemas::GooglePrivacyDlpV2CreateStoredInfoTypeRequest,
                         parent: impl Into<String>,
-                        location_id: impl Into<String>,
                     ) -> CreateRequestBuilder {
                         CreateRequestBuilder {
                             reqwest: &self.reqwest,
@@ -29207,7 +29059,6 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
                         }
                     }
                     #[doc = "Deletes a stored infoType.\nSee https://cloud.google.com/dlp/docs/creating-stored-infotypes to\nlearn more."]
@@ -29249,11 +29100,7 @@ pub mod resources {
                         }
                     }
                     #[doc = "Lists stored infoTypes.\nSee https://cloud.google.com/dlp/docs/creating-stored-infotypes to\nlearn more."]
-                    pub fn list(
-                        &self,
-                        parent: impl Into<String>,
-                        location_id: impl Into<String>,
-                    ) -> ListRequestBuilder {
+                    pub fn list(&self, parent: impl Into<String>) -> ListRequestBuilder {
                         ListRequestBuilder {
                             reqwest: &self.reqwest,
                             auth: self.auth_ref(),
@@ -29269,7 +29116,7 @@ pub mod resources {
                             upload_type: None,
                             xgafv: None,
                             parent: parent.into(),
-                            location_id: location_id.into(),
+                            location_id: None,
                             order_by: None,
                             page_size: None,
                             page_token: None,
@@ -29307,7 +29154,6 @@ pub mod resources {
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     request: crate::schemas::GooglePrivacyDlpV2CreateStoredInfoTypeRequest,
                     parent: String,
-                    location_id: String,
                     access_token: Option<String>,
                     alt: Option<crate::params::Alt>,
                     callback: Option<String>,
@@ -29436,14 +29282,6 @@ pub mod resources {
                             output.extend(::percent_encoding::utf8_percent_encode(
                                 &var_as_str,
                                 crate::RESERVED,
-                            ));
-                        }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
                             ));
                         }
                         output.push_str("/storedInfoTypes");
@@ -29804,7 +29642,7 @@ pub mod resources {
                     pub(crate) reqwest: &'a ::reqwest::blocking::Client,
                     pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
                     parent: String,
-                    location_id: String,
+                    location_id: Option<String>,
                     order_by: Option<String>,
                     page_size: Option<i32>,
                     page_token: Option<String>,
@@ -29821,6 +29659,11 @@ pub mod resources {
                     xgafv: Option<crate::params::Xgafv>,
                 }
                 impl<'a> ListRequestBuilder<'a> {
+                    #[doc = "Deprecated. This field has no effect."]
+                    pub fn location_id(mut self, value: impl Into<String>) -> Self {
+                        self.location_id = Some(value.into());
+                        self
+                    }
                     #[doc = "Comma separated list of fields to order by,\nfollowed by `asc` or `desc` postfix. This list is case-insensitive,\ndefault sorting order is ascending, redundant space characters are\ninsignificant.\n\nExample: `name asc, display_name, create_time desc`\n\nSupported fields are:\n\n* `create_time`: corresponds to time the most recent version of the\n  resource was created.\n* `state`: corresponds to the state of the resource.\n* `name`: corresponds to resource name.\n* `display_name`: corresponds to info type's display name."]
                     pub fn order_by(mut self, value: impl Into<String>) -> Self {
                         self.order_by = Some(value.into());
@@ -30068,14 +29911,6 @@ pub mod resources {
                                 crate::RESERVED,
                             ));
                         }
-                        output.push_str("/locations/");
-                        {
-                            let var_as_str = &self.location_id;
-                            output.extend(::percent_encoding::utf8_percent_encode(
-                                &var_as_str,
-                                crate::SIMPLE,
-                            ));
-                        }
                         output.push_str("/storedInfoTypes");
                         output
                     }
@@ -30085,6 +29920,7 @@ pub mod resources {
                     ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
                     {
                         let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("locationId", &self.location_id)]);
                         let req = req.query(&[("orderBy", &self.order_by)]);
                         let req = req.query(&[("pageSize", &self.page_size)]);
                         let req = req.query(&[("pageToken", &self.page_token)]);
@@ -30911,7 +30747,7 @@ pub mod resources {
                 xgafv: Option<crate::params::Xgafv>,
             }
             impl<'a> ListRequestBuilder<'a> {
-                #[doc = "The geographic location where stored infoTypes will be retrieved from.\nUse `-` for all locations. Reserved for future extensions."]
+                #[doc = "Deprecated. This field has no effect."]
                 pub fn location_id(mut self, value: impl Into<String>) -> Self {
                     self.location_id = Some(value.into());
                     self

@@ -26,6 +26,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub ciphertext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Optional. An optional CRC32C checksum of the AsymmetricDecryptRequest.ciphertext.\nIf specified, KeyManagementService will verify the integrity of the\nreceived AsymmetricDecryptRequest.ciphertext using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(AsymmetricDecryptRequest.ciphertext) is equal to\nAsymmetricDecryptRequest.ciphertext_crc32c, and if so, perform a\nlimited number of retries. A persistent mismatch may indicate an issue in\nyour computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "ciphertextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub ciphertext_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for AsymmetricDecryptRequest {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -57,6 +65,21 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub plaintext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Integrity verification field. A CRC32C checksum of the returned\nAsymmetricDecryptResponse.plaintext. An integrity check of\nAsymmetricDecryptResponse.plaintext can be performed by computing the\nCRC32C checksum of AsymmetricDecryptResponse.plaintext and comparing\nyour results to this field. Discard the response in case of non-matching\nchecksum values, and perform a limited number of retries. A persistent\nmismatch may indicate an issue in your computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "plaintextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub plaintext_crc_3_2c: ::std::option::Option<i64>,
+        #[doc = "Integrity verification field. A flag indicating whether\nAsymmetricDecryptRequest.ciphertext_crc32c was received by\nKeyManagementService and used for the integrity verification of the\nciphertext. A false value of this\nfield indicates either that AsymmetricDecryptRequest.ciphertext_crc32c\nwas left unset or that it was not delivered to KeyManagementService. If\nyou've set AsymmetricDecryptRequest.ciphertext_crc32c but this field is\nstill false, discard the response and perform a limited number of retries.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "verifiedCiphertextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub verified_ciphertext_crc_3_2c: ::std::option::Option<bool>,
     }
     impl ::google_field_selector::FieldSelector for AsymmetricDecryptResponse {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -88,6 +111,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub digest: ::std::option::Option<crate::schemas::Digest>,
+        #[doc = "Optional. An optional CRC32C checksum of the AsymmetricSignRequest.digest. If\nspecified, KeyManagementService will verify the integrity of the\nreceived AsymmetricSignRequest.digest using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(AsymmetricSignRequest.digest) is equal to\nAsymmetricSignRequest.digest_crc32c, and if so, perform a limited\nnumber of retries. A persistent mismatch may indicate an issue in your\ncomputation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "digestCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub digest_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for AsymmetricSignRequest {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -112,6 +143,13 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct AsymmetricSignResponse {
+        #[doc = "The resource name of the CryptoKeyVersion used for signing. Check\nthis field to verify that the intended resource was used for signing.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
         #[doc = "The created signature."]
         #[serde(
             rename = "signature",
@@ -119,6 +157,21 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub signature: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Integrity verification field. A CRC32C checksum of the returned\nAsymmetricSignResponse.signature. An integrity check of\nAsymmetricSignResponse.signature can be performed by computing the\nCRC32C checksum of AsymmetricSignResponse.signature and comparing your\nresults to this field. Discard the response in case of non-matching\nchecksum values, and perform a limited number of retries. A persistent\nmismatch may indicate an issue in your computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "signatureCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub signature_crc_3_2c: ::std::option::Option<i64>,
+        #[doc = "Integrity verification field. A flag indicating whether\nAsymmetricSignRequest.digest_crc32c was received by\nKeyManagementService and used for the integrity verification of the\ndigest. A false value of this field\nindicates either that AsymmetricSignRequest.digest_crc32c was left\nunset or that it was not delivered to KeyManagementService. If you've\nset AsymmetricSignRequest.digest_crc32c but this field is still false,\ndiscard the response and perform a limited number of retries.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "verifiedDigestCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub verified_digest_crc_3_2c: ::std::option::Option<bool>,
     }
     impl ::google_field_selector::FieldSelector for AsymmetricSignResponse {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -1374,6 +1427,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub additional_authenticated_data: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Optional. An optional CRC32C checksum of the\nDecryptRequest.additional_authenticated_data. If specified,\nKeyManagementService will verify the integrity of the received\nDecryptRequest.additional_authenticated_data using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(DecryptRequest.additional_authenticated_data) is equal to\nDecryptRequest.additional_authenticated_data_crc32c, and if so, perform\na limited number of retries. A persistent mismatch may indicate an issue in\nyour computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "additionalAuthenticatedDataCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub additional_authenticated_data_crc_3_2c: ::std::option::Option<i64>,
         #[doc = "Required. The encrypted data originally returned in\nEncryptResponse.ciphertext."]
         #[serde(
             rename = "ciphertext",
@@ -1381,6 +1442,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub ciphertext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Optional. An optional CRC32C checksum of the DecryptRequest.ciphertext. If\nspecified, KeyManagementService will verify the integrity of the\nreceived DecryptRequest.ciphertext using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(DecryptRequest.ciphertext) is equal to\nDecryptRequest.ciphertext_crc32c, and if so, perform a limited number\nof retries. A persistent mismatch may indicate an issue in your computation\nof the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "ciphertextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub ciphertext_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for DecryptRequest {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -1412,6 +1481,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub plaintext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Integrity verification field. A CRC32C checksum of the returned\nDecryptResponse.plaintext. An integrity check of\nDecryptResponse.plaintext can be performed by computing the CRC32C\nchecksum of DecryptResponse.plaintext and comparing your results to\nthis field. Discard the response in case of non-matching checksum values,\nand perform a limited number of retries. A persistent mismatch may indicate\nan issue in your computation of the CRC32C checksum. Note: receiving this\nresponse message indicates that KeyManagementService is able to\nsuccessfully decrypt the ciphertext.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "plaintextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub plaintext_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for DecryptResponse {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -1512,6 +1589,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub additional_authenticated_data: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Optional. An optional CRC32C checksum of the\nEncryptRequest.additional_authenticated_data. If specified,\nKeyManagementService will verify the integrity of the received\nEncryptRequest.additional_authenticated_data using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(EncryptRequest.additional_authenticated_data) is equal to\nEncryptRequest.additional_authenticated_data_crc32c, and if so, perform\na limited number of retries. A persistent mismatch may indicate an issue in\nyour computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "additionalAuthenticatedDataCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub additional_authenticated_data_crc_3_2c: ::std::option::Option<i64>,
         #[doc = "Required. The data to encrypt. Must be no larger than 64KiB.\n\nThe maximum size depends on the key version's\nprotection_level. For\nSOFTWARE keys, the plaintext must be no larger\nthan 64KiB. For HSM keys, the combined length of the\nplaintext and additional_authenticated_data fields must be no larger than\n8KiB."]
         #[serde(
             rename = "plaintext",
@@ -1519,6 +1604,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub plaintext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Optional. An optional CRC32C checksum of the EncryptRequest.plaintext. If\nspecified, KeyManagementService will verify the integrity of the\nreceived EncryptRequest.plaintext using this checksum.\nKeyManagementService will report an error if the checksum verification\nfails. If you receive a checksum error, your client should verify that\nCRC32C(EncryptRequest.plaintext) is equal to\nEncryptRequest.plaintext_crc32c, and if so, perform a limited number of\nretries. A persistent mismatch may indicate an issue in your computation of\nthe CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "plaintextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub plaintext_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for EncryptRequest {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -1550,6 +1643,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub ciphertext: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "Integrity verification field. A CRC32C checksum of the returned\nEncryptResponse.ciphertext. An integrity check of\nEncryptResponse.ciphertext can be performed by computing the CRC32C\nchecksum of EncryptResponse.ciphertext and comparing your results to\nthis field. Discard the response in case of non-matching checksum values,\nand perform a limited number of retries. A persistent mismatch may indicate\nan issue in your computation of the CRC32C checksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "ciphertextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub ciphertext_crc_3_2c: ::std::option::Option<i64>,
         #[doc = "The resource name of the CryptoKeyVersion used in encryption. Check\nthis field to verify that the intended resource was used for encryption."]
         #[serde(
             rename = "name",
@@ -1557,6 +1658,20 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub name: ::std::option::Option<String>,
+        #[doc = "Integrity verification field. A flag indicating whether\nEncryptRequest.additional_authenticated_data_crc32c was received by\nKeyManagementService and used for the integrity verification of the\nAAD. A false value of this\nfield indicates either that\nEncryptRequest.additional_authenticated_data_crc32c was left unset or\nthat it was not delivered to KeyManagementService. If you've set\nEncryptRequest.additional_authenticated_data_crc32c but this field is\nstill false, discard the response and perform a limited number of retries.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "verifiedAdditionalAuthenticatedDataCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub verified_additional_authenticated_data_crc_3_2c: ::std::option::Option<bool>,
+        #[doc = "Integrity verification field. A flag indicating whether\nEncryptRequest.plaintext_crc32c was received by\nKeyManagementService and used for the integrity verification of the\nplaintext. A false value of this field\nindicates either that EncryptRequest.plaintext_crc32c was left unset or\nthat it was not delivered to KeyManagementService. If you've set\nEncryptRequest.plaintext_crc32c but this field is still false, discard\nthe response and perform a limited number of retries.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "verifiedPlaintextCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub verified_plaintext_crc_3_2c: ::std::option::Option<bool>,
     }
     impl ::google_field_selector::FieldSelector for EncryptResponse {
         fn fields() -> Vec<::google_field_selector::Field> {
@@ -2795,6 +2910,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub algorithm: ::std::option::Option<crate::schemas::PublicKeyAlgorithm>,
+        #[doc = "The name of the CryptoKeyVersion public key.\nProvided here for verification.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "name",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub name: ::std::option::Option<String>,
         #[doc = "The public key, encoded in PEM format. For more information, see the\n[RFC 7468](https://tools.ietf.org/html/rfc7468) sections for\n[General Considerations](https://tools.ietf.org/html/rfc7468#section-2) and\n[Textual Encoding of Subject Public Key Info]\n(https://tools.ietf.org/html/rfc7468#section-13)."]
         #[serde(
             rename = "pem",
@@ -2802,6 +2924,14 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub pem: ::std::option::Option<String>,
+        #[doc = "Integrity verification field. A CRC32C checksum of the returned\nPublicKey.pem. An integrity check of PublicKey.pem can be performed\nby computing the CRC32C checksum of PublicKey.pem and\ncomparing your results to this field. Discard the response in case of\nnon-matching checksum values, and perform a limited number of retries. A\npersistent mismatch may indicate an issue in your computation of the CRC32C\nchecksum.\nNote: This field is defined as int64 for reasons of compatibility across\ndifferent languages. However, it is a non-negative integer, which will\nnever exceed 2^32-1, and can be safely downconverted to uint32 in languages\nthat support this type.\n\nNOTE: This field is in Beta."]
+        #[serde(
+            rename = "pemCrc32c",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        #[serde(with = "crate::parsed_string")]
+        pub pem_crc_3_2c: ::std::option::Option<i64>,
     }
     impl ::google_field_selector::FieldSelector for PublicKey {
         fn fields() -> Vec<::google_field_selector::Field> {

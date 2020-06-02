@@ -1,4 +1,4 @@
-#![doc = "# Resources and Methods\n    * [projects](resources/projects/struct.ProjectsActions.html)\n      * [*deleteAgent*](resources/projects/struct.DeleteAgentRequestBuilder.html), [*getAgent*](resources/projects/struct.GetAgentRequestBuilder.html), [*setAgent*](resources/projects/struct.SetAgentRequestBuilder.html)\n      * [agent](resources/projects/agent/struct.AgentActions.html)\n        * [*export*](resources/projects/agent/struct.ExportRequestBuilder.html), [*getFulfillment*](resources/projects/agent/struct.GetFulfillmentRequestBuilder.html), [*getValidationResult*](resources/projects/agent/struct.GetValidationResultRequestBuilder.html), [*import*](resources/projects/agent/struct.ImportRequestBuilder.html), [*restore*](resources/projects/agent/struct.RestoreRequestBuilder.html), [*search*](resources/projects/agent/struct.SearchRequestBuilder.html), [*train*](resources/projects/agent/struct.TrainRequestBuilder.html), [*updateFulfillment*](resources/projects/agent/struct.UpdateFulfillmentRequestBuilder.html)\n        * [entity_types](resources/projects/agent/entity_types/struct.EntityTypesActions.html)\n          * [*batchDelete*](resources/projects/agent/entity_types/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/entity_types/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/agent/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/entity_types/struct.PatchRequestBuilder.html)\n          * [entities](resources/projects/agent/entity_types/entities/struct.EntitiesActions.html)\n            * [*batchCreate*](resources/projects/agent/entity_types/entities/struct.BatchCreateRequestBuilder.html), [*batchDelete*](resources/projects/agent/entity_types/entities/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/entity_types/entities/struct.BatchUpdateRequestBuilder.html)\n        * [environments](resources/projects/agent/environments/struct.EnvironmentsActions.html)\n          * [*list*](resources/projects/agent/environments/struct.ListRequestBuilder.html)\n          * [users](resources/projects/agent/environments/users/struct.UsersActions.html)\n            * [sessions](resources/projects/agent/environments/users/sessions/struct.SessionsActions.html)\n              * [*deleteContexts*](resources/projects/agent/environments/users/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/agent/environments/users/sessions/struct.DetectIntentRequestBuilder.html)\n              * [contexts](resources/projects/agent/environments/users/sessions/contexts/struct.ContextsActions.html)\n                * [*create*](resources/projects/agent/environments/users/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/environments/users/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/environments/users/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/environments/users/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/environments/users/sessions/contexts/struct.PatchRequestBuilder.html)\n              * [entity_types](resources/projects/agent/environments/users/sessions/entity_types/struct.EntityTypesActions.html)\n                * [*create*](resources/projects/agent/environments/users/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/environments/users/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/environments/users/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/environments/users/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/environments/users/sessions/entity_types/struct.PatchRequestBuilder.html)\n        * [intents](resources/projects/agent/intents/struct.IntentsActions.html)\n          * [*batchDelete*](resources/projects/agent/intents/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/intents/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/agent/intents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/intents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/intents/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/intents/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/intents/struct.PatchRequestBuilder.html)\n        * [knowledge_bases](resources/projects/agent/knowledge_bases/struct.KnowledgeBasesActions.html)\n          * [*create*](resources/projects/agent/knowledge_bases/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/knowledge_bases/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/knowledge_bases/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/knowledge_bases/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/knowledge_bases/struct.PatchRequestBuilder.html)\n          * [documents](resources/projects/agent/knowledge_bases/documents/struct.DocumentsActions.html)\n            * [*create*](resources/projects/agent/knowledge_bases/documents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/knowledge_bases/documents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/knowledge_bases/documents/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/knowledge_bases/documents/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/knowledge_bases/documents/struct.PatchRequestBuilder.html), [*reload*](resources/projects/agent/knowledge_bases/documents/struct.ReloadRequestBuilder.html)\n        * [sessions](resources/projects/agent/sessions/struct.SessionsActions.html)\n          * [*deleteContexts*](resources/projects/agent/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/agent/sessions/struct.DetectIntentRequestBuilder.html)\n          * [contexts](resources/projects/agent/sessions/contexts/struct.ContextsActions.html)\n            * [*create*](resources/projects/agent/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/sessions/contexts/struct.PatchRequestBuilder.html)\n          * [entity_types](resources/projects/agent/sessions/entity_types/struct.EntityTypesActions.html)\n            * [*create*](resources/projects/agent/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/sessions/entity_types/struct.PatchRequestBuilder.html)\n      * [knowledge_bases](resources/projects/knowledge_bases/struct.KnowledgeBasesActions.html)\n        * [*create*](resources/projects/knowledge_bases/struct.CreateRequestBuilder.html), [*delete*](resources/projects/knowledge_bases/struct.DeleteRequestBuilder.html), [*get*](resources/projects/knowledge_bases/struct.GetRequestBuilder.html), [*list*](resources/projects/knowledge_bases/struct.ListRequestBuilder.html), [*patch*](resources/projects/knowledge_bases/struct.PatchRequestBuilder.html)\n        * [documents](resources/projects/knowledge_bases/documents/struct.DocumentsActions.html)\n          * [*create*](resources/projects/knowledge_bases/documents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/knowledge_bases/documents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/knowledge_bases/documents/struct.GetRequestBuilder.html), [*list*](resources/projects/knowledge_bases/documents/struct.ListRequestBuilder.html), [*patch*](resources/projects/knowledge_bases/documents/struct.PatchRequestBuilder.html), [*reload*](resources/projects/knowledge_bases/documents/struct.ReloadRequestBuilder.html)\n      * [locations](resources/projects/locations/struct.LocationsActions.html)\n        * [*deleteAgent*](resources/projects/locations/struct.DeleteAgentRequestBuilder.html), [*getAgent*](resources/projects/locations/struct.GetAgentRequestBuilder.html), [*setAgent*](resources/projects/locations/struct.SetAgentRequestBuilder.html)\n        * [agent](resources/projects/locations/agent/struct.AgentActions.html)\n          * [*export*](resources/projects/locations/agent/struct.ExportRequestBuilder.html), [*fulfillment*](resources/projects/locations/agent/struct.FulfillmentRequestBuilder.html), [*getFulfillment*](resources/projects/locations/agent/struct.GetFulfillmentRequestBuilder.html), [*import*](resources/projects/locations/agent/struct.ImportRequestBuilder.html), [*restore*](resources/projects/locations/agent/struct.RestoreRequestBuilder.html), [*train*](resources/projects/locations/agent/struct.TrainRequestBuilder.html)\n          * [entity_types](resources/projects/locations/agent/entity_types/struct.EntityTypesActions.html)\n            * [*batchDelete*](resources/projects/locations/agent/entity_types/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/entity_types/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/locations/agent/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/entity_types/struct.PatchRequestBuilder.html)\n            * [entities](resources/projects/locations/agent/entity_types/entities/struct.EntitiesActions.html)\n              * [*batchCreate*](resources/projects/locations/agent/entity_types/entities/struct.BatchCreateRequestBuilder.html), [*batchDelete*](resources/projects/locations/agent/entity_types/entities/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/entity_types/entities/struct.BatchUpdateRequestBuilder.html)\n          * [environments](resources/projects/locations/agent/environments/struct.EnvironmentsActions.html)\n            * [*list*](resources/projects/locations/agent/environments/struct.ListRequestBuilder.html)\n            * [users](resources/projects/locations/agent/environments/users/struct.UsersActions.html)\n              * [sessions](resources/projects/locations/agent/environments/users/sessions/struct.SessionsActions.html)\n                * [*deleteContexts*](resources/projects/locations/agent/environments/users/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/locations/agent/environments/users/sessions/struct.DetectIntentRequestBuilder.html)\n                * [contexts](resources/projects/locations/agent/environments/users/sessions/contexts/struct.ContextsActions.html)\n                  * [*create*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.PatchRequestBuilder.html)\n                * [entity_types](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.EntityTypesActions.html)\n                  * [*create*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.PatchRequestBuilder.html)\n          * [intents](resources/projects/locations/agent/intents/struct.IntentsActions.html)\n            * [*batchDelete*](resources/projects/locations/agent/intents/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/intents/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/locations/agent/intents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/intents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/intents/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/intents/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/intents/struct.PatchRequestBuilder.html)\n          * [sessions](resources/projects/locations/agent/sessions/struct.SessionsActions.html)\n            * [*deleteContexts*](resources/projects/locations/agent/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/locations/agent/sessions/struct.DetectIntentRequestBuilder.html)\n            * [contexts](resources/projects/locations/agent/sessions/contexts/struct.ContextsActions.html)\n              * [*create*](resources/projects/locations/agent/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/sessions/contexts/struct.PatchRequestBuilder.html)\n            * [entity_types](resources/projects/locations/agent/sessions/entity_types/struct.EntityTypesActions.html)\n              * [*create*](resources/projects/locations/agent/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/sessions/entity_types/struct.PatchRequestBuilder.html)\n        * [operations](resources/projects/locations/operations/struct.OperationsActions.html)\n          * [*cancel*](resources/projects/locations/operations/struct.CancelRequestBuilder.html), [*get*](resources/projects/locations/operations/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/operations/struct.ListRequestBuilder.html)\n      * [operations](resources/projects/operations/struct.OperationsActions.html)\n        * [*cancel*](resources/projects/operations/struct.CancelRequestBuilder.html), [*get*](resources/projects/operations/struct.GetRequestBuilder.html), [*list*](resources/projects/operations/struct.ListRequestBuilder.html)\n"]
+#![doc = "# Resources and Methods\n    * [projects](resources/projects/struct.ProjectsActions.html)\n      * [*deleteAgent*](resources/projects/struct.DeleteAgentRequestBuilder.html), [*getAgent*](resources/projects/struct.GetAgentRequestBuilder.html), [*setAgent*](resources/projects/struct.SetAgentRequestBuilder.html)\n      * [agent](resources/projects/agent/struct.AgentActions.html)\n        * [*export*](resources/projects/agent/struct.ExportRequestBuilder.html), [*getFulfillment*](resources/projects/agent/struct.GetFulfillmentRequestBuilder.html), [*getValidationResult*](resources/projects/agent/struct.GetValidationResultRequestBuilder.html), [*import*](resources/projects/agent/struct.ImportRequestBuilder.html), [*restore*](resources/projects/agent/struct.RestoreRequestBuilder.html), [*search*](resources/projects/agent/struct.SearchRequestBuilder.html), [*train*](resources/projects/agent/struct.TrainRequestBuilder.html), [*updateFulfillment*](resources/projects/agent/struct.UpdateFulfillmentRequestBuilder.html)\n        * [entity_types](resources/projects/agent/entity_types/struct.EntityTypesActions.html)\n          * [*batchDelete*](resources/projects/agent/entity_types/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/entity_types/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/agent/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/entity_types/struct.PatchRequestBuilder.html)\n          * [entities](resources/projects/agent/entity_types/entities/struct.EntitiesActions.html)\n            * [*batchCreate*](resources/projects/agent/entity_types/entities/struct.BatchCreateRequestBuilder.html), [*batchDelete*](resources/projects/agent/entity_types/entities/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/entity_types/entities/struct.BatchUpdateRequestBuilder.html)\n        * [environments](resources/projects/agent/environments/struct.EnvironmentsActions.html)\n          * [*list*](resources/projects/agent/environments/struct.ListRequestBuilder.html)\n          * [users](resources/projects/agent/environments/users/struct.UsersActions.html)\n            * [sessions](resources/projects/agent/environments/users/sessions/struct.SessionsActions.html)\n              * [*deleteContexts*](resources/projects/agent/environments/users/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/agent/environments/users/sessions/struct.DetectIntentRequestBuilder.html)\n              * [contexts](resources/projects/agent/environments/users/sessions/contexts/struct.ContextsActions.html)\n                * [*create*](resources/projects/agent/environments/users/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/environments/users/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/environments/users/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/environments/users/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/environments/users/sessions/contexts/struct.PatchRequestBuilder.html)\n              * [entity_types](resources/projects/agent/environments/users/sessions/entity_types/struct.EntityTypesActions.html)\n                * [*create*](resources/projects/agent/environments/users/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/environments/users/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/environments/users/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/environments/users/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/environments/users/sessions/entity_types/struct.PatchRequestBuilder.html)\n        * [intents](resources/projects/agent/intents/struct.IntentsActions.html)\n          * [*batchDelete*](resources/projects/agent/intents/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/agent/intents/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/agent/intents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/intents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/intents/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/intents/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/intents/struct.PatchRequestBuilder.html)\n        * [knowledge_bases](resources/projects/agent/knowledge_bases/struct.KnowledgeBasesActions.html)\n          * [*create*](resources/projects/agent/knowledge_bases/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/knowledge_bases/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/knowledge_bases/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/knowledge_bases/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/knowledge_bases/struct.PatchRequestBuilder.html)\n          * [documents](resources/projects/agent/knowledge_bases/documents/struct.DocumentsActions.html)\n            * [*create*](resources/projects/agent/knowledge_bases/documents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/knowledge_bases/documents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/knowledge_bases/documents/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/knowledge_bases/documents/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/knowledge_bases/documents/struct.PatchRequestBuilder.html), [*reload*](resources/projects/agent/knowledge_bases/documents/struct.ReloadRequestBuilder.html)\n        * [sessions](resources/projects/agent/sessions/struct.SessionsActions.html)\n          * [*deleteContexts*](resources/projects/agent/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/agent/sessions/struct.DetectIntentRequestBuilder.html)\n          * [contexts](resources/projects/agent/sessions/contexts/struct.ContextsActions.html)\n            * [*create*](resources/projects/agent/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/sessions/contexts/struct.PatchRequestBuilder.html)\n          * [entity_types](resources/projects/agent/sessions/entity_types/struct.EntityTypesActions.html)\n            * [*create*](resources/projects/agent/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/agent/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/agent/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/agent/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/agent/sessions/entity_types/struct.PatchRequestBuilder.html)\n      * [knowledge_bases](resources/projects/knowledge_bases/struct.KnowledgeBasesActions.html)\n        * [*create*](resources/projects/knowledge_bases/struct.CreateRequestBuilder.html), [*delete*](resources/projects/knowledge_bases/struct.DeleteRequestBuilder.html), [*get*](resources/projects/knowledge_bases/struct.GetRequestBuilder.html), [*list*](resources/projects/knowledge_bases/struct.ListRequestBuilder.html), [*patch*](resources/projects/knowledge_bases/struct.PatchRequestBuilder.html)\n        * [documents](resources/projects/knowledge_bases/documents/struct.DocumentsActions.html)\n          * [*create*](resources/projects/knowledge_bases/documents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/knowledge_bases/documents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/knowledge_bases/documents/struct.GetRequestBuilder.html), [*list*](resources/projects/knowledge_bases/documents/struct.ListRequestBuilder.html), [*patch*](resources/projects/knowledge_bases/documents/struct.PatchRequestBuilder.html), [*reload*](resources/projects/knowledge_bases/documents/struct.ReloadRequestBuilder.html)\n      * [locations](resources/projects/locations/struct.LocationsActions.html)\n        * [*deleteAgent*](resources/projects/locations/struct.DeleteAgentRequestBuilder.html), [*getAgent*](resources/projects/locations/struct.GetAgentRequestBuilder.html), [*setAgent*](resources/projects/locations/struct.SetAgentRequestBuilder.html)\n        * [agent](resources/projects/locations/agent/struct.AgentActions.html)\n          * [*export*](resources/projects/locations/agent/struct.ExportRequestBuilder.html), [*fulfillment*](resources/projects/locations/agent/struct.FulfillmentRequestBuilder.html), [*getFulfillment*](resources/projects/locations/agent/struct.GetFulfillmentRequestBuilder.html), [*import*](resources/projects/locations/agent/struct.ImportRequestBuilder.html), [*restore*](resources/projects/locations/agent/struct.RestoreRequestBuilder.html), [*search*](resources/projects/locations/agent/struct.SearchRequestBuilder.html), [*train*](resources/projects/locations/agent/struct.TrainRequestBuilder.html)\n          * [entity_types](resources/projects/locations/agent/entity_types/struct.EntityTypesActions.html)\n            * [*batchDelete*](resources/projects/locations/agent/entity_types/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/entity_types/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/locations/agent/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/entity_types/struct.PatchRequestBuilder.html)\n            * [entities](resources/projects/locations/agent/entity_types/entities/struct.EntitiesActions.html)\n              * [*batchCreate*](resources/projects/locations/agent/entity_types/entities/struct.BatchCreateRequestBuilder.html), [*batchDelete*](resources/projects/locations/agent/entity_types/entities/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/entity_types/entities/struct.BatchUpdateRequestBuilder.html)\n          * [environments](resources/projects/locations/agent/environments/struct.EnvironmentsActions.html)\n            * [*list*](resources/projects/locations/agent/environments/struct.ListRequestBuilder.html)\n            * [users](resources/projects/locations/agent/environments/users/struct.UsersActions.html)\n              * [sessions](resources/projects/locations/agent/environments/users/sessions/struct.SessionsActions.html)\n                * [*deleteContexts*](resources/projects/locations/agent/environments/users/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/locations/agent/environments/users/sessions/struct.DetectIntentRequestBuilder.html)\n                * [contexts](resources/projects/locations/agent/environments/users/sessions/contexts/struct.ContextsActions.html)\n                  * [*create*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/environments/users/sessions/contexts/struct.PatchRequestBuilder.html)\n                * [entity_types](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.EntityTypesActions.html)\n                  * [*create*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/environments/users/sessions/entity_types/struct.PatchRequestBuilder.html)\n          * [intents](resources/projects/locations/agent/intents/struct.IntentsActions.html)\n            * [*batchDelete*](resources/projects/locations/agent/intents/struct.BatchDeleteRequestBuilder.html), [*batchUpdate*](resources/projects/locations/agent/intents/struct.BatchUpdateRequestBuilder.html), [*create*](resources/projects/locations/agent/intents/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/intents/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/intents/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/intents/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/intents/struct.PatchRequestBuilder.html)\n          * [sessions](resources/projects/locations/agent/sessions/struct.SessionsActions.html)\n            * [*deleteContexts*](resources/projects/locations/agent/sessions/struct.DeleteContextsRequestBuilder.html), [*detectIntent*](resources/projects/locations/agent/sessions/struct.DetectIntentRequestBuilder.html)\n            * [contexts](resources/projects/locations/agent/sessions/contexts/struct.ContextsActions.html)\n              * [*create*](resources/projects/locations/agent/sessions/contexts/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/sessions/contexts/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/sessions/contexts/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/sessions/contexts/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/sessions/contexts/struct.PatchRequestBuilder.html)\n            * [entity_types](resources/projects/locations/agent/sessions/entity_types/struct.EntityTypesActions.html)\n              * [*create*](resources/projects/locations/agent/sessions/entity_types/struct.CreateRequestBuilder.html), [*delete*](resources/projects/locations/agent/sessions/entity_types/struct.DeleteRequestBuilder.html), [*get*](resources/projects/locations/agent/sessions/entity_types/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/agent/sessions/entity_types/struct.ListRequestBuilder.html), [*patch*](resources/projects/locations/agent/sessions/entity_types/struct.PatchRequestBuilder.html)\n        * [operations](resources/projects/locations/operations/struct.OperationsActions.html)\n          * [*cancel*](resources/projects/locations/operations/struct.CancelRequestBuilder.html), [*get*](resources/projects/locations/operations/struct.GetRequestBuilder.html), [*list*](resources/projects/locations/operations/struct.ListRequestBuilder.html)\n      * [operations](resources/projects/operations/struct.OperationsActions.html)\n        * [*cancel*](resources/projects/operations/struct.CancelRequestBuilder.html), [*get*](resources/projects/operations/struct.GetRequestBuilder.html), [*list*](resources/projects/operations/struct.ListRequestBuilder.html)\n"]
 pub mod scopes {
     #[doc = "View and manage your data across Google Cloud Platform services\n\n`https://www.googleapis.com/auth/cloud-platform`"]
     pub const CLOUD_PLATFORM: &str = "https://www.googleapis.com/auth/cloud-platform";
@@ -6,6 +6,799 @@ pub mod scopes {
     pub const DIALOGFLOW: &str = "https://www.googleapis.com/auth/dialogflow";
 }
 pub mod schemas {
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        #[doc = "Uncompressed raw byte content for agent."]
+        #[serde(
+            rename = "agentContent",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub agent_content: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "The URI to a file containing the exported agent. This field is populated\nonly if `agent_uri` is specified in ExportAgentRequest."]
+        #[serde(
+            rename = "agentUri",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub agent_uri: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfo {
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe unique identifier of the current page.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "currentPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub current_page: ::std::option::Option<String>,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nInformation about the form."]
+        #[serde(
+            rename = "formInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub form_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo>,
+        #[doc = "Deprecated. Please use WebhookResponse.target_page or\nWebhookResponse.target_flow instead.\n\nOptional for WebhookResponse.\nThe unique identifier of the next page. This field can be set by the\nwebhook to immediately transition to a page different from `current_page`.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "nextPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1PageInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nThe parameters contained in the form. Note that the webhook cannot add\nor remove any form parameter."]
+        #[serde(
+            rename = "parameterInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub parameter_info: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo>,
+        >,
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe current state of the form."]
+        #[serde(
+            rename = "state",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub state: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState,
+        >,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        #[doc = "The server is collecting form parameters from the user. The webhook can\nmodify form parameters that have been collected or are to be collected."]
+        Collecting,
+        #[doc = "The server has collected all required form parameters from the user.\nThe webhook can modify collected form parameters. If any required\nparameter is invalidated by the webhook, the form will return to the\nparameter collection state; otherwise, parameter collection will\nconclude."]
+        Finalized,
+        #[doc = "Not specified. This value should be never used."]
+        FormStateUnspecified,
+        #[doc = "The server is initializing the form. The webhook can process the form\nbefore parameter collection begins."]
+        Initializing,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        pub fn as_str(self) -> &'static str {
+            match self {
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting => "COLLECTING",
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized => "FINALIZED",
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified => {
+                    "FORM_STATE_UNSPECIFIED"
+                }
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing => "INITIALIZING",
+            }
+        }
+    }
+    impl ::std::convert::AsRef<str> for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState, ()>
+        {
+            Ok(match s {
+                "COLLECTING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting,
+                "FINALIZED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized,
+                "FORM_STATE_UNSPECIFIED" => {
+                    GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified
+                }
+                "INITIALIZING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing,
+                _ => return Err(()),
+            })
+        }
+    }
+    impl ::std::fmt::Display for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de> for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok(match value {
+                "COLLECTING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting,
+                "FINALIZED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized,
+                "FORM_STATE_UNSPECIFIED" => {
+                    GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified
+                }
+                "INITIALIZING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing,
+                _ => {
+                    return Err(::serde::de::Error::custom(format!(
+                        "invalid enum for #name: {}",
+                        value
+                    )))
+                }
+            })
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo {
+        #[doc = "Always present for WebhookRequest. Required for\nWebhookResponse.\nThe human-readable name of the parameter, unique within the form. This\nfield cannot be modified by the webhook."]
+        #[serde(
+            rename = "displayName",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub display_name: ::std::option::Option<String>,
+        #[doc = "Optional for WebhookRequest. Ignored for WebhookResponse.\nIndicates if the parameter value was just collected on the last\nconversation turn."]
+        #[serde(
+            rename = "justCollected",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub just_collected: ::std::option::Option<bool>,
+        #[doc = "Not set for WebhookRequest. Optional for WebhookResponse.\nThe prompt to send to the user to fill a required form parameter. This\nfield can be set by the webhook. If set, this field overrides the\nprompt defined for the form parameter."]
+        #[serde(
+            rename = "prompt",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub prompt: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessage>,
+        >,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nIndicates whether the parameter is required. Optional parameters will\nnot trigger prompts; however, they are filled if the user specifies\nthem. Required parameters must be filled before form filling concludes."]
+        #[serde(
+            rename = "required",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub required: ::std::option::Option<bool>,
+        #[doc = "Always present for WebhookRequest. Required for\nWebhookResponse. The state of the parameter. This field can be set\nto INVALID by\nthe webhook to invalidate the parameter; other values set by the\nwebhook will be ignored."]
+        #[serde(
+            rename = "state",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub state: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState,
+        >,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nThe value of the parameter. This field can be set by the webhook to\nchange the parameter value."]
+        #[serde(
+            rename = "value",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub value: ::std::option::Option<::serde_json::Value>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        #[doc = "Indicates that the parameter does not have a value."]
+        Empty,
+        #[doc = "Indicates that the parameter has a value."]
+        Filled,
+        #[doc = "Indicates that the parameter value is invalid. This field can be used\nby the webhook to invalidate the parameter and ask the server to\ncollect it from the user again."]
+        Invalid,
+        #[doc = "Not specified. This value should be never used."]
+        ParameterStateUnspecified,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        pub fn as_str(self) -> &'static str {
+            match self { GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty => "EMPTY" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled => "FILLED" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid => "INVALID" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified => "PARAMETER_STATE_UNSPECIFIED" , }
+        }
+    }
+    impl ::std::convert::AsRef<str>
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<
+            GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState,
+            (),
+        > {
+            Ok ( match s { "EMPTY" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty , "FILLED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled , "INVALID" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid , "PARAMETER_STATE_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified , _ => return Err ( ( ) ) , } )
+        }
+    }
+    impl ::std::fmt::Display for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de>
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok ( match value { "EMPTY" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty , "FILLED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled , "INVALID" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid , "PARAMETER_STATE_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        #[doc = "Indicates that the conversation succeeded."]
+        #[serde(
+            rename = "conversationSuccess",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub conversation_success: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess,
+        >,
+        #[doc = "Hands off conversation to a human agent."]
+        #[serde(
+            rename = "humanAgentHandoff",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub human_agent_handoff: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff,
+        >,
+        #[doc = "Returns a response containing a custom, platform-specific payload."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Returns a text response."]
+        #[serde(
+            rename = "text",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub text: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageText,
+        >,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess {
+        #[doc = "Custom metadata. Dialogflow doesn't impose any structure on this."]
+        #[serde(
+            rename = "metadata",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub metadata:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff {
+        #[doc = "Custom metadata for your handoff procedure. Dialogflow doesn't impose\nany structure on this."]
+        #[serde(
+            rename = "metadata",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub metadata:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        #[doc = "A collection of text responses."]
+        #[serde(
+            rename = "text",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub text: ::std::option::Option<Vec<String>>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        #[doc = "Optional for WebhookRequest. Optional for WebhookResponse.\nAll parameters collected from forms and intents during the session.\nParameters can be created, updated, or removed by the webhook. To remove a\nparameter from the session, the webhook should explicitly set the parameter\nvalue to null in WebhookResponse. The map is keyed by parameters'\ndisplay names."]
+        #[serde(
+            rename = "parameters",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub parameters:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe unique identifier of the session. This\nfield can be used by the webhook to identify a user.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/sessions/<Session ID>`."]
+        #[serde(
+            rename = "session",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        #[doc = "Always present. The unique identifier of the DetectIntentResponse that\nwill be returned to the API caller."]
+        #[serde(
+            rename = "detectIntentResponseId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub detect_intent_response_id: ::std::option::Option<String>,
+        #[doc = "Always present. Information about the fulfillment that triggered this\nwebhook call."]
+        #[serde(
+            rename = "fulfillmentInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub fulfillment_info: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo,
+        >,
+        #[doc = "Information about the last matched intent."]
+        #[serde(
+            rename = "intentInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub intent_info: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo,
+        >,
+        #[doc = "The list of rich message responses to present to the user. Webhook can\nchoose to append or replace this list in\nWebhookResponse.fulfillment_response;"]
+        #[serde(
+            rename = "messages",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub messages: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessage>,
+        >,
+        #[doc = "Information about page status."]
+        #[serde(
+            rename = "pageInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub page_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfo>,
+        #[doc = "Custom data set in QueryParameters.payload."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Information about session status."]
+        #[serde(
+            rename = "sessionInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1SessionInfo>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo {
+        #[doc = "Always present. The tag used to identify which fulfillment is being\ncalled."]
+        #[serde(
+            rename = "tag",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub tag: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo { # [ doc = "Always present. The unique identifier of the last matched\nintent. Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>`." ] # [ serde ( rename = "lastMatchedIntent" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub last_matched_intent : :: std :: option :: Option < String > , # [ doc = "Parameters identified as a result of intent matching. This is a map of\nthe name of the identified parameter to the value of the parameter\nidentified from the user's utterance. All parameters defined in the\nmatched intent that are identified will be surfaced here." ] # [ serde ( rename = "parameters" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub parameters : :: std :: option :: Option < :: std :: collections :: BTreeMap < String , crate :: schemas :: GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue > > , }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue {
+        #[doc = "Always present. Original text value extracted from user utterance."]
+        #[serde(
+            rename = "originalValue",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub original_value: ::std::option::Option<String>,
+        #[doc = "Always present. Structured value for the parameter extracted from user\nutterance."]
+        #[serde(
+            rename = "resolvedValue",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub resolved_value: ::std::option::Option<::serde_json::Value>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        #[doc = "The fulfillment response to send to the user. This field can be omitted by\nthe webhook if it does not intend to send any response to the user."]
+        #[serde(
+            rename = "fulfillmentResponse",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub fulfillment_response: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse,
+        >,
+        #[doc = "Information about page status. This field can be omitted by the webhook if\nit does not intend to modify page status."]
+        #[serde(
+            rename = "pageInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub page_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfo>,
+        #[doc = "Value to append directly to QueryResult.webhook_payloads."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Information about session status. This field can be omitted by the webhook\nif it does not intend to modify session status."]
+        #[serde(
+            rename = "sessionInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1SessionInfo>,
+        #[doc = "The target flow to transition to.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>`."]
+        #[serde(
+            rename = "targetFlow",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub target_flow: ::std::option::Option<String>,
+        #[doc = "The target page to transition to.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "targetPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub target_page: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse { # [ doc = "Merge behavior for `messages`." ] # [ serde ( rename = "mergeBehavior" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub merge_behavior : :: std :: option :: Option < crate :: schemas :: GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior > , # [ doc = "The list of rich message responses to present to the user." ] # [ serde ( rename = "messages" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub messages : :: std :: option :: Option < Vec < crate :: schemas :: GoogleCloudDialogflowCxV3Beta1ResponseMessage > > , }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior {
+        #[doc = "`messages` will be appended to the list of messages waiting to be sent\nto the user."]
+        Append,
+        #[doc = "Not specified. `APPEND` will be used."]
+        MergeBehaviorUnspecified,
+        #[doc = "`messages` will replace the list of messages waiting to be sent to the\nuser."]
+        Replace,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior {
+        pub fn as_str(self) -> &'static str {
+            match self { GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append => "APPEND" , GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified => "MERGE_BEHAVIOR_UNSPECIFIED" , GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace => "REPLACE" , }
+        }
+    }
+    impl ::std::convert::AsRef<str>
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<
+            GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior,
+            (),
+        > {
+            Ok ( match s { "APPEND" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append , "MERGE_BEHAVIOR_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified , "REPLACE" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace , _ => return Err ( ( ) ) , } )
+        }
+    }
+    impl ::std::fmt::Display
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de>
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok ( match value { "APPEND" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append , "MERGE_BEHAVIOR_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified , "REPLACE" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
     #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
     pub struct GoogleCloudDialogflowV2AnnotatedMessagePart {
         #[doc = "The [Dialogflow system entity\ntype](https://cloud.google.com/dialogflow/docs/reference/system-entities)\nof this message part. If this is empty, Dialogflow could not annotate the\nphrase part with a system entity."]
@@ -28503,6 +29296,27 @@ pub mod resources {
                             parent: parent.into(),
                         }
                     }
+                    #[doc = "Returns the list of agents.\nSince there is at most one conversational agent per project, this method is\nuseful primarily for listing all agents across projects the caller has\naccess to. One can achieve that with a wildcard project collection id \"-\".\nRefer to [List\nSub-Collections](https://cloud.google.com/apis/design/design_patterns#list_sub-collections)."]
+                    pub fn search(&self, parent: impl Into<String>) -> SearchRequestBuilder {
+                        SearchRequestBuilder {
+                            reqwest: &self.reqwest,
+                            auth: self.auth_ref(),
+                            access_token: None,
+                            alt: None,
+                            callback: None,
+                            fields: None,
+                            key: None,
+                            oauth_token: None,
+                            pretty_print: None,
+                            quota_user: None,
+                            upload_protocol: None,
+                            upload_type: None,
+                            xgafv: None,
+                            parent: parent.into(),
+                            page_size: None,
+                            page_token: None,
+                        }
+                    }
                     #[doc = "Trains the specified agent.\n\nOperation <response: google.protobuf.Empty>"]
                     pub fn train(
                         &self,
@@ -29380,6 +30194,309 @@ pub mod resources {
                                 .map_err(|err| crate::Error::OAuth2(err))?,
                         );
                         Ok(req)
+                    }
+                }
+                #[doc = "Created via [AgentActions::search()](struct.AgentActions.html#method.search)"]
+                #[derive(Debug, Clone)]
+                pub struct SearchRequestBuilder<'a> {
+                    pub(crate) reqwest: &'a ::reqwest::blocking::Client,
+                    pub(crate) auth: &'a dyn ::google_api_auth::GetAccessToken,
+                    parent: String,
+                    page_size: Option<i32>,
+                    page_token: Option<String>,
+                    access_token: Option<String>,
+                    alt: Option<crate::params::Alt>,
+                    callback: Option<String>,
+                    fields: Option<String>,
+                    key: Option<String>,
+                    oauth_token: Option<String>,
+                    pretty_print: Option<bool>,
+                    quota_user: Option<String>,
+                    upload_protocol: Option<String>,
+                    upload_type: Option<String>,
+                    xgafv: Option<crate::params::Xgafv>,
+                }
+                impl<'a> SearchRequestBuilder<'a> {
+                    #[doc = "Optional. The maximum number of items to return in a single page. By\ndefault 100 and at most 1000."]
+                    pub fn page_size(mut self, value: i32) -> Self {
+                        self.page_size = Some(value);
+                        self
+                    }
+                    #[doc = "Optional. The next_page_token value returned from a previous list request."]
+                    pub fn page_token(mut self, value: impl Into<String>) -> Self {
+                        self.page_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth access token."]
+                    pub fn access_token(mut self, value: impl Into<String>) -> Self {
+                        self.access_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "JSONP"]
+                    pub fn callback(mut self, value: impl Into<String>) -> Self {
+                        self.callback = Some(value.into());
+                        self
+                    }
+                    #[doc = "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token."]
+                    pub fn key(mut self, value: impl Into<String>) -> Self {
+                        self.key = Some(value.into());
+                        self
+                    }
+                    #[doc = "OAuth 2.0 token for the current user."]
+                    pub fn oauth_token(mut self, value: impl Into<String>) -> Self {
+                        self.oauth_token = Some(value.into());
+                        self
+                    }
+                    #[doc = "Returns response with indentations and line breaks."]
+                    pub fn pretty_print(mut self, value: bool) -> Self {
+                        self.pretty_print = Some(value);
+                        self
+                    }
+                    #[doc = "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters."]
+                    pub fn quota_user(mut self, value: impl Into<String>) -> Self {
+                        self.quota_user = Some(value.into());
+                        self
+                    }
+                    #[doc = "Upload protocol for media (e.g. \"raw\", \"multipart\")."]
+                    pub fn upload_protocol(mut self, value: impl Into<String>) -> Self {
+                        self.upload_protocol = Some(value.into());
+                        self
+                    }
+                    #[doc = "Legacy upload protocol for media (e.g. \"media\", \"multipart\")."]
+                    pub fn upload_type(mut self, value: impl Into<String>) -> Self {
+                        self.upload_type = Some(value.into());
+                        self
+                    }
+                    #[doc = "V1 error format."]
+                    pub fn xgafv(mut self, value: crate::params::Xgafv) -> Self {
+                        self.xgafv = Some(value);
+                        self
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are chosen by the caller of this"]
+                    #[doc = r" method and must implement `Deserialize` and `FieldSelector`. The"]
+                    #[doc = r" populated fields in the yielded items will be determined by the"]
+                    #[doc = r" `FieldSelector` implementation."]
+                    pub fn iter_agents<T>(self) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_agents_with_fields(fields)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be the default fields populated by"]
+                    #[doc = r" the server."]
+                    pub fn iter_agents_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<
+                        Self,
+                        crate::schemas::GoogleCloudDialogflowV2Beta1Agent,
+                    > {
+                        self.iter_agents_with_fields(None::<String>)
+                    }
+                    #[doc = r" Return an iterator that iterates over all `#prop_ident`. The"]
+                    #[doc = r" items yielded by the iterator are `#items_type`. The populated"]
+                    #[doc = r" fields in `#items_type` will be all fields available. This should"]
+                    #[doc = r" primarily be used during developement and debugging as fetching"]
+                    #[doc = r" all fields can be expensive both in bandwidth and server"]
+                    #[doc = r" resources."]
+                    pub fn iter_agents_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageItemIter<
+                        Self,
+                        crate::schemas::GoogleCloudDialogflowV2Beta1Agent,
+                    > {
+                        self.iter_agents_with_fields(Some("*"))
+                    }
+                    pub fn iter_agents_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageItemIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        self.fields = Some({
+                            let mut selector = concat!("nextPageToken,", "agents").to_owned();
+                            let items_fields = fields.as_ref().map(|x| x.as_ref()).unwrap_or("");
+                            if !items_fields.is_empty() {
+                                selector.push_str("(");
+                                selector.push_str(items_fields);
+                                selector.push_str(")");
+                            }
+                            selector
+                        });
+                        crate::iter::PageItemIter::new(self, "agents")
+                    }
+                    pub fn iter<T>(self) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.iter_with_fields(fields)
+                    }
+                    pub fn iter_with_default_fields(
+                        self,
+                    ) -> crate::iter::PageIter<
+                        Self,
+                        crate::schemas::GoogleCloudDialogflowV2Beta1SearchAgentsResponse,
+                    > {
+                        self.iter_with_fields(None::<&str>)
+                    }
+                    pub fn iter_with_all_fields(
+                        self,
+                    ) -> crate::iter::PageIter<
+                        Self,
+                        crate::schemas::GoogleCloudDialogflowV2Beta1SearchAgentsResponse,
+                    > {
+                        self.iter_with_fields(Some("*"))
+                    }
+                    pub fn iter_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> crate::iter::PageIter<Self, T>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: AsRef<str>,
+                    {
+                        let mut fields =
+                            fields.as_ref().map(|x| x.as_ref()).unwrap_or("").to_owned();
+                        if !fields.is_empty() {
+                            match fields.chars().rev().nth(0) {
+                                Some(',') | None => {}
+                                _ => fields.push_str(","),
+                            }
+                            fields.push_str("nextPageToken");
+                            self.fields = Some(fields);
+                        }
+                        crate::iter::PageIter::new(self)
+                    }
+                    #[doc = r" Execute the given operation. The fields requested are"]
+                    #[doc = r" determined by the FieldSelector attribute of the return type."]
+                    #[doc = r" This allows for flexible and ergonomic partial responses. See"]
+                    #[doc = r" `execute_standard` and `execute_debug` for interfaces that"]
+                    #[doc = r" are not generic over the return type and deserialize the"]
+                    #[doc = r" response into an auto-generated struct will all possible"]
+                    #[doc = r" fields."]
+                    pub fn execute<T>(self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned + ::google_field_selector::FieldSelector,
+                    {
+                        let fields = ::google_field_selector::to_string::<T>();
+                        let fields: Option<String> = if fields.is_empty() {
+                            None
+                        } else {
+                            Some(fields)
+                        };
+                        self.execute_with_fields(fields)
+                    }
+                    #[doc = r" Execute the given operation. This will not provide any"]
+                    #[doc = r" `fields` selector indicating that the server will determine"]
+                    #[doc = r" the fields returned. This typically includes the most common"]
+                    #[doc = r" fields, but it will not include every possible attribute of"]
+                    #[doc = r" the response resource."]
+                    pub fn execute_with_default_fields(
+                        self,
+                    ) -> Result<
+                        crate::schemas::GoogleCloudDialogflowV2Beta1SearchAgentsResponse,
+                        crate::Error,
+                    > {
+                        self.execute_with_fields(None::<&str>)
+                    }
+                    #[doc = r" Execute the given operation. This will provide a `fields`"]
+                    #[doc = r" selector of `*`. This will include every attribute of the"]
+                    #[doc = r" response resource and should be limited to use during"]
+                    #[doc = r" development or debugging."]
+                    pub fn execute_with_all_fields(
+                        self,
+                    ) -> Result<
+                        crate::schemas::GoogleCloudDialogflowV2Beta1SearchAgentsResponse,
+                        crate::Error,
+                    > {
+                        self.execute_with_fields(Some("*"))
+                    }
+                    #[doc = r" Execute the given operation. This will use the `fields`"]
+                    #[doc = r" selector provided and will deserialize the response into"]
+                    #[doc = r" whatever return value is provided."]
+                    pub fn execute_with_fields<T, F>(
+                        mut self,
+                        fields: Option<F>,
+                    ) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                        F: Into<String>,
+                    {
+                        self.fields = fields.map(Into::into);
+                        self._execute()
+                    }
+                    fn _execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        let req = self._request(&self._path())?;
+                        Ok(crate::error_from_response(req.send()?)?.json()?)
+                    }
+                    fn _path(&self) -> String {
+                        let mut output = "https://dialogflow.googleapis.com/".to_owned();
+                        output.push_str("v2beta1/");
+                        {
+                            let var_as_str = &self.parent;
+                            output.extend(::percent_encoding::utf8_percent_encode(
+                                &var_as_str,
+                                crate::RESERVED,
+                            ));
+                        }
+                        output.push_str("/agent:search");
+                        output
+                    }
+                    fn _request(
+                        &self,
+                        path: &str,
+                    ) -> Result<::reqwest::blocking::RequestBuilder, crate::Error>
+                    {
+                        let req = self.reqwest.request(::reqwest::Method::GET, path);
+                        let req = req.query(&[("pageSize", &self.page_size)]);
+                        let req = req.query(&[("pageToken", &self.page_token)]);
+                        let req = req.query(&[("access_token", &self.access_token)]);
+                        let req = req.query(&[("alt", &self.alt)]);
+                        let req = req.query(&[("callback", &self.callback)]);
+                        let req = req.query(&[("fields", &self.fields)]);
+                        let req = req.query(&[("key", &self.key)]);
+                        let req = req.query(&[("oauth_token", &self.oauth_token)]);
+                        let req = req.query(&[("prettyPrint", &self.pretty_print)]);
+                        let req = req.query(&[("quotaUser", &self.quota_user)]);
+                        let req = req.query(&[("upload_protocol", &self.upload_protocol)]);
+                        let req = req.query(&[("uploadType", &self.upload_type)]);
+                        let req = req.query(&[("$.xgafv", &self.xgafv)]);
+                        let req = req.bearer_auth(
+                            self.auth
+                                .access_token()
+                                .map_err(|err| crate::Error::OAuth2(err))?,
+                        );
+                        Ok(req)
+                    }
+                }
+                impl<'a> crate::iter::IterableMethod for SearchRequestBuilder<'a> {
+                    fn set_page_token(&mut self, value: String) {
+                        self.page_token = value.into();
+                    }
+                    fn execute<T>(&mut self) -> Result<T, crate::Error>
+                    where
+                        T: ::serde::de::DeserializeOwned,
+                    {
+                        self._execute()
                     }
                 }
                 #[doc = "Created via [AgentActions::train()](struct.AgentActions.html#method.train)"]

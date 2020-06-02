@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Run",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200514",
+  "revision": "20200521",
   "title": "Cloud Run API",
   "description": "Deploy and manage user provided container images that scale automatically based on HTTP traffic.",
   "ownerDomain": "google.com",

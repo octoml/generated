@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Run",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200514",
+  "revision": "20200521",
   "title": "Cloud Run API",
   "description": "Deploy and manage user provided container images that scale automatically based on HTTP traffic.",
   "ownerDomain": "google.com",
@@ -998,6 +998,16 @@
           "items": {
             "$ref": "ResourceRecord"
           }
+        },
+        "url": {
+          "description": "Cloud Run fully managed: not supported\n\nCloud Run on GKE: supported\n\nHolds the URL that will serve the traffic of the DomainMapping.\n+optional",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
         }
       },
       "additionalProperties": null,

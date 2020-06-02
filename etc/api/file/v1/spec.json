@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Filestore",
   "fullyEncodeReservedExpansion": true,
   "version": "v1",
-  "revision": "20200520",
+  "revision": "20200528",
   "title": "Cloud Filestore API",
   "description": "The Cloud Filestore API is used for creating and managing cloud file servers.",
   "ownerDomain": "google.com",

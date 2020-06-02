@@ -1,13 +1,13 @@
 {
   "kind": "discovery#restDescription",
-  "etag": "\"u9GIe6H63LSGq-9_t39K2Zx_EAc/VZADaIUTjNHbxdv5VQ4VUIadXV4\"",
+  "etag": "\"u9GIe6H63LSGq-9_t39K2Zx_EAc/PZk7-wpz6XHgQMe6JksWYBgwpSs\"",
   "discoveryVersion": "v1",
   "id": "compute:v1",
   "name": "compute",
   "canonicalName": null,
   "fullyEncodeReservedExpansion": null,
   "version": "v1",
-  "revision": "20200427",
+  "revision": "20200501",
   "title": "Compute Engine API",
   "description": "Creates and runs virtual machines on Google Cloud Platform.",
   "ownerDomain": "google.com",
@@ -13460,6 +13460,24 @@
             "$ref": "NetworkInterface"
           }
         },
+        "privateIpv6GoogleAccess": {
+          "description": "The private IPv6 google access type for the VM. If not specified, use  INHERIT_FROM_SUBNETWORK as default.",
+          "type": "string",
+          "format": null,
+          "enum": [
+            "ENABLE_BIDIRECTIONAL_ACCESS_TO_GOOGLE",
+            "ENABLE_OUTBOUND_VM_ACCESS_TO_GOOGLE",
+            "INHERIT_FROM_SUBNETWORK"
+          ],
+          "enumDescriptions": [
+            "",
+            "",
+            ""
+          ],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
         "reservationAffinity": {
           "description": "Specifies the reservations that this instance can consume from.",
           "$ref": "ReservationAffinity"
@@ -13527,7 +13545,7 @@
           "items": null
         },
         "status": {
-          "description": "[Output Only] The status of the instance. One of the following values: PROVISIONING, STAGING, RUNNING, STOPPING, STOPPED, SUSPENDING, SUSPENDED, and TERMINATED.",
+          "description": "[Output Only] The status of the instance. One of the following values: PROVISIONING, STAGING, RUNNING, STOPPING, SUSPENDING, SUSPENDED, and TERMINATED.",
           "type": "string",
           "format": null,
           "enum": [
@@ -16681,6 +16699,24 @@
           "items": {
             "$ref": "NetworkInterface"
           }
+        },
+        "privateIpv6GoogleAccess": {
+          "description": "The private IPv6 google access type for the VM. If not specified, use  INHERIT_FROM_SUBNETWORK as default.",
+          "type": "string",
+          "format": null,
+          "enum": [
+            "ENABLE_BIDIRECTIONAL_ACCESS_TO_GOOGLE",
+            "ENABLE_OUTBOUND_VM_ACCESS_TO_GOOGLE",
+            "INHERIT_FROM_SUBNETWORK"
+          ],
+          "enumDescriptions": [
+            "",
+            "",
+            ""
+          ],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
         },
         "reservationAffinity": {
           "description": "Specifies the reservations that this instance can consume from.",
@@ -22599,6 +22635,16 @@
           "description": "Fingerprint hash of contents stored in this network interface. This field will be ignored when inserting an Instance or adding a NetworkInterface. An up-to-date fingerprint must be provided in order to update the NetworkInterface, otherwise the request will fail with error 412 conditionNotMet.",
           "type": "string",
           "format": "byte",
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "ipv6Address": {
+          "description": "[Output Only] An IPv6 internal network address for this network interface.",
+          "type": "string",
+          "format": null,
           "enum": [],
           "enumDescriptions": [],
           "properties": {},
@@ -36797,6 +36843,16 @@
           "additionalProperties": null,
           "items": null
         },
+        "ipv6CidrRange": {
+          "description": "[Output Only] The range of internal IPv6 addresses that are owned by this subnetwork.",
+          "type": "string",
+          "format": null,
+          "enum": [],
+          "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
         "kind": {
           "description": "[Output Only] Type of the resource. Always compute#subnetwork for Subnetwork resources.",
           "type": "string",
@@ -36837,6 +36893,24 @@
           "format": null,
           "enum": [],
           "enumDescriptions": [],
+          "properties": {},
+          "additionalProperties": null,
+          "items": null
+        },
+        "privateIpv6GoogleAccess": {
+          "description": "The private IPv6 google access type for the VMs in this subnet. This is an expanded field of enablePrivateV6Access. If both fields are set, privateIpv6GoogleAccess will take priority.\n\nThis field can be both set at resource creation time and updated using patch.",
+          "type": "string",
+          "format": null,
+          "enum": [
+            "DISABLE_GOOGLE_ACCESS",
+            "ENABLE_BIDIRECTIONAL_ACCESS_TO_GOOGLE",
+            "ENABLE_OUTBOUND_VM_ACCESS_TO_GOOGLE"
+          ],
+          "enumDescriptions": [
+            "",
+            "",
+            ""
+          ],
           "properties": {},
           "additionalProperties": null,
           "items": null

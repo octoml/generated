@@ -749,7 +749,7 @@ pub mod schemas {
         :: serde :: Serialize,
     )]
     pub struct MergeCapacityCommitmentsRequest {
-        #[doc = "Ids of capacity commitments to merge.\nThese capacity commitments must exist under admin project and location\nspecified in the parent."]
+        #[doc = "Ids of capacity commitments to merge.\nThese capacity commitments must exist under admin project and location\nspecified in the parent.\nID is the last portion of capacity commitment name e.g., 'abc' for\nprojects/myproject/locations/US/capacityCommitments/abc"]
         #[serde(
             rename = "capacityCommitmentIds",
             default,

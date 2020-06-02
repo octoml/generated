@@ -7,7 +7,7 @@
   "canonicalName": "BigQuery Reservation",
   "fullyEncodeReservedExpansion": true,
   "version": "v1alpha2",
-  "revision": "20200516",
+  "revision": "20200519",
   "title": "BigQuery Reservation API",
   "description": "A service to modify your BigQuery flat-rate reservations.",
   "ownerDomain": "google.com",

@@ -7,6 +7,799 @@ pub mod scopes {
 }
 pub mod schemas {
     #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        #[doc = "Uncompressed raw byte content for agent."]
+        #[serde(
+            rename = "agentContent",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub agent_content: ::std::option::Option<::google_api_bytes::Bytes>,
+        #[doc = "The URI to a file containing the exported agent. This field is populated\nonly if `agent_uri` is specified in ExportAgentRequest."]
+        #[serde(
+            rename = "agentUri",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub agent_uri: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ExportAgentResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfo {
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe unique identifier of the current page.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "currentPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub current_page: ::std::option::Option<String>,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nInformation about the form."]
+        #[serde(
+            rename = "formInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub form_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo>,
+        #[doc = "Deprecated. Please use WebhookResponse.target_page or\nWebhookResponse.target_flow instead.\n\nOptional for WebhookResponse.\nThe unique identifier of the next page. This field can be set by the\nwebhook to immediately transition to a page different from `current_page`.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "nextPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub next_page: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1PageInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nThe parameters contained in the form. Note that the webhook cannot add\nor remove any form parameter."]
+        #[serde(
+            rename = "parameterInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub parameter_info: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo>,
+        >,
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe current state of the form."]
+        #[serde(
+            rename = "state",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub state: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState,
+        >,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        #[doc = "The server is collecting form parameters from the user. The webhook can\nmodify form parameters that have been collected or are to be collected."]
+        Collecting,
+        #[doc = "The server has collected all required form parameters from the user.\nThe webhook can modify collected form parameters. If any required\nparameter is invalidated by the webhook, the form will return to the\nparameter collection state; otherwise, parameter collection will\nconclude."]
+        Finalized,
+        #[doc = "Not specified. This value should be never used."]
+        FormStateUnspecified,
+        #[doc = "The server is initializing the form. The webhook can process the form\nbefore parameter collection begins."]
+        Initializing,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        pub fn as_str(self) -> &'static str {
+            match self {
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting => "COLLECTING",
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized => "FINALIZED",
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified => {
+                    "FORM_STATE_UNSPECIFIED"
+                }
+                GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing => "INITIALIZING",
+            }
+        }
+    }
+    impl ::std::convert::AsRef<str> for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState, ()>
+        {
+            Ok(match s {
+                "COLLECTING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting,
+                "FINALIZED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized,
+                "FORM_STATE_UNSPECIFIED" => {
+                    GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified
+                }
+                "INITIALIZING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing,
+                _ => return Err(()),
+            })
+        }
+    }
+    impl ::std::fmt::Display for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de> for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok(match value {
+                "COLLECTING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Collecting,
+                "FINALIZED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Finalized,
+                "FORM_STATE_UNSPECIFIED" => {
+                    GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::FormStateUnspecified
+                }
+                "INITIALIZING" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState::Initializing,
+                _ => {
+                    return Err(::serde::de::Error::custom(format!(
+                        "invalid enum for #name: {}",
+                        value
+                    )))
+                }
+            })
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoState {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo {
+        #[doc = "Always present for WebhookRequest. Required for\nWebhookResponse.\nThe human-readable name of the parameter, unique within the form. This\nfield cannot be modified by the webhook."]
+        #[serde(
+            rename = "displayName",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub display_name: ::std::option::Option<String>,
+        #[doc = "Optional for WebhookRequest. Ignored for WebhookResponse.\nIndicates if the parameter value was just collected on the last\nconversation turn."]
+        #[serde(
+            rename = "justCollected",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub just_collected: ::std::option::Option<bool>,
+        #[doc = "Not set for WebhookRequest. Optional for WebhookResponse.\nThe prompt to send to the user to fill a required form parameter. This\nfield can be set by the webhook. If set, this field overrides the\nprompt defined for the form parameter."]
+        #[serde(
+            rename = "prompt",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub prompt: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessage>,
+        >,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nIndicates whether the parameter is required. Optional parameters will\nnot trigger prompts; however, they are filled if the user specifies\nthem. Required parameters must be filled before form filling concludes."]
+        #[serde(
+            rename = "required",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub required: ::std::option::Option<bool>,
+        #[doc = "Always present for WebhookRequest. Required for\nWebhookResponse. The state of the parameter. This field can be set\nto INVALID by\nthe webhook to invalidate the parameter; other values set by the\nwebhook will be ignored."]
+        #[serde(
+            rename = "state",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub state: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState,
+        >,
+        #[doc = "Optional for both WebhookRequest and WebhookResponse.\nThe value of the parameter. This field can be set by the webhook to\nchange the parameter value."]
+        #[serde(
+            rename = "value",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub value: ::std::option::Option<::serde_json::Value>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        #[doc = "Indicates that the parameter does not have a value."]
+        Empty,
+        #[doc = "Indicates that the parameter has a value."]
+        Filled,
+        #[doc = "Indicates that the parameter value is invalid. This field can be used\nby the webhook to invalidate the parameter and ask the server to\ncollect it from the user again."]
+        Invalid,
+        #[doc = "Not specified. This value should be never used."]
+        ParameterStateUnspecified,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        pub fn as_str(self) -> &'static str {
+            match self { GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty => "EMPTY" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled => "FILLED" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid => "INVALID" , GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified => "PARAMETER_STATE_UNSPECIFIED" , }
+        }
+    }
+    impl ::std::convert::AsRef<str>
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<
+            GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState,
+            (),
+        > {
+            Ok ( match s { "EMPTY" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty , "FILLED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled , "INVALID" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid , "PARAMETER_STATE_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified , _ => return Err ( ( ) ) , } )
+        }
+    }
+    impl ::std::fmt::Display for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de>
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok ( match value { "EMPTY" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Empty , "FILLED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Filled , "INVALID" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: Invalid , "PARAMETER_STATE_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState :: ParameterStateUnspecified , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1PageInfoFormInfoParameterInfoState
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        #[doc = "Indicates that the conversation succeeded."]
+        #[serde(
+            rename = "conversationSuccess",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub conversation_success: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess,
+        >,
+        #[doc = "Hands off conversation to a human agent."]
+        #[serde(
+            rename = "humanAgentHandoff",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub human_agent_handoff: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff,
+        >,
+        #[doc = "Returns a response containing a custom, platform-specific payload."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Returns a text response."]
+        #[serde(
+            rename = "text",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub text: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessageText,
+        >,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ResponseMessage {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess {
+        #[doc = "Custom metadata. Dialogflow doesn't impose any structure on this."]
+        #[serde(
+            rename = "metadata",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub metadata:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageConversationSuccess
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff {
+        #[doc = "Custom metadata for your handoff procedure. Dialogflow doesn't impose\nany structure on this."]
+        #[serde(
+            rename = "metadata",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub metadata:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1ResponseMessageHumanAgentHandoff
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        #[doc = "A collection of text responses."]
+        #[serde(
+            rename = "text",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub text: ::std::option::Option<Vec<String>>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1ResponseMessageText {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        #[doc = "Optional for WebhookRequest. Optional for WebhookResponse.\nAll parameters collected from forms and intents during the session.\nParameters can be created, updated, or removed by the webhook. To remove a\nparameter from the session, the webhook should explicitly set the parameter\nvalue to null in WebhookResponse. The map is keyed by parameters'\ndisplay names."]
+        #[serde(
+            rename = "parameters",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub parameters:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Always present for WebhookRequest. Ignored for WebhookResponse.\nThe unique identifier of the session. This\nfield can be used by the webhook to identify a user.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/sessions/<Session ID>`."]
+        #[serde(
+            rename = "session",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1SessionInfo {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        #[doc = "Always present. The unique identifier of the DetectIntentResponse that\nwill be returned to the API caller."]
+        #[serde(
+            rename = "detectIntentResponseId",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub detect_intent_response_id: ::std::option::Option<String>,
+        #[doc = "Always present. Information about the fulfillment that triggered this\nwebhook call."]
+        #[serde(
+            rename = "fulfillmentInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub fulfillment_info: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo,
+        >,
+        #[doc = "Information about the last matched intent."]
+        #[serde(
+            rename = "intentInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub intent_info: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo,
+        >,
+        #[doc = "The list of rich message responses to present to the user. Webhook can\nchoose to append or replace this list in\nWebhookResponse.fulfillment_response;"]
+        #[serde(
+            rename = "messages",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub messages: ::std::option::Option<
+            Vec<crate::schemas::GoogleCloudDialogflowCxV3Beta1ResponseMessage>,
+        >,
+        #[doc = "Information about page status."]
+        #[serde(
+            rename = "pageInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub page_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfo>,
+        #[doc = "Custom data set in QueryParameters.payload."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Information about session status."]
+        #[serde(
+            rename = "sessionInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1SessionInfo>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1WebhookRequest {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
+        Debug,
+        Clone,
+        PartialEq,
+        Hash,
+        PartialOrd,
+        Ord,
+        Eq,
+        Default,
+        :: serde :: Deserialize,
+        :: serde :: Serialize,
+    )]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo {
+        #[doc = "Always present. The tag used to identify which fulfillment is being\ncalled."]
+        #[serde(
+            rename = "tag",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub tag: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestFulfillmentInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo { # [ doc = "Always present. The unique identifier of the last matched\nintent. Format: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>`." ] # [ serde ( rename = "lastMatchedIntent" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub last_matched_intent : :: std :: option :: Option < String > , # [ doc = "Parameters identified as a result of intent matching. This is a map of\nthe name of the identified parameter to the value of the parameter\nidentified from the user's utterance. All parameters defined in the\nmatched intent that are identified will be surfaced here." ] # [ serde ( rename = "parameters" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub parameters : :: std :: option :: Option < :: std :: collections :: BTreeMap < String , crate :: schemas :: GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue > > , }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfo
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue {
+        #[doc = "Always present. Original text value extracted from user utterance."]
+        #[serde(
+            rename = "originalValue",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub original_value: ::std::option::Option<String>,
+        #[doc = "Always present. Structured value for the parameter extracted from user\nutterance."]
+        #[serde(
+            rename = "resolvedValue",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub resolved_value: ::std::option::Option<::serde_json::Value>,
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookRequestIntentInfoIntentParameterValue
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        #[doc = "The fulfillment response to send to the user. This field can be omitted by\nthe webhook if it does not intend to send any response to the user."]
+        #[serde(
+            rename = "fulfillmentResponse",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub fulfillment_response: ::std::option::Option<
+            crate::schemas::GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse,
+        >,
+        #[doc = "Information about page status. This field can be omitted by the webhook if\nit does not intend to modify page status."]
+        #[serde(
+            rename = "pageInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub page_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1PageInfo>,
+        #[doc = "Value to append directly to QueryResult.webhook_payloads."]
+        #[serde(
+            rename = "payload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub payload:
+            ::std::option::Option<::std::collections::BTreeMap<String, ::serde_json::Value>>,
+        #[doc = "Information about session status. This field can be omitted by the webhook\nif it does not intend to modify session status."]
+        #[serde(
+            rename = "sessionInfo",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub session_info:
+            ::std::option::Option<crate::schemas::GoogleCloudDialogflowCxV3Beta1SessionInfo>,
+        #[doc = "The target flow to transition to.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>`."]
+        #[serde(
+            rename = "targetFlow",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub target_flow: ::std::option::Option<String>,
+        #[doc = "The target page to transition to.\nFormat: `projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>`."]
+        #[serde(
+            rename = "targetPage",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub target_page: ::std::option::Option<String>,
+    }
+    impl ::google_field_selector::FieldSelector for GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType for GoogleCloudDialogflowCxV3Beta1WebhookResponse {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Default, :: serde :: Deserialize, :: serde :: Serialize)]
+    pub struct GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse { # [ doc = "Merge behavior for `messages`." ] # [ serde ( rename = "mergeBehavior" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub merge_behavior : :: std :: option :: Option < crate :: schemas :: GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior > , # [ doc = "The list of rich message responses to present to the user." ] # [ serde ( rename = "messages" , default , skip_serializing_if = "std::option::Option::is_none" ) ] pub messages : :: std :: option :: Option < Vec < crate :: schemas :: GoogleCloudDialogflowCxV3Beta1ResponseMessage > > , }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponse
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(Debug, Clone, PartialEq, Hash, PartialOrd, Ord, Eq, Copy)]
+    pub enum GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior {
+        #[doc = "`messages` will be appended to the list of messages waiting to be sent\nto the user."]
+        Append,
+        #[doc = "Not specified. `APPEND` will be used."]
+        MergeBehaviorUnspecified,
+        #[doc = "`messages` will replace the list of messages waiting to be sent to the\nuser."]
+        Replace,
+    }
+    impl GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior {
+        pub fn as_str(self) -> &'static str {
+            match self { GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append => "APPEND" , GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified => "MERGE_BEHAVIOR_UNSPECIFIED" , GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace => "REPLACE" , }
+        }
+    }
+    impl ::std::convert::AsRef<str>
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn as_ref(&self) -> &str {
+            self.as_str()
+        }
+    }
+    impl ::std::str::FromStr
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        type Err = ();
+        fn from_str(
+            s: &str,
+        ) -> ::std::result::Result<
+            GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior,
+            (),
+        > {
+            Ok ( match s { "APPEND" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append , "MERGE_BEHAVIOR_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified , "REPLACE" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace , _ => return Err ( ( ) ) , } )
+        }
+    }
+    impl ::std::fmt::Display
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> ::std::fmt::Result {
+            f.write_str(self.as_str())
+        }
+    }
+    impl ::serde::Serialize
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn serialize<S>(&self, serializer: S) -> ::std::result::Result<S::Ok, S::Error>
+        where
+            S: ::serde::ser::Serializer,
+        {
+            serializer.serialize_str(self.as_str())
+        }
+    }
+    impl<'de> ::serde::Deserialize<'de>
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn deserialize<D>(deserializer: D) -> ::std::result::Result<Self, D::Error>
+        where
+            D: ::serde::de::Deserializer<'de>,
+        {
+            let value: &'de str = <&str>::deserialize(deserializer)?;
+            Ok ( match value { "APPEND" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Append , "MERGE_BEHAVIOR_UNSPECIFIED" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: MergeBehaviorUnspecified , "REPLACE" => GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior :: Replace , _ => return Err ( :: serde :: de :: Error :: custom ( format ! ( "invalid enum for #name: {}" , value ) ) ) , } )
+        }
+    }
+    impl ::google_field_selector::FieldSelector
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn fields() -> Vec<::google_field_selector::Field> {
+            Vec::new()
+        }
+    }
+    impl ::google_field_selector::ToFieldType
+        for GoogleCloudDialogflowCxV3Beta1WebhookResponseFulfillmentResponseMergeBehavior
+    {
+        fn field_type() -> ::google_field_selector::FieldType {
+            ::google_field_selector::FieldType::Leaf
+        }
+    }
+    #[derive(
         Debug, Clone, PartialEq, PartialOrd, Default, :: serde :: Deserialize, :: serde :: Serialize,
     )]
     pub struct GoogleCloudDialogflowV2Agent {

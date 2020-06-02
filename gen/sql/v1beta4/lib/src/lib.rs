@@ -1171,6 +1171,8 @@ pub mod schemas {
         Mysql56,
         #[doc = "The database version is MySQL 5.7."]
         Mysql57,
+        #[doc = "The database version is MySQL 8."]
+        Mysql80,
         #[doc = "The database version is PostgreSQL 10."]
         Postgres10,
         #[doc = "The database version is PostgreSQL 11."]
@@ -1197,6 +1199,7 @@ pub mod schemas {
                 DatabaseInstanceDatabaseVersion::Mysql55 => "MYSQL_5_5",
                 DatabaseInstanceDatabaseVersion::Mysql56 => "MYSQL_5_6",
                 DatabaseInstanceDatabaseVersion::Mysql57 => "MYSQL_5_7",
+                DatabaseInstanceDatabaseVersion::Mysql80 => "MYSQL_8_0",
                 DatabaseInstanceDatabaseVersion::Postgres10 => "POSTGRES_10",
                 DatabaseInstanceDatabaseVersion::Postgres11 => "POSTGRES_11",
                 DatabaseInstanceDatabaseVersion::Postgres12 => "POSTGRES_12",
@@ -1226,6 +1229,7 @@ pub mod schemas {
                 "MYSQL_5_5" => DatabaseInstanceDatabaseVersion::Mysql55,
                 "MYSQL_5_6" => DatabaseInstanceDatabaseVersion::Mysql56,
                 "MYSQL_5_7" => DatabaseInstanceDatabaseVersion::Mysql57,
+                "MYSQL_8_0" => DatabaseInstanceDatabaseVersion::Mysql80,
                 "POSTGRES_10" => DatabaseInstanceDatabaseVersion::Postgres10,
                 "POSTGRES_11" => DatabaseInstanceDatabaseVersion::Postgres11,
                 "POSTGRES_12" => DatabaseInstanceDatabaseVersion::Postgres12,
@@ -1267,6 +1271,7 @@ pub mod schemas {
                 "MYSQL_5_5" => DatabaseInstanceDatabaseVersion::Mysql55,
                 "MYSQL_5_6" => DatabaseInstanceDatabaseVersion::Mysql56,
                 "MYSQL_5_7" => DatabaseInstanceDatabaseVersion::Mysql57,
+                "MYSQL_8_0" => DatabaseInstanceDatabaseVersion::Mysql80,
                 "POSTGRES_10" => DatabaseInstanceDatabaseVersion::Postgres10,
                 "POSTGRES_11" => DatabaseInstanceDatabaseVersion::Postgres11,
                 "POSTGRES_12" => DatabaseInstanceDatabaseVersion::Postgres12,
@@ -1926,6 +1931,13 @@ pub mod schemas {
             skip_serializing_if = "std::option::Option::is_none"
         )]
         pub kind: ::std::option::Option<String>,
+        #[doc = "Option for export offload."]
+        #[serde(
+            rename = "offload",
+            default,
+            skip_serializing_if = "std::option::Option::is_none"
+        )]
+        pub offload: ::std::option::Option<bool>,
         #[doc = "Options for exporting data as SQL statements."]
         #[serde(
             rename = "sqlExportOptions",
@@ -2281,6 +2293,7 @@ pub mod schemas {
         Mysql55,
         Mysql56,
         Mysql57,
+        Mysql80,
         Postgres10,
         Postgres11,
         Postgres12,
@@ -2298,6 +2311,7 @@ pub mod schemas {
                 FlagAppliesToItems::Mysql55 => "MYSQL_5_5",
                 FlagAppliesToItems::Mysql56 => "MYSQL_5_6",
                 FlagAppliesToItems::Mysql57 => "MYSQL_5_7",
+                FlagAppliesToItems::Mysql80 => "MYSQL_8_0",
                 FlagAppliesToItems::Postgres10 => "POSTGRES_10",
                 FlagAppliesToItems::Postgres11 => "POSTGRES_11",
                 FlagAppliesToItems::Postgres12 => "POSTGRES_12",
@@ -2325,6 +2339,7 @@ pub mod schemas {
                 "MYSQL_5_5" => FlagAppliesToItems::Mysql55,
                 "MYSQL_5_6" => FlagAppliesToItems::Mysql56,
                 "MYSQL_5_7" => FlagAppliesToItems::Mysql57,
+                "MYSQL_8_0" => FlagAppliesToItems::Mysql80,
                 "POSTGRES_10" => FlagAppliesToItems::Postgres10,
                 "POSTGRES_11" => FlagAppliesToItems::Postgres11,
                 "POSTGRES_12" => FlagAppliesToItems::Postgres12,
@@ -2364,6 +2379,7 @@ pub mod schemas {
                 "MYSQL_5_5" => FlagAppliesToItems::Mysql55,
                 "MYSQL_5_6" => FlagAppliesToItems::Mysql56,
                 "MYSQL_5_7" => FlagAppliesToItems::Mysql57,
+                "MYSQL_8_0" => FlagAppliesToItems::Mysql80,
                 "POSTGRES_10" => FlagAppliesToItems::Postgres10,
                 "POSTGRES_11" => FlagAppliesToItems::Postgres11,
                 "POSTGRES_12" => FlagAppliesToItems::Postgres12,

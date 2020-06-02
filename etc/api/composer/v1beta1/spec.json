@@ -7,7 +7,7 @@
   "canonicalName": "Cloud Composer",
   "fullyEncodeReservedExpansion": true,
   "version": "v1beta1",
-  "revision": "20200505",
+  "revision": "20200517",
   "title": "Cloud Composer API",
   "description": "Manages Apache Airflow environments on Google Cloud Platform.",
   "ownerDomain": "google.com",
