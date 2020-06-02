@@ -13,7 +13,7 @@ path = "src/main.rs"
 
 [dependencies]
 yup-oauth2 = "^3.1"
-google_api_auth = { git = "https://github.com/google-apis-rs/generator", features = ["with-yup-oauth2"] }
+google_api_auth = { git = "https://github.com/octoml/generator", features = ["with-yup-oauth2"], branch = "octo_master" }
 hyper-rustls = "^0.16"
 clap = "^2.33"
 hyper = "0.12.33"
